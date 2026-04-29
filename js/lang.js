@@ -92,6 +92,10 @@ const translations = {
       minigun: "Minigun",
       harpoon: "Arpão",
 
+      /* Melee Desc */
+      machetedesc: "Esta lâmina bem equilibrada oferece velocidade, dano e capacidade de desmembramento superiores. Cortante. Uma mão.",
+      sledgehammerdesc: "Esta arma corpo-a-corpo gigantesca é tão lenta quanto destrutiva. Contundente. Duas mãos.",
+
       /* Ranged Desc */
       crossbowdesc: "Essa arma extremamente poderosa é dolorosamente lenta para recarregar, então faça com que cada tiro valha a pena.",
       repeatingcrossbowdesc: "Esta besta foi modificada para aumentar sua capacidade de munição e frequência de tiro. Certifique-se de que seu inimigo entenda a lição — repetidamente, em rápida sucessão.",
@@ -100,7 +104,7 @@ const translations = {
     /* Perfil dos personagens */
     attributes: "Atributos",
     defense: "Defesa",
-    melee: "Armas brancas",
+    melee: "Armas corpo-a-corpo",
     range: "Armas de longo alcance",
     support2: "Assistência à equipe",
 
@@ -257,6 +261,10 @@ const translations = {
       sawgun: "Sawgun",
       minigun: "Minigun",
       harpoon: "hapoon",
+
+      /* Melee Desc */
+      machetedesc: "This well-balanced blade provides superior speed, damage and dismemberment. Sharp. One-handed.",
+      sledgehammerdesc: "This beast of a melee weapon is as slow as it is destructive. Blunt. Two-handed.",
 
       /* Ranged Desc */
       crossbowdesc: "This very powerful weapon is painfuly slow to reload, so make every shot count.",
