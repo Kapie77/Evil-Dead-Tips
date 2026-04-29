@@ -95,6 +95,8 @@ const translations = {
       /* Melee Desc */
       machetedesc: "Esta lâmina bem equilibrada oferece velocidade, dano e capacidade de desmembramento superiores. Cortante. Uma mão.",
       sledgehammerdesc: "Esta arma corpo-a-corpo gigantesca é tão lenta quanto destrutiva. Contundente. Duas mãos.",
+      shoveldesc: "Não é rápido, mas nada bate como uma pá. Contundente. Duas mãos.",
+      chainsawdesc: "Esta arma só pode ser usada pelo Ash de Evil Dead II, pelo Ash de Army of Darkness e pelo Ash de Ash vs. Evil Dead. Ela corta as Deadites com facilidade. Cortante. Uma mão.",
 
       /* Ranged Desc */
       crossbowdesc: "Essa arma extremamente poderosa é dolorosamente lenta para recarregar, então faça com que cada tiro valha a pena.",
@@ -265,6 +267,8 @@ const translations = {
       /* Melee Desc */
       machetedesc: "This well-balanced blade provides superior speed, damage and dismemberment. Sharp. One-handed.",
       sledgehammerdesc: "This beast of a melee weapon is as slow as it is destructive. Blunt. Two-handed.",
+      shoveldesc: "It isn't fast, but nothing hits quite like a shovel. Blunt. Two-handed.",
+      chainsawdesc: "This weapon can be used only by Evil Dead II Ash, Army of Darkness Ash, and Ash vs. Evil Dead Ash. It slices through Deadites with ease. Sharp. One-handed.",
 
       /* Ranged Desc */
       crossbowdesc: "This very powerful weapon is painfuly slow to reload, so make every shot count.",
