@@ -357,7 +357,7 @@ const translations = {
 };
 
 function applyLang() {
-  const lang = localStorage.getItem("lang") || "pt";
+  const lang = localStorage.getItem("lang") || "en"; // Lingua padrão "en" (english)
 
   document.querySelectorAll("[data-lang]").forEach(el => {
     const key = el.getAttribute("data-lang");
