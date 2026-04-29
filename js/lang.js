@@ -57,7 +57,7 @@ const translations = {
       chainsaw: "Motoserra",
       handaxe: "Machadinha",
       scythe: "Foice",
-      knife: "Faca",
+      huntingknife: "Faca de Caça",
       bat: "Taco de Pregos",
       lumberjackaxe: "Machado de Lenhador",
       sledgehammer: "Marreta",
@@ -98,6 +98,7 @@ const translations = {
       shoveldesc: "Não é rápido, mas nada bate como uma pá. Contundente. Duas mãos.",
       chainsawdesc: "Esta arma só pode ser usada pelo Ash de Evil Dead II, pelo Ash de Army of Darkness e pelo Ash de Ash vs. Evil Dead. Ela corta as Deadites com facilidade. Cortante. Uma mão.",
       lumberjackaxedesc: "Se você precisa de uma arma que cause muito dano e desmembramento, mas que não seja particularmente rápida, esta é a ideal para você. Cortante. Duas mãos.",
+      knifedesc: "Esta arma compensa seu curto alcance com sua alta velocidade de ataque. Cortante. Uma mão.",
 
       /* Ranged Desc */
       crossbowdesc: "Essa arma extremamente poderosa é dolorosamente lenta para recarregar, então faça com que cada tiro valha a pena.",
@@ -230,7 +231,7 @@ const translations = {
       chainsaw: "Chainsaw",
       handaxe: "Hand Axe",
       scythe: "Scythe",
-      knife: "Hunting Knife",
+      huntingknife: "Hunting Knife",
       bat: "Nail Bat",
       lumberjackaxe: "Lumberjack Axe",
       sledgehammer: "Sledgehammer",
@@ -271,6 +272,7 @@ const translations = {
       shoveldesc: "It isn't fast, but nothing hits quite like a shovel. Blunt. Two-handed.",
       chainsawdesc: "This weapon can be used only by Evil Dead II Ash, Army of Darkness Ash, and Ash vs. Evil Dead Ash. It slices through Deadites with ease. Sharp. One-handed.",
       lumberjackaxedesc: "If you need a weapon that deals high damage and dismemberment, but isn't particularly fast, this one's for you. Sharp. Two-handed.",
+      knifedesc: "This weapon makes up for its short range with its high attack speed. Sharp. One-handed.",
 
       /* Ranged Desc */
       crossbowdesc: "This very powerful weapon is painfuly slow to reload, so make every shot count.",
