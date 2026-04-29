@@ -99,6 +99,7 @@ const translations = {
       chainsawdesc: "Esta arma só pode ser usada pelo Ash de Evil Dead II, pelo Ash de Army of Darkness e pelo Ash de Ash vs. Evil Dead. Ela corta as Deadites com facilidade. Cortante. Uma mão.",
       lumberjackaxedesc: "Se você precisa de uma arma que cause muito dano e desmembramento, mas que não seja particularmente rápida, esta é a ideal para você. Cortante. Duas mãos.",
       knifedesc: "Esta arma compensa seu curto alcance com sua alta velocidade de ataque. Cortante. Uma mão.",
+      sworddesc: "Esta arma nobre não é rápida, mas tem um golpe amplo e desmembra como só um sabre é capaz. Cortante. Duas mãos.",
 
       /* Ranged Desc */
       crossbowdesc: "Essa arma extremamente poderosa é dolorosamente lenta para recarregar, então faça com que cada tiro valha a pena.",
@@ -273,6 +274,7 @@ const translations = {
       chainsawdesc: "This weapon can be used only by Evil Dead II Ash, Army of Darkness Ash, and Ash vs. Evil Dead Ash. It slices through Deadites with ease. Sharp. One-handed.",
       lumberjackaxedesc: "If you need a weapon that deals high damage and dismemberment, but isn't particularly fast, this one's for you. Sharp. Two-handed.",
       knifedesc: "This weapon makes up for its short range with its high attack speed. Sharp. One-handed.",
+      sworddesc: "This noble weapon isn't fast but it swings wide and dismembers like only a saber can. Sharp. Two-handed.",
 
       /* Ranged Desc */
       crossbowdesc: "This very powerful weapon is painfuly slow to reload, so make every shot count.",
