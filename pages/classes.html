@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Classes - Sobreviventes</title>
+  <link rel="stylesheet" href="../css/classes.css">
+  <link rel="stylesheet" href="../css/backbutton.css">
+
+  <link rel="stylesheet" href="../css/flag.css">
+</head>
+<body>
+
+  <!-- Language -->
+   <div class="lang-switch">
+      <img src="../images/flags/br.jpg" onclick="setLang('pt')">
+      <img src="../images/flags/us.png" onclick="setLang('en')">
+      <img src="../images/flags/es.jpg" onclick="setLang('es')">
+  </div>
+  <!--------------->
+
+  <div class="overlay"></div>
+
+  <header>
+    <h1 data-lang="classes">CLASSES</h1>
+  </header>
+
+  <main class="container">
+
+    <div class="card lider" onclick="goTo('../pages/classes/leader.html')">
+      <div class="card-img"></div>
+      <h2 data-lang="leader">Líder</h2>
+    </div>
+
+    <div class="card guerreiro" onclick="goTo('../pages/classes/warrior.html')">
+      <div class="card-img"></div>
+      <h2 data-lang="warrior">Guerreiro</h2>
+    </div>
+
+    <div class="card cacador" onclick="goTo('../pages/classes/hunter.html')">
+      <div class="card-img"></div>
+      <h2 data-lang="hunter">Caçador</h2>
+    </div>
+
+    <div class="card suporte" onclick="goTo('../pages/classes/support.html')">
+      <div class="card-img"></div>
+      <h2 data-lang="support">Suporte</h2>
+    </div>
+
+  </main>
+
+  <button onclick="goBack()" class="back-btn" data-lang="back">Voltar</button>
+
+  <script src="../js/script.js"></script>
+    <script src="../js/lang.js"></script> <!-- translate -->
+</body>
+</html>

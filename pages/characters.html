@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Personagens</title>
+  <link rel="stylesheet" href="../css/characters.css">
+  <link rel="stylesheet" href="../css/backbutton.css">
+  <link rel="stylesheet" href="../css/flag.css">
+</head>
+<body>
+
+  <!-- Language -->
+   <div class="lang-switch">
+      <img src="../images/flags/br.jpg" onclick="setLang('pt')">
+      <img src="../images/flags/us.png" onclick="setLang('en')">
+      <img src="../images/flags/es.jpg" onclick="setLang('es')">
+  </div>
+  <!--------------->
+
+  <div class="overlay"></div>
+
+  <header>
+    <h1 data-lang="characters">PERSONAGENS</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- EXEMPLO DE PERSONAGEM -->
+    <!-- LÍDER -->
+      <section class="classe">
+        <h2 data-lang="leader">Líder</h2>
+
+          <div class="char-card">
+            <img src="../images/characters/AshLeader.png">
+            <span>Ash (Líder)</span>
+          </div>
+
+          <div class="char-card">
+            <img src="../images/characters/Annie.png">
+            <span>Annie</span>
+          </div>
+
+          <div class="char-card">
+            <img src="../images/characters/Arthur.png">
+            <span>Lorde Arthur</span>
+          </div>
+
+          <div class="char-card">
+            <img src="../images/characters/Ruby.png">
+            <span>Ruby</span>
+          </div>
+
+          <div class="char-card">
+            <img src="../images/characters/Brock.png">
+            <span>Brock</span>
+          </div>
+      
+    </section>
+
+    <!-- GUERREIRO -->
+    <section class="classe">
+      <h2 data-lang="warrior">Guerreiro</h2>
+
+        <div class="char-card">
+          <img src="../images/characters/AshWarrior.png">
+          <span>Ash (Guerreiro)</span>
+      </div>
+
+        <div class="char-card">
+          <img src="../images/characters/Henry.png">
+          <span>Henry</span>
+      </div>
+
+        <div class="char-card">
+          <img src="../images/characters/Scotty.png">
+          <span>Scotty</span>
+      </div>
+
+        <div class="char-card">
+          <img src="../images/characters/Mia.png">
+          <span>Mia</span>
+      </div>
+
+    </section>
+
+    <!-- CAÇADOR -->
+    <section class="classe">
+      <h2 data-lang="hunter">Caçador</h2>
+
+        <div class="char-card">
+          <img src="../images/characters/AshHunter.png">
+          <span>Ash (Caçador)</span>
+      </div>
+
+          <a href="../pages/characters/ed.html" class="char-card">
+          <img src="../images/characters/Ed.png">
+          <span>Ed</span>
+        </a>
+
+        <div class="char-card">
+          <img src="../images/characters/Kelly.png">
+          <span>Kelly</span>
+      </div>
+
+        <div class="char-card">
+          <img src="../images/characters/Amanda.png">
+          <span>Amanda</span>
+      </div>
+    </section>
+
+    <!-- SUPORTE -->
+    <section class="classe">
+      <h2 data-lang="support">Suporte</h2>
+
+        <div class="char-card">
+          <img src="../images/characters/AshSupport.png">
+          <span>Ash (Suporte)</span>
+      </div>
+
+        <div class="char-card">
+          <img src="../images/characters/Cheryl.png">
+          <span>Cheryl</span>
+      </div>
+
+        <div class="char-card">
+          <img src="../images/characters/Pablo.png">
+          <span>Pablo</span>
+      </div>
+
+        <div class="char-card">
+          <img src="../images/characters/David.png">
+          <span>David</span>
+      </div>
+
+        <div class="char-card">
+          <img src="../images/characters/Blacksmith.png">
+          <span>Ferreiro</span>
+      </div>
+    </section>
+
+</main>
+<!----------------->
+
+  <button onclick="goBack()" class="back-btn" data-lang="back">Voltar</button>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/lang.js"></script> <!-- translate -->
+</body>
+</html>

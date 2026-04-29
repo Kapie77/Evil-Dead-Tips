@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-image 0.5s ease-in-out;
+  color: white;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* ==========
+    HEADER
+============ */
+header {
+  text-align: center;
+  padding-top: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+header h1 {
+  font-size: 4rem;
+  color: #ff1a1a;
+  text-shadow: 0 0 20px red;
+}
+
+header p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+/* Logo/Título */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 400px; /* ajusta conforme ficar melhor */
+  max-width: 90%;
+  height: auto;
+}
+
+/* Subtitulo */
+.subtitle {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+/* ==============
+    CONTAINER
+================ */
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  gap: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  background-image: ""
+}
+
+.card h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px red;
+}
+
+.survivors {
+  background: url('images/cards/survivors.jpg') center/cover;
+}
+
+.demons {
+  background: url('images/cards/demon4.jpg') center/cover;
+}

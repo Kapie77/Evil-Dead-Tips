@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Puppeteer - Dicas</title>
+
+  <link rel="stylesheet" href="../../css/demonpage.css">
+  <link rel="stylesheet" href="../../css/backbutton.css">
+  <link rel="stylesheet" href="../../css/flag.css">
+</head>
+<body class="puppeteer">
+
+  <!-- idioma -->
+  <div class="lang-switch">
+    <img src="../../images/flags/br.jpg" onclick="setLang('pt')">
+    <img src="../../images/flags/us.png" onclick="setLang('en')">
+    <img src="../../images/flags/es.jpg" onclick="setLang('es')">
+  </div>
+
+  <div class="overlay"></div>
+
+  <main class="container">
+
+    <!-- IMAGEM FIXA -->
+    <div class="hero-image">
+      <img src="../../images/demons/eligos.jpg" alt="Eligos">
+    </div>
+
+    <!-- PERFIL -->
+    <section class="char-hero">
+
+      <div class="hero-left">
+        <h1>PUPPETEER</h1>
+        <p data-lang="EligosBio">
+          Eligos é um demônio focado em controle, dano elétrico e pressão constante.
+          Ele se destaca ao possuir unidades e atacar rapidamente, dificultando a reação
+          dos sobreviventes. Sua mobilidade e imprevisibilidade fazem dele um dos demônios
+          mais perigosos em mãos experientes.
+        </p>
+      </div>
+
+      <div class="hero-right">
+        <h2 data-lang="stats">Atributos</h2>
+
+        <div class="stat">
+          <span data-lang="defense">Pressão</span>
+          <div class="bars">
+            <div class="bar filled"></div>
+            <div class="bar filled"></div>
+            <div class="bar filled"></div>
+            <div class="bar filled"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+
+        <div class="stat">
+          <span data-lang="damage">Dano</span>
+          <div class="bars">
+            <div class="bar filled"></div>
+            <div class="bar filled"></div>
+            <div class="bar filled"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+
+        <div class="stat">
+          <span data-lang="speed">Controle</span>
+          <div class="bars">
+            <div class="bar filled"></div>
+            <div class="bar filled"></div>
+            <div class="bar filled"></div>
+            <div class="bar filled"></div>
+            <div class="bar filled"></div>
+          </div>
+        </div>
+
+        <div class="stat">
+          <span data-lang="abilities">Dificuldade</span>
+          <div class="bars">
+            <div class="bar filled"></div>
+            <div class="bar filled"></div>
+            <div class="bar filled"></div>
+            <div class="bar filled"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="abilities-box">
+      <h2 data-lang="abilities">Habilidades</h2>
+      <p data-lang="EligosAbility">Units you possess have more health, deal more damage, and their attacks increase fear in their targets. Additionally, possessed evil units inflict bleeding damage.</p>
+
+      <div class="ability">
+        <h3 data-lang="EligosAb1">Possessão Rápida</h3>
+        <p data-lang="EligosAbInfo1">Permite controlar unidades com maior eficiência e velocidade.</p>
+      </div>
+
+      <div class="ability">
+        <h3 data-lang="EligosAb2">Dano Elétrico</h3>
+        <p data-lang="EligosAbInfo2">Seus ataques causam dano adicional em área.</p>
+      </div>
+
+      <div class="ability">
+        <h3 data-lang="EligosAb3">Teleportes</h3>
+        <p data-lang="EligosAbInfo3">Alta mobilidade para confundir sobreviventes.</p>
+      </div>
+    </section>
+
+    <!-- PONTOS FORTES -->
+    <section class="strengths-box">
+      <h2>Pontos Fortes</h2>
+      <ul>
+        <li>Alta pressão constante</li>
+        <li>Difícil de prever</li>
+        <li>Ótimo controle de unidades</li>
+      </ul>
+    </section>
+
+    <!-- PONTOS FRACOS -->
+    <section class="weakness-box">
+      <h2>Pontos Fracos</h2>
+      <ul>
+        <li>Dependente de habilidade do jogador</li>
+        <li>Frágil sem energia</li>
+        <li>Menos eficaz contra equipes organizadas</li>
+      </ul>
+    </section>
+
+    <!-- DICAS -->
+    <section class="tips-box">
+      <h2>Dicas</h2>
+
+      <div class="tip">
+        <span class="tip-number"></span>
+        <p>Use possessão com timing, não desperdice energia.</p>
+      </div>
+
+      <div class="tip">
+        <span class="tip-number"></span>
+        <p>Pressione cedo para atrasar o loot dos sobreviventes.</p>
+      </div>
+
+      <div class="tip">
+        <span class="tip-number"></span>
+        <p>Use sua mobilidade para atacar de surpresa.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <button onclick="goBack()" class="back-btn" data-lang="back">Voltar</button>
+
+  <script src="../../js/script.js"></script>
+  <script src="../../js/lang.js"></script> <!-- tradução -->
+</body>
+</html>

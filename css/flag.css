@@ -1,0 +1,23 @@
+.lang-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+.lang-switch img {
+  width: 35px;
+  height: 25px;
+  cursor: pointer;
+
+  border-radius: 3px;
+  transition: 0.2s;
+}
+
+.lang-switch img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px white;
+}

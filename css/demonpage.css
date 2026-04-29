@@ -1,0 +1,246 @@
+/* BASE */
+body {
+  background: url('../images/background.png') no-repeat center/cover;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* HERO */
+.char-hero {
+  display: flex;
+  gap: 40px;
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* IMAGE */
+.hero-image {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.hero-image img {
+  width: 120px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #66ccff;
+}
+
+/* ATTRIBUTES */
+.bars {
+  display: flex;
+  gap: 5px;
+}
+
+.bar {
+  width: 12px;
+  height: 12px;
+  background: rgba(255,255,255,0.2);
+  transform: rotate(45deg);
+}
+
+.bar.filled {
+  background: #66ccff;
+}
+
+/* BOXES */
+.box {
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* ==================
+    PONTOS FORTES
+=================== */
+.strengths-box {
+  background: rgba(0, 50, 2, 0.6);
+  border: 1px solid rgba(77, 250, 25, 0.3);
+
+  padding: 20px;
+  border-radius: 10px;
+
+  backdrop-filter: blur(8px);
+  position: relative;
+  margin-top: 20px;
+}
+
+/* borda lateral */
+.strengths-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: #2aaf01;
+}
+
+/* título */
+.strengths-box h2 {
+  color: #6bff4d;
+  margin-bottom: 15px;
+}
+
+/* ==================
+PONTOS FRACOS
+=================== */
+.weakness-box {
+  background: rgba(50,0,0,0.6);
+  border: 1px solid rgba(255,0,0,0.3);
+
+  padding: 20px;
+  border-radius: 10px;
+
+  backdrop-filter: blur(8px);
+  position: relative;
+}
+
+/* borda lateral */
+.weakness-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: #ff3333;
+}
+
+/* título */
+.weakness-box h2 {
+  color: #ff4d4d;
+  margin-bottom: 15px;
+}
+
+/* ==================
+    HABILIDADES
+====================*/
+.abilities-box {
+  margin-top: 20px;
+  border-left: 4px solid #66ccff;
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+}
+
+/* ===================
+    DICAS
+============== */
+.tips-box {
+  background: rgba(0,30,50,0.6);
+  border: 1px solid rgba(0,200,255,0.3);
+
+  padding: 20px;
+  border-radius: 10px;
+
+  backdrop-filter: blur(8px);
+  position: relative;
+
+  counter-reset: tip;
+}
+
+/* borda lateral */
+.tips-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: #00ccff;
+}
+
+/* título */
+.tips-box h2 {
+  color: #00ccff;
+  margin-bottom: 15px;
+}
+
+/* Dica invidivual */
+.tip {
+  counter-increment: tip;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(0,200,255,0.2);
+
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+
+  transition: 0.2s;
+}
+
+.tip:hover {
+  transform: translateY(-3px);
+  background: rgba(0,200,255,0.08);
+  box-shadow: 0 0 10px rgba(0,200,255,0.2);
+}
+
+/* hover número */
+.tip-number::before {
+  content: counter(tip);
+}
+
+.tip-number {
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #00ccff;
+  color: black;
+
+  font-weight: bold;
+  font-size: 0.8rem;
+
+  border-radius: 5px;
+
+  box-shadow: 0 0 6px rgba(0,200,255,0.6);
+
+  flex-shrink: 0;
+}
+
+/* textos */
+.tip p {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+/* ==================================
+DICAS E PONTOS FRACOS/FORTES HOVER
+====================================*/
+.strengths-box,
+.weakness-box,
+.tips-box {
+  padding: 20px 20px 20px 35px; /* Topo, direita, baixo, esquerda */
+}
+.strengths-box:hover, 
+.weakness-box:hover,
+.tips-box:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+}
+
+.strengths-box, 
+.weakness-box,
+.tips-box ul li {
+  font-size: 1rem;       /* aumenta um pouco */
+  line-height: 1.6;      /* deixa mais confortável de ler */
+  margin-bottom: 10px;   /* espaço entre as dicas */
+}

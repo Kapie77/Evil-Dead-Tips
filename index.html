@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Evil Dead - Dicas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/flag.css">
+  <script src="js/background.js"></script> <!-- background images -->
+</head>
+<body>
+
+  <!-- Language -->
+   <div class="lang-switch">
+      <img src="images/flags/br.jpg" onclick="setLang('pt')">
+      <img src="images/flags/us.png" onclick="setLang('en')">
+      <img src="images/flags/es.jpg" onclick="setLang('es')">
+  </div>
+  <!--------------->
+
+  <div class="overlay"></div>
+
+  <header>
+
+    <div class="logo">
+      <img src="images/logo.png" alt="Evil Dead">
+    </div>
+
+    <p class="subtitle" data-lang="subtitle">Dicas e Estratégias</p>
+
+  </header>
+
+  <main class="container">
+
+    <div class="card survivors" onclick="goTo('./pages/survivors.html')">
+      <h2 data-lang="survivors">Sobreviventes</h2>
+    </div>
+
+    <div class="card demons" onclick="goTo('./pages/demons.html')">
+      <h2 data-lang="demons">Demônios</h2>
+    </div>
+
+  </main>
+
+  <script src="js/script.js"></script>
+  <script src="js/lang.js"></script> <!-- translate -->
+</body>
+</html>

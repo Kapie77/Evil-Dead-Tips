@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url('../images/background.png') no-repeat center/cover;
+  color: white;
+}
+
+/* overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+/* header */
+header {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+  z-index: 2;
+}
+
+header h1 {
+  color: #ff3333;
+  text-shadow: 0 0 15px #ff3333;
+}
+
+/* container */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+/* caixas de conteúdo */
+.box {
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+  border-left: 4px solid #ff3333;
+  border-radius: 5px;
+}
+
+/* ====================
+    BOX POR CLASSE
+======================*/
+body.guerreiro .box {
+  border-left: 4px solid #ff3333;
+}
+
+body.lider .box {
+  border-left: 4px solid #00ccff;
+}
+
+body.cacador .box {
+  border-left: 4px solid #ffaa00;
+}
+
+body.suporte .box {
+  border-left: 4px solid #33cc66;
+}
+/* ================ */
+
+.box h2 {
+  margin-bottom: 10px;
+}
+
+.box ul {
+  padding-left: 20px;
+}
+
+/* botão voltar */
+.back {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.back:hover {
+  background: white;
+  color: black;
+}
+
+/* ==================
+   CSS POR CLASSE
+=================== */
+/* Guerreiro */
+body.guerreiro header h1 {
+  color: #ff3333;
+  text-shadow: 0 0 15px #ff3333;
+}
+
+/* Líder */
+body.lider header h1 {
+  color: #00ccff;
+  text-shadow: 0 0 15px #00ccff;
+}
+
+/* Caçador */
+body.cacador header h1 {
+  color: #ffaa00;
+  text-shadow: 0 0 15px #ffaa00;
+}
+
+/* Suporte */
+body.suporte header h1 {
+  color: #33cc66;
+  text-shadow: 0 0 15px #33cc66;
+}

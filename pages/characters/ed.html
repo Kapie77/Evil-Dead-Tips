@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Ed - Dicas</title>
+
+  <link rel="stylesheet" href="../../css/characterspage.css">
+  <link rel="stylesheet" href="../../css/backbutton.css">
+  <link rel="stylesheet" href="../../css/flag.css">
+
+</head>
+<body class="cacador">
+
+  <!-- Language -->
+   <div class="lang-switch">
+      <img src="../../images/flags/br.jpg" onclick="setLang('pt')">
+      <img src="../../images/flags/us.png" onclick="setLang('en')">
+      <img src="../../images/flags/es.jpg" onclick="setLang('es')">
+  </div>
+  <!--------------->
+
+  <div class="overlay"></div>
+
+  <main class="container">
+
+<div class="hero-wrapper">
+
+  <!-- IMAGEM -->
+  <div class="hero-image">
+    <img src="../../images/characters/Ed.png" alt="Ed">
+  </div>
+
+  <!-- PERFIL -->
+  <section class="char-hero">
+
+    <!-- Descrição do personagem -->
+    <div class="hero-left">
+      <h1>ED GETLEY</h1>
+      <p data-lang="edbio">
+        Sendo um caçador de relíquias, o Professor Associado Ed Getly entende a importância de uma lanterna. A bateria da lanterna de Ed duram mais tempo e sua tecnica ativa lhe permite usar uma lanterna especial para detectar e desarmar armadilhas demoniacas. ele tem "o jeito" para encontrar armas de melhor qualidade e, simplesmente por estar por perto, ele proporicona essa vantagem a todos os membros de equipe da partida. Como se isso tudo não fosse o bastante, ele ainda é perito de besta.
+      </p>
+    </div>
+
+    <!-- Atributos -->
+    <div class="hero-right">
+      <h2 data-lang="attributes">Atributos</h2> 
+        <div class="stat"> 
+            <span data-lang="defense">Defesa</span> 
+            <div class="bars"> 
+                <div class="bar filled"></div> 
+                <div class="bar filled"></div> 
+                <div class="bar filled"></div> 
+                <div class="bar"></div> 
+                <div class="bar"></div> 
+            </div> 
+        </div> 
+        <div class="stat"> 
+            <span data-lang="melee">Corpo a corpo</span> 
+            <div class="bars"> 
+                <div class="bar filled"></div> 
+                <div class="bar"></div> 
+                <div class="bar"></div> 
+                <div class="bar"></div> 
+                <div class="bar"></div> 
+            </div> 
+        </div> 
+        <div class="stat"> 
+            <span data-lang="range">Longo alcance</span> 
+            <div class="bars"> 
+                <div class="bar filled"></div> 
+                <div class="bar filled"></div> 
+                <div class="bar filled"></div> 
+                <div class="bar filled"></div> 
+                <div class="bar filled"></div> 
+            </div> 
+        </div> 
+        <div class="stat"> 
+            <span data-lang="support2">Suporte</span> 
+            <div class="bars"> 
+                <div class="bar filled"></div> 
+                <div class="bar filled"></div> 
+                <div class="bar filled"></div> 
+                <div class="bar"></div> 
+                <div class="bar"></div> 
+        </div> 
+</div>
+</section>
+  <!-- FIM DO PERFIL -->
+  </div>
+
+    <!-- Perfil de Habilidades-->
+      <section class="abilities-box">
+
+        <h2 data-lang="abilities">Habilidades</h2>
+        <p data-lang="EdAbilityDescription">When activated, this ability grants use of a unique flashlight that allows you to detect and temporarily disarm demon traps.</p>
+
+        <div class="ability">
+          <h3 data-lang="edab1">Luz Prolongada</h3>
+          <p data-lang="edabdc1">Aumenta a vida útil da bateria da sua lanterna</p>
+        </div>
+
+        <div class="ability">
+          <h3 data-lang="edab2">Maestria de Armas: Bestas</h3>
+          <p data-lang="edabdc2">Bestas causam mais dano e recarregam mais rápido</p>
+        </div>
+
+        <div class="ability">
+          <h3 data-lang="edab3">O Colecionador</h3>
+          <p data-lang="edabdc3">Aumenta chance de loot melhor</p>
+        </div>
+
+      </section>
+
+    <!-- MAESTRIA -->
+     <section class="mastery-box">
+          <h2 data-lang="WeaponMastery">Maestria de Arma</h2>
+
+          <div class="mastery-grid">
+
+            <a href="../weapons/ranged/crossbow.html" class="mastery-card">
+              <img src="../../images/weapons/Crossbow_06.png">
+              <span data-lang="crossbow">Besta</span>
+            </a>
+
+            <a href="../weapons/ranged/crossbow.html" class="mastery-card">
+              <img src="../../images/weapons/Crossbow_01.png">
+              <span data-lang="repeatingcrossbow">Besta Repetidora</span>
+            </a>
+
+            <a href="../weapons/ranged/crossbow.html" class="mastery-card">
+              <img src="../../images/weapons/Crossbow_04.png">
+              <span data-lang="explosivecrossbow">Besta Explosiva</span>
+            </a>
+          
+            <!-- SE NÃO TIVER MAESTRIA :
+             <p data-lang="nomastery">Este personagem não possui maestria de arma.</p> 
+            -->
+
+            <!-- MAESTRIA COM UMA ARMA SÓ:
+             <div class="mastery-grid single">
+                <a href="../weapons/ranged/crossbow.html" class="mastery-card">
+                  <img src="../../images/weapons/Crossbow_04.png">
+                  <span>Espada</span>
+                </a>
+              </div>
+            -->
+        </div>
+    </section>
+
+    <!-------------->
+
+    <!-- PONTOS FORTES -->
+    <section class="strengths-box">
+      <h2 data-lang="strengths">Pontos Fortes</h2>
+      <ul>
+        <li data-lang="edstrength">Ele possui pouca saúde</li>
+      </ul>
+    </section>
+    <!-------------------->
+
+    <!-- PONTOS FRACOS -->
+    <section class="weakness-box">
+      <h2 data-lang="weaknesses">Pontos Fracos</h2>
+      <ul>
+        <li data-lang="edweak1">Ele possui pouca saúde</li>
+      </ul>
+    </section>
+    <!-------------------->
+
+    <!-- DICAS -->
+    <section class="tips-box">
+      <h2 data-lang="tips">Dicas</h2>
+      <div class="tips-grid">
+
+        <div class="tip">
+          <span class="tip-number">1</span>
+          <p data-lang="EdTip1">Se você usar seu poder e desligar a lanterna, o seu poder será desligado também. Então não desligue ela se estiver usando seu poder. Ed consegue usar a bateria da laterna por mais tempo, então é sempre bom ter a lanterna dele ligada.</p>
+        </div>
+
+        <div class="tip">
+          <span class="tip-number">2</span>
+        <p data-lang="EdTip2">Quando Baal é invocado as lanternas de todos são desativadas por alguns bons segundos, então atente-se em não usar seu poder se ver que o Baal será invocado ou se foi invocado. Se usou seu poder e Baal foi invocado você não terá opção a não ser matar ele para que a lanterna volte, ou, a outra opção, é aceitar que usou seu poder em vão.</p>
+        </div>
+
+        <div class="tip">
+          <span class="tip-number">3</span>
+        <p data-lang="EdTip3">A luz da lanterna desarma armadilhas e não você, então não corre para cima de uma armadilha porque está usando seu poder porque você poderá cair na armadilha! Isso acontece muito porque você pode chegar antes da luz desarmar a armadilha, principalmente por causa do lag, então aproxime-se com cautela de uma armadilha para desarma-la e depois poderá passar por ela.</p>
+        </div>
+
+        <div class="tip">
+          <span class="tip-number">4</span>
+        <p data-lang="EdTip4">Existem 3 tipos de besta: besta (normal), que dá só um tiro por vez. Besta repetidora, que dá vários tiros seguidos. E a besta explosiva que dá um tiro explosivo em area por vez. Ed tem maestria com Besta, não importa qual delas.</p>
+        </div>
+
+        <div class="tip">
+          <span class="tip-number">5</span>
+        <p data-lang="EdTip5">Se o Demon te possuir enquanto você está usando seu poder, sua lanterna se apagará, mas o tempo de uso estará contando, então quando ele te despossuir pode restar poucos segundos de poder ou até mesmo já ter acabado. Então se tiver com medo alto tente não usar sua habilidade.</p>
+        </div>
+
+        <div class="tip">
+          <span class="tip-number">6</span>
+        <p data-lang="EdTip6">Umas das habilidades de Ed é de aumentar a vida util da lanterna em 100% então dificilmente acabará a bateria, então deixa-a ligada todo o tempo (mas, claro, sempre de olho para não acabar a bateria).</p>
+        </div>
+        
+        <div class="tip">
+          <span class="tip-number">7</span>
+        <p data-lang="EdTip7">Você só usará a habilidade de Ed umas 3 ou 4 vezes na partida, e no inicio, quando chega nos Sombrios você não usará mais porque não tem onde usar, então não vale a pena colocar pontos em Recarga Rápida, que reduz 10% do cooldown da habilidade dele. Veja:
+<i>110s (1 minutos e 50 segundos) - 10% [11s] 99 segundos (1 minutos e 39 segundos)
+105s (1 minuto e 45 segundos) [Prestigio 5] - 10% [10,55s] = 94,5 segundos (1 minuto e 34,5 segundos)</i></p>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <button onclick="goBack()" class="back-btn" data-lang="back">Voltar</button>
+
+  <script src="../../js/script.js"></script>
+  <script src="../../js/lang.js"></script> <!-- translate -->
+</body>
+</html>

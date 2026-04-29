@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Demônios - Evil Dead</title>
+
+  <link rel="stylesheet" href="../css/demons.css">
+  <link rel="stylesheet" href="../css/backbutton.css">
+  <link rel="stylesheet" href="../css/flag.css">
+</head>
+<body>
+
+  <!-- Flag -->
+  <div class="lang-switch">
+    <img src="../images/flags/br.jpg" onclick="setLang('pt')">
+    <img src="../images/flags/us.png" onclick="setLang('en')">
+    <img src="../images/flags/es.jpg" onclick="setLang('es')">
+  </div>
+  <!---->
+
+  <div class="overlay"></div>
+
+  <header>
+    <h1 data-lang="demons">DEMÔNIOS</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- DEMÔNIOS -->
+    <div class="cards">
+
+      <a href="warlord.html" class="card warlord">
+        <div class="card-img" style="background-image: url('../images/demons/henrietta.jpg');"></div>
+        <div class="card-info">
+        <h2>Warlord</h2>
+        <p>Henrietta • força bruta</p>
+        </div>
+      </a>
+
+      <a href="necromancer.html" class="card necromancer">
+        <div class="card-img" style="background-image: url('../images/demons/evilash.jpg');"></div>
+        <div class="card-info">
+        <h2>Necromancer</h2>
+        <p>Evil Ash • exército de esqueletos</p>
+         </div>
+      </a>
+
+      <a href="../pages/characters/puppeteer.html" class="card puppeteer">
+        <div class="card-img" style="background-image: url('../images/demons/eligos.jpg');"></div>
+        <div class="card-info">
+            <h2>Puppeteer</h2>
+            <p>Eligos • dano elétrico</p>
+        </div>
+      </a>
+
+      <a href="plaguebringer.html" class="card plague">
+        <div class="card-img" style="background-image: url('../images/demons/witch.jpg');"></div>
+        <div class="card-info">
+        <h2>Plaguebringer</h2>
+        <p>Bruxa • veneno e controle</p>
+        </div>
+      </a>
+
+      <a href="schemer.html" class="card schemer">
+        <div class="card-img" style="background-image: url('../images/demons/baal.jpg');"></div>
+        <div class="card-info">
+        <h2>Schemer</h2>
+        <p>Baal • manipulação mental</p>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- DICAS -->
+    <section class="demon-tips">
+
+      <h2>Dicas Gerais</h2>
+
+      <div class="tips-list">
+
+        <div class="tip">
+          <span class="tip-number"></span>
+          <p>Suba de nível rápido colocando pontos em armadilhas</p>
+        </div>
+
+        <div class="tip">
+          <span class="tip-number"></span>
+          <p>Pressione os sobreviventes no início para atrasar o loot</p>
+        </div>
+
+        <div class="tip">
+          <span class="tip-number"></span>
+          <p>Use possessão com inteligência, não spam</p>
+        </div>
+
+        <div class="tip">
+          <span class="tip-number"></span>
+          <p>Controle o medo dos sobreviventes para dominar eles</p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <button onclick="goBack()" class="back-btn" data-lang="back">Voltar</button>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/lang.js"></script>
+</body>
+</html>
