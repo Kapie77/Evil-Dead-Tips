@@ -100,12 +100,13 @@ const translations = {
       lumberjackaxedesc: "Se você precisa de uma arma que cause muito dano e desmembramento, mas que não seja particularmente rápida, esta é a ideal para você. Cortante. Duas mãos.",
       knifedesc: "Esta arma compensa seu curto alcance com sua alta velocidade de ataque. Cortante. Uma mão.",
       sworddesc: "Esta arma nobre não é rápida, mas tem um golpe amplo e desmembra como só um sabre é capaz. Cortante. Duas mãos.",
+      batdesc: "Claro, é lenta, mas essa arma causa muito dano e reduz a barra de equilíbrio dos inimigos com uma pancada forte na cabeça. Contundente. Duas mãos.",
+      pickaxedesc: "Esta ferramenta de mineração possui estatísticas bem equilibradas e é particularmente útil para escavar cérebros de Deadites. Contundente. Uma mão.",
 
       /* Ranged Desc */
       crossbowdesc: "Essa arma extremamente poderosa é dolorosamente lenta para recarregar, então faça com que cada tiro valha a pena.",
       repeatingcrossbowdesc: "Esta besta foi modificada para aumentar sua capacidade de munição e frequência de tiro. Certifique-se de que seu inimigo entenda a lição — repetidamente, em rápida sucessão.",
       explosivecrossbowdesc: "A recarga é lenta, mas a explosão vale a pena esperar.",
-      batdesc: "Claro, é lenta, mas essa arma causa muito dano e reduz a barra de equilíbrio dos inimigos com uma pancada forte na cabeça. Contundente. Duas mãos.",
 
     /* Perfil dos personagens */
     attributes: "Atributos",
@@ -277,6 +278,7 @@ const translations = {
       knifedesc: "This weapon makes up for its short range with its high attack speed. Sharp. One-handed.",
       sworddesc: "This noble weapon isn't fast but it swings wide and dismembers like only a saber can. Sharp. Two-handed.",
       batdesc: "Sure, it's slow, but the this weapon deals lots of damage and reduces enemies' balance bar with a grand slam to the head. Blunt. Two-handed.",
+      pickaxedesc: "This mining tool has well-balanced stats and is particularly useful for excavating Deadite brains. Blunt. One-handed.",
 
       /* Ranged Desc */
       crossbowdesc: "This very powerful weapon is painfuly slow to reload, so make every shot count.",
