@@ -102,6 +102,7 @@ const translations = {
       sworddesc: "Esta arma nobre não é rápida, mas tem um golpe amplo e desmembra como só um sabre é capaz. Cortante. Duas mãos.",
       batdesc: "Claro, é lenta, mas essa arma causa muito dano e reduz a barra de equilíbrio dos inimigos com uma pancada forte na cabeça. Contundente. Duas mãos.",
       pickaxedesc: "Esta ferramenta de mineração possui estatísticas bem equilibradas e é particularmente útil para escavar cérebros de Deadites. Contundente. Uma mão.",
+      meathammerdesc: "Tem dano e velocidade medianos, mas desencadeia ataques especiais com toda a força. Contundente. Uma mão.",
 
       /* Ranged Desc */
       crossbowdesc: "Essa arma extremamente poderosa é dolorosamente lenta para recarregar, então faça com que cada tiro valha a pena.",
@@ -279,6 +280,7 @@ const translations = {
       sworddesc: "This noble weapon isn't fast but it swings wide and dismembers like only a saber can. Sharp. Two-handed.",
       batdesc: "Sure, it's slow, but the this weapon deals lots of damage and reduces enemies' balance bar with a grand slam to the head. Blunt. Two-handed.",
       pickaxedesc: "This mining tool has well-balanced stats and is particularly useful for excavating Deadite brains. Blunt. One-handed.",
+      meathammerdesc: "It's got average damage and speed, but triggers special attacks like a boss. Blunt. One-handed.",
 
       /* Ranged Desc */
       crossbowdesc: "This very powerful weapon is painfuly slow to reload, so make every shot count.",
