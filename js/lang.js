@@ -108,11 +108,14 @@ const translations = {
       speardesc: "Esta arma cortante e perfurante tem um alcance considerável. Cortante. Duas mãos.",
       tranquilizerdesc: "Você vai ter que chegar bem perto e pessoal para usar as seringas, mas um ataque com essas duas garotas más empunhadas causa um dano significativo na barra de equilíbrio de qualquer unidade maligna. Contundente. Duas mãos.",
       macedesc: "Esta arma é lenta, mas poderosa, perfeita para dar uma surra nas Deadites. Contundente. Uma mão.",
+      pipedesc: "Este pedaço de metal abriga uma variante totalmente nova de tétano. Contundente. Duas mãos.",
 
       /* Ranged Desc */
       crossbowdesc: "Essa arma extremamente poderosa é dolorosamente lenta para recarregar, então faça com que cada tiro valha a pena.",
       repeatingcrossbowdesc: "Esta besta foi modificada para aumentar sua capacidade de munição e frequência de tiro. Certifique-se de que seu inimigo entenda a lição — repetidamente, em rápida sucessão.",
       explosivecrossbowdesc: "A recarga é lenta, mas a explosão vale a pena esperar.",
+      handgundesc: "A pistola é uma arma de longo alcance versátil que dá conta do recado.",
+      nailgundesc: "Tem uma frequência de tiro rápida e grande capacidade de munição, mas causa pouco dano.",
 
     /* Perfil dos personagens */
     attributes: "Atributos",
@@ -291,11 +294,14 @@ const translations = {
       speardesc: "This slashing and piercing weapon has considerable range. Sharp. Two-handed.",
       tranquilizerdesc: "You'll have to get up close and personal to use the syringes, but ana attack by these dual-wielded bad boys deals significant balance bar damage to any evil unit. Blunt. Two-Handed.",
       macedesc: "This weapon is slow but powerful, perfect for going medieval on Deadites. Blunt. One-handed.",
+      pipedesc: "This hunk of metal if home to a whole new variant of tetanus. Blunt. Two-handed.",
 
       /* Ranged Desc */
       crossbowdesc: "This very powerful weapon is painfuly slow to reload, so make every shot count.",
       repeatingcrossbowdesc: "This crossbow was modified to increase its ammo capacity and rate of fire. Make sure your enemy gets the point - over and over again, in rapid succession.",
       explosivecrossbowdesc: "It's slow to reload but the blast is worth the wait.",
+      handgundesc: "The Pistol is a versatile ranged weapon tht gets the job done.",
+      nailgundesc: "It fires fast and holds a lot of ammo, but inflicts low damage.",
 
     /* Perfil dos personagens */
     attributes: "Attributes",
