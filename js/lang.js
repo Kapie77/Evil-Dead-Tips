@@ -106,6 +106,7 @@ const translations = {
       meatcleaverdesc: "O que falta a esta arma em alcance, ela compensa com velocidade e capacidade de desmembramento. Cortante. Uma mão.",
       handaxedesc: "Esta arma oferece um equilíbrio entre dano, velocidade de ataque e desmembramento. Cortante. Uma mão.",
       speardesc: "Esta arma cortante e perfurante tem um alcance considerável. Cortante. Duas mãos.",
+      tranquilizerdesc: "Você vai ter que chegar bem perto e pessoal para usar as seringas, mas um ataque com essas duas garotas más empunhadas causa um dano significativo na barra de equilíbrio de qualquer unidade maligna. Contundente. Duas mãos.",
 
       /* Ranged Desc */
       crossbowdesc: "Essa arma extremamente poderosa é dolorosamente lenta para recarregar, então faça com que cada tiro valha a pena.",
@@ -287,6 +288,7 @@ const translations = {
       meatcleaverdesc: "What this weapon lacks in range, it makes up for with speed and dismemberment ability. Sharp. One-handed.",
       handaxedesc: "This weapon balances damage, attack speed and dismemberment. Sharp. One-handed.",
       speardesc: "This slashing and piercing weapon has considerable range. Sharp. Two-handed.",
+      tranquilizerdesc: "You'll have to get up close and personal to use the syringes, but ana attack by these dual-wielded bad boys deals significant balance bar damage to any evil unit. Blunt. Two-Handed.",
 
       /* Ranged Desc */
       crossbowdesc: "This very powerful weapon is painfuly slow to reload, so make every shot count.",
