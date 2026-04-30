@@ -62,7 +62,7 @@ const translations = {
       lumberjackaxe: "Machado de Lenhador",
       sledgehammer: "Marreta",
       meatcleaver: "Cutelo",
-      spear: "Lança",
+      spear: "Lança Improvisada",
       meathammer: "Martelo de Carne",
       machete: "Facão",
       pickaxe: "Picareta",
