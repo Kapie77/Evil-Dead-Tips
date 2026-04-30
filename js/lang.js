@@ -117,6 +117,7 @@ const translations = {
       explosivecrossbowdesc: "A recarga é lenta, mas a explosão vale a pena esperar.",
       handgundesc: "A pistola é uma arma de longo alcance versátil que dá conta do recado.",
       nailgundesc: "Tem uma frequência de tiro rápida e grande capacidade de munição, mas causa pouco dano.",
+      boomstickdesc: "Mortal a curta distância, esta arma é a favorita de Ash por um motivo.",
       sawgundesc: "É uma arma que dispara lâminas de serra e uma máquina de desmembramento.",
 
     /* Perfil dos personagens */
@@ -305,6 +306,7 @@ const translations = {
       explosivecrossbowdesc: "It's slow to reload but the blast is worth the wait.",
       handgundesc: "The Pistol is a versatile ranged weapon tht gets the job done.",
       nailgundesc: "It fires fast and holds a lot of ammo, but inflicts low damage.",
+      boomstickdesc: "Deadly at close range, this firearm is Ash's favorite for a reason.",
       sawgundesc: "It's a gun that shoots saw blades and a dismemberment machine.",
 
     /* Perfil dos personagens */
