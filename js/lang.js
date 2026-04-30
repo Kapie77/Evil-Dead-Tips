@@ -105,6 +105,7 @@ const translations = {
       meathammerdesc: "Tem dano e velocidade medianos, mas desencadeia ataques especiais com toda a força. Contundente. Uma mão.",
       meatcleaverdesc: "O que falta a esta arma em alcance, ela compensa com velocidade e capacidade de desmembramento. Cortante. Uma mão.",
       handaxedesc: "Esta arma oferece um equilíbrio entre dano, velocidade de ataque e desmembramento. Cortante. Uma mão.",
+      speardesc: "Esta arma cortante e perfurante tem um alcance considerável. Cortante. Duas mãos.",
 
       /* Ranged Desc */
       crossbowdesc: "Essa arma extremamente poderosa é dolorosamente lenta para recarregar, então faça com que cada tiro valha a pena.",
@@ -285,6 +286,7 @@ const translations = {
       meathammerdesc: "It's got average damage and speed, but triggers special attacks like a boss. Blunt. One-handed.",
       meatcleaverdesc: "What this weapon lacks in range, it makes up for with speed and dismemberment ability. Sharp. One-handed.",
       handaxedesc: "This weapon balances damage, attack speed and dismemberment. Sharp. One-handed.",
+      speardesc: "This slashing and piercing weapon has considerable range. Sharp. Two-handed.",
 
       /* Ranged Desc */
       crossbowdesc: "This very powerful weapon is painfuly slow to reload, so make every shot count.",
