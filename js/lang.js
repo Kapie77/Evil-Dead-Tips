@@ -83,7 +83,7 @@ const translations = {
       revolver: "Revolver",
       shotgun: "Escopeta",
       huntingrifle: "Rifle de Caça",
-      leveractionrifle: "Rifle de Alavanca",
+      leveractionrifle: "Rifle de Ação de Alavanca",
       longstick: "Cano Duplo",
       boomstick: "Pau de Fogo",
       nailgun: "Pistola de Prego",
@@ -124,6 +124,7 @@ const translations = {
       submachinegundesc: "Altamente eficaz a curta e média distância, esta beleza certamente atende a muitos requisitos.",
       singleshotgundesc: "Claro, ela demora para recarregar e não tem o melhor alcance, mas tem um impacto e tanto a curta distância e faz você parecer um pirata.",
       revolverdesc: "É muito eficaz a curta distância contra um único alvo.",
+      leveractionrifledesc: "Tem uma frequência de tiro e uma capacidade de munição razoáveis. Além disso, os cowboys usavam esse rifle. Quem não gostaria de atirar nas Deadites como um cowboy?",
 
     /* Perfil dos personagens */
     attributes: "Atributos",
@@ -318,6 +319,7 @@ const translations = {
       submachinegundesc: "Highly effective in the short and medium range, this beauty sure ticks many boxes.",
       singleshotgundesc: "Sure, it's slow to reload and doesn't have the best range, but it packs a punch up close and makes you look like a pirate.",
       revolverdesc: "It's powerful at short range against a single target.",
+      leveractionrifledesc: "It's got a decent rate of fire and ammo capacity. Besides, cowboys used this rifle. Who doesn't want to shoot Deadites like a cowboy?",
 
     /* Perfil dos personagens */
     attributes: "Attributes",
