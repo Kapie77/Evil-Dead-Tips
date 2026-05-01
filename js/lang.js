@@ -68,10 +68,13 @@ const translations = {
       pickaxe: "Picareta",
       shovel: "Pá",
       sword: "Espada",
+      arthursword: "Espada Lendária de Artur",
       tranquilizer: "Seringa",
       pipe: "Cano",
       mace: "Maça",
       quarterstaff: "Cajado",
+      fist: "Punho",
+      powerglove: "Luva Poderosa",
 
       /* Ranged */
       crossbow: "Besta",
@@ -263,10 +266,13 @@ const translations = {
       pickaxe: "Pickaxe",
       shovel: "Shovel",
       sword: "Sword",
+      arthursword: "Arthur's Fabled Sword",
       tranquilizer: "Syringe",
       pipe: "Lead Pipe",
       mace: "Mace",
       quarterstaff: "Staff",
+      fist: "Fist",
+      powerglove: "Power Glove",
 
       /* Ranged */
       crossbow: "Crossbow",
