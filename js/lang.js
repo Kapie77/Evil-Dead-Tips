@@ -123,6 +123,7 @@ const translations = {
       huntingrifledesc: "Mortal e precisa, o rifle de caça é perfeito para abates a longa distância.",
       submachinegundesc: "Altamente eficaz a curta e média distância, esta beleza certamente atende a muitos requisitos.",
       singleshotgundesc: "Claro, ela demora para recarregar e não tem o melhor alcance, mas tem um impacto e tanto a curta distância e faz você parecer um pirata.",
+      revolverdesc: "É muito eficaz a curta distância contra um único alvo.",
 
     /* Perfil dos personagens */
     attributes: "Atributos",
@@ -316,6 +317,7 @@ const translations = {
       huntingrifledesc: "Deadly and accurate, the hunting rifle is perfect for long distance kills.",
       submachinegundesc: "Highly effective in the short and medium range, this beauty sure ticks many boxes.",
       singleshotgundesc: "Sure, it's slow to reload and doesn't have the best range, but it packs a punch up close and makes you look like a pirate.",
+      revolverdesc: "It's powerful at short range against a single target.",
 
     /* Perfil dos personagens */
     attributes: "Attributes",
