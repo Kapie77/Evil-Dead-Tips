@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Fist</title>
+
+  <link rel="stylesheet" href="../../../css/weaponpage.css">
+  <link rel="stylesheet" href="../../../css/backbutton.css">
+  <link rel="stylesheet" href="../../../css/flag.css">
+</head>
+<body>
+
+    <!-- idioma -->
+  <div class="lang-switch">
+    <img src="../../../images/flags/br.jpg" onclick="setLang('pt')">
+    <img src="../../../images/flags/us.png" onclick="setLang('en')">
+    <img src="../../../images/flags/es.jpg" onclick="setLang('es')">
+  </div>
+
+  <div class="overlay"></div>
+
+  <header>
+    <h1 data-lang="fist">FIST</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- RARIDADES -->
+    <section class="rarity-section">
+
+        <!-- COMUM -->
+        <div class="weapon-card common">
+            <div class="weapon-top">
+            <h3 data-lang="fist">Fist</h3>
+            <span data-lang="common">Comum</span>
+            </div>
+
+            <div class="weapon-content">
+            <img src="../../../images/weapons/MeleeFist_01.png">
+
+            <div class="stats">
+
+            <!-- LINHA DE CIMA -->
+            <div class="stats-top"> 
+               
+              <p>
+                  <span data-lang="Damage">Dano</span>
+                  <strong>: 15</strong>
+                </p>
+
+                <p>
+                  <span data-lang="Speed">Velocidade</span>
+                  <strong>: 5</strong>
+                </p>
+               
+                <p>
+                 <span data-lang="Range">Alcance</span>
+                 <strong>: 3.0</strong>
+                </p>
+                </div>
+
+              <!-- LISTA DE BAIXO -->
+              <div class="stats-bottom">
+                <p>
+                  <span data-lang="Dismemberment">Desmembramento</span>
+                  <strong>5</strong>
+                </p>
+
+                <p>
+                  <span data-lang="Balancebar">Barra de equilibrio</span>
+                   <strong>15</strong>
+                </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+        
+
+        </section>
+    <!-- RARIDE FIM -->
+
+  </main>
+
+  <button onclick="goBack()" class="back-btn" data-lang="back">Voltar</button>
+
+  <script src="../../../js/script.js"></script>
+  <script src="../../../js/lang.js"></script> <!-- tradução -->
+
+</body>
+</html>

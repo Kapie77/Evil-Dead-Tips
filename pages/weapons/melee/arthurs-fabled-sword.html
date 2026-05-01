@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sword</title>
+
+  <link rel="stylesheet" href="../../../css/weaponpage.css">
+  <link rel="stylesheet" href="../../../css/backbutton.css">
+  <link rel="stylesheet" href="../../../css/flag.css">
+</head>
+<body>
+
+    <!-- idioma -->
+  <div class="lang-switch">
+    <img src="../../../images/flags/br.jpg" onclick="setLang('pt')">
+    <img src="../../../images/flags/us.png" onclick="setLang('en')">
+    <img src="../../../images/flags/es.jpg" onclick="setLang('es')">
+  </div>
+
+  <div class="overlay"></div>
+
+  <header>
+    <h1 data-lang="sword">SWORD</h1>
+    <p data-lang="sworddesc">This noble weapon isn't fast but it swings wide and dismembers like only a saber can. Sharp. Two-handed.</p>
+  </header>
+
+  <main class="container">
+
+    <!-- RARIDADES -->
+    <section class="rarity-section">
+
+        
+        <!-- LENDÁRIA -->
+        <div class="weapon-card legendary">
+            <div class="weapon-top">
+            <h3 data-lang="sword">SWORD</h3>
+            <span data-lang="legendary">Lendária</span>
+            </div>
+
+            <div class="weapon-content">
+            <img src="../../../images/weapons/LegendSword_01.png">
+
+            <div class="stats">
+
+              <!-- LINHA DE CIMA -->
+              <div class="stats-top"> 
+               <p>
+                  <span data-lang="Damage">Dano</span>
+                  <strong>: 1,000</strong>
+                </p>
+
+                <p>
+                  <span data-lang="Speed">Velocidade</span>
+                  <strong>: 1</strong>
+               </p>
+               
+                <p>
+                 <span data-lang="Range">Alcance</span>
+                 <strong>: 4.0</strong>
+                </p>
+              </div>
+
+              <!-- LINHA DEBAIXO -->
+              <div class="stats-bottom"> 
+                <p>
+                  <span data-lang="Dismemberment">Desmembramento</span>
+                  <strong>200</strong>
+                </p>
+
+                <p>
+                  <span data-lang="Balancebar">Barra de equilibrio</span>
+                   <strong>100</strong>
+                </p>
+
+              </div>
+          </div>
+        </div>
+      </div>
+
+        </section>
+    <!-- RARIDE FIM -->
+
+  </main>
+
+  <button onclick="goBack()" class="back-btn" data-lang="back">Voltar</button>
+
+  <script src="../../../js/script.js"></script>
+  <script src="../../../js/lang.js"></script> <!-- tradução -->
+
+</body>
+</html>
