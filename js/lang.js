@@ -121,6 +121,7 @@ const translations = {
       sawgundesc: "É uma arma que dispara lâminas de serra e uma máquina de desmembramento.",
       huntingrifledesc: "Mortal e precisa, o rifle de caça é perfeito para abates a longa distância.",
       submachinegundesc: "Altamente eficaz a curta e média distância, esta beleza certamente atende a muitos requisitos.",
+      singleshotgundesc: "Claro, ela demora para recarregar e não tem o melhor alcance, mas tem um impacto e tanto a curta distância e faz você parecer um pirata.",
 
     /* Perfil dos personagens */
     attributes: "Atributos",
@@ -312,6 +313,7 @@ const translations = {
       sawgundesc: "It's a gun that shoots saw blades and a dismemberment machine.",
       huntingrifledesc: "Deadly and accurate, the hunting rifle is perfect for long distance kills.",
       submachinegundesc: "Highly effective in the short and medium range, this beauty sure ticks many boxes.",
+      singleshotgundesc: "Sure, it's slow to reload and doesn't have the best range, but it packs a punch up close and makes you look like a pirate.",
 
     /* Perfil dos personagens */
     attributes: "Attributes",
