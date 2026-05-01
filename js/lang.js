@@ -119,6 +119,7 @@ const translations = {
       nailgundesc: "Tem uma frequência de tiro rápida e grande capacidade de munição, mas causa pouco dano.",
       boomstickdesc: "Mortal a curta distância, esta arma é a favorita de Ash por um motivo.",
       sawgundesc: "É uma arma que dispara lâminas de serra e uma máquina de desmembramento.",
+      huntingrifledesc: "Mortal e precisa, o rifle de caça é perfeito para abates a longa distância.",
 
     /* Perfil dos personagens */
     attributes: "Atributos",
@@ -308,6 +309,7 @@ const translations = {
       nailgundesc: "It fires fast and holds a lot of ammo, but inflicts low damage.",
       boomstickdesc: "Deadly at close range, this firearm is Ash's favorite for a reason.",
       sawgundesc: "It's a gun that shoots saw blades and a dismemberment machine.",
+      huntingrifledesc: "Deadly and accurate, the hunting rifle is perfect for long distance kills.",
 
     /* Perfil dos personagens */
     attributes: "Attributes",
