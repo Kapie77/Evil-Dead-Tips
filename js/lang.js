@@ -110,6 +110,7 @@ const translations = {
       macedesc: "Esta arma é lenta, mas poderosa, perfeita para dar uma surra nas Deadites. Contundente. Uma mão.",
       pipedesc: "Este pedaço de metal abriga uma variante totalmente nova de tétano. Contundente. Duas mãos.",
       quarterstaffdesc: "Um clássico do design. A humilde vara resolve disputas desde o início dos tempos. Contundente. Duas mãos.",
+      scythedesc: "Aja como a Morte e mande esses deadites para o além. Cortante. Duas mãos.",
 
       /* Ranged Desc */
       crossbowdesc: "Essa arma extremamente poderosa é dolorosamente lenta para recarregar, então faça com que cada tiro valha a pena.",
@@ -302,6 +303,7 @@ const translations = {
       macedesc: "This weapon is slow but powerful, perfect for going medieval on Deadites. Blunt. One-handed.",
       pipedesc: "This hunk of metal if home to a whole new variant of tetanus. Blunt. Two-handed.",
       quarterstaffdesc: "A design classic. The humble stick has settled disputes since the beginning of time. Blunt, two-handed.",
+      scythedesc: "Act like the Grim Reaper and put these deadites to rest. Sharp. Two Handed.",
 
       /* Ranged Desc */
       crossbowdesc: "This very powerful weapon is painfuly slow to reload, so make every shot count.",
