@@ -68,7 +68,7 @@ const translations = {
       pickaxe: "Picareta",
       shovel: "Pá",
       sword: "Espada",
-      arthursword: "Espada Lendária de Artur",
+      arthursword: "Espada Lendária de Arthur",
       tranquilizer: "Seringa",
       pipe: "Cano",
       mace: "Maça",
