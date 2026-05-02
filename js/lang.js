@@ -114,6 +114,8 @@ const translations = {
       pipedesc: "Este pedaço de metal abriga uma variante totalmente nova de tétano. Contundente. Duas mãos.",
       quarterstaffdesc: "Um clássico do design. A humilde vara resolve disputas desde o início dos tempos. Contundente. Duas mãos.",
       scythedesc: "Aja como a Morte e mande esses deadites para o além. Cortante. Duas mãos.",
+      arthursworddesc: "O escudeiro de Lord Arthur tinha o trabalho mais tranquilo do Castelo de Kandar. Ele tinha UMA única tarefa: não perder a espada lendária. Esta geração não tem ética de trabalho.",
+      arthur_mission: "Disponível apenas na Missão 5 “Homecoming King”.",
 
       /* Ranged Desc */
       crossbowdesc: "Essa arma extremamente poderosa é dolorosamente lenta para recarregar, então faça com que cada tiro valha a pena.",
@@ -312,6 +314,8 @@ const translations = {
       pipedesc: "This hunk of metal if home to a whole new variant of tetanus. Blunt. Two-handed.",
       quarterstaffdesc: "A design classic. The humble stick has settled disputes since the beginning of time. Blunt, two-handed.",
       scythedesc: "Act like the Grim Reaper and put these deadites to rest. Sharp. Two Handed.",
+      arthursworddesc: "Lord Arthur's sword boy had the cushiest job at Castle Kandar. He had ONE job: Don't lose the fabled sword. This generation has no work ethic.",
+      arthur_mission: "Available only in Mission 5, “Homecoming King”.",
 
       /* Ranged Desc */
       crossbowdesc: "This very powerful weapon is painfuly slow to reload, so make every shot count.",
