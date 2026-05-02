@@ -115,7 +115,7 @@ const translations = {
       quarterstaffdesc: "Um clássico do design. A humilde vara resolve disputas desde o início dos tempos. Contundente. Duas mãos.",
       scythedesc: "Aja como a Morte e mande esses deadites para o além. Cortante. Duas mãos.",
       arthursworddesc: "O escudeiro de Lord Arthur tinha o trabalho mais tranquilo do Castelo de Kandar. Ele tinha UMA única tarefa: não perder a espada lendária. Esta geração não tem ética de trabalho.",
-      arthur_mission: "Disponível apenas na Missão 5 “Homecoming King”.",
+      arthur_mission: "Disponível apenas na Missão 5 “O Retorno do Rei”.",
 
       /* Ranged Desc */
       crossbowdesc: "Essa arma extremamente poderosa é dolorosamente lenta para recarregar, então faça com que cada tiro valha a pena.",
