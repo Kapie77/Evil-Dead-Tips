@@ -130,6 +130,7 @@ const translations = {
       singleshotgundesc: "Claro, ela demora para recarregar e não tem o melhor alcance, mas tem um impacto e tanto a curta distância e faz você parecer um pirata.",
       revolverdesc: "É muito eficaz a curta distância contra um único alvo.",
       leveractionrifledesc: "Tem uma frequência de tiro e uma capacidade de munição razoáveis. Além disso, os cowboys usavam esse rifle. Quem não gostaria de atirar nas Deadites como um cowboy?",
+      grenadelauncherdesc: "É hora de Travar, Carregar e KABOOOM nessas Deadites!",
 
     /* Perfil dos personagens */
     attributes: "Atributos",
@@ -330,6 +331,7 @@ const translations = {
       singleshotgundesc: "Sure, it's slow to reload and doesn't have the best range, but it packs a punch up close and makes you look like a pirate.",
       revolverdesc: "It's powerful at short range against a single target.",
       leveractionrifledesc: "It's got a decent rate of fire and ammo capacity. Besides, cowboys used this rifle. Who doesn't want to shoot Deadites like a cowboy?",
+      grenadelauncherdesc: "It's time to Lock, Load and KABOOOM these Deadites away!",
 
     /* Perfil dos personagens */
     attributes: "Attributes",
