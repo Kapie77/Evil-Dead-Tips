@@ -26,6 +26,7 @@ const translations = {
     warrior: "Guerreiro",
     hunter: "Caçador",
     support: "Suporte",
+    exclusive: "Exclusivo",
 
     /* Armas */
     TypesOfAmmunition: "Tipos de Munição",
@@ -227,6 +228,7 @@ const translations = {
     warrior: "Warrior",
     hunter: "Hunter",
     support: "Support",
+    exclusive: "Exclusive",
 
     /* Armas */
     TypesOfAmmunition: "Types of Ammunition",
