@@ -131,6 +131,7 @@ const translations = {
       revolverdesc: "É muito eficaz a curta distância contra um único alvo.",
       leveractionrifledesc: "Tem uma frequência de tiro e uma capacidade de munição razoáveis. Além disso, os cowboys usavam esse rifle. Quem não gostaria de atirar nas Deadites como um cowboy?",
       grenadelauncherdesc: "É hora de Travar, Carregar e KABOOOM nessas Deadites!",
+      shotgundesc: "A escopeta dispara uma rajada de curto alcance capaz de derrubar vários inimigos de uma só vez.",
 
     /* Perfil dos personagens */
     attributes: "Atributos",
@@ -332,6 +333,7 @@ const translations = {
       revolverdesc: "It's powerful at short range against a single target.",
       leveractionrifledesc: "It's got a decent rate of fire and ammo capacity. Besides, cowboys used this rifle. Who doesn't want to shoot Deadites like a cowboy?",
       grenadelauncherdesc: "It's time to Lock, Load and KABOOOM these Deadites away!",
+      shotgundesc: "The shotgun delivers a short-range blast that can take out several enemies at once.",
 
     /* Perfil dos personagens */
     attributes: "Attributes",
