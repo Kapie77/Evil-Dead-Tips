@@ -1,0 +1,221 @@
+/* BASE */
+body {
+  min-height: 100vh;
+  background: url('../images/background.png') no-repeat center/cover;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  color: #ffcc33;
+  text-shadow: 0 0 15px #ffcc33;
+  font-size: 3rem;
+}
+
+/* CONTAINER */
+.chest-section {
+  max-width: 1100px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 20px;
+}
+
+/* CARD */
+.chest-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  min-height: 220px;
+
+  background: rgba(0,0,0,0.6);
+
+  border-radius: 10px;
+  padding: 18px;
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  transition: 0.2s;
+}
+
+.chest-card:hover {
+  transform: translateY(-3px);
+}
+
+/* IMG */
+.chest-card img {
+  width: 190px;
+  height: auto;
+
+  object-fit: contain;
+
+  transition: 0.2s;
+}
+
+.chest-card:hover img {
+  transform: scale(1.05);
+}
+
+/* INFO */
+.chest-info {
+  flex: 1;
+}
+
+.chest-info h2 {
+  margin-bottom: 12px;
+}
+
+/* LOOT */
+.loot-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.loot-item {
+  background: rgba(255,255,255,0.05);
+
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+/* RARIDADES */
+.common {
+  border-left: 5px solid #999;
+}
+
+.common img {
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.25));
+}
+
+.rare {
+  border-left: 5px solid #4da6ff;
+}
+
+.rare img {
+  filter: drop-shadow(0 0 12px rgba(77,166,255,0.5));
+}
+
+.epic {
+  border-left: 5px solid #b366ff;
+}
+
+.epic img {
+  filter: drop-shadow(0 0 12px rgba(179,102,255,0.5));
+}
+
+.legendary {
+  border-left: 5px solid #ffaa00;
+}
+
+.legendary img {
+  filter: drop-shadow(0 0 15px rgba(255,170,0,0.6));
+}
+
+.treasure {
+  border-left: 5px solid #00ff99;
+}
+
+.treasure img {
+  filter: drop-shadow(0 0 15px rgba(0,255,153,0.5));
+}
+
+/* ==================================
+CORES DOS TÍTULOS IGUAL DAS ARMAS 
+=====================================*/
+.common h2 {
+  color: #ccc;
+}
+
+.rare h2 {
+  color: #4da6ff;
+}
+
+.epic h2 {
+  color: #b366ff;
+}
+
+.legendary h2 {
+  color: #ffaa00;
+}
+
+/* =========================
+   CARD TESOURO
+========================= */
+.treasure {
+  border-left: 5px solid #00ff99;
+  position: relative;
+}
+
+.treasure h2 {
+  color: #00ff99;
+}
+
+/* badge do mapa */
+.map-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  background: rgba(255,60,60,0.15);
+  border: 1px solid rgba(255,60,60,0.5);
+
+  color: #ff7b7b;
+
+  padding: 5px 10px;
+  border-radius: 6px;
+
+  font-size: 0.75rem;
+  font-weight: bold;
+
+  backdrop-filter: blur(4px);
+}
+
+/* ===========================
+          DESCRIÇÃO
+============================= /*
+/* descrição */
+.crate-desc {
+  margin-top: 6px;
+  margin-bottom: 14px;
+
+  color: rgba(255,255,255,0.75);
+
+  line-height: 1.4;
+  font-size: 0.95rem;
+
+  max-width: 700px;
+}
+
+/* aviso do treasure */
+.map-exclusive {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  background: rgba(255,60,60,0.15);
+  border: 1px solid rgba(255,60,60,0.5);
+
+  color: #ff7b7b;
+
+  padding: 6px 10px;
+  border-radius: 6px;
+
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* necessário pro badge funcionar */
+.chest-card {
+  position: relative;
+}
