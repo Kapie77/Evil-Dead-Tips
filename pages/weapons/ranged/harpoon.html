@@ -22,19 +22,10 @@
   background: rgba(0,0,0,0.3);
   margin-bottom: 20px;
 }
+
 .voice-line {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  background: rgba(0,200,255,0.05);
-  padding: 8px 12px;
-  border-radius: 6px;
-  margin-bottom: 6px;
-}
-.voice-line {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  gap: 14px;
 
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,120,0,0.2);
@@ -45,36 +36,63 @@
   margin-bottom: 10px;
 }
 
-.voice-line img {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-}
-
+/* TAG */
 .voice-id {
+  min-width: 170px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  align-self: stretch;
+
   background: rgba(0,200,255,0.15);
   border: 1px solid rgba(0,200,255,0.4);
 
   color: #6fdcff;
 
-  padding: 4px 8px;
+  padding: 8px;
   border-radius: 6px;
 
   font-size: 0.75rem;
   font-weight: bold;
 
-  min-width: 150px;
   text-align: center;
-
-  flex-shrink: 0;
 }
 
-/* falas de ataque */
+/* ataque */
 .voice-id.attack {
   background: rgba(255,80,80,0.15);
   border: 1px solid rgba(255,80,80,0.4);
-
   color: #ff7b7b;
+}
+
+/* LADO DIREITO */
+.voice-content {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.voice-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.voice-main img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.voice-audio {
+  width: 100%;
+  height: 36px;
 }
 </style>
 </head>
@@ -107,10 +125,16 @@
   <section class="weapon-voice-lines">
     <h2 data-lang="voice_lines">Voice Lines</h2>
 
+    <!-- Henry -->
     <div class="voice-line">
+
       <div class="voice-id">
         FindsHarpoonGun
       </div>
+
+      <div class="voice-content">
+      <div class="voice-main">
+
       <img src="../../../images/characters/Henry.png" alt="Henry the Red">
       <p>
         <strong>Henry the Red:</strong>
@@ -118,12 +142,27 @@
           Impalement from afar! Brilliant!
         </span>
       </p>
-    </div>
 
+      </div>
+
+      <audio controls class="voice-audio">
+          <source src="./audios/harpoon/HenryTheRedH_FindsHarpoonGun_01.mp3" type="audio/mpeg">
+      </audio>
+
+      </div>
+    </div>
+    <!------------->
+
+    <!-- Kelly -->
     <div class="voice-line">
+
       <div class="voice-id attack">
         AttackHarpoonGun
       </div>
+
+      <div class="voice-content">
+      <div class="voice-main">
+
       <img src="../../../images/characters/Kelly.png" alt="Kelly Maxwell">
       <p>
         <strong>Kelly Maxwell:</strong>
@@ -131,12 +170,27 @@
           Evil on a stick.
         </span>
       </p>
-    </div>
 
+      </div>
+
+      <audio controls class="voice-audio">
+          <source src="./audios/harpoon/KellyH_AttackHarpoonGun_01_alt.mp3" type="audio/mpeg">
+      </audio>
+
+      </div>
+    </div>
+    <!------------->
+
+    <!-- Lord Arthur -->
     <div class="voice-line">
+
       <div class="voice-id attack">
         AttackHarpoonGun
       </div>
+
+      <div class="voice-content">
+      <div class="voice-main">
+
       <img src="../../../images/characters/Arthur.png" alt="Lord Arthur">
       <p>
         <strong>Lord Arthur:</strong>
@@ -144,12 +198,27 @@
           Barbed missile hits its mark!
         </span>
       </p>
-    </div>
 
+      </div>
+
+      <audio controls class="voice-audio">
+          <source src="./audios/harpoon/LordArthurH_AttackHarpoonGun_01.mp3" type="audio/mpeg">
+      </audio>
+
+      </div>
+    </div>
+    <!------------->
+
+    <!-- Cheryl -->
     <div class="voice-line">
+
       <div class="voice-id attack">
         AttackHarpoonGun
       </div>
+
+      <div class="voice-content">
+      <div class="voice-main">
+
       <img src="../../../images/characters/Cheryl.png" alt="Cheryl Williams">
       <p>
         <strong>Cheryl Williams:</strong>
@@ -157,12 +226,27 @@
           Skewered!
         </span>
       </p>
-    </div>
 
+      </div>
+
+      <audio controls class="voice-audio">
+          <source src="./audios/harpoon/CherylH_AttackHarpoonGun_01.mp3" type="audio/mpeg">
+      </audio>
+
+      </div>
+    </div>
+    <!------------->
+
+    <!-- Ed -->
     <div class="voice-line">
+
       <div class="voice-id attack">
         AttackHarpoonGun
       </div>
+
+      <div class="voice-content">
+      <div class="voice-main">
+
       <img src="../../../images/characters/Ed.png" alt="Ed Getley">
       <p>
         <strong>Ed Getley:</strong>
@@ -170,12 +254,27 @@
           Spiked one!
         </span>
       </p>
-    </div>
 
+      </div>
+
+      <audio controls class="voice-audio">
+          <source src="./audios/harpoon/EdGetleyH_AttackHarpoonGun_01_alt.mp3" type="audio/mpeg">
+      </audio>
+
+      </div>
+    </div>
+    <!------------->
+
+    <!-- Scotty -->
     <div class="voice-line">
+
       <div class="voice-id attack">
         AttackHarpoonGun
       </div>
+
+      <div class="voice-content">
+      <div class="voice-main">
+
       <img src="../../../images/characters/Scotty.png" alt="Scotty">
       <p>
         <strong>Scotty:</strong>
@@ -183,12 +282,27 @@
           Shish kabob.
         </span>
       </p>
-    </div>
 
+      </div>
+
+      <audio controls class="voice-audio">
+          <source src="./audios/harpoon/ScottyH_AttackHarpoonGun_01_alt.mp3" type="audio/mpeg">
+      </audio>
+
+      </div>
+    </div>
+    <!------------->
+
+    <!-- Ash Parte 3 -->
     <div class="voice-line">
+
       <div class="voice-id">
         FindsHarpoonGun
       </div>
+
+      <div class="voice-content">
+      <div class="voice-main">
+
       <img src="../../../images/characters/AshWarrior.png" alt="Ash Williams">
       <p>
         <strong>Ash Williams (Army of Darkness):</strong>
@@ -196,12 +310,27 @@
           You piss me off, you're gonna get the harpoon.
         </span>
       </p>
-    </div>
 
+      </div>
+
+      <audio controls class="voice-audio">
+          <source src="./audios/harpoon/AshED3H_FindsHarpoonGun_01.mp3" type="audio/mpeg">
+      </audio>
+
+      </div>
+    </div>
+    <!------------->
+
+    <!-- Ash Parte 2 --->
     <div class="voice-line">
+
       <div class="voice-id">
         FindsHarpoonGun
       </div>
+
+      <div class="voice-content">
+      <div class="voice-main">
+
       <img src="../../../images/characters/AshHunter.png" alt="Ash Williams">
       <p>
         <strong>Ash Williams (Evil Dead 2):</strong>
@@ -209,12 +338,27 @@
           Are we hunting whales?
         </span>
       </p>
-    </div>
 
+      </div>
+
+      <audio controls class="voice-audio">
+          <source src="./audios/harpoon/AshED2H_FindsHarpoonGun_01.mp3" type="audio/mpeg">
+      </audio>
+
+      </div>
+    </div>
+    <!------------->
+
+    <!-- Ash Lider --->
     <div class="voice-line">
+
       <div class="voice-id attack">
         AttackHarpoonGun
       </div>
+
+      <div class="voice-content">
+      <div class="voice-main">
+
       <img src="../../../images/characters/AshLeader.png" alt="Ash Williams">
       <p>
         <strong>Ash Williams (Ash vs Evil Dead):</strong>
@@ -222,7 +366,12 @@
           Cross harpooning a Deadite off my bucket list.
         </span>
       </p>
+
+      </div>
+
+      </div>
     </div>
+    <!------------->
 
   </section>
 
