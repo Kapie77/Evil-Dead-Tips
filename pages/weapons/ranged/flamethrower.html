@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Flamethrower</title>
+
+<link rel="stylesheet" href="../../../css/weaponpage.css">
+<link rel="stylesheet" href="../../../css/backbutton.css">
+<link rel="stylesheet" href="../../../css/flag.css">
+
+<!-- Three.js -->
+<script type="module" src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.module.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/three@0.155.0/examples/jsm/loaders/GLTFLoader.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/three@0.155.0/examples/jsm/controls/OrbitControls.js"></script>
+
+<style>
+.voice-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,120,0,0.2);
+
+  border-radius: 8px;
+  padding: 12px;
+
+  margin-bottom: 10px;
+}
+
+.voice-line img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.voice-id {
+  background: rgba(0,200,255,0.15);
+  border: 1px solid rgba(0,200,255,0.4);
+
+  color: #6fdcff;
+
+  padding: 4px 8px;
+  border-radius: 6px;
+
+  font-size: 0.75rem;
+  font-weight: bold;
+
+  min-width: 150px;
+  text-align: center;
+
+  flex-shrink: 0;
+}
+
+/* falas de ataque */
+.voice-id.attack {
+  background: rgba(255,80,80,0.15);
+  border: 1px solid rgba(255,80,80,0.4);
+
+  color: #ff7b7b;
+}
+</style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <img src="../../../images/flags/br.jpg" onclick="setLang('pt')">
+  <img src="../../../images/flags/us.png" onclick="setLang('en')">
+  <img src="../../../images/flags/es.jpg" onclick="setLang('es')">
+</div>
+
+<div class="overlay"></div>
+
+<header>
+  <h1 data-lang="flamethrower">Flamethrower</h1>
+  <p data-lang="nodescription.">No description.</p>
+</header>
+
+<main class="container">
+
+  <!-- Nota -->
+  <div class="special-note">
+      <strong data-lang="unreleased">Unreleased</strong>
+    </div>
+
+
+  <!-- FALA DOS PERSONAGENS -->
+  <section class="weapon-voice-lines">
+    <h2 data-lang="voice_lines">Voice Lines</h2>
+
+    <div class="voice-line">
+
+    <div class="voice-id">
+      FindsFlamethrower
+    </div>
+
+    <img src="../../../images/characters/Henry.png" alt="Henry the Red">
+
+    <p>
+      <strong>Henry the Red:</strong>
+      <span data-lang="flamethrowervc1">
+        A fire-hurler -- my men must have one!
+      </span>
+    </p>
+
+  </div>
+
+  <div class="voice-line">
+
+    <div class="voice-id">
+      FindsFlamethrower
+    </div>
+
+    <img src="../../../images/characters/Kelly.png" alt="Kelly Maxwell">
+
+    <p>
+      <strong>Kelly Maxwell:</strong>
+      <span data-lang="flamethrowervc2">
+        Just what I've always wanted!
+      </span>
+    </p>
+
+  </div>
+
+  <div class="voice-line">
+
+    <div class="voice-id attack">
+      AttackFlamethrower
+    </div>
+
+    <img src="../../../images/characters/Kelly.png" alt="Kelly Maxwell">
+
+    <p>
+      <strong>Kelly Maxwell:</strong>
+      <span data-lang="flamethrowervc3">
+        Sometimes dreams come true.
+      </span>
+    </p>
+
+  </div>
+
+  <div class="voice-line">
+
+    <div class="voice-id attack">
+      AttackFlamethrower
+    </div>
+
+    <img src="../../../images/characters/Pablo.png" alt="Pablo Simon Bolivar">
+
+    <p>
+      <strong>Pablo Simon Bolivar:</strong>
+      <span data-lang="flamethrowervc4">
+        Roasted!
+      </span>
+    </p>
+
+  </div>
+
+  <div class="voice-line">
+
+    <div class="voice-id">
+      FindsFlamethrower
+    </div>
+
+    <img src="../../../images/characters/AshHunter.png" alt="Ash Williams">
+
+    <p>
+      <strong>Ash Williams (Evil Dead 2):</strong>
+      <span data-lang="flamethrowervc5">
+        Always wanted to try one of these.
+      </span>
+    </p>
+
+  </div>
+
+  <div class="voice-line">
+
+    <div class="voice-id attack">
+      AttackFlamethrower
+    </div>
+
+    <img src="../../../images/characters/AshHunter.png" alt="Ash Williams">
+
+    <p>
+      <strong>Ash Williams (Evil Dead 2):</strong>
+      <span data-lang="flamethrowervc6">
+        Ah, how 'bout extra crispy?
+      </span>
+    </p>
+
+  </div>
+
+  <div class="voice-line">
+
+    <div class="voice-id attack">
+      AttackFlamethrower
+    </div>
+
+    <img src="../../../images/characters/AshWarrior.png" alt="Ash Williams">
+
+    <p>
+      <strong>Ash Williams (Army of Darkness):</strong>
+      <span data-lang="flamethrowervc7">
+        Where you're going, you might as well be on fire. Flame on, evil!
+      </span>
+    </p>
+
+  </div>
+
+  <div class="voice-line">
+
+    <div class="voice-id attack">
+      AttackFlamethrower
+    </div>
+
+    <img src="../../../images/characters/AshLeader.png" alt="Ash Williams">
+
+    <p>
+      <strong>Ash Williams (Ash vs Evil Dead):</strong>
+      <span data-lang="flamethrowervc8">
+        Sorry man, you're fired.
+      </span>
+    </p>
+
+  </div>
+
+  <div class="voice-line">
+
+    <div class="voice-id">
+      FindsFlamethrower
+    </div>
+
+    <img src="../../../images/characters/Blacksmith.png" alt="Blacksmith">
+
+    <p>
+      <strong>Blacksmith:</strong>
+      <span data-lang="flamethrowervc9">
+        Provider of the burning sensation.
+      </span>
+    </p>
+
+  </div>
+
+  </section>
+
+</main>
+
+<button onclick="goBack()" class="back-btn" data-lang="back">Voltar</button>
+
+
+<script src="../../../js/script.js"></script>
+<script src="../../../js/lang.js"></script>
+</body>
+</html>
