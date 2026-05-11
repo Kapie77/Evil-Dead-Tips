@@ -96,7 +96,7 @@ const translations = {
       submachinegun: "Sub-metralhadora",
       sawgun: "Retalhadora",
       minigun: "Minigun",
-      harpoon: "Arpão",
+      harpoon: "Lançador de Arpão",
 
       /* Melee Desc */
       machetedesc: "Esta lâmina bem equilibrada oferece velocidade, dano e capacidade de desmembramento superiores. Cortante. Uma mão.",
@@ -310,7 +310,7 @@ const translations = {
       submachinegun: "Submachine Gun",
       sawgun: "Sawgun",
       minigun: "Minigun",
-      harpoon: "Hapoon",
+      harpoon: "Harpoon Launcher",
 
       /* Melee Desc */
       machetedesc: "This well-balanced blade provides superior speed, damage and dismemberment. Sharp. One-handed.",
