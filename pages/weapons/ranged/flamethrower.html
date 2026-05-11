@@ -16,8 +16,7 @@
 <style>
 .voice-line {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  gap: 14px;
 
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,120,0,0.2);
@@ -28,36 +27,63 @@
   margin-bottom: 10px;
 }
 
-.voice-line img {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-}
-
+/* TAG */
 .voice-id {
+  min-width: 170px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  align-self: stretch;
+
   background: rgba(0,200,255,0.15);
   border: 1px solid rgba(0,200,255,0.4);
 
   color: #6fdcff;
 
-  padding: 4px 8px;
+  padding: 8px;
   border-radius: 6px;
 
   font-size: 0.75rem;
   font-weight: bold;
 
-  min-width: 150px;
   text-align: center;
-
-  flex-shrink: 0;
 }
 
-/* falas de ataque */
+/* ataque */
 .voice-id.attack {
   background: rgba(255,80,80,0.15);
   border: 1px solid rgba(255,80,80,0.4);
-
   color: #ff7b7b;
+}
+
+/* LADO DIREITO */
+.voice-content {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.voice-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.voice-main img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.voice-audio {
+  width: 100%;
+  height: 36px;
 }
 </style>
 </head>
@@ -88,28 +114,44 @@
   <section class="weapon-voice-lines">
     <h2 data-lang="voice_lines">Voice Lines</h2>
 
-    <div class="voice-line">
+    <!-- Henry -->
+      <div class="voice-line">
 
-    <div class="voice-id">
-      FindsFlamethrower
-    </div>
+          <div class="voice-id">
+              FindsFlamethrower
+          </div>
+        
+        <div class="voice-content">
+        <div class="voice-main">
 
-    <img src="../../../images/characters/Henry.png" alt="Henry the Red">
+          <img src="../../../images/characters/Henry.png" alt="Henry the Red">
 
-    <p>
-      <strong>Henry the Red:</strong>
-      <span data-lang="flamethrowervc1">
-        A fire-hurler -- my men must have one!
-      </span>
-    </p>
+            <p>
+              <strong>Henry the Red:</strong>
+              <span data-lang="flamethrowervc1">
+                A fire-hurler -- my men must have one!
+              </span>
+            </p>
 
-  </div>
+        </div>
 
+        <audio controls class="voice-audio">
+          <source src="./audios/flamethrower/HenryTheRedH_FindsFlamethrower_01.mp3" type="audio/mpeg">
+        </audio>
+
+      </div>
+      </div>
+    <!------------------->
+
+  <!-- Kelly 1 -->
   <div class="voice-line">
 
-    <div class="voice-id">
-      FindsFlamethrower
-    </div>
+      <div class="voice-id">
+            FindsFlamethrower
+      </div>
+
+    <div class="voice-content">
+    <div class="voice-main">
 
     <img src="../../../images/characters/Kelly.png" alt="Kelly Maxwell">
 
@@ -120,13 +162,25 @@
       </span>
     </p>
 
-  </div>
+</div>
 
+    <audio controls class="voice-audio">
+        <source src="./audios/flamethrower/KellyH_FindsFlamethrower_01_alt2.mp3" type="audio/mpeg">
+    </audio>
+
+  </div>
+</div>
+    <!---------------->
+
+    <!-- Kelly 2 -->
   <div class="voice-line">
 
     <div class="voice-id attack">
       AttackFlamethrower
     </div>
+
+  <div class="voice-content">
+  <div class="voice-main">
 
     <img src="../../../images/characters/Kelly.png" alt="Kelly Maxwell">
 
@@ -137,13 +191,25 @@
       </span>
     </p>
 
-  </div>
+</div>
+    <audio controls class="voice-audio">
+        <source src="./audios/flamethrower/KellyH_AttackFlamethrower_01_alt.mp3" type="audio/mpeg">
+    </audio>
 
+  </div>
+</div>
+    <!-------------------->
+
+
+  <!-- Pablo -->
   <div class="voice-line">
 
-    <div class="voice-id attack">
-      AttackFlamethrower
-    </div>
+      <div class="voice-id attack">
+          AttackFlamethrower
+      </div>
+
+    <div class="voice-content">
+    <div class="voice-main">
 
     <img src="../../../images/characters/Pablo.png" alt="Pablo Simon Bolivar">
 
@@ -154,13 +220,25 @@
       </span>
     </p>
 
-  </div>
+</div>
+    <audio controls class="voice-audio">
+        <source src="./audios/flamethrower/PabloH_AttackFlamethrower_01.mp3" type="audio/mpeg">
+    </audio>
 
+  </div>
+</div>
+    <!------------->
+
+
+  <!-- Ash Parte 2 -->
   <div class="voice-line">
 
-    <div class="voice-id">
-      FindsFlamethrower
-    </div>
+      <div class="voice-id">
+            FindsFlamethrower
+      </div>
+
+    <div class="voice-content">
+    <div class="voice-main">
 
     <img src="../../../images/characters/AshHunter.png" alt="Ash Williams">
 
@@ -171,13 +249,24 @@
       </span>
     </p>
 
-  </div>
+</div>
+    <audio controls class="voice-audio">
+        <source src="./audios/flamethrower/AshED2H_FindsFlamethrower_01.mp3" type="audio/mpeg">
+    </audio>
 
+  </div>
+</div>
+    <!---------------->
+
+  <!-- Ash Parte 2 (2)-->
   <div class="voice-line">
 
     <div class="voice-id attack">
       AttackFlamethrower
     </div>
+
+    <div class="voice-content">
+    <div class="voice-main">
 
     <img src="../../../images/characters/AshHunter.png" alt="Ash Williams">
 
@@ -188,13 +277,26 @@
       </span>
     </p>
 
-  </div>
+</div>
 
+    <audio controls class="voice-audio">
+        <source src="./audios/flamethrower/AshED2H_AttackFlamethrower_01.mp3" type="audio/mpeg">
+    </audio>
+
+
+  </div>
+</div>
+    <!--------------------->
+
+  <!-- Ash Parte 3-->
   <div class="voice-line">
 
     <div class="voice-id attack">
       AttackFlamethrower
     </div>
+
+    <div class="voice-content">
+    <div class="voice-main">
 
     <img src="../../../images/characters/AshWarrior.png" alt="Ash Williams">
 
@@ -204,14 +306,26 @@
         Where you're going, you might as well be on fire. Flame on, evil!
       </span>
     </p>
-
+ 
   </div>
 
+    <audio controls class="voice-audio">
+        <source src="./audios/flamethrower/AshED3H_AttackFlamethrower_01_alt.mp3" type="audio/mpeg">
+    </audio>
+
+  </div>
+</div>
+    <!-------------------->
+
+  <!-- Ash Lider -->
   <div class="voice-line">
 
     <div class="voice-id attack">
-      AttackFlamethrower
+            AttackFlamethrower
     </div>
+
+    <div class="voice-content">
+    <div class="voice-main">
 
     <img src="../../../images/characters/AshLeader.png" alt="Ash Williams">
 
@@ -222,13 +336,25 @@
       </span>
     </p>
 
-  </div>
+</div>
 
+    <audio controls class="voice-audio">
+        <source src="./audios/flamethrower/AshAvEDH_AttackFlamethrower_01_alt.mp3" type="audio/mpeg">
+    </audio>
+
+  </div>
+</div>
+    <!----------------->
+
+  <!-- Ferreiro -->
   <div class="voice-line">
 
     <div class="voice-id">
-      FindsFlamethrower
+            FindsFlamethrower
     </div>
+
+    <div class="voice-content">
+    <div class="voice-main">
 
     <img src="../../../images/characters/Blacksmith.png" alt="Blacksmith">
 
@@ -238,8 +364,11 @@
         Provider of the burning sensation.
       </span>
     </p>
+    </div>
 
   </div>
+  </div>
+  <!---------------->
 
   </section>
 
