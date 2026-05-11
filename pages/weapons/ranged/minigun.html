@@ -31,10 +31,50 @@
   border-radius: 6px;
   margin-bottom: 6px;
 }
+.voice-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,120,0,0.2);
+
+  border-radius: 8px;
+  padding: 12px;
+
+  margin-bottom: 10px;
+}
+
 .voice-line img {
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
+}
+
+.voice-id {
+  background: rgba(0,200,255,0.15);
+  border: 1px solid rgba(0,200,255,0.4);
+
+  color: #6fdcff;
+
+  padding: 4px 8px;
+  border-radius: 6px;
+
+  font-size: 0.75rem;
+  font-weight: bold;
+
+  min-width: 150px;
+  text-align: center;
+
+  flex-shrink: 0;
+}
+
+/* falas de ataque */
+.voice-id.attack {
+  background: rgba(255,80,80,0.15);
+  border: 1px solid rgba(255,80,80,0.4);
+
+  color: #ff7b7b;
 }
 </style>
 </head>
@@ -68,6 +108,9 @@
     <h2 data-lang="voice_lines">Voice Lines</h2>
 
     <div class="voice-line">
+      <div class="voice-id">
+        FindsMinigun
+      </div>
       <img src="../../../images/characters/Kelly.png" alt="Kelly Maxwell">
       <p>
         <strong>Kelly Maxwell:</strong>
@@ -78,6 +121,9 @@
     </div>
 
     <div class="voice-line">
+      <div class="voice-id attack">
+        AttackMinigun
+      </div>
       <img src="../../../images/characters/Kelly.png" alt="Kelly Maxwell">
       <p>
         <strong>Kelly Maxwell:</strong>
@@ -88,6 +134,9 @@
     </div>
 
     <div class="voice-line">
+      <div class="voice-id attack">
+        AttackMinigun
+      </div>
       <img src="../../../images/characters/AshHunter.png" alt="Ash Williams">
       <p>
         <strong>Ash Williams (Evil Dead 2):</strong>
@@ -98,6 +147,9 @@
     </div>
 
     <div class="voice-line">
+      <div class="voice-id">
+        FindsMinigun
+      </div>
       <img src="../../../images/characters/AshSupport.png" alt="Ash Williams">
       <p>
         <strong>Ash Williams (The Evil Dead):</strong>
@@ -108,6 +160,9 @@
     </div>
 
     <div class="voice-line">
+      <div class="voice-id attack">
+        AttackMinigun
+      </div>
       <img src="../../../images/characters/AshWarrior.png" alt="Ash Williams">
       <p>
         <strong>Ash Williams (Army of Darkness):</strong>
