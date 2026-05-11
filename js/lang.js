@@ -27,6 +27,7 @@ const translations = {
     hunter: "Caçador",
     support: "Suporte",
     exclusive: "Exclusivo",
+    voice_lines: "Fala dos Personagens",
 
     /* Armas */
     TypesOfAmmunition: "Tipos de Munição",
@@ -230,6 +231,7 @@ const translations = {
     hunter: "Hunter",
     support: "Support",
     exclusive: "Exclusive",
+    voice_lines: "Voice Lines",
 
     /* Armas */
     TypesOfAmmunition: "Types of Ammunition",
