@@ -28,6 +28,7 @@ const translations = {
     support: "Suporte",
     exclusive: "Exclusivo",
     voice_lines: "Fala dos Personagens",
+    unreleased: "Não-lançado",
 
     /* Armas */
     TypesOfAmmunition: "Tipos de Munição",
@@ -232,6 +233,7 @@ const translations = {
     support: "Support",
     exclusive: "Exclusive",
     voice_lines: "Voice Lines",
+    unreleased: "Unreleased",
 
     /* Armas */
     TypesOfAmmunition: "Types of Ammunition",
