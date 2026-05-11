@@ -97,6 +97,8 @@ const translations = {
       sawgun: "Retalhadora",
       minigun: "Minigun",
       harpoon: "Lançador de Arpão",
+      flamethrower: "Lança-chamas",
+      nodescription: "Sem descrição.",
 
       /* Melee Desc */
       machetedesc: "Esta lâmina bem equilibrada oferece velocidade, dano e capacidade de desmembramento superiores. Cortante. Uma mão.",
@@ -155,6 +157,17 @@ const translations = {
         harpoonvc7: " Se você me irritar, vai levar arpão.",
         harpoonvc8: " Nós estamos caçando baleia?",
         harpoonvc9: " Arpoar Deadite com arpão cruzado riscado da minha lista de desejos.",
+    
+        /* flamethrower voice lines */
+        flamethrowervc1: " Um lançador de fogo -- meus homens precisam de um!",
+        flamethrowervc2: " Exatamente o que eu sempre quis!",
+        flamethrowervc3: " Às vezes os sonhos se realizam.",
+        flamethrowervc4: " Torradinho!",
+        flamethrowervc5: " Sempre quis experimentar um desses.",
+        flamethrowervc6: " Ah, que tal extra crocante?",
+        flamethrowervc7: " Pra onde você vai, melhor já estar pegando fogo. Queime, demônio!",
+        flamethrowervc8: " Desculpa cara, você tá queimado.",
+        flamethrowervc9: " Provedor da sensação de queimadura.",
 
     /* Perfil dos personagens */
     attributes: "Atributos",
@@ -253,6 +266,7 @@ const translations = {
     exclusive: "Exclusive",
     voice_lines: "Voice Lines",
     unreleased: "Unreleased",
+    nodescription: "No description.",
 
     /* Armas */
     TypesOfAmmunition: "Types of Ammunition",
@@ -322,6 +336,7 @@ const translations = {
       sawgun: "Sawgun",
       minigun: "Minigun",
       harpoon: "Harpoon Launcher",
+      flamethrower: "Flamethrower",
 
       /* Melee Desc */
       machetedesc: "This well-balanced blade provides superior speed, damage and dismemberment. Sharp. One-handed.",
@@ -363,7 +378,7 @@ const translations = {
       minigundesc: "Pull the trigger, feel the power, send them back to hell.",
       harpoondesc: "Originally designed to hunt sea creatures, this weapon is even better at skewering Deadites.",
 
-        /* minigun voice lines*/
+        /* minigun voice lines */
         minigunvc1: " These things are dangerous",
         minigunvc2: " Yeah you want some more?",
         minigunvc3: " Eat lead.",
@@ -380,6 +395,17 @@ const translations = {
         harpoonvc7: " You piss me off, you're gonna get the harpoon.",
         harpoonvc8: " Are we hunting whales?",
         harpoonvc9: " Cross harpooning a Deadite off my bucket list.",
+
+        /* flamethrower voice lines */
+        flamethrowervc1: " A fire-hurler -- my men must have one!",
+        flamethrowervc2: " Just what I've always wanted!",
+        flamethrowervc3: " Sometimes dreams come true.",
+        flamethrowervc4: " Roasted!",
+        flamethrowervc5: " Always wanted to try one of these.",
+        flamethrowervc6: " Ah, how 'bout extra crispy?",
+        flamethrowervc7: " Where you're going, you might as well be on fire. Flame on, evil!",
+        flamethrowervc8: " Sorry man, you're fired.",
+        flamethrowervc9: " Provider of the burning sensation.",
 
     /* Perfil dos personagens */
     attributes: "Attributes",
