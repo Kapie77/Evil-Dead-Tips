@@ -136,6 +136,7 @@ const translations = {
       grenadelauncherdesc: "É hora de Travar, Carregar e KABOOOM nessas Deadites!",
       shotgundesc: "A escopeta dispara uma rajada de curto alcance capaz de derrubar vários inimigos de uma só vez.",
       minigundesc: "Puxe o gatilho, sinta a força, mande-os de volta para o inferno.",
+      harpoondesc: "Originalmente concebida para caçar criaturas marinhas, essa arma é ainda mais eficaz para empalar Deadites.",
       
         /* minigun voice lines*/
         minigunvc1: " Essas coisas são perigosas",
@@ -309,7 +310,7 @@ const translations = {
       submachinegun: "Submachine Gun",
       sawgun: "Sawgun",
       minigun: "Minigun",
-      harpoon: "hapoon",
+      harpoon: "Hapoon",
 
       /* Melee Desc */
       machetedesc: "This well-balanced blade provides superior speed, damage and dismemberment. Sharp. One-handed.",
@@ -349,6 +350,7 @@ const translations = {
       grenadelauncherdesc: "It's time to Lock, Load and KABOOOM these Deadites away!",
       shotgundesc: "The shotgun delivers a short-range blast that can take out several enemies at once.",
       minigundesc: "Pull the trigger, feel the power, send them back to hell.",
+      harpoondesc: "Originally designed to hunt sea creatures, this weapon is even better at skewering Deadites.",
 
         /* minigun voice lines*/
         minigunvc1: " These things are dangerous",
