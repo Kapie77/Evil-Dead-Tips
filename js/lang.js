@@ -136,6 +136,13 @@ const translations = {
       grenadelauncherdesc: "É hora de Travar, Carregar e KABOOOM nessas Deadites!",
       shotgundesc: "A escopeta dispara uma rajada de curto alcance capaz de derrubar vários inimigos de uma só vez.",
       minigundesc: "Puxe o gatilho, sinta a força, mande-os de volta para o inferno.",
+      
+        /* minigun voice lines*/
+        minigunvc1: " Essas coisas são perigosas",
+        minigunvc2: " Yeah, quer mais um pouco?",
+        minigunvc3: " Coma chumbo.",
+        minigunvc4: " Hum. Pesado.",
+        minigunvc5: " Ei, bebê!",
 
     /* Perfil dos personagens */
     attributes: "Atributos",
@@ -342,6 +349,13 @@ const translations = {
       grenadelauncherdesc: "It's time to Lock, Load and KABOOOM these Deadites away!",
       shotgundesc: "The shotgun delivers a short-range blast that can take out several enemies at once.",
       minigundesc: "Pull the trigger, feel the power, send them back to hell.",
+
+        /* minigun voice lines*/
+        minigunvc1: " These things are dangerous",
+        minigunvc2: " Yeah you want some more?",
+        minigunvc3: " Eat lead.",
+        minigunvc4: " Mmm. Heavy.",
+        minigunvc5: " Hey baby!",
 
     /* Perfil dos personagens */
     attributes: "Attributes",
