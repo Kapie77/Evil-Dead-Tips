@@ -145,6 +145,17 @@ const translations = {
         minigunvc4: " Hum. Pesado.",
         minigunvc5: " Ei, bebê!",
 
+        /* harpoon voice lines */
+        harpoonvc1: " Empalamento à distância! Brilhante!",
+        harpoonvc2: " Mal em um espeto.",
+        harpoonvc3: " O míssil com farpas acerta o alvo!",
+        harpoonvc4: " No espeto!",
+        harpoonvc5: " Espetadinho!",
+        harpoonvc6: " Shish kabob.",
+        harpoonvc7: " Se você me irritar, vai levar arpão.",
+        harpoonvc8: " Nós estamos caçando baleia?",
+        harpoonvc9: " Arpoar Deadite com arpão cruzado riscado da minha lista de desejos.",
+
     /* Perfil dos personagens */
     attributes: "Atributos",
     defense: "Defesa",
@@ -358,6 +369,17 @@ const translations = {
         minigunvc3: " Eat lead.",
         minigunvc4: " Mmm. Heavy.",
         minigunvc5: " Hey baby!",
+        
+        /* harpoon voice lines */
+        harpoonvc1: " Impalement from afar! Brilliant!",
+        harpoonvc2: " Evil on a stick.",
+        harpoonvc3: " Barbed missile hits its mark!",
+        harpoonvc4: " Skewered!",
+        harpoonvc5: " Spiked one!",
+        harpoonvc6: " Shish kabob.",
+        harpoonvc7: " You piss me off, you're gonna get the harpoon.",
+        harpoonvc8: " Are we hunting whales?",
+        harpoonvc9: " Cross harpooning a Deadite off my bucket list.",
 
     /* Perfil dos personagens */
     attributes: "Attributes",
