@@ -8,8 +8,9 @@ const translations = {
 
   /* PORTUGUÊS */
   pt: {
+    title: "Evil Dead Tips",
     back: "Voltar",
-    strong: "Pontos Fortes",
+    strengths: "Pontos Fortes",
     stats: "Estatísticas",
     damage: "Dano",
     speed: "Velocidade",
@@ -29,6 +30,20 @@ const translations = {
     exclusive: "Exclusivo",
     voice_lines: "Fala dos Personagens",
     unreleased: "Não-lançado",
+
+    /* Personagens */
+    lash: "Ash (Líder)",
+    wash: "Ash (Guerreiro)",
+    hash: "Ash (Caçador)",
+    sash: "Ash (Suporte)",
+    eligos: "Eligos - Marionetista",
+    puppeteer: "Marionetista",
+    necromancer: "Necromante",
+    warlord: "Senhor da Guerra",
+    plaguebringer: "Portador da Peste",
+    schemer: "Intrigante",
+    evilash: "Ash Maligno",
+    witch: "Bruxa",
 
     /* Armas */
     TypesOfAmmunition: "Tipos de Munição",
@@ -216,7 +231,7 @@ const translations = {
     edstrength: "Por ser caçador ele tem muita stamina.",
 
     /* Pontos Fracos */
-    Weaknesses: "Pontos Fracos",
+    weaknesses: "Pontos Fracos",
     edweak1: "Ele possui pouca saúde por ser Caçador.",
 
     /* DICAS */
@@ -269,6 +284,7 @@ const translations = {
 
   /* ENGLISH */
   en: {
+    title: "Evil Dead Tips",
     back: "Back",
     strengths: "Strengths",
     stats: "Stats",
@@ -292,6 +308,20 @@ const translations = {
     unreleased: "Unreleased",
     nodescription: "No description.",
     crates: "Crates",
+
+    /* Personagens */
+    lash: "Ash (Leader)",
+    wash: "Ash (Warrior)",
+    hash: "Ash (Hunter)",
+    sash: "Ash (Support)",
+    eligos: "Eligos - Puppeteer",
+    puppeteer: "Puppeteer",
+    necromancer: "Necromancer",
+    warlord: "Warlord",
+    plaguebringer: "Plaguebringer",
+    schemer: "Schemer",
+    evilash: "Evil Ash",
+    witch: "Witch",
 
     /* Armas */
     TypesOfAmmunition: "Types of Ammunition",
@@ -347,7 +377,7 @@ const translations = {
       handaxe: "Hand Axe",
       scythe: "Scythe",
       huntingknife: "Hunting Knife",
-      bat: "Nail Bat",
+      bat: "Nailed Bat",
       lumberjackaxe: "Lumberjack Axe",
       sledgehammer: "Sledgehammer",
       meatcleaver: "Meat Cleaver",
