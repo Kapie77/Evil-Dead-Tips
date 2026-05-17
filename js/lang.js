@@ -269,6 +269,14 @@ const translations = {
     geraltip19: "Quando o Chefe morre ele dropa um refrigerante ou um amuleto.",
 
     /* DEMONS */
+
+      /* Dicas Gerais Demônio*/
+      demongeneraltip1: "Para invocar o Chefe não tem custo de energia infernal, apenas para mantê-lo.",
+      demongeneraltip2: "Sobreviventes podem usar glitchs, como o de correr usando a habilidade especial/refrigerante Shemp's ou bater sem parar, então tenha cuidado.",
+      demongeneraltip3: "Verá que tudo depende do livro. Tem jogadores demônio fracos que perdem facil em todos os objetivos, mas conseguem destruir o livro e ganham a partida. Então foque em uma build para isso, ou seja, foque em aumentar a barra de equilibrio das suas unidades e dano delas.",
+      demongeneraltip4: "Quando o Chefe morre ele dropa um refrigerante Shemp's ou um amuleto, então se ver que vai morrer vá para longe e esconda-se para os Sobreviventes não verem e pegarem o item de cura.",
+      demongeneraltip5: "Destrua todos os carros próximo quando os Sobreviventes ativarem a Adaga ou a Página de imediato. Dê prioridade para destruir os carros antes de ataca-los. Existem carros intocaveis, pois só spawnam quando um sobrevivente chega perto. Se um desses carros estiver próximo do objetivo você pode possuir um sobrevivente e levá-lo até o carro para spawnar ele e depois é só destruí-lo. Se não estiver próximo, nem vá atrás dos sobreviventes porque eles vão pegar o carro e escapar, então foque em botar armadilhas no próximo objetivo.",
+
       /* Eligos */
       EligosBio: "Eligos pode ser chamado de muitas coisas, mas “demônio menor” não é uma delas. Além da habilidade de lançar pedras com a mente, ele possui o poder telecinético de atordoar temporariamente todos os Sobreviventes próximos. Ele também fica invisível quando se move, então boa sorte para detê-lo.",
       EligosAbility: "As unidades que você possui têm mais vida, causam mais dano e seus ataques aumentam o medo nos alvos. Além disso, as unidades malignas possuídas causam dano de sangramento.",
@@ -545,6 +553,14 @@ const translations = {
     geraltip19: "When the Boss dies, he drops a Shemp's Cola or a Amulet.",
 
     /* DEMONS */
+
+    /* Dicas Gerais Demônio*/
+      demongeneraltip1: "Summoning the Boss doesn't cost any inernal energy; it only costs infernal energy to keep him active.",
+      demongeneraltip2: "Survivors can do glitches, such as running while using Shemp's/special ability or attacking nonstop, so be careful.",
+      demongeneraltip3: "You'll see that it all depends on the book. There are weak players who lose easily in every objective but manage to destroy the book and win the match. So focus on a build for that—in other words, focus on increasing your units' health and damage.",
+      demongeneraltip4: "When the Boss dies, he drops a Shemp's cola or an amulet, so if you see that your boss is about to die, move away and hide so the Survivors don't see you and take the healing item.",
+      demongeneraltip5: "Destroy all nearby cars immediately when Survivors activate the Dagger or the Page. Prioritize destroying the cars before attacking them. There are untouchable cars, as they only spawn when a survivor gets close. If one of these cars is near the objective, you can possess a survivor and take them to the car to spawn it, then just destroy it. If it’s not nearby, don’t even go after the survivors because they’ll take the car and escape, so focus on setting traps at the next objective.",
+
       /* Eligos */
       EligosBio: "Eligos can be called a lot of things, but a 'minor demon' is not one of them. In addition to the ability to throw rocks with his mind, he wields the telekinetic power to temporarily stun all nearby Survivors. He's also invisible when moving, so good luck stopping him.",
       EligosAbility: "Units you possess have more health, deal more damage, and their attacks increase fear in their targets. Additionally, possessed evil units inflict bleeding damage.",
