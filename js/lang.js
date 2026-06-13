@@ -64,6 +64,14 @@ const translations = {
     Damage: "Dano",
     AmmoCapacity: "Capacidade de munição",
     RateOfFire: "Frequência de disparos",
+    AttackSpeed: "Velocidade de Ataque",
+    AmountConvertedToBleedingDamage: "Valor Convertido em Dano de Sangramento",
+    BleedingDuration: "Duração do Sangramento",
+    FearThreshold: "Limiar do Medo",
+    MaximumDamage: "Dano Máximo",
+    FearIncreasePerSecond: "Aumento do Medo Por Segundo",
+    FearReductionPerKill: "Redução do Medo Por Morte",
+    MeleeDamage: "Dano Corpo a Corpo",
 
       /* Tipos */
       Common: "Comum",
@@ -207,6 +215,12 @@ const translations = {
         flamethrowervc7: " Pra onde você vai, melhor já estar pegando fogo. Queime, demônio!",
         flamethrowervc8: " Desculpa cara, você tá queimado.",
         flamethrowervc9: " Provedor da sensação de queimadura.",
+      
+    /* Classes */
+    leaderdesc: "Os Líderes possuem auras específicas que melhoram suas estatísticas e as dos Sobreviventes próximos. Eles também são mais resistentes ao medo.",
+    warriordesc: "Os Guerreiros têm mais vida e causam mais dano corpo a corpo.",
+    hunterdesc: "Os Caçadores causam mais dano com armas de longo alcance, podem carregar mais munição e têm um consumo de stamina mais lento.",
+    supportdesc: "Os Sobreviventes da classe Suporte começam com um Refrigerante Shemp's e um amuleto, e podem carregar mais Shemp's e amuletos. Se Shemp's ou amuletos forem usados, os Sobreviventes dentro da sua aura também ganham os efeitos positivos.",
 
     /* Perfil dos personagens */
     attributes: "Atributos",
@@ -217,22 +231,111 @@ const translations = {
 
     /* Habilidades */
     abilities: "Habilidades",
-    EdAbilityDescription: "Quando ativada, essa habilidade permite o uso de uma lanterna especial que te ajuda a detectar e desarmar temporariamente armadilhas demoníacas.",
+    specialabilities: "Habilidades Especiais",
+    showabilities: "Mostrar Habilidades",
+    showprofile: "Mostrar Perfil",
+    duration: "Duração",
+    cooldown: "Tempo de recarga",
+    dismembermentdamage: "Dano de desmembramento",
+    balancebardamage: "Dano a barra de equilíbrio",
+    ReloadSpeedIncrease: "Aumento da velocidade de recarga",
+    FearReductionSpeed: "Velocidade de Redução do Medo",
+    PossessionCostIncrease: "Aumento do Custo de Possessão",
+    DamageReduction: "Redução de Danos",
+    EffectDuration: "Duração do Efeito",
+    AuraEffectRange: "Alcance do Efeito de Aura",
+    InfernalEnergyReductionPerHit: "Redução de Energia Infernal Por Golpe",
+    InfernalEnergyCost: "Custo da Energia Infernal",
+    FearReduction: "Redução de Medo",
+    ExtraDuration: "Duração Extra",
 
     /* Ed */
+    EdAbilityDescription: "Quando ativada, essa habilidade permite o uso de uma lanterna especial que te ajuda a detectar e desarmar temporariamente armadilhas demoníacas.",
     edab1: "Luz Perene",
     edab2: "Maestria de Armas: Bestas",
     edab3: "O Colecionador",
     edabdc1: "Aumenta a duração da bateria da sua lanterna",
     edabdc2: "As bestas têm uma velocidade de recarga mais rápida e causam mais danos à saúde, à barra de equilíbrio e desmembramento",
     edabdc3: "Aumenta a chance de os inimigos derrotados deixarem cair itens; também aumenta a chance de encontrar itens de maior raridade",
+    edspecialhability1: "Quando ativada, essa habilidade permite o uso de uma lanterna especial que te ajuda a detectar e desarmar temporariamente armadilhas demoníacas.",
+    edspecialhability2: "Aumenta a duração da bateria da sua lanterna.",
+    edspecialhability3: "As bestas têm uma velocidade de recarga mais rápida e causam mais dano à saúde, à barra de equilíbrio e de desmembramento.",
+    edspecialhability4: "Aumenta a chance de os inimigos derrotados deixarem cair itens; também aumenta a chance de encontrar caixas de maior raridade.",
+    edspecialtitle1: "É UMA ARMADILHA",
+    edspecialtitle2: "LUZ DURADOURA",
+    edspecialtitle3: "MESTRE EM ARMAS: BESTAS",
+    edspecialtitle4: "O COLECIONADOR",
+    batterylife: "Duração da bateria",
+
+    /* Mia */
+    MiaAbilityDescription: "Quando ativada, Mia não pode ser possuída, mas seu nível de medo aumenta e não pode ser reduzido. No entanto, quando a habilidade é desativada, seu nível de medo diminui de acordo com o número de unidades malignas que ela matou enquanto a habilidade estava ativa.",
+    miaab1: "O Medo Leva à Raiva",
+    miaab2: "Chuva de Sangue",
+    miaab3: "Maestria de Arma: Facão",
+    miaabdc1: "Quando o nível de medo de Mia atinge um determinado limite, seu potencial de dano aumenta à medida que o medo cresce. Quanto mais assustada ela fica, mais dano causa.",
+    miaabdc2: "Uma porcentagem do dano de ataque pesado de Mia é convertida em dano de sangramento prolongado.",
+    miaabdc3: "O Facão tem uma velocidade de ataque maior e aumenta o dano à saúde, à barra de equilíbrio e de desmembramento.",
+    miaspecialhability1: "Quando ativada, Mia não pode ser possuída, mas seu nível de medo aumenta e não pode ser reduzido. No entanto, quando a habilidade é desativada, seu nível de medo diminui de acordo com o número de unidades malignas que ela matou enquanto a habilidade estava ativa.",
+    miaspecialhability2: "Quando o nível de medo de Mia atinge um determinado limite, seu potencial de dano aumenta à medida que o medo cresce. Quanto mais assustada ela fica, mais dano causa.",
+    miaspecialhability3: "Uma porcentagem do dano de ataque pesado de Mia é convertida em dano de sangramento prolongado.",
+    miaspecialhability4: "O Facão tem uma velocidade de ataque maior e aumenta o dano à saúde, à barra de equilíbrio e de desmembramento.",
+    miaspecialtitle1: "Incontrolável",
+    miaspecialtitle2: "O Medo Leva à Raiva",
+    miaspecialtitle3: "Chuva de Sangue",
+    miaspecialtitle4: "Maestria de Arma: Facão",
+
+    /* David */
+    DavidAbilityDescription: "Reduz o medo em você e em quaisquer companheiros de equipe que estejam dentro da aura da chama. As unidades malignas dentro da aura precisam de uma quantidade maior de Energia Infernal para serem possuídas.",
+    davidab1: "Estouro de Refrigerante",
+    davidab2: "Maestria de Armas: Pistola de Pregos",
+    davidab3: "Farol Turbinado",
+    davidabdc1: "Quando David bebe um Shemp's, ele e todos os Sobreviventes próximos recebem menos dano por um tempo limitado.",
+    davidabdc2: "A pistola de pregos têm uma velocidade de recarga mais rápida e causa mais danos à saúde, à barra de equilíbrio e de desmembramento.",
+    davidabdc3: "Aumenta o alcance da aura do Farol da Esperança e o custo de Energia Infernal para manter a possessão dentro da aura. Atacar uma unidade maligna possuída dentro da aura reduz a Energia Infernal do demônio.",
+    davidspecialhability1: "Reduz o medo em você e em quaisquer companheiros de equipe que estejam dentro da aura da chama. As unidades malignas dentro da aura precisam de uma quantidade maior de Energia Infernal para serem possuídas.",
+    davidspecialhability2: "Quando David bebe um Shemp's, ele e todos os Sobreviventes próximos recebem menos dano por um tempo limitado.",
+    davidspecialhability3: "A pistola de pregos têm uma velocidade de recarga mais rápida e causa mais danos à saúde, à barra de equilíbrio e de desmembramento.",
+    davidspecialhability4: "Aumenta o alcance da aura do Farol da Esperança e o custo de Energia Infernal para manter a possessão dentro da aura. Atacar uma unidade maligna possuída dentro da aura reduz a Energia Infernal do demônio.",
+    davidspecialtitle1: "Farol da Esperança",
+    davidspecialtitle2: "Estouro de Refrigerante",
+    davidspecialtitle3: "Maestria de Armas: Pistola de Pregos",
+    davidspecialtitle4: "Farol Turbinado",
+
+    /* Lord Arthur */
+    LordArthurAbilityDescription: "Quando ativada, essa habilidade aumenta o dano causado pelos seus ataques corpo a corpo e pelos de seus companheiros de equipe próximos, além de reduzir os níveis de medo; se Lord Arthur estiver com uma espada, ele causa dano extra.",
+    lordarthurab1: "Mestre das Armas: Ataques Corpo a Corpo",
+    lordarthurab2: "Maestria de Arma: Espada",
+    lordarthurab3: "Abasteça o Fogo",
+    lordarthurabdc1: "Você e todos os companheiros de equipe dentro do raio de ação da aura causam mais dano com ataques corpo a corpo; comece a partida com uma espada.",
+    lordarthurabdc2: "A Espada tem uma velocidade de ataque maior e causa mais dano à vida, à barra de equilíbrio e de desmembramento.",
+    lordarthurabdc3: "Se você executar um golpe final enquanto a Cólera do Lord estiver ativa, a habilidade dura mais tempo.",
+    lordarthurspecialtitle1: "A Cólera do Lord",
+    lordarthurspecialtitle2: "Mestre das Armas: Ataques Corpo a Corpo",
+    lordarthurspecialtitle3: "Mestre em Armas: Espada",
+    lordarthurspecialtitle4: "Abasteça o Fogo",
+    lordarthurspecialhability1: "Quando ativada, essa habilidade aumenta o dano causado pelos seus ataques corpo a corpo e pelos de seus companheiros de equipe próximos, além de reduzir os níveis de medo; se Lord Arthur estiver com uma espada, ele causa dano extra.",
+    lordarthurspecialhability2: "Você e todos os companheiros de equipe dentro do raio de ação da aura causam mais dano com ataques corpo a corpo; comece a partida com uma espada.",
+    lordarthurspecialhability3: "A Espada tem uma velocidade de ataque maior e causa mais dano à vida, à barra de equilíbrio e de desmembramento.",
+    lordarthurspecialhability4: "Se você executar um golpe final enquanto a Cólera do Lord estiver ativa, a habilidade dura mais tempo.",
 
     /* Pontos Fortes */
     edstrength: "Por ser caçador ele tem muita stamina.",
 
+    miastrength: "Ela tem o maior dano do jogo.",
+
+    davidstrength: "É o único Suporte útil, e forte, no livro.",
+
+    lordarthurstrength: "Pode abaixar o próprio medo sozinho.",
+
     /* Pontos Fracos */
     weaknesses: "Pontos Fracos",
     edweak1: "Ele possui pouca saúde por ser Caçador.",
+
+    miaweak1: "O medo dela sobe muito rápido, então você precisa vigiar seu nível de medo constantemente para que o demônio não saiba onde você está.",
+
+    davidweak1: "Ele tem maestria com uma arma arma horrível, que dá pouco dano e gasta muita munição.",
+
+    lordarthurweak1: "A espada tem um manejo difícil.",
 
     /* DICAS */
     tips: "Dicas",
@@ -245,6 +348,16 @@ const translations = {
       EdTip5: "Se o Demônio te possuir enquanto você está usando sua habilidade, sua lanterna se apagará, mas o tempo de uso estará contando, então quando ele te despossuir pode restar poucos segundos de habilidade ou até mesmo já ter acabado, assim se tiver com medo alto tente não usar sua habilidade.",
       EdTip6: "Umas das habilidades passivas de Ed é de aumentar a vida util da lanterna em 100%, então dificilmente acabará a bateria dela; ela costuma durar até a partida acabar. Então deixa-a ligada todo o tempo (mas, claro, sempre de olho para não acabar a bateria, pois as vezes algumas partidas são tão longas que acaba o tempo).",
       EdTip7: "Você só usará a habilidade de Ed umas 3 ou 4 vezes na partida, em média, e durante o inicio; quando chega nos Sombrios você não usará mais porque não tem onde usar, então não vale a pena colocar pontos em Recarga Rápida, que reduz 10% do cooldown da habilidade dele. Veja: 110s (1 minutos e 50 segundos) - 10% [11s] 99 segundos (1 minutos e 39 segundos) 105s (1 minuto e 45 segundos) [Prestigio 5] - 10% [10,55s] = 94,5 segundos (1 minuto e 34,5 segundos)",
+
+      MiaTip1: "Mia, diferente dos outros Guerreiros, não tem build de dano a barra de equilibro, mas sim uma build de dano. E isso, somado ao fato das habilidades especiais dela aumentarem seu dano quanto maior for seu medo, e dano de sangramento, torna ela a personagem com mais dano do jogo. Por isso, se você utilizar a arma com mais dano do jogo, o machado, ela ficará muito forte. Seu foco com ela, então, deve ser em dano!",
+
+      DavidTip1: "Se você estiver sozinho no meio do nada e o demônio te achar, a Chama Azul é a sua salvação! A chama irá drenar toda a energia do demônio se ele possuir alguma unidade e tentar te matar. Você pode apenas se esquivar e ganhar tempo com ele na chama, mas se puder bater nele é melhor ainda, porque ele perderá energia mais rápido. E mesmo que ele não entre na chama, fique esperando ela acabar, ele irá perder tempo e energia, fazendo você recuperar stamina, ter seu medo diminuido, e ganhando tempo para pensar no que fazer ou tempo para seus amigos chegarem e te ajudar.",
+      DavidTip2: "Tenha cuidado ao usar a Chama Azul porque se o demônio te assustar, ou te possuir, a animação é cortada, o poder não é usado, mas o tempo é resetado como se tivesse sido usado, então você terá que esperar muito tempo para conseguir usa sua habilidade de novo.",
+      DavidTip3: "Lembre-se que seu refrigerante não só cura, mas faz diminuir o dano tomado pra todos os companheiros de equipe próximos, e isso é fundamental no livro. Então, saiba usar Shemp's pensando não só em curar, mas também pensando em fazer todos receberem menos dano — mesmo que todos estejam com a vida cheia; mas você teria que ter muitos refrigerantes e saber administrá-los.",
+      DavidTip4: "Use a Chama Azul assim que o livro aparecer, pois assim conseguirá usá-la mais uma vez no final.",
+
+      LordArthurTip1: "A espada é muito difícil de manejar e é lenta, então você terá que ter paciência e treinar bastante com ela. Uma dica é upar o Melee (corpo-a-corpo) pro máximo assim você terá +20% de velocidade de ataque corpo-a-corpo, além de +20% de dano corpo a corpo claro.",
+      LordArthurTip2: "O poder de Lord Arthur não só aumenta o dano corpo-a-corpo, mas diminui o medo também, então ele é util para abaixar seu medo quando precisar. Não abaixa tanto, mas ajuda muitas vezes.",
 
     /* DICAS GERAIS */
     generaltips: "Dicas Gerais",
@@ -287,7 +400,10 @@ const translations = {
       EligosAbInfo2: "Eligos lança pedras nos Sobreviventes.",
       EligosAbInfo3: "Eligos usa a telecinesia para imobilizar e causar dano a um Sobrevivente. Este ataque não pode ser esquivado. Para quebrar a imobilização, outros Sobreviventes devem atacar Eligos.",
 
-    edbio: "Sendo um caçador de relíquias, o Professor Associado Ed Getly entende a importância de uma lanterna. A bateria da lanterna de Ed duram mais tempo e sua tecnica ativa lhe permite usar uma lanterna especial para detectar e desarmar armadilhas demoniacas. ele tem 'o jeito' para encontrar armas de melhor qualidade e, simplesmente por estar por perto, ele proporicona essa vantagem a todos os membros de equipe da partida. Como se isso tudo não fosse o bastante, ele ainda é perito de besta."
+    edbio: "Sendo um caçador de relíquias, o Professor Associado Ed Getly entende a importância de uma lanterna. A bateria da lanterna de Ed duram mais tempo e sua tecnica ativa lhe permite usar uma lanterna especial para detectar e desarmar armadilhas demoniacas. ele tem 'o jeito' para encontrar armas de melhor qualidade e, simplesmente por estar por perto, ele proporicona essa vantagem a todos os membros de equipe da partida. Como se isso tudo não fosse o bastante, ele ainda é perito de besta.",
+    miabio: "Mia Allen jurou manter o controle. Além de ter maestria com o facão, ela aprendeu a transformar seu medo em força. Ela tem a capacidade de aumentar seu próprio nível de medo, tornando-se invulnerável à possessão e permitindo-lhe causar mais danos à medida que esse nível aumenta. Os inimigos temem seus ataques poderosos porque uma porcentagem do dano que causam é automaticamente convertida em sangramento prolongado.",
+    davidbio: "David Allen nem sempre esteve presente para seus entes queridos. Desta vez, ele não vai mais fugir. Sua coragem renovada é simbolizada pela capacidade de acender uma fogueira improvisada que, ao mesmo tempo, diminui o medo dos outros Sobreviventes e enfraquece a capacidade do demônio de possuí-los.",
+    lordarthurbio: "Senhor protetor do Castelo de Kandar, Arthur é um líder extraordinariamente inspirador. Ele aumenta automaticamente o dano corpo a corpo causado por qualquer Sobrevivente próximo. Se Arthur decidir liberar totalmente sua ira, os companheiros que estiverem por perto recebem um aumento ainda maior no dano corpo a corpo causado e uma redução de medo."
   },
 
   /* ENGLISH */
@@ -350,6 +466,14 @@ const translations = {
     Damage: "Damage",
     AmmoCapacity: "Ammo capacity",
     RateOfFire: "Rate of fire",
+    AttackSpeed: "Attack Speed",
+    AmountConvertedToBleedingDamage: "Amount Converted To Bleeding Damage",
+    BleedingDuration: "Bleeding Duration",
+    FearThreshold: "Fear Threshold",
+    MaximumDamage: "Maximum Damage",
+    FearIncreasePerSecond: "Fear Increase Per Second",
+    FearReductionPerKill: "Fear Reduction Per Kill",
+    MeleeDamage: "Melee Damage",
 
     /* Caixas */
       crate_common: "Crate Common",
@@ -492,6 +616,12 @@ const translations = {
         flamethrowervc8: " Sorry man, you're fired.",
         flamethrowervc9: " Provider of the burning sensation.",
 
+    /* Classes */
+    leaderdesc: "Leaders have specific auras that improve their stats and the stats of nearby Survivors. They're also more resistant to fear.",
+    warriordesc: "Warriors have more health and inflict more melee damage.",
+    hunterdesc: "Hunters inflict more ranged weapon damage, can carry more ammo, and have slower stamina consumption.",
+    supportdesc: "Support class Survivors start with a Shemp's Cola and an amulet, and can carry more Shemp's and amulets. If Shemp's or amulets are used, Survivors in your aura also gain the positive effects.",
+
     /* Perfil dos personagens */
     attributes: "Attributes",
     defense: "Defense",
@@ -501,22 +631,111 @@ const translations = {
 
     /* Habilidades */
     abilities: "Abilities",
-    EdAbilityDescription: "When activated, this ability grants use of a unique flashlight that allows you to detect and temporarily disarm demon traps.",
+    specialabilities: "Special Abilities",
+    showabilities: "Show Abilities",
+    showprofile: "Show Profile",
+    duration: "Duration",
+    cooldown: "Cooldown",
+    dismembermentdamage: "Dismemberment damage",
+    balancebardamage: "Balance bar damage",
+    ReloadSpeedIncrease: "Reload speed increase",
+    FearReductionSpeed: "Fear Reduction Speed",
+    PossessionCostIncrease: "Possession Cost Increase",
+    DamageReduction: "Damage Reduction",
+    EffectDuration: "Effect Duration",
+    AuraEffectRange: "Aura Effect Range",
+    InfernalEnergyReductionPerHit: "Infernal Energy Reduction Per Hit",
+    InfernalEnergyCost: "Infernal Energy Cost",
+    FearReduction: "Fear Reduction",
+    ExtraDuration: "Extra Duration",
 
     /* Ed */
+    EdAbilityDescription: "When activated, this ability grants use of a unique flashlight that allows you to detect and temporarily disarm demon traps.",
     edab1: "Enduring Light",
     edab2: "Weapon Master: Crossbows",
     edab3: "The Collector",
     edabdc1: "Increases the battery life of your flashlight",
     edabdc2: "Crossbows have a faster reload speed and deal increased health, balance bar and dismemberment damage",
     edabdc3: "Increases the chance that defeated enemies will drop items; also improves the chance of finding creates of higher rarity",
+    edspecialhability1: "When activated, this ability grants use of a unique flashlight that allows you to detect and temporarily disarm demon traps.",
+    edspecialhability2: "Increases the battery life of your flashlight.",
+    edspecialhability3: "Crossbows have a faster reload speed and deal increased health, balance bar and dismemberment damage.",
+    edspecialhability4: "Increases the chance that defeated enemies will drop items; also improves the chance of finding crates of higher rarity.",
+    specialtitle1: "IT'S A TRAP",
+    specialtitle2: "ENDURING LIGHT",
+    specialtitle3: "WEAPON MASTER: CROSSBOWS",
+    specialtitle4: "THE COLLECTOR",
+    batterylife: "Battery life",
+
+    /* Mia */
+    MiaAbilityDescription: "When activated, Mia cannot be possessed but her fear level increases and cannot be decreased. However, when the ability deactivates, her fear level drops according to how many evil units she killed while it was active.",
+    miaab1: "Fear Leads To Anger",
+    miaab2: "Blood Rain",
+    miaab3: "Weapon Master: Machete",
+    miaabdc1: "When Mia's fear level reaches a specific threshold, her damage potential increases as her fear rises. The more scared she is, the more damage she deals.",
+    miaabdc2: "A percentage of Mia's heavy attack damage is converted to prolonged bleeding damage.",
+    miaabdc3: "The Machete has a faster attack speed and deals increased health, balance bar and dismembermemt damage.",
+    miaspecialhability1: "When activated, Mia cannot be possessed but her fear level increases and cannot be decreased. However, when the ability deactivates, her fear level drops according to how many evil units she killed while it was active.",
+    miaspecialhability2: "When Mia's fear level reaches a specific threshold, her damage potential increases as her fear rises. The more scared she is, the more damage she deals.",
+    miaspecialhability3: "A percentage of Mia's heavy attack damage is converted to prolonged bleeding damage.",
+    miaspecialhability4: "The Machete has a faster attack speed and deals increased health, balance bar and dismembermemt damage.",
+    miaspecialtitle1: "Uncontrollable",
+    miaspecialtitle2: "Fear Leads To Anger",
+    miaspecialtitle3: "Blood Rain",
+    miaspecialtitle4: "Weapon Master: Machete",
+
+    /* David */
+    DavidAbilityDescription: "Reduces fear for you and any teammates within the flame's aura. Evil units within the aura require and increased amount of Infernal Energy to possess.",
+    davidab1: "Soda Pop",
+    davidab2: "Weapon Master: Nail Gun",
+    davidab3: "Boosted Beacon",
+    davidabdc1: "When David drinks a Shemp's, he and all nearby Survivors take less damage for a limited time.",
+    davidabdc2: "Nail guns have a faster reload speed and deal increased health, balance bar and dismemberment damage.",
+    davidabdc3: "Increases the range of Beacon of Hope's aura and the Infernal Energy cost to maintain possession within the aura. Attacking a possessed evil unit within the aura reduces the demon's Infernal Energy.",
+    davidspecialhability1: "Reduces fear for you and any teammates within the flame's aura. Evil units within the aura require and increased amount of Infernal Energy to possess.",
+    davidspecialhability2: "When David drinks a Shemp's, he and all nearby Survivors take less damage for a limited time.",
+    davidspecialhability3: "Nail guns have a faster reload speed and deal increased health, balance bar and dismemberment damage.",
+    davidspecialhability4: "Increases the range of Beacon of Hope's aura and the Infernal Energy cost to maintain possession within the aura. Attacking a possessed evil unit within the aura reduces the demon's Infernal Energy.",
+    davidspecialtitle1: "Beancon of Hope",
+    davidspecialtitle2: "Soda Pop",
+    davidspecialtitle3: "Weapon Master: Nail Gun",
+    davidspecialtitle4: "Boosted Beacon",
+
+    /* Lord Arthur */
+    LordArthurAbilityDescription: "When activated, this ability increases the damage inflicted by your melee attacks and those of your nearby teammates, in addition to reducing fear levels; if Lord Arthur has a sword, he inflicts extra damage.",
+    lordarthurab1: "Weapon Master: Melee Attacks",
+    lordarthurab2: "Weapon Master: Sword",
+    lordarthurab3: "Fuel the Fire",
+    lordarthurabdc1: "You and all teammates within the aura's radius deal increased damage with melee attacks; start the match with a sword.",
+    lordarthurabdc2: "The Sword has a faster attack speed and deals increased health, balance bar and dismemberment damage.",
+    lordarthurabdc3: "If you perform a finisher while the Lord's Wrath is active, the ability lasts longer.",
+    lordarthurspecialtitle1: "The Lord's Wrath",
+    lordarthurspecialtitle2: "Weapon Master: Melee Attacks",
+    lordarthurspecialtitle3: "Weapon Master: Sword",
+    lordarthurspecialtitle4: "Fuel the Fire",
+    lordarthurspecialhability1: "When activated, this ability increases the damage inflicted by your melee attacks and those of your nearby teammates, in addition to reducing fear levels; if Lord Arthur has a sword, he inflicts extra damage.",
+    lordarthurspecialhability2: "You and all teammates within the aura's radius deal increased damage with melee attacks; start the match with a sword.",
+    lordarthurspecialhability3: "The Sword has a faster attack speed and deals increased health, balance bar and dismemberment damage.",
+    lordarthurspecialhability4: "If you perform a finisher while the Lord's Wrath is active, the ability lasts longer.",
 
     /* Pontos Fortes */
     edstrength: "Since he's a hunter, he has a lot of stamina.",
 
+    miastrength: "She deals the most damage in the game.",
+
+    davidstrength: "It is the only useful, and strong, Support in the book.",
+
+    lordarthurstrength: "He can reduce his fear on his own.",
+
     /* Pontos Fracos*/
     weaknesses: "Weaknesses",
     edweak1: "He has low health because he is a Hunter.",
+
+    miaweak1: "Her fear rises very quickly, so you need to keep a constant eye on her fear level so the demon doesn't know where you are.",
+
+    davidweak1: "He have mastery with of a terrible weapon that deals little damage and uses up a lot of ammunition.",
+
+    lordarthurweak1: "The sword is difficult to handle.",
 
     /* DICAS */
     tips: "Tips",
@@ -529,6 +748,16 @@ const translations = {
       EdTip5: "If the Demon possesses you while you're using your ability, your flashlight will go out, but the ability's duration will still be counting down. So when he releases you, there might only be a few seconds left on the ability—or it might have already ended. Therefore, if you're at a high fear level, try not to use your ability.",
       EdTip6: "One of Ed's passive abilities is to increase the flashlight's battery life by 100%, so it's unlikely to run out of power; it usually lasts until the match ends. So keep it on the whole time (but, of course, keep an eye on the battery so it doesn't run out, since sometimes some matches is so long that the time runs out).",
       EdTip7: "You’ll only use Ed’s ability about 3 or 4 times per match, on average, and only during the early game; once you reach The Dark Ones, you won’t use it anymore because there’s nowhere to use it, so it’s not worth putting points into Quick Recharge, which reduces his ability’s cooldown by 10%. See: 110s (1 minute and 50 seconds) - 10% [11s] 99 seconds (1 minute and 39 seconds) 105s (1 minute and 45 seconds) [Prestige 5] - 10% [10.55s] = 94.5 seconds (1 minute and 34.5 seconds)",
+
+      MiaTip1: "Unlike the other Warriors, Mia doesn't have a balance bar damage build; instead, she has a pure damage build. Combined with the fact that her special abilities increase her damage the more fear she has, plus her bleed damage, this makes her the highest-damage character in the game. Therefore, if you equip her with the game's highest-damage weapon, the lumberjack axe, she'll be extremely powerful. Your focus with her, then, should be on damage!",
+
+      DavidTip1: "If you're alone in the middle of nowhere and the demon finds you, the Blue Flame is your salvation! The flame will drain all the demon's energy if it has any left and tries to kill you. You can just dodge and stall it in the flame, but if you can hit it, that’s even better, because he will lose energy faster. And even if he doesn’t enter the flame, just wait for it to burn out, he will waste time and energy, allowing you to regain stamina, reduce your fear, and buy time to figure out what to do or for your friends to arrive and help you.",
+      DavidTip2: "Be careful when using the Blue Flame, because if the demon scares you, or possesses you, the animation is cut short, the ability isn't used, but the cooldown is reset as if it had been used, so you'll have to wait a long time before you can use your ability again.",
+      DavidTip3: "Remember that your soda not only heals you, but also reduces the damage taken by all nearby teammates, and this is crucial in the game. So, learn to use Shemp's not just to heal, but also to help everyone take less damage — even if everyone is at full health; but you'll need to have plenty of sodas and know how to manage them.",
+      DavidTip4: "Use the Blue Flame as soon as the book appears, because that way you'll be able to use it one more time at the end.",
+
+      LordArthurTip1: "The sword is very difficult to handle and it's slow, so you'll need to be patient and practice a lot with it. One tip is to max out your Melee stat, which will give you a +20% melee attack speed bonus, as well as a +20% melee damage bonus, of course.",
+      LordArthurTip2: "Lord Arthur's ability not only increases melee damage but also reduces fear, so it's useful for lowering your fear level when you need to. It doesn't lower it by much, but it often helps.",
     
     /* General tips */
     generaltips: "General Tips",
@@ -571,7 +800,10 @@ const translations = {
       EligosAbInfo2: "Eligos launches rocks at Survivors.",
       EligosAbInfo3: "Eligos use telekinesis to immobilize and damage a Survivor. This attack cannot be dodged. To break the hold, other Survivors must attack Eligos.",
 
-    edbio: "As a relic hunter, Associate Professor Ed Getley understands the importance of a flashlight. Ed's flashlight batteries last longer and his active ability allows him to use a special flashlight to detect demonic traps and disarm them. Ed has a knack for finding higher quality weapons and his mere presence provides this advantage to all team members in a match. If that isn't enough, the guy is also a crossbow master."
+    edbio: "As a relic hunter, Associate Professor Ed Getley understands the importance of a flashlight. Ed's flashlight batteries last longer and his active ability allows him to use a special flashlight to detect demonic traps and disarm them. Ed has a knack for finding higher quality weapons and his mere presence provides this advantage to all team members in a match. If that isn't enough, the guy is also a crossbow master.",
+    miabio: "Mia Allen has vowed to stay in control. Not only has she mastered the machete, but she's learned to channel her terror into strength. She has the ability to increase her own fear level, making her invulnerable to possession and allowing her to deal greater damage as that level rises. Enemies fear her heavy attacks because a percentage of the damage they inflict is automatically converted to prolonged bleeding.",
+    davidbio: "David Allen hasn't always been there for his loved ones. This time, he's through running away. His bolstered courage is symbolized by the ability to light an improvised bonfire that both reduces the fear of other Survivors and weakens the demon's ability to possess them.",
+    lordarthurbio: "Lord protector of Castle Kandar, Arthur is an extraordinarily inspiring leader. he automatically increases the melee damage dealt by any nearby Survivors. If Arthur decides to fully unleash his wrath, comrades who are close at hand experience an even greater boost in melee damage dealt and a reduction of fear."
 
   },
 

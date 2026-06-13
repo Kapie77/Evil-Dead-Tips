@@ -18,6 +18,30 @@ body {
   color: white;
 }
 
+/* =====================
+CORES DAS CLASSES
+===================== */
+
+/* CAÇADOR */
+body.cacador {
+  --class-color: #ffaa00;
+}
+
+/* GUERREIRO */
+body.guerreiro {
+  --class-color: #ff3333;
+}
+
+/* LÍDER */
+body.lider {
+  --class-color: #00ccff;
+}
+
+/* SUPORTE */
+body.suporte {
+  --class-color: #33cc66;
+}
+
 header {
   text-align: center;
   padding: 30px 0;
@@ -91,7 +115,7 @@ NOVO
 ===============*/
 .char-hero {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 40px;
 
@@ -107,6 +131,8 @@ NOVO
 /* esquerda */
 .hero-left {
   flex: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-left h1 {
@@ -156,41 +182,10 @@ NOVO
 }
 
 .bar.filled {
-  background: #ffaa00; /* cor do caçador */
-  box-shadow: 0 0 5px #ffaa00;
+  background: var(--class-color);
+  box-shadow: 0 0 5px var(--class-color);
 }
 
-/* ============
- PROFILE IMAGE
-=============== */
-.hero-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.hero-image {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 3; /* fica acima do overlay */
-}
-
-.hero-image img {
-  width: 120px;
-  height: auto;
-  border-radius: 10px;
-
-  /* estilo */
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
-}
-
-body.cacador .hero-image img {
-  box-shadow: 0 0 25px rgba(255,170,0,0.5);
-}
 
 /* =======================
  PERFIL DE HABILIDADES
@@ -215,6 +210,15 @@ body.cacador .hero-image img {
 .abilities-box h2 {
   margin-bottom: 15px;
   color: #ffaa00;
+}
+
+#abilities-tab h2 {
+  margin-bottom: 15px;
+}
+
+#abilities-tab > p {
+  margin-bottom: 25px;
+  line-height: 1.6;
 }
 
 /* cada habilidade */
@@ -426,20 +430,26 @@ DICAS E PONTOS FRACOS
   top: 0;
   height: 100%;
   width: 4px;
-  background: #ffaa00; /* cor do caçador */
+  background: var(--class-color);
 }
 
 /* título */
 .mastery-box h2 {
-  color: #ffaa00;
+  color: var(--class-color);
   margin-bottom: 15px;
+}
+
+/* hover */
+.mastery-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px var(--class-color);
 }
 
 /* grid */
 .mastery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 120px));
-  justify-content: center; /* 🔥 isso resolve */
+  justify-content: center;
   gap: 15px;
 }
 
@@ -472,14 +482,8 @@ DICAS E PONTOS FRACOS
   text-align: center;
 }
 
-/* hover */
-.mastery-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px #ffaa00;
-}
-
 .mastery-card {
-  border: 1px solid rgba(255,170,0,0.4);
+  border: 1px solid var(--class-color);
 }
 .mastery-grid.single {
   display: flex;
@@ -494,4 +498,133 @@ DICAS E PONTOS FRACOS
 .mastery-grid.single .mastery-card img {
   width: 64px;
   height: 64px;
+}
+
+/* =========================
+      SISTEMA DE ABAS
+========================= */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.profile-layout.active {
+  display: flex !important;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tab-buttons button {
+  background: color-mix(in srgb, var(--class-color) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--class-color) 40%, transparent);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tab-buttons button:hover {
+  background: color-mix(in srgb, var(--class-color) 30%, transparent);
+  box-shadow: 0 0 10px var(--class-color);
+}
+
+/* =============================
+      HABILIDADES ESPECIAIS
+=============================== */
+.skills-box {
+  background: rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.2);
+
+  padding: 20px;
+  border-radius: 10px;
+
+  backdrop-filter: blur(8px);
+}
+
+.skills-box h2 {
+  margin-bottom: 15px;
+  color: var(--class-color);
+}
+
+.skill-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+.skill-icon {
+  width: 90px;
+  height: 90px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  opacity: .6;
+
+  transition: .2s;
+}
+
+.skill-icon:hover {
+  opacity: .85;
+  transform: scale(1.05);
+}
+
+.skill-icon.active {
+  opacity: 1;
+  border-color: var(--class-color);
+  box-shadow: 0 0 15px var(--class-color);
+}
+
+.skill-info {
+  background: rgba(255,255,255,0.05);
+
+  border-radius: 8px;
+
+  padding: 15px;
+}
+
+.skill-info h3 {
+  margin-bottom: 10px;
+}
+
+.skill-stats {
+  margin-top: 20px;
+  padding-top: 15px;
+
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.skill-stat {
+  margin-bottom: 15px;
+}
+
+.skill-stat-name {
+  color: var(--class-color);
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.skill-stat-values {
+  color: rgba(255,255,255,0.85);
 }
