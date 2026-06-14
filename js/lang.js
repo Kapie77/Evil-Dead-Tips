@@ -248,6 +248,10 @@ const translations = {
     InfernalEnergyCost: "Custo da Energia Infernal",
     FearReduction: "Redução de Medo",
     ExtraDuration: "Duração Extra",
+    DamageIncrease: "Aumento de Dano",
+    HealthRestored: "Saúde Recuperada",
+    ExplosionDamage: "Dano de Explosão",
+    ShieldBarRestored: "Barra de Escudo Restaurada",
 
     /* Ed */
     EdAbilityDescription: "Quando ativada, essa habilidade permite o uso de uma lanterna especial que te ajuda a detectar e desarmar temporariamente armadilhas demoníacas.",
@@ -318,6 +322,23 @@ const translations = {
     lordarthurspecialhability3: "A Espada tem uma velocidade de ataque maior e causa mais dano à vida, à barra de equilíbrio e de desmembramento.",
     lordarthurspecialhability4: "Se você executar um golpe final enquanto a Cólera do Lord estiver ativa, a habilidade dura mais tempo.",
 
+    /* Ash Warrior */
+    AshWarriorAbilityDescription: "Quando ativada, essa habilidade proporcionará recuperação de vida, redução do efeito de medo, aumento do dano causado e redução do dano recebido.",
+    ashwarriorab1: "Explosão do Escudo",
+    ashwarriorab2: "Finalize Forte",
+    ashwarriorab3: "Maestria de Arma: Motosserra",
+    ashwarriorabdc1: "Cada vez que o seu escudo perde uma barra, ocorre uma explosão que causa dano a todos os inimigos próximos.",
+    ashwarriorabdc2: "Depois que Ash mata um inimigo com um golpe finalizador, ele recupera parte da barra de escudo.",
+    ashwarriorabdc3: "A motosserra tem uma velocidade de ataque maior e causa mais dano à saúde, à barra de equilíbrio e de desmembramento.",
+    ashwarriorspecialtitle1: "Poção do Sábio",
+    ashwarriorspecialtitle2: "Explosão do Escudo",
+    ashwarriorspecialtitle3: "Finalize Forte",
+    ashwarriorspecialtitle4: "Maestria de Arma: Motosserra",
+    ashwarriorspecialhability1: "Quando ativada, essa habilidade proporcionará recuperação de vida, redução do efeito de medo, aumento do dano causado e redução do dano recebido.",
+    ashwarriorspecialhability2: "Cada vez que o seu escudo perde uma barra, ocorre uma explosão que causa dano a todos os inimigos próximos.",
+    ashwarriorspecialhability3: "Depois que Ash mata um inimigo com um golpe finalizador, ele recupera parte da barra de escudo.",
+    ashwarriorspecialhability4: "A motosserra tem uma velocidade de ataque maior e causa mais dano à saúde, à barra de equilíbrio e de desmembramento.",
+
     /* Pontos Fortes */
     edstrength: "Por ser caçador ele tem muita stamina.",
 
@@ -326,6 +347,8 @@ const translations = {
     davidstrength: "É o único Suporte útil, e forte, no livro.",
 
     lordarthurstrength: "Pode abaixar o próprio medo sozinho.",
+
+    ashwarriorstrength: "Ganha barra de escudo realizando finalizador nos demônios.",
 
     /* Pontos Fracos */
     weaknesses: "Pontos Fracos",
@@ -336,6 +359,8 @@ const translations = {
     davidweak1: "Ele tem maestria com uma arma arma horrível, que dá pouco dano e gasta muita munição.",
 
     lordarthurweak1: "A espada tem um manejo difícil.",
+
+    ashwarriorweak1: "Por ser Guerreiro tem pouca stamina.",
 
     /* DICAS */
     tips: "Dicas",
@@ -358,6 +383,10 @@ const translations = {
 
       LordArthurTip1: "A espada é muito difícil de manejar e é lenta, então você terá que ter paciência e treinar bastante com ela. Uma dica é upar o Melee (corpo-a-corpo) pro máximo assim você terá +20% de velocidade de ataque corpo-a-corpo, além de +20% de dano corpo a corpo claro.",
       LordArthurTip2: "O poder de Lord Arthur não só aumenta o dano corpo-a-corpo, mas diminui o medo também, então ele é util para abaixar seu medo quando precisar. Não abaixa tanto, mas ajuda muitas vezes.",
+
+      AshWarriorTip1: "Coloque os primeiros pontos na barra de escudo dele, focando em deixá-la no máximo. É fundamental que seu wAsh esteja com a barra de escudo cheia (ou pelo menos não vazia) para usar a habilidade de explosão dele, que é muito útil.",
+      AshWarriorTip2: "Sempre finalize os inimigos, porque isso aumentará sua barra de escudo e você precisa disso.",
+      AshWarriorTip3: "Esteja sempre com escudos ativos.",
 
     /* DICAS GERAIS */
     generaltips: "Dicas Gerais",
@@ -403,7 +432,8 @@ const translations = {
     edbio: "Sendo um caçador de relíquias, o Professor Associado Ed Getly entende a importância de uma lanterna. A bateria da lanterna de Ed duram mais tempo e sua tecnica ativa lhe permite usar uma lanterna especial para detectar e desarmar armadilhas demoniacas. ele tem 'o jeito' para encontrar armas de melhor qualidade e, simplesmente por estar por perto, ele proporicona essa vantagem a todos os membros de equipe da partida. Como se isso tudo não fosse o bastante, ele ainda é perito de besta.",
     miabio: "Mia Allen jurou manter o controle. Além de ter maestria com o facão, ela aprendeu a transformar seu medo em força. Ela tem a capacidade de aumentar seu próprio nível de medo, tornando-se invulnerável à possessão e permitindo-lhe causar mais danos à medida que esse nível aumenta. Os inimigos temem seus ataques poderosos porque uma porcentagem do dano que causam é automaticamente convertida em sangramento prolongado.",
     davidbio: "David Allen nem sempre esteve presente para seus entes queridos. Desta vez, ele não vai mais fugir. Sua coragem renovada é simbolizada pela capacidade de acender uma fogueira improvisada que, ao mesmo tempo, diminui o medo dos outros Sobreviventes e enfraquece a capacidade do demônio de possuí-los.",
-    lordarthurbio: "Senhor protetor do Castelo de Kandar, Arthur é um líder extraordinariamente inspirador. Ele aumenta automaticamente o dano corpo a corpo causado por qualquer Sobrevivente próximo. Se Arthur decidir liberar totalmente sua ira, os companheiros que estiverem por perto recebem um aumento ainda maior no dano corpo a corpo causado e uma redução de medo."
+    lordarthurbio: "Senhor protetor do Castelo de Kandar, Arthur é um líder extraordinariamente inspirador. Ele aumenta automaticamente o dano corpo a corpo causado por qualquer Sobrevivente próximo. Se Arthur decidir liberar totalmente sua ira, os companheiros que estiverem por perto recebem um aumento ainda maior no dano corpo a corpo causado e uma redução de medo.",
+    ashwarriorbio: "Ele teve a chance de se tornar rei. Em vez disso, este Ash voltou da Idade Média para salvar o mundo do mal. Extremamente resistente em combate, ele consegue regenerar parcialmente seu escudo ao desferir ataques finalizadores. Quando esgotado, seu escudo explode, causando dano aos inimigos próximos. Ele é um mestre da motosserra, mas, se tudo mais falhar, pode beber a poção do Sábio para ganhar uma melhoria."
   },
 
   /* ENGLISH */
@@ -648,6 +678,11 @@ const translations = {
     InfernalEnergyCost: "Infernal Energy Cost",
     FearReduction: "Fear Reduction",
     ExtraDuration: "Extra Duration",
+    DamageIncrease: "Damage Increase",
+    HealthRestored: "Health Restored",
+    ExplosionDamage: "Explosion Damage",
+    ShieldBarRestored: "Shield Bar Restored",
+
 
     /* Ed */
     EdAbilityDescription: "When activated, this ability grants use of a unique flashlight that allows you to detect and temporarily disarm demon traps.",
@@ -718,6 +753,23 @@ const translations = {
     lordarthurspecialhability3: "The Sword has a faster attack speed and deals increased health, balance bar and dismemberment damage.",
     lordarthurspecialhability4: "If you perform a finisher while the Lord's Wrath is active, the ability lasts longer.",
 
+    /* Ash Warrior */
+    AshWarriorAbilityDescription: "When activated, this ability will grant you health restoration, fear reduction, increased damage dealing and reduction of damage received.",
+    ashwarriorab1: "Shield Blast",
+    ashwarriorab2: "Finish Strong",
+    ashwarriorab3: "Weapon Master: Chainsaw",
+    ashwarriorabdc1: "Each time your shield loses a bar, it triggers an explosion, damaging any nearby enemies.",
+    ashwarriorabdc2: "After Ash kills an enemy with a finisher he recovers part of his shield bar.",
+    ashwarriorabdc3: "The Chainsaw has a faster attack speed and deals increased health, balance bar and dismemberment damage.",
+    ashwarriorspecialtitle1: "Wiseman's Potion",
+    ashwarriorspecialtitle2: "Shield Blast",
+    ashwarriorspecialtitle3: "Finish Strong",
+    ashwarriorspecialtitle4: "Weapon Master: Chainsaw",
+    ashwarriorspecialhability1: "When activated, this ability will grant you health restoration, fear reduction, increased damage dealing and reduction of damage received.",
+    ashwarriorspecialhability2: "Each time your shield loses a bar, it triggers an explosion, damaging any nearby enemies.",
+    ashwarriorspecialhability3: "After Ash kills an enemy with a finisher he recovers part of his shield bar.",
+    ashwarriorspecialhability4: "The Chainsaw has a faster attack speed and deals increased health, balance bar and dismemberment damage.",
+
     /* Pontos Fortes */
     edstrength: "Since he's a hunter, he has a lot of stamina.",
 
@@ -726,6 +778,8 @@ const translations = {
     davidstrength: "It is the only useful, and strong, Support in the book.",
 
     lordarthurstrength: "He can reduce his fear on his own.",
+
+    ashwarriorstrength: "Earn a shield bar by performing finisher on demons.",
 
     /* Pontos Fracos*/
     weaknesses: "Weaknesses",
@@ -736,6 +790,8 @@ const translations = {
     davidweak1: "He have mastery with of a terrible weapon that deals little damage and uses up a lot of ammunition.",
 
     lordarthurweak1: "The sword is difficult to handle.",
+
+    ashwarriorweak1: "Because he's a Warrior, he has low stamina.",
 
     /* DICAS */
     tips: "Tips",
@@ -758,6 +814,10 @@ const translations = {
 
       LordArthurTip1: "The sword is very difficult to handle and it's slow, so you'll need to be patient and practice a lot with it. One tip is to max out your Melee stat, which will give you a +20% melee attack speed bonus, as well as a +20% melee damage bonus, of course.",
       LordArthurTip2: "Lord Arthur's ability not only increases melee damage but also reduces fear, so it's useful for lowering your fear level when you need to. It doesn't lower it by much, but it often helps.",
+
+      AshWarriorTip1: "Put your early points into his shield bar and focus on maxing it. It's crucial that your wAsh has a full shield bar (or at least not empty) to use his Shield Blast, which is a very useful ability.",
+      AshWarriorTip2: "Always finish off your enemies, because that will increase your shield bar, and you need it.",
+      AshWarriorTip3: "Always keep your shields up.",
     
     /* General tips */
     generaltips: "General Tips",
@@ -803,7 +863,8 @@ const translations = {
     edbio: "As a relic hunter, Associate Professor Ed Getley understands the importance of a flashlight. Ed's flashlight batteries last longer and his active ability allows him to use a special flashlight to detect demonic traps and disarm them. Ed has a knack for finding higher quality weapons and his mere presence provides this advantage to all team members in a match. If that isn't enough, the guy is also a crossbow master.",
     miabio: "Mia Allen has vowed to stay in control. Not only has she mastered the machete, but she's learned to channel her terror into strength. She has the ability to increase her own fear level, making her invulnerable to possession and allowing her to deal greater damage as that level rises. Enemies fear her heavy attacks because a percentage of the damage they inflict is automatically converted to prolonged bleeding.",
     davidbio: "David Allen hasn't always been there for his loved ones. This time, he's through running away. His bolstered courage is symbolized by the ability to light an improvised bonfire that both reduces the fear of other Survivors and weakens the demon's ability to possess them.",
-    lordarthurbio: "Lord protector of Castle Kandar, Arthur is an extraordinarily inspiring leader. he automatically increases the melee damage dealt by any nearby Survivors. If Arthur decides to fully unleash his wrath, comrades who are close at hand experience an even greater boost in melee damage dealt and a reduction of fear."
+    lordarthurbio: "Lord protector of Castle Kandar, Arthur is an extraordinarily inspiring leader. He automatically increases the melee damage dealt by any nearby Survivors. If Arthur decides to fully unleash his wrath, comrades who are close at hand experience an even greater boost in melee damage dealt and a reduction of fear.",
+    ashwarriorbio: "He had the chance to be king. Instead, this Ash is back from the middle ages to save the world from evil. Exceptionally resilient in combat, he can partially regenerate his shield when delivering finisher attacks. Once depleted, his shield explodes, damaging nearby enemies. He's a master of the chainsaw, but, if all else fails, he can drink the Wiseman's potion for a boost."
 
   },
 
