@@ -72,6 +72,7 @@ const translations = {
     FearIncreasePerSecond: "Aumento do Medo Por Segundo",
     FearReductionPerKill: "Redução do Medo Por Morte",
     MeleeDamage: "Dano Corpo a Corpo",
+    NoMastery: "Este personagem não possui maestria de arma.",
 
       /* Tipos */
       Common: "Comum",
@@ -252,6 +253,7 @@ const translations = {
     HealthRestored: "Saúde Recuperada",
     ExplosionDamage: "Dano de Explosão",
     ShieldBarRestored: "Barra de Escudo Restaurada",
+    DamageRestoredAsHealth: "Dano Restaurado Como Saúde",
 
     /* Ed */
     EdAbilityDescription: "Quando ativada, essa habilidade permite o uso de uma lanterna especial que te ajuda a detectar e desarmar temporariamente armadilhas demoníacas.",
@@ -339,6 +341,16 @@ const translations = {
     ashwarriorspecialhability3: "Depois que Ash mata um inimigo com um golpe finalizador, ele recupera parte da barra de escudo.",
     ashwarriorspecialhability4: "A motosserra tem uma velocidade de ataque maior e causa mais dano à saúde, à barra de equilíbrio e de desmembramento.",
 
+    /* Ash Support */
+    ashsupportspecialtitle1: "Presença Reconfortante",
+    ashsupportspecialtitle2: "Cura Alternativa",
+    ashsupportspecialtitle3: "Alvo Marcado: Dano",
+    ashsupportspecialtitle4: "Alvo Marcado: Cura",
+    ashsupportspecialhability1: "Quando ativada, essa habilidade reduz os níveis de medo em você e nos companheiros de equipe próximos.",
+    ashsupportspecialhability2: "Ataques corpo a corpo pesados bem-sucedidos restauram parcialmente a saúde para você e para seus companheiros de equipe próximos.",
+    ashsupportspecialhability3: "Os tiros na cabeça marcam o alvo por um tempo limitado; durante esse período, os tiros subsequentes disparados por você ou por seus companheiros de equipe causam dano adicional.",
+    ashsupportspecialhability4: "Os tiros na cabeça marcam o alvo por um tempo limitado; durante esse período, os tiros subsequentes disparados por você ou por seus companheiros de equipe restauram uma porcentagem do dano causado como vida para vocês.",
+
     /* Pontos Fortes */
     edstrength: "Por ser caçador ele tem muita stamina.",
 
@@ -349,6 +361,9 @@ const translations = {
     lordarthurstrength: "Pode abaixar o próprio medo sozinho.",
 
     ashwarriorstrength: "Ganha barra de escudo realizando finalizador nos demônios.",
+
+    ashsupportstrength: "Consegue abaixar o próprio medo.",
+    ashsupportstrength2: "Consegue se curar sozinho ao acertar ataques pesados nos demônios.",
 
     /* Pontos Fracos */
     weaknesses: "Pontos Fracos",
@@ -361,6 +376,8 @@ const translations = {
     lordarthurweak1: "A espada tem um manejo difícil.",
 
     ashwarriorweak1: "Por ser Guerreiro tem pouca stamina.",
+
+    ashsupportweak1: "Ataques pesados são lentos, então companheiros de equipe podem matar os demônios, ou realizar um finalizador, antes que você acerte o golpe e cure todos.",
 
     /* DICAS */
     tips: "Dicas",
@@ -387,6 +404,10 @@ const translations = {
       AshWarriorTip1: "Coloque os primeiros pontos na barra de escudo dele, focando em deixá-la no máximo. É fundamental que seu wAsh esteja com a barra de escudo cheia (ou pelo menos não vazia) para usar a habilidade de explosão dele, que é muito útil.",
       AshWarriorTip2: "Sempre finalize os inimigos, porque isso aumentará sua barra de escudo e você precisa disso.",
       AshWarriorTip3: "Esteja sempre com escudos ativos.",
+
+      AshSupportTip1: "Seus ataques pesados resturam o dano como vida 20% (25% no P1), então quanto maior for seu ataque maior será a vida recuperada, por isso foque em armas com mais dano como machado, e monte uma build que aumente dano também.",
+      AshSupportTip2: "Seus ataques pesados curam um pouco de vida, mas não tanto, então sempre se esquive se ver que o demõnio vai te bater e só depois bata nele, porque o que ele dá de dano é maior do que o que você recupera de vida.",
+      AshSupportTip3: "Fique perto do seu time e use ataques pesados porque isso além de te curar, irá curá-los também.",
 
     /* DICAS GERAIS */
     generaltips: "Dicas Gerais",
@@ -433,7 +454,8 @@ const translations = {
     miabio: "Mia Allen jurou manter o controle. Além de ter maestria com o facão, ela aprendeu a transformar seu medo em força. Ela tem a capacidade de aumentar seu próprio nível de medo, tornando-se invulnerável à possessão e permitindo-lhe causar mais danos à medida que esse nível aumenta. Os inimigos temem seus ataques poderosos porque uma porcentagem do dano que causam é automaticamente convertida em sangramento prolongado.",
     davidbio: "David Allen nem sempre esteve presente para seus entes queridos. Desta vez, ele não vai mais fugir. Sua coragem renovada é simbolizada pela capacidade de acender uma fogueira improvisada que, ao mesmo tempo, diminui o medo dos outros Sobreviventes e enfraquece a capacidade do demônio de possuí-los.",
     lordarthurbio: "Senhor protetor do Castelo de Kandar, Arthur é um líder extraordinariamente inspirador. Ele aumenta automaticamente o dano corpo a corpo causado por qualquer Sobrevivente próximo. Se Arthur decidir liberar totalmente sua ira, os companheiros que estiverem por perto recebem um aumento ainda maior no dano corpo a corpo causado e uma redução de medo.",
-    ashwarriorbio: "Ele teve a chance de se tornar rei. Em vez disso, este Ash voltou da Idade Média para salvar o mundo do mal. Extremamente resistente em combate, ele consegue regenerar parcialmente seu escudo ao desferir ataques finalizadores. Quando esgotado, seu escudo explode, causando dano aos inimigos próximos. Ele é um mestre da motosserra, mas, se tudo mais falhar, pode beber a poção do Sábio para ganhar uma melhoria."
+    ashwarriorbio: "Ele teve a chance de se tornar rei. Em vez disso, este Ash voltou da Idade Média para salvar o mundo do mal. Extremamente resistente em combate, ele consegue regenerar parcialmente seu escudo ao desferir ataques finalizadores. Quando esgotado, seu escudo explode, causando dano aos inimigos próximos. Ele é um mestre da motosserra, mas, se tudo mais falhar, pode beber a poção do Sábio para ganhar uma melhoria.",
+    ashsupportbio: "Esse Ash, de rosto jovem, está sempre cuidando do seu grupo. Sua habilidade ativa reduz o nível de medo dos Sobreviventes próximos, e uma parte do dano causado por seus ataques corpo a corpo pesados sempre concede cura aos companheiros de equipe próximos. Seus tiros na cabeça também marcam os alvos, de modo que o próximo Sobrevivente a acertar esse inimigo causa dano extra e recebe um pouco de cura."
   },
 
   /* ENGLISH */
@@ -504,6 +526,7 @@ const translations = {
     FearIncreasePerSecond: "Fear Increase Per Second",
     FearReductionPerKill: "Fear Reduction Per Kill",
     MeleeDamage: "Melee Damage",
+    NoMastery: "This character does not have any weapon mastery.",
 
     /* Caixas */
       crate_common: "Crate Common",
@@ -682,6 +705,7 @@ const translations = {
     HealthRestored: "Health Restored",
     ExplosionDamage: "Explosion Damage",
     ShieldBarRestored: "Shield Bar Restored",
+    DamageRestoredAsHealth: "Damage Restored As Health",
 
 
     /* Ed */
@@ -770,6 +794,16 @@ const translations = {
     ashwarriorspecialhability3: "After Ash kills an enemy with a finisher he recovers part of his shield bar.",
     ashwarriorspecialhability4: "The Chainsaw has a faster attack speed and deals increased health, balance bar and dismemberment damage.",
 
+    /* Ash Support */
+    ashsupportspecialtitle1: "Reassuring Presence",
+    ashsupportspecialtitle2: "Alternative Healing",
+    ashsupportspecialtitle3: "Marked Target: Damage",
+    ashsupportspecialtitle4: "Marked Target: Healing",
+    ashsupportspecialhability1: "When activated, this ability reduces fear levels for you and nearby teammates.",
+    ashsupportspecialhability2: "Successful heavy melee attacks partially restore health for your and nearby teammates.",
+    ashsupportspecialhability3: "Headshots mark a target for a limited time; during this period, follow up shots from you or your teammates deal additional damage.",
+    ashsupportspecialhability4: "Headshots mark a target for a limited time; during this period, follow up shots from you or your teammates restore a percentage of the damage back to you as health.",
+
     /* Pontos Fortes */
     edstrength: "Since he's a hunter, he has a lot of stamina.",
 
@@ -780,6 +814,9 @@ const translations = {
     lordarthurstrength: "He can reduce his fear on his own.",
 
     ashwarriorstrength: "Earn a shield bar by performing finisher on demons.",
+
+    ashsupportstrength: "He is able to lower his own level of fear.",
+    ashsupportstrength2: "He can heal himself by landing heavy attacks on demons.",
 
     /* Pontos Fracos*/
     weaknesses: "Weaknesses",
@@ -792,6 +829,8 @@ const translations = {
     lordarthurweak1: "The sword is difficult to handle.",
 
     ashwarriorweak1: "Because he's a Warrior, he has low stamina.",
+
+    ashsupportweak1: "Heavy attacks are slow, so your teammates can kill the demons, or land a finisher, before you land your attack and heal everyone.",
 
     /* DICAS */
     tips: "Tips",
@@ -818,6 +857,10 @@ const translations = {
       AshWarriorTip1: "Put your early points into his shield bar and focus on maxing it. It's crucial that your wAsh has a full shield bar (or at least not empty) to use his Shield Blast, which is a very useful ability.",
       AshWarriorTip2: "Always finish off your enemies, because that will increase your shield bar, and you need it.",
       AshWarriorTip3: "Always keep your shields up.",
+
+      AshSupportTip1: "Your heavy attacks restore damage as health at a rate of 20% (25% at P1), so the higher your attack, the more health you’ll recover. That’s why you should focus on high-damage weapons like axes and build a setup that also increases your damage.",
+      AshSupportTip2: "His heavy attacks restore a little health, but not that much, so always dodge if you see the demon about to hit you, and only then attack him, because the damage he deals is greater than the health you regain.",
+      AshSupportTip3: "Stay close to your team and use heavy attacks, because that will not only heal you but also heal them.",
     
     /* General tips */
     generaltips: "General Tips",
@@ -864,7 +907,8 @@ const translations = {
     miabio: "Mia Allen has vowed to stay in control. Not only has she mastered the machete, but she's learned to channel her terror into strength. She has the ability to increase her own fear level, making her invulnerable to possession and allowing her to deal greater damage as that level rises. Enemies fear her heavy attacks because a percentage of the damage they inflict is automatically converted to prolonged bleeding.",
     davidbio: "David Allen hasn't always been there for his loved ones. This time, he's through running away. His bolstered courage is symbolized by the ability to light an improvised bonfire that both reduces the fear of other Survivors and weakens the demon's ability to possess them.",
     lordarthurbio: "Lord protector of Castle Kandar, Arthur is an extraordinarily inspiring leader. He automatically increases the melee damage dealt by any nearby Survivors. If Arthur decides to fully unleash his wrath, comrades who are close at hand experience an even greater boost in melee damage dealt and a reduction of fear.",
-    ashwarriorbio: "He had the chance to be king. Instead, this Ash is back from the middle ages to save the world from evil. Exceptionally resilient in combat, he can partially regenerate his shield when delivering finisher attacks. Once depleted, his shield explodes, damaging nearby enemies. He's a master of the chainsaw, but, if all else fails, he can drink the Wiseman's potion for a boost."
+    ashwarriorbio: "He had the chance to be king. Instead, this Ash is back from the middle ages to save the world from evil. Exceptionally resilient in combat, he can partially regenerate his shield when delivering finisher attacks. Once depleted, his shield explodes, damaging nearby enemies. He's a master of the chainsaw, but, if all else fails, he can drink the Wiseman's potion for a boost.",
+    ashsupportbio: "This fresh-faced Ash is always looking out for his crew. His active skill reduces the fear level of nearby Survivors and a portion of the damage caused by his heavy melee attacks always grants healing to nearby teammates. his head shots also mark their targets so the next Survivor to hit this enemy deals extra damage and receives some healing."
 
   },
 
