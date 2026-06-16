@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Ash - Support</title>
+
+  <link rel="stylesheet" href="../../css/characterspage.css">
+  <link rel="stylesheet" href="../../css/backbutton.css">
+  <link rel="stylesheet" href="../../css/flag.css">
+  <link rel="icon" href="../../images/favicon.png">
+
+</head>
+<body class="suporte">
+
+  <!-- Language -->
+   <div class="lang-switch">
+      <img src="../../images/flags/br.jpg" onclick="setLang('pt')">
+      <img src="../../images/flags/us.png" onclick="setLang('en')">
+      <img src="../../images/flags/es.jpg" onclick="setLang('es')">
+  </div>
+  <!--------------->
+
+  <div class="overlay"></div>
+
+  <main class="container">
+
+<div class="hero-wrapper">
+
+  <!-- PERFIL -->
+  <section class="char-hero">
+  <div id="profile-tab" class="tab-content profile-layout active">
+
+    <!-- Descrição -->
+    <div class="hero-left">
+      
+      <h1>ASH WILLIAMS</h1>
+
+      <p data-lang="ashsupportbio">
+        Personagem Descrição
+      </p>
+
+    </div>
+
+    <!-- Atributos -->
+    <div class="hero-right">
+
+      <h2 data-lang="attributes">Atributos</h2>
+
+      <div class="stat">
+        <span data-lang="defense">Defesa</span>
+        <div class="bars">
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <div class="stat">
+        <span data-lang="melee">Corpo a corpo</span>
+        <div class="bars">
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <div class="stat">
+        <span data-lang="range">Longo alcance</span>
+        <div class="bars">
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <div class="stat">
+        <span data-lang="support2">Suporte</span>
+        <div class="bars">
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+        </div>
+      </div>
+
+       <div class="tab-buttons">
+        <button onclick="showAbilities()" data-lang="showabilities">
+          Ver Habilidades
+        </button>
+     </div>
+
+    </div>
+
+  </div>
+
+  <!-- HABILIDADES -->
+  <div id="abilities-tab" class="tab-content">
+
+    <h2 data-lang="abilities">Habilidades</h2>
+
+    <p data-lang="ashsupportspecialhability1">
+      Descrição de Habilidade
+    </p>
+
+    <div class="ability">
+      <h3 data-lang="ashsupportspecialtitle2">Título Habilidade</h3>
+      <p data-lang="ashsupportspecialhability2">Descrição Habilidade</p>
+    </div>
+
+    <div class="ability">
+      <h3 data-lang="ashsupportspecialtitle3">Blood Rain</h3>
+      <p data-lang="ashsupportspecialhability3">A percentage of Mia's heavy attack damage is converted to prolonged bleeding damage.</p>
+    </div>
+
+    <div class="ability">
+      <h3 data-lang="ashsupportspecialtitle4">Weapon Master: Machete</h3>
+      <p data-lang="ashsupportspecialhability4">The Machete has a faster attack speed and deals increased health, balance bar and dismembermemt damage.</p>
+    </div>
+
+    <div class="tab-buttons">
+      <button onclick="showProfile()" data-lang="showprofile">
+        Voltar ao Perfil
+      </button>
+    </div>
+
+  </div>
+
+</section>
+  <!-- FIM DO PERFIL -->
+  </div>
+
+  <!-- HABILIDADES ESPECIAIS -->
+  <section class="skills-box">
+
+    <h2 data-lang="specialabilities">Habilidades Especiais</h2>
+
+    <div class="skill-icons">
+
+      <img src="../../images/SkillTree/MainCharacter/Ash_Support/01.png"
+          class="skill-icon active"
+          onclick="showSkill('trap', this)">
+
+      <img src="../../images/SkillTree/MainCharacter/Ash_Support/02.png"
+          class="skill-icon"
+          onclick="showSkill('light', this)">
+
+      <img src="../../images/SkillTree/MainCharacter/Ash_Support/03.png"
+          class="skill-icon"
+          onclick="showSkill('crossbow', this)">
+
+      <img src="../../images/SkillTree/MainCharacter/Ash_Support/04.png"
+          class="skill-icon"
+          onclick="showSkill('collector', this)">
+    </div>
+
+    <div class="skill-info">
+
+      <h3 id="skill-title"></h3>
+
+      <p id="skill-description"></p>
+
+      <div class="skill-stats" id="skill-stats"></div>
+
+    </div>
+
+  </section>
+  <!-- FIM DAS HABILIDADES ESPECIAIS -->
+
+    <!-- MAESTRIA -->
+     <section class="mastery-box">
+          <h2 data-lang="WeaponMastery">Maestria de Arma</h2>
+
+          <div class="no-mastery">
+
+            <p data-lang="NoMastery">
+              Este personagem não possui maestria de arma.
+            </p>
+
+          </div>
+    </section>
+
+    <!-------------->
+
+    <!-- PONTOS FORTES -->
+    <section class="strengths-box">
+      <h2 data-lang="strengths">Pontos Fortes</h2>
+      <ul>
+        <li data-lang="ashsupportstrength">Força 1</li>
+      </ul>
+
+      <ul>
+        <li data-lang="ashsupportstrength2">Força 2</li>
+      </ul>
+    </section>
+    <!-------------------->
+
+    <!-- PONTOS FRACOS -->
+    <section class="weakness-box">
+      <h2 data-lang="weaknesses">Pontos Fracos</h2>
+      <ul>
+        <li data-lang="ashsupportweak1">Fraqueza 1</li>
+      </ul>
+    </section>
+    <!-------------------->
+
+    <!-- DICAS -->
+    <section class="tips-box">
+      <h2 data-lang="tips">Dicas</h2>
+      <div class="tips-grid">
+
+        <div class="tip">
+          <span class="tip-number">1</span>
+          <p data-lang="AshSupportTip1">Dica 1</p>
+        </div>
+
+        <div class="tip">
+          <span class="tip-number">2</span>
+          <p data-lang="AshSupportTip2">Dica 2</p>
+        </div>
+
+        <div class="tip">
+          <span class="tip-number">3</span>
+          <p data-lang="AshSupportTip3">Dica 3</p>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <button onclick="goBack()" class="back-btn" data-lang="back">Voltar</button>
+
+  <script src="../../js/script.js"></script>
+  <script src="../../js/lang.js"></script> <!-- translate -->
+  <script src="../../js/see-abilities.js"></script> <!-- see abilities/profile -->
+
+  <script>
+    const currentLang = localStorage.getItem("lang") || "en";
+
+    const skills = {
+
+    trap: {
+      title: "ashsupportspecialtitle1",
+
+      description:
+        "ashsupportspecialhability1",
+
+      stats: [
+        {
+          name: "FearReduction",
+          value: "50 → 55"
+        },
+        {
+          name: "cooldown",
+          value: "60s → 55s"
+        }
+      ]
+    },
+
+    light: {
+      title: "ashsupportspecialtitle2",
+
+      description:
+        "ashsupportspecialhability2",
+
+      stats: [
+        {
+          name: "DamageRestoredAsHealth",
+          value: "20% → 25%"
+        }
+      ]
+    },
+
+    crossbow: {
+      title: "ashsupportspecialtitle3",
+
+      description:
+        "ashsupportspecialhability3",
+
+      stats: [
+        {
+          name: "Damage",
+          value: "20%"
+        },
+        {
+          name: "duration",
+          value: "5s"
+        }
+      ]
+    },
+
+    collector: {
+      title: "ashsupportspecialtitle4",
+
+      description:
+        "ashsupportspecialhability4",
+
+      stats: [
+        {
+          name: "DamageRestoredAsHealth",
+          value: "10%"
+        }
+      ]
+    }
+
+  };
+
+  function showSkill(skillName, clickedIcon) {
+
+  document.getElementById("skill-title").textContent =
+    translations[currentLang][skills[skillName].title];
+
+  document.getElementById("skill-description").textContent =
+    translations[currentLang][skills[skillName].description];
+
+  const statsContainer =
+    document.getElementById("skill-stats");
+
+  statsContainer.innerHTML = "";
+
+  skills[skillName].stats.forEach(stat => {
+
+    statsContainer.innerHTML += `
+      <div class="skill-stat">
+
+        <div class="skill-stat-name">
+          ${translations[currentLang][stat.name]}
+        </div>
+
+        <div class="skill-stat-values">
+          ${stat.value}
+        </div>
+
+      </div>
+    `;
+
+  });
+
+  document.querySelectorAll(".skill-icon")
+    .forEach(icon => icon.classList.remove("active"));
+
+  if (clickedIcon) {
+    clickedIcon.classList.add("active");
+  }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  showSkill("trap");
+});
+  </script>
+
+</body>
+</html>
