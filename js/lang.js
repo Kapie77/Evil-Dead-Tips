@@ -354,14 +354,14 @@ const translations = {
     ashsupportspecialhability4: "Os tiros na cabeça marcam o alvo por um tempo limitado; durante esse período, os tiros subsequentes disparados por você ou por seus companheiros de equipe restauram uma porcentagem do dano causado como vida para vocês.",
 
     /* Ash Hunter */
-    ashhunterspecialtitle1: "Exorcist",
-    ashhunterspecialtitle2: "",
-    ashhunterspecialtitle3: "",
-    ashhunterspecialtitle4: "",
-    ashhunterspecialhability1: "Activating this ability exorcises the demon from any possessed Survivor or basic unit. If used on a possessed elite or boss unit, the ability drains some Infernal Energy from the demon.",
-    ashhunterspecialhability2: "",
-    ashhunterspecialhability3: "",
-    ashhunterspecialhability4: "",
+    ashhunterspecialtitle1: "Exorcista",
+    ashhunterspecialtitle2: "Caçador de Tesouros",
+    ashhunterspecialtitle3: "Sou o cara com o cano duplo",
+    ashhunterspecialtitle4: "Maestria de Arma: Cano duplo",
+    ashhunterspecialhability1: "A ativação dessa habilidade expulsa o demônio de qualquer Sobrevivente ou unidade básica possuída. Se usada em uma unidade de elite ou chefe possuída, a habilidade drena parte da Energia Infernal do demônio.",
+    ashhunterspecialhability2: "Ver caixas de suprimentos através das paredes a curta distância.",
+    ashhunterspecialhability3: "Comece a partida com o cano duplo.",
+    ashhunterspecialhability4: "A Cano Duplo tem uma velocidade de recarga mais rápido e causa mais dano à saúde, à barra de equilíbrio e de desmembramento.",
 
     /* Pontos Fortes */
     edstrength: "Por ser caçador ele tem muita stamina.",
