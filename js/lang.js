@@ -254,6 +254,8 @@ const translations = {
     ExplosionDamage: "Dano de Explosão",
     ShieldBarRestored: "Barra de Escudo Restaurada",
     DamageRestoredAsHealth: "Dano Restaurado Como Saúde",
+    InfernalEnergyReduction: "Redução da Energia Infernal",
+    batterylife: "Duração da bateria",
 
     /* Ed */
     EdAbilityDescription: "Quando ativada, essa habilidade permite o uso de uma lanterna especial que te ajuda a detectar e desarmar temporariamente armadilhas demoníacas.",
@@ -263,15 +265,15 @@ const translations = {
     edabdc1: "Aumenta a duração da bateria da sua lanterna",
     edabdc2: "As bestas têm uma velocidade de recarga mais rápida e causam mais danos à saúde, à barra de equilíbrio e desmembramento",
     edabdc3: "Aumenta a chance de os inimigos derrotados deixarem cair itens; também aumenta a chance de encontrar itens de maior raridade",
+    
+    edspecialtitle1: "É UMA ARMADILHA",
+    edspecialtitle2: "LUZ PERENE",
+    edspecialtitle3: "MAESTRIA DE ARMA: BESTAS",
+    edspecialtitle4: "O COLECIONADOR",
     edspecialhability1: "Quando ativada, essa habilidade permite o uso de uma lanterna especial que te ajuda a detectar e desarmar temporariamente armadilhas demoníacas.",
     edspecialhability2: "Aumenta a duração da bateria da sua lanterna.",
     edspecialhability3: "As bestas têm uma velocidade de recarga mais rápida e causam mais dano à saúde, à barra de equilíbrio e de desmembramento.",
     edspecialhability4: "Aumenta a chance de os inimigos derrotados deixarem cair itens; também aumenta a chance de encontrar caixas de maior raridade.",
-    edspecialtitle1: "É UMA ARMADILHA",
-    edspecialtitle2: "LUZ DURADOURA",
-    edspecialtitle3: "MESTRE EM ARMAS: BESTAS",
-    edspecialtitle4: "O COLECIONADOR",
-    batterylife: "Duração da bateria",
 
     /* Mia */
     MiaAbilityDescription: "Quando ativada, Mia não pode ser possuída, mas seu nível de medo aumenta e não pode ser reduzido. No entanto, quando a habilidade é desativada, seu nível de medo diminui de acordo com o número de unidades malignas que ela matou enquanto a habilidade estava ativa.",
@@ -351,6 +353,16 @@ const translations = {
     ashsupportspecialhability3: "Os tiros na cabeça marcam o alvo por um tempo limitado; durante esse período, os tiros subsequentes disparados por você ou por seus companheiros de equipe causam dano adicional.",
     ashsupportspecialhability4: "Os tiros na cabeça marcam o alvo por um tempo limitado; durante esse período, os tiros subsequentes disparados por você ou por seus companheiros de equipe restauram uma porcentagem do dano causado como vida para vocês.",
 
+    /* Ash Hunter */
+    ashhunterspecialtitle1: "Exorcist",
+    ashhunterspecialtitle2: "",
+    ashhunterspecialtitle3: "",
+    ashhunterspecialtitle4: "",
+    ashhunterspecialhability1: "Activating this ability exorcises the demon from any possessed Survivor or basic unit. If used on a possessed elite or boss unit, the ability drains some Infernal Energy from the demon.",
+    ashhunterspecialhability2: "",
+    ashhunterspecialhability3: "",
+    ashhunterspecialhability4: "",
+
     /* Pontos Fortes */
     edstrength: "Por ser caçador ele tem muita stamina.",
 
@@ -409,6 +421,11 @@ const translations = {
       AshSupportTip2: "Seus ataques pesados curam um pouco de vida, mas não tanto, então sempre se esquive se ver que o demõnio vai te bater e só depois bata nele, porque o que ele dá de dano é maior do que o que você recupera de vida.",
       AshSupportTip3: "Fique perto do seu time e use ataques pesados porque isso além de te curar, irá curá-los também.",
 
+      AshHunterTip1: "Coloque os primeiros pontos na Stamina. Foque em deixá-la no máximo. Assim você terá stamina para catar os mapas, correr do demõnio e se esquivar se precisar. Contudo, se o demônio for um jogador experiente e te achar no inicio da partida a melhor opção pode ser colocar os pontos em Longo Alcance, porque assim você recarregará a arma mais rápido e dará mais dano.",
+      AshHunterTip2: "Comece a partida rushando todos os mapas. Caçador é a classe que tem mais stamina, você consegue correr muito, e ainda tem o poder de exorcizar se for preciso caso o demônio te ache sozinho.",
+      AshHunterTip3: "Antes de usar a habilidade de exorcizar mate todos os demônio em volta, porque senão você irá exorcizar a unidade possuida e ele irá possuir algum outro demônio ao redor e continuará te batendo, então não irá adiantar nada.",
+      AshHunterTip4: "Vale a pena ter Recarga Rápida com ele, porque você precisará muito do poder dele. Calculos caso queira conferir: 90s (1 minuto e 30 segundos) - 10% (9 segundos) = 81s (1 minuto e 21 segundos). 85s [P5] (1 minuto e 25 segundos) - 10% (8,5 segundos) = 76,5s (1 minuto e 16 segundos)",
+
     /* DICAS GERAIS */
     generaltips: "Dicas Gerais",
     geraltip1: "Se pegar um carro ou atirar o Demônio conseguirá ver sua localização, então jamais faça isso no inicio da partida! Só faça isso quando já tiver pegado todas as partes do mapa e já estiver na Adaga/Página.",
@@ -455,7 +472,8 @@ const translations = {
     davidbio: "David Allen nem sempre esteve presente para seus entes queridos. Desta vez, ele não vai mais fugir. Sua coragem renovada é simbolizada pela capacidade de acender uma fogueira improvisada que, ao mesmo tempo, diminui o medo dos outros Sobreviventes e enfraquece a capacidade do demônio de possuí-los.",
     lordarthurbio: "Senhor protetor do Castelo de Kandar, Arthur é um líder extraordinariamente inspirador. Ele aumenta automaticamente o dano corpo a corpo causado por qualquer Sobrevivente próximo. Se Arthur decidir liberar totalmente sua ira, os companheiros que estiverem por perto recebem um aumento ainda maior no dano corpo a corpo causado e uma redução de medo.",
     ashwarriorbio: "Ele teve a chance de se tornar rei. Em vez disso, este Ash voltou da Idade Média para salvar o mundo do mal. Extremamente resistente em combate, ele consegue regenerar parcialmente seu escudo ao desferir ataques finalizadores. Quando esgotado, seu escudo explode, causando dano aos inimigos próximos. Ele é um mestre da motosserra, mas, se tudo mais falhar, pode beber a poção do Sábio para ganhar uma melhoria.",
-    ashsupportbio: "Esse Ash, de rosto jovem, está sempre cuidando do seu grupo. Sua habilidade ativa reduz o nível de medo dos Sobreviventes próximos, e uma parte do dano causado por seus ataques corpo a corpo pesados sempre concede cura aos companheiros de equipe próximos. Seus tiros na cabeça também marcam os alvos, de modo que o próximo Sobrevivente a acertar esse inimigo causa dano extra e recebe um pouco de cura."
+    ashsupportbio: "Esse Ash, de rosto jovem, está sempre cuidando do seu grupo. Sua habilidade ativa reduz o nível de medo dos Sobreviventes próximos, e uma parte do dano causado por seus ataques corpo a corpo pesados sempre concede cura aos companheiros de equipe próximos. Seus tiros na cabeça também marcam os alvos, de modo que o próximo Sobrevivente a acertar esse inimigo causa dano extra e recebe um pouco de cura.",
+    ashhunterbio: "Depois de perder o amor de sua vida para as forças das trevas, esse Ash logo encontrou um novo amor: seu cano duplo. Ele começa todas as partidas com ele e sabe manuseá-lo com mais eficácia do que qualquer outra pessoa no planeta. Sua experiência lhe conferiu a capacidade de detectar caixas de suprimentos próximas através das paredes e uma habilidade única que lhe permite expulsar o demônio de qualquer humano ou Deadite que esteja por perto."
   },
 
   /* ENGLISH */
@@ -706,6 +724,8 @@ const translations = {
     ExplosionDamage: "Explosion Damage",
     ShieldBarRestored: "Shield Bar Restored",
     DamageRestoredAsHealth: "Damage Restored As Health",
+    InfernalEnergyReduction: "Infernal Energy Reduction",
+    batterylife: "Battery life",
 
 
     /* Ed */
@@ -716,15 +736,15 @@ const translations = {
     edabdc1: "Increases the battery life of your flashlight",
     edabdc2: "Crossbows have a faster reload speed and deal increased health, balance bar and dismemberment damage",
     edabdc3: "Increases the chance that defeated enemies will drop items; also improves the chance of finding creates of higher rarity",
+    
+    edspecialtitle1: "IT'S A TRAP",
+    edspecialtitle2: "ENDURING LIGHT",
+    edspecialtitle3: "WEAPON MASTER: CROSSBOWS",
+    edspecialtitle4: "THE COLLECTOR",
     edspecialhability1: "When activated, this ability grants use of a unique flashlight that allows you to detect and temporarily disarm demon traps.",
     edspecialhability2: "Increases the battery life of your flashlight.",
     edspecialhability3: "Crossbows have a faster reload speed and deal increased health, balance bar and dismemberment damage.",
     edspecialhability4: "Increases the chance that defeated enemies will drop items; also improves the chance of finding crates of higher rarity.",
-    specialtitle1: "IT'S A TRAP",
-    specialtitle2: "ENDURING LIGHT",
-    specialtitle3: "WEAPON MASTER: CROSSBOWS",
-    specialtitle4: "THE COLLECTOR",
-    batterylife: "Battery life",
 
     /* Mia */
     MiaAbilityDescription: "When activated, Mia cannot be possessed but her fear level increases and cannot be decreased. However, when the ability deactivates, her fear level drops according to how many evil units she killed while it was active.",
@@ -804,6 +824,16 @@ const translations = {
     ashsupportspecialhability3: "Headshots mark a target for a limited time; during this period, follow up shots from you or your teammates deal additional damage.",
     ashsupportspecialhability4: "Headshots mark a target for a limited time; during this period, follow up shots from you or your teammates restore a percentage of the damage back to you as health.",
 
+    /* Ash Hunter */
+    ashhunterspecialtitle1: "Exorcist",
+    ashhunterspecialtitle2: "Treasure Hunter",
+    ashhunterspecialtitle3: "I'm the guy with the double-barrel",
+    ashhunterspecialtitle4: "Weapon Master: Double-barrel",
+    ashhunterspecialhability1: "Activating this ability exorcises the demon from any possessed Survivor or basic unit. If used on a possessed elite or boss unit, the ability drains some Infernal Energy from the demon.",
+    ashhunterspecialhability2: "See supply crates through walls at close range.",
+    ashhunterspecialhability3: "Start the match with the double-barrel.",
+    ashhunterspecialhability4: "The Double-Barrel has a faster reload speed and deals increased health, balance bar and dismemberment damage.",
+
     /* Pontos Fortes */
     edstrength: "Since he's a hunter, he has a lot of stamina.",
 
@@ -861,6 +891,11 @@ const translations = {
       AshSupportTip1: "Your heavy attacks restore damage as health at a rate of 20% (25% at P1), so the higher your attack, the more health you’ll recover. That’s why you should focus on high-damage weapons like axes and build a setup that also increases your damage.",
       AshSupportTip2: "His heavy attacks restore a little health, but not that much, so always dodge if you see the demon about to hit you, and only then attack him, because the damage he deals is greater than the health you regain.",
       AshSupportTip3: "Stay close to your team and use heavy attacks, because that will not only heal you but also heal them.",
+
+      AshHunterTip1: "Put your first points into Stamina. Focus on maxing it out. That way, you’ll have enough stamina to scavenge for pieces of the map, run from the demon, and dodge if you need to. However, if the demon is an experienced player and finds you early in the match, the best option might be to put your points into Long Range, because that way you’ll reload your weapon faster and deal more damage.",
+      AshHunterTip2: "Start the match by rushing through all the pieces of the map. The Hunter is the class with the most stamina, you can run a long way, and you also have the ability to exorcise if necessary, in case the demon finds you alone.",
+      AshHunterTip3: "Before using the exorcism ability, kill all the demons around you, because otherwise you’ll exorcise the possessed unit, and he will possess another demon nearby and keep attacking you, so hitwon’t do any good.",
+      AshHunterTip4: "It's worth having Quick Recharge with him, because you'll really need his power. Here are the calculations if you want to check: 90s (1 minute and 30 seconds) - 10% (9 seconds) = 81s (1 minute and 21 seconds). 85s [P5] (1 minute and 25 seconds) - 10% (8.5 seconds) = 76.5s (1 minute and 16 seconds)",
     
     /* General tips */
     generaltips: "General Tips",
@@ -908,7 +943,8 @@ const translations = {
     davidbio: "David Allen hasn't always been there for his loved ones. This time, he's through running away. His bolstered courage is symbolized by the ability to light an improvised bonfire that both reduces the fear of other Survivors and weakens the demon's ability to possess them.",
     lordarthurbio: "Lord protector of Castle Kandar, Arthur is an extraordinarily inspiring leader. He automatically increases the melee damage dealt by any nearby Survivors. If Arthur decides to fully unleash his wrath, comrades who are close at hand experience an even greater boost in melee damage dealt and a reduction of fear.",
     ashwarriorbio: "He had the chance to be king. Instead, this Ash is back from the middle ages to save the world from evil. Exceptionally resilient in combat, he can partially regenerate his shield when delivering finisher attacks. Once depleted, his shield explodes, damaging nearby enemies. He's a master of the chainsaw, but, if all else fails, he can drink the Wiseman's potion for a boost.",
-    ashsupportbio: "This fresh-faced Ash is always looking out for his crew. His active skill reduces the fear level of nearby Survivors and a portion of the damage caused by his heavy melee attacks always grants healing to nearby teammates. his head shots also mark their targets so the next Survivor to hit this enemy deals extra damage and receives some healing."
+    ashsupportbio: "This fresh-faced Ash is always looking out for his crew. His active skill reduces the fear level of nearby Survivors and a portion of the damage caused by his heavy melee attacks always grants healing to nearby teammates. his head shots also mark their targets so the next Survivor to hit this enemy deals extra damage and receives some healing.",
+    ashhunterbio: "After losing the love of his life to the forces of darkness, this Ash soon found a new love: his double-barrel. He begins every match with it and can wield it more effectively than anyone else on the planet. His experience has granted him the ability to sense nearby supply crates through walls and a unique skill which allows him to expel the demon from any nearby human or Deadite."
 
   },
 
