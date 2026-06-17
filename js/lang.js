@@ -425,6 +425,7 @@ const translations = {
       AshHunterTip2: "Comece a partida rushando todos os mapas. Caçador é a classe que tem mais stamina, você consegue correr muito, e ainda tem o poder de exorcizar se for preciso caso o demônio te ache sozinho.",
       AshHunterTip3: "Antes de usar a habilidade de exorcizar mate todos os demônio em volta, porque senão você irá exorcizar a unidade possuida e ele irá possuir algum outro demônio ao redor e continuará te batendo, então não irá adiantar nada.",
       AshHunterTip4: "Vale a pena ter Recarga Rápida com ele, porque você precisará muito do poder dele. Calculos caso queira conferir: 90s (1 minuto e 30 segundos) - 10% (9 segundos) = 81s (1 minuto e 21 segundos). 85s [P5] (1 minuto e 25 segundos) - 10% (8,5 segundos) = 76,5s (1 minuto e 16 segundos)",
+      AshHunterTip5: "Você não pode exorcizar unidades de elite e chefe possuidas, mas ao usar a habilidade de exorcizar você irá drenar a energia infernal do demônio e isso pode ser muito util, pois assim poderá diminuir o tempo de possessão dele ou mesmo acabar com a possessão porque ele pode estar com pouca energia infernal.",
 
     /* DICAS GERAIS */
     generaltips: "Dicas Gerais",
@@ -896,6 +897,7 @@ const translations = {
       AshHunterTip2: "Start the match by rushing through all the pieces of the map. The Hunter is the class with the most stamina, you can run a long way, and you also have the ability to exorcise if necessary, in case the demon finds you alone.",
       AshHunterTip3: "Before using the exorcism ability, kill all the demons around you, because otherwise you’ll exorcise the possessed unit, and he will possess another demon nearby and keep attacking you, so hitwon’t do any good.",
       AshHunterTip4: "It's worth having Quick Recharge with him, because you'll really need his power. Here are the calculations if you want to check: 90s (1 minute and 30 seconds) - 10% (9 seconds) = 81s (1 minute and 21 seconds). 85s [P5] (1 minute and 25 seconds) - 10% (8.5 seconds) = 76.5s (1 minute and 16 seconds)",
+      AshHunterTip5: "You cannot exorcise possessed elite and boss units, but using the exorcism ability will drain the demon’s infernal energy, which can be very useful because it can shorten the duration of the possession or even end it altogether if the demon is low on infernal energy.",
     
     /* General tips */
     generaltips: "General Tips",
