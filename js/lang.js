@@ -361,7 +361,7 @@ const translations = {
     ashhunterspecialhability1: "A ativação dessa habilidade expulsa o demônio de qualquer Sobrevivente ou unidade básica possuída. Se usada em uma unidade de elite ou chefe possuída, a habilidade drena parte da Energia Infernal do demônio.",
     ashhunterspecialhability2: "Ver caixas de suprimentos através das paredes a curta distância.",
     ashhunterspecialhability3: "Comece a partida com o cano duplo.",
-    ashhunterspecialhability4: "A Cano Duplo tem uma velocidade de recarga mais rápido e causa mais dano à saúde, à barra de equilíbrio e de desmembramento.",
+    ashhunterspecialhability4: "O Cano Duplo tem uma velocidade de recarga mais rápido e causa mais dano à saúde, à barra de equilíbrio e de desmembramento.",
 
     /* Pontos Fortes */
     edstrength: "Por ser caçador ele tem muita stamina.",
