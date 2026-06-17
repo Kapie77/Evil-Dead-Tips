@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Ash - Hunter</title>
+
+  <link rel="stylesheet" href="../../css/characterspage.css">
+  <link rel="stylesheet" href="../../css/backbutton.css">
+  <link rel="stylesheet" href="../../css/flag.css">
+  <link rel="icon" href="../../images/favicon.png">
+
+</head>
+<body class="cacador">
+
+  <!-- Language -->
+   <div class="lang-switch">
+      <img src="../../images/flags/br.jpg" onclick="setLang('pt')">
+      <img src="../../images/flags/us.png" onclick="setLang('en')">
+      <img src="../../images/flags/es.jpg" onclick="setLang('es')">
+  </div>
+  <!--------------->
+
+  <div class="overlay"></div>
+
+  <main class="container">
+
+<div class="hero-wrapper">
+
+  <!-- IMAGEM
+  <section class="character-banner">
+
+    <img
+      src="../../images/banners/ed.png"
+      alt="Ed Getley">
+
+  </section>
+  -->
+
+  <!-- PERFIL -->
+  <section class="char-hero">
+  <div id="profile-tab" class="tab-content profile-layout active">
+
+    <!-- Descrição -->
+    <div class="hero-left">
+      
+      <h1>ED GETLEY</h1>
+
+      <p data-lang="ashhunterbio">
+        Bio Descrição.
+      </p>
+
+    </div>
+
+    <!-- Atributos -->
+    <div class="hero-right">
+
+      <h2 data-lang="attributes">Atributos</h2>
+
+      <div class="stat">
+        <span data-lang="defense">Defesa</span>
+        <div class="bars">
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <div class="stat">
+        <span data-lang="melee">Corpo a corpo</span>
+        <div class="bars">
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <div class="stat">
+        <span data-lang="range">Longo alcance</span>
+        <div class="bars">
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <div class="stat">
+        <span data-lang="support2">Suporte</span>
+        <div class="bars">
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+       <div class="tab-buttons">
+        <button onclick="showAbilities()" data-lang="showabilities">
+          Ver Habilidades
+        </button>
+     </div>
+
+    </div>
+
+  </div>
+
+  <!-- HABILIDADES -->
+  <div id="abilities-tab" class="tab-content">
+
+    <h2 data-lang="abilities">Habilidades</h2>
+
+    <p data-lang="ashhunterspecialhability1">
+      Descrição da habilidade principal.
+    </p>
+
+    <div class="ability">
+      <h3 data-lang="ashhunterspecialtitle2">Habilidade Titulo 1</h3>
+      <p data-lang="ashhunterspecialhability2">Habilidade Descrição 1</p>
+    </div>
+
+    <div class="ability">
+      <h3 data-lang="ashhunterspecialtitle3">Habilidade Titulo 2</h3>
+      <p data-lang="ashhunterspecialhability3">Habilidade Descrição 2</p>
+    </div>
+
+    <div class="ability">
+      <h3 data-lang="ashhunterspecialtitle4">Habilidade Titulo 3</h3>
+      <p data-lang="ashhunterspecialhability4">Habilidade Descrição 3</p>
+    </div>
+
+    <div class="tab-buttons">
+      <button onclick="showProfile()" data-lang="showprofile">
+        Voltar ao Perfil
+      </button>
+    </div>
+
+  </div>
+
+</section>
+  <!-- FIM DO PERFIL -->
+  </div>
+
+  <!-- HABILIDADES ESPECIAIS -->
+  <section class="skills-box">
+
+    <h2 data-lang="specialabilities">Habilidades Especiais</h2>
+
+    <div class="skill-icons">
+
+      <img src="../../images/SkillTree/MainCharacter/Ash_Hunter/01.png"
+          class="skill-icon active"
+          onclick="showSkill('trap', this)">
+
+      <img src="../../images/SkillTree/MainCharacter/Ash_Hunter/02.png"
+          class="skill-icon"
+          onclick="showSkill('light', this)">
+
+      <img src="../../images/SkillTree/MainCharacter/Ash_Hunter/03.png"
+          class="skill-icon"
+          onclick="showSkill('crossbow', this)">
+
+      <img src="../../images/SkillTree/MainCharacter/Ash_Hunter/04.png"
+          class="skill-icon"
+          onclick="showSkill('collector', this)">
+    </div>
+
+    <div class="skill-info">
+
+      <h3 id="skill-title"></h3>
+
+      <p id="skill-description"></p>
+
+      <div class="skill-stats" id="skill-stats"></div>
+
+    </div>
+
+  </section>
+  <!-- FIM DAS HABILIDADES ESPECIAIS -->
+
+    <!-- MAESTRIA -->
+     <section class="mastery-box">
+          <h2 data-lang="WeaponMastery">Maestria de Arma</h2>
+
+          <div class="mastery-grid">
+
+             <div class="mastery-grid single">
+                <a href="../weapons/ranged/double-barrel.html" class="mastery-card">
+                  <img src="../../images/weapons/Longstick_01.png">
+                  <span data-lang="longstick">Longstick</span>
+                </a>
+
+        </div>
+    </section>
+
+    <!-------------->
+
+    <!-- PONTOS FORTES -->
+    <section class="strengths-box">
+      <h2 data-lang="strengths">Pontos Fortes</h2>
+      <ul>
+        <li data-lang="edstrength">Ele possui pouca saúde</li>
+      </ul>
+    </section>
+    <!-------------------->
+
+    <!-- PONTOS FRACOS -->
+    <section class="weakness-box">
+      <h2 data-lang="weaknesses">Pontos Fracos</h2>
+      <ul>
+        <li data-lang="edweak1">Ele possui pouca saúde</li>
+      </ul>
+    </section>
+    <!-------------------->
+
+    <!-- DICAS -->
+    <section class="tips-box">
+      <h2 data-lang="tips">Dicas</h2>
+      <div class="tips-grid">
+
+        <div class="tip">
+          <span class="tip-number">1</span>
+          <p data-lang="AshHunterTip1">Se você usar seu poder e desligar a lanterna, o seu poder será desligado também. Então não desligue ela se estiver usando seu poder. Ed consegue usar a bateria da laterna por mais tempo, então é sempre bom ter a lanterna dele ligada.</p>
+        </div>
+
+        <div class="tip">
+          <span class="tip-number">2</span>
+        <p data-lang="AshHunterTip2">Quando Baal é invocado as lanternas de todos são desativadas por alguns bons segundos, então atente-se em não usar seu poder se ver que o Baal será invocado ou se foi invocado. Se usou seu poder e Baal foi invocado você não terá opção a não ser matar ele para que a lanterna volte, ou, a outra opção, é aceitar que usou seu poder em vão.</p>
+        </div>
+
+        <div class="tip">
+          <span class="tip-number">3</span>
+        <p data-lang="AshHunterTip3">A luz da lanterna desarma armadilhas e não você, então não corre para cima de uma armadilha porque está usando seu poder porque você poderá cair na armadilha! Isso acontece muito porque você pode chegar antes da luz desarmar a armadilha, principalmente por causa do lag, então aproxime-se com cautela de uma armadilha para desarma-la e depois poderá passar por ela.</p>
+        </div>
+
+        <div class="tip">
+          <span class="tip-number">4</span>
+        <p data-lang="AshHunterTip4">Existem 3 tipos de besta: besta (normal), que dá só um tiro por vez. Besta repetidora, que dá vários tiros seguidos. E a besta explosiva que dá um tiro explosivo em area por vez. Ed tem maestria com Besta, não importa qual delas.</p>
+        </div>
+        
+      </div>
+    </section>
+
+
+  </main>
+
+  <button onclick="goBack()" class="back-btn" data-lang="back">Voltar</button>
+
+  <script src="../../js/script.js"></script>
+  <script src="../../js/lang.js"></script> <!-- translate -->
+  <script src="../../js/see-abilities.js"></script> <!-- see abilities/profile -->
+
+  <script>
+    const currentLang = localStorage.getItem("lang") || "en";
+
+    const skills = {
+
+    trap: {
+      title: "ashhunterspecialtitle1",
+
+      description:
+        "ashhunterspecialhability1",
+
+      stats: [
+        {
+          name: "InfernalEnergyReduction",
+          value: "20% → 25%"
+        },
+        {
+          name: "cooldown",
+          value: "90s → 85s"
+        }
+      ]
+    },
+
+    light: {
+      title: "ashhunterspecialtitle2",
+
+      description:
+        "ashhunterspecialhability2",
+
+      stats: [
+
+      ]
+    },
+
+    crossbow: {
+      title: "ashhunterspecialtitle3",
+
+      description:
+        "ashhunterspecialhability3",
+
+      stats: [
+
+      ]
+    },
+
+    collector: {
+      title: "ashhunterspecialtitle4",
+
+      description:
+        "ashunterspecialhability4",
+
+      stats: [
+        {
+          name: "damage",
+          value: "20% → 25%"
+        },
+        {
+          name: "dismembermentdamage",
+          value: "20% → 25%"
+        },
+        {
+          name: "balancebardamage",
+          value: "20% → 25%"
+        },
+        {
+          name: "ReloadSpeedIncrease",
+          value: "20% → 25%"
+        }
+      ]
+    }
+
+  };
+
+  function showSkill(skillName, clickedIcon) {
+
+  document.getElementById("skill-title").textContent =
+    translations[currentLang][skills[skillName].title];
+
+  document.getElementById("skill-description").textContent =
+    translations[currentLang][skills[skillName].description];
+
+  const statsContainer =
+    document.getElementById("skill-stats");
+
+  statsContainer.innerHTML = "";
+
+  skills[skillName].stats.forEach(stat => {
+
+    statsContainer.innerHTML += `
+      <div class="skill-stat">
+
+        <div class="skill-stat-name">
+          ${translations[currentLang][stat.name]}
+        </div>
+
+        <div class="skill-stat-values">
+          ${stat.value}
+        </div>
+
+      </div>
+    `;
+
+  });
+
+  document.querySelectorAll(".skill-icon")
+    .forEach(icon => icon.classList.remove("active"));
+
+  if (clickedIcon) {
+    clickedIcon.classList.add("active");
+  }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  showSkill("trap");
+});
+  </script>
+
+</body>
+</html>
