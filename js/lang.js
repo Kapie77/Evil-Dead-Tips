@@ -256,6 +256,8 @@ const translations = {
     DamageRestoredAsHealth: "Dano Restaurado Como Saúde",
     InfernalEnergyReduction: "Redução da Energia Infernal",
     batterylife: "Duração da bateria",
+    ImpactRadius: "Raio de Impacto",
+    DamageDealtToNearbyEnemies: "Dano Causado a Inimigos Próximos",
 
     /* Ed */
     EdAbilityDescription: "Quando ativada, essa habilidade permite o uso de uma lanterna especial que te ajuda a detectar e desarmar temporariamente armadilhas demoníacas.",
@@ -377,6 +379,8 @@ const translations = {
     ashsupportstrength: "Consegue abaixar o próprio medo.",
     ashsupportstrength2: "Consegue se curar sozinho ao acertar ataques pesados nos demônios.",
 
+    scottystrength: "Ele tem maestria com a arma de corpo a corpo mais forte do jogo.",
+
     /* Pontos Fracos */
     weaknesses: "Pontos Fracos",
     edweak1: "Ele possui pouca saúde por ser Caçador.",
@@ -390,6 +394,8 @@ const translations = {
     ashwarriorweak1: "Por ser Guerreiro tem pouca stamina.",
 
     ashsupportweak1: "Ataques pesados são lentos, então companheiros de equipe podem matar os demônios, ou realizar um finalizador, antes que você acerte o golpe e cure todos.",
+
+    scottyweak1: "A habilidade especial dele é horrível.",
 
     /* DICAS */
     tips: "Dicas",
@@ -426,6 +432,9 @@ const translations = {
       AshHunterTip3: "Antes de usar a habilidade de exorcizar mate todos os demônio em volta, porque senão você irá exorcizar a unidade possuida e ele irá possuir algum outro demônio ao redor e continuará te batendo, então não irá adiantar nada.",
       AshHunterTip4: "Vale a pena ter Recarga Rápida com ele, porque você precisará muito do poder dele. Calculos caso queira conferir: 90s (1 minuto e 30 segundos) - 10% (9 segundos) = 81s (1 minuto e 21 segundos). 85s [P5] (1 minuto e 25 segundos) - 10% (8,5 segundos) = 76,5s (1 minuto e 16 segundos)",
       AshHunterTip5: "Você não pode exorcizar unidades de elite e chefe possuidas, mas ao usar a habilidade de exorcizar você irá drenar a energia infernal do demônio e isso pode ser muito util, pois assim poderá diminuir o tempo de possessão dele ou mesmo acabar com a possessão porque ele pode estar com pouca energia infernal.",
+
+      ScottyTip1: "Os ataques pesados dele fazem ele perde um pouco de medo, assim como companheiros ao redor, então use ataques pesado quando estiver nos primeiros objetivos para abaixar o medo o máximo que der e evitar ser possuído. O nível de medo abaixado é bem pouco, mas já ajuda.",
+      ScottyTip2: "Ataques pesados causam dano em area, então é bom contra demônios que colocam muitas unidades, como Eligos e Ash Maligno. E é algo especialmente bom no livro.",
 
     /* DICAS GERAIS */
     generaltips: "Dicas Gerais",
@@ -474,7 +483,8 @@ const translations = {
     lordarthurbio: "Senhor protetor do Castelo de Kandar, Arthur é um líder extraordinariamente inspirador. Ele aumenta automaticamente o dano corpo a corpo causado por qualquer Sobrevivente próximo. Se Arthur decidir liberar totalmente sua ira, os companheiros que estiverem por perto recebem um aumento ainda maior no dano corpo a corpo causado e uma redução de medo.",
     ashwarriorbio: "Ele teve a chance de se tornar rei. Em vez disso, este Ash voltou da Idade Média para salvar o mundo do mal. Extremamente resistente em combate, ele consegue regenerar parcialmente seu escudo ao desferir ataques finalizadores. Quando esgotado, seu escudo explode, causando dano aos inimigos próximos. Ele é um mestre da motosserra, mas, se tudo mais falhar, pode beber a poção do Sábio para ganhar uma melhoria.",
     ashsupportbio: "Esse Ash, de rosto jovem, está sempre cuidando do seu grupo. Sua habilidade ativa reduz o nível de medo dos Sobreviventes próximos, e uma parte do dano causado por seus ataques corpo a corpo pesados sempre concede cura aos companheiros de equipe próximos. Seus tiros na cabeça também marcam os alvos, de modo que o próximo Sobrevivente a acertar esse inimigo causa dano extra e recebe um pouco de cura.",
-    ashhunterbio: "Depois de perder o amor de sua vida para as forças das trevas, esse Ash logo encontrou um novo amor: seu cano duplo. Ele começa todas as partidas com ele e sabe manuseá-lo com mais eficácia do que qualquer outra pessoa no planeta. Sua experiência lhe conferiu a capacidade de detectar caixas de suprimentos próximas através das paredes e uma habilidade única que lhe permite expulsar o demônio de qualquer humano ou Deadite que esteja por perto."
+    ashhunterbio: "Depois de perder o amor de sua vida para as forças das trevas, esse Ash logo encontrou um novo amor: seu cano duplo. Ele começa todas as partidas com ele e sabe manuseá-lo com mais eficácia do que qualquer outra pessoa no planeta. Sua experiência lhe conferiu a capacidade de detectar caixas de suprimentos próximas através das paredes e uma habilidade única que lhe permite expulsar o demônio de qualquer humano ou Deadite que esteja por perto.",
+    scottybio: "Seja para contar uma piada ou acabar com uma Deadite, Scotty, o melhor amigo de Ash, está sempre pronto! Um mestre com um machado de lenhador, os ataques corpo a corpo pesados de Scotty causam dano colateral aos inimigos ao redor, e seus níveis de medo diminuem a cada morte. Ele possui uma habilidade única capaz de desencadear uma explosão devastadora que causa dano a todos os inimigos ao seu redor com um único impulso."
   },
 
   /* ENGLISH */
@@ -727,6 +737,8 @@ const translations = {
     DamageRestoredAsHealth: "Damage Restored As Health",
     InfernalEnergyReduction: "Infernal Energy Reduction",
     batterylife: "Battery life",
+    ImpactRadius: "Impact Radius",
+    DamageDealtToNearbyEnemies: "Damage Dealt to Nearby Enemies",
 
 
     /* Ed */
@@ -835,6 +847,16 @@ const translations = {
     ashhunterspecialhability3: "Start the match with the double-barrel.",
     ashhunterspecialhability4: "The Double-Barrel has a faster reload speed and deals increased health, balance bar and dismemberment damage.",
 
+    /* Scotty */
+    scottyspecialtitle1: "Thunder Thrust",
+    scottyspecialtitle2: "Collateral Damage",
+    scottyspecialtitle3: "Exposure Therapy",
+    scottyspecialtitle4: "Weapon Master: Lumberjack Axe",
+    scottyspecialhability1: "When activated, this explosive ability damages all enemies in the surrounding area.",
+    scottyspecialhability2: "Your heavy melee attacks inflict additional damage to nearby enemies.",
+    scottyspecialhability3: "Partially reduces your fear levels with every enemy you kill.",
+    scottyspecialhability4: "The Lumberjack Axe has a faster attacks speed and deals increased health, balance bar and dismemberment damage.",
+
     /* Pontos Fortes */
     edstrength: "Since he's a hunter, he has a lot of stamina.",
 
@@ -849,6 +871,8 @@ const translations = {
     ashsupportstrength: "He is able to lower his own level of fear.",
     ashsupportstrength2: "He can heal himself by landing heavy attacks on demons.",
 
+    scottystrength: "He has mastery over the game's most powerful melee weapon.",
+
     /* Pontos Fracos*/
     weaknesses: "Weaknesses",
     edweak1: "He has low health because he is a Hunter.",
@@ -862,6 +886,8 @@ const translations = {
     ashwarriorweak1: "Because he's a Warrior, he has low stamina.",
 
     ashsupportweak1: "Heavy attacks are slow, so your teammates can kill the demons, or land a finisher, before you land your attack and heal everyone.",
+
+    scottyweak1: "His special ability is terrible.",
 
     /* DICAS */
     tips: "Tips",
@@ -898,6 +924,9 @@ const translations = {
       AshHunterTip3: "Before using the exorcism ability, kill all the demons around you, because otherwise you’ll exorcise the possessed unit, and he will possess another demon nearby and keep attacking you, so hitwon’t do any good.",
       AshHunterTip4: "It's worth having Quick Recharge with him, because you'll really need his power. Here are the calculations if you want to check: 90s (1 minute and 30 seconds) - 10% (9 seconds) = 81s (1 minute and 21 seconds). 85s [P5] (1 minute and 25 seconds) - 10% (8.5 seconds) = 76.5s (1 minute and 16 seconds)",
       AshHunterTip5: "You cannot exorcise possessed elite and boss units, but using the exorcism ability will drain the demon’s infernal energy, which can be very useful because it can shorten the duration of the possession or even end it altogether if the demon is low on infernal energy.",
+
+      ScottyTip1: "His heavy attacks cause him to lose a little fear, as do his nearby allies, so use heavy attacks when you’re facing the first objectives to lower their fear as much as possible and avoid being possessed. The reduction in fear is very small, but it helps.",
+      ScottyTip2: "Heavy attacks deal area damage, so they're effective against demons that deploy many units, such as Eligos and Evil Ash. And it's particularly useful in the book.",
     
     /* General tips */
     generaltips: "General Tips",
@@ -946,7 +975,8 @@ const translations = {
     lordarthurbio: "Lord protector of Castle Kandar, Arthur is an extraordinarily inspiring leader. He automatically increases the melee damage dealt by any nearby Survivors. If Arthur decides to fully unleash his wrath, comrades who are close at hand experience an even greater boost in melee damage dealt and a reduction of fear.",
     ashwarriorbio: "He had the chance to be king. Instead, this Ash is back from the middle ages to save the world from evil. Exceptionally resilient in combat, he can partially regenerate his shield when delivering finisher attacks. Once depleted, his shield explodes, damaging nearby enemies. He's a master of the chainsaw, but, if all else fails, he can drink the Wiseman's potion for a boost.",
     ashsupportbio: "This fresh-faced Ash is always looking out for his crew. His active skill reduces the fear level of nearby Survivors and a portion of the damage caused by his heavy melee attacks always grants healing to nearby teammates. his head shots also mark their targets so the next Survivor to hit this enemy deals extra damage and receives some healing.",
-    ashhunterbio: "After losing the love of his life to the forces of darkness, this Ash soon found a new love: his double-barrel. He begins every match with it and can wield it more effectively than anyone else on the planet. His experience has granted him the ability to sense nearby supply crates through walls and a unique skill which allows him to expel the demon from any nearby human or Deadite."
+    ashhunterbio: "After losing the love of his life to the forces of darkness, this Ash soon found a new love: his double-barrel. He begins every match with it and can wield it more effectively than anyone else on the planet. His experience has granted him the ability to sense nearby supply crates through walls and a unique skill which allows him to expel the demon from any nearby human or Deadite.",
+    scottybio: "Whether it's to crack a joke or kill a Deadite, Ash's best friend Scotty is always down! A master with a lumberjack axe, Scotty's heavy melee attacks cause splash damage to surrounding enemies and his fear levels are reduced with each kill. He possesses a unique skill which can unleash a devastating blast that damages all enemies around him with a single thrust."
 
   },
 
