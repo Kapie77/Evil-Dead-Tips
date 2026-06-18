@@ -365,6 +365,16 @@ const translations = {
     ashhunterspecialhability3: "Comece a partida com o cano duplo.",
     ashhunterspecialhability4: "O Cano Duplo tem uma velocidade de recarga mais rápido e causa mais dano à saúde, à barra de equilíbrio e de desmembramento.",
 
+    /* Scotty */
+    scottyspecialtitle1: "Impulso Trovão",
+    scottyspecialtitle2: "Danos Colaterais",
+    scottyspecialtitle3: "Terapia de Exposição",
+    scottyspecialtitle4: "Maestria de Arma: Machado de Lenhador",
+    scottyspecialhability1: "Quando ativada, essa habilidade explosiva causa dano a todos os inimigos na área ao redor.",
+    scottyspecialhability2: "Seus ataques corpo a corpo pesados infligem dano adicional aos inimigos próximos.",
+    scottyspecialhability3: "Reduz parcialmente seus níveis de medo a cada inimigo que você mata.",
+    scottyspecialhability4: "O Machado de Lenhador tem uma velocidade de ataque maior e causa mais dano à saúde, à barra de equilíbrio e de desmembramento.",
+
     /* Pontos Fortes */
     edstrength: "Por ser caçador ele tem muita stamina.",
 
