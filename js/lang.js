@@ -258,6 +258,9 @@ const translations = {
     batterylife: "Duração da bateria",
     ImpactRadius: "Raio de Impacto",
     DamageDealtToNearbyEnemies: "Dano Causado a Inimigos Próximos",
+    ExtraAmulets: "Amuletos Extras",
+    MaximumAmuletsIncrease: "Aumento do Máximo de Amuletos",
+    TeammatesShieldBarRestored: "Barra de Escudo dos Companheiros de Equipe Restaurada",
 
     /* Ed */
     EdAbilityDescription: "Quando ativada, essa habilidade permite o uso de uma lanterna especial que te ajuda a detectar e desarmar temporariamente armadilhas demoníacas.",
@@ -375,6 +378,16 @@ const translations = {
     scottyspecialhability3: "Reduz parcialmente seus níveis de medo a cada inimigo que você mata.",
     scottyspecialhability4: "O Machado de Lenhador tem uma velocidade de ataque maior e causa mais dano à saúde, à barra de equilíbrio e de desmembramento.",
 
+    /* Pablo */
+    pablospecialtitle1: "Presente de El Brujo Especial",
+    pablospecialtitle2: "Camuflagem Infernal",
+    pablospecialtitle3: "Legado de El Brujo",
+    pablospecialtitle4: "Proteção Shamanica",
+    pablospecialhability1: "Ative essa habilidade para começar a criar um amuleto e, ao terminar, solte-o no chão.",
+    pablospecialhability2: "Os demônios não conseguem mais detectar você por meio da Visão do Demônio. Ao usar um amuleto, os sobreviventes próximos ficam indetectáveis pela Visão do Demônio por um tempo limitado.",
+    pablospecialhability3: "Comece a partida com um amuleto adicional. Além disso, aumenta o número máximo de amuletos que você pode carregar. Quando Pablo usa um amuleto, os Sobreviventes próximos recuperam parte de sua barra de escudo.",
+    pablospecialhability4: "Sua barra de escudo se recuperará gradualmente com o tempo até que você tenha pelo menos 1 barra cheia.",
+
     /* Pontos Fortes */
     edstrength: "Por ser caçador ele tem muita stamina.",
 
@@ -391,6 +404,8 @@ const translations = {
 
     scottystrength: "Ele tem maestria com a arma de corpo a corpo mais forte do jogo.",
 
+    pablostrength: "Consegue criar amuletos.",
+
     /* Pontos Fracos */
     weaknesses: "Pontos Fracos",
     edweak1: "Ele possui pouca saúde por ser Caçador.",
@@ -406,6 +421,8 @@ const translations = {
     ashsupportweak1: "Ataques pesados são lentos, então companheiros de equipe podem matar os demônios, ou realizar um finalizador, antes que você acerte o golpe e cure todos.",
 
     scottyweak1: "A habilidade especial dele é horrível.",
+
+    pabloweak1: "Ele é fraco no livro.",
 
     /* DICAS */
     tips: "Dicas",
@@ -445,6 +462,11 @@ const translations = {
 
       ScottyTip1: "Os ataques pesados dele fazem ele perde um pouco de medo, assim como companheiros ao redor, então use ataques pesado quando estiver nos primeiros objetivos para abaixar o medo o máximo que der e evitar ser possuído. O nível de medo abaixado é bem pouco, mas já ajuda.",
       ScottyTip2: "Ataques pesados causam dano em area, então é bom contra demônios que colocam muitas unidades, como Eligos e Ash Maligno. E é algo especialmente bom no livro.",
+
+      PabloTip1: "Pablo fica invísivel pro Demônio na Visão Demôniaca, mesmo com medo alto ou se atirar, então ele não pode te ver pelo mapa, a menos que esteja te vendo cara a cara, assim, com essa vantagem, você pode catar todos os pedaços do mapa tranquilamente sem ele te achar.",
+      PabloTip2: "Como o demônio não consegue te ver pela Visão Demôniaca não tem necessidade de você upar o medo, deixe isso para depois que upar os principais como escudo, vida, stamina e corpo-a-corpo.",
+      PabloTip3: "Embora o demônio não consiga te ver nem se você estiver com o medo alto, ele ainda pode te possuir, então cuide do seu medo, ainda mais se for fazer a Adaga ou a Página.",
+      PabloTip4: "Comece upando sua barra de escudo para conseguir usar seus amuletos, depois upe vigor e vida.",
 
     /* DICAS GERAIS */
     generaltips: "Dicas Gerais",
@@ -494,7 +516,8 @@ const translations = {
     ashwarriorbio: "Ele teve a chance de se tornar rei. Em vez disso, este Ash voltou da Idade Média para salvar o mundo do mal. Extremamente resistente em combate, ele consegue regenerar parcialmente seu escudo ao desferir ataques finalizadores. Quando esgotado, seu escudo explode, causando dano aos inimigos próximos. Ele é um mestre da motosserra, mas, se tudo mais falhar, pode beber a poção do Sábio para ganhar uma melhoria.",
     ashsupportbio: "Esse Ash, de rosto jovem, está sempre cuidando do seu grupo. Sua habilidade ativa reduz o nível de medo dos Sobreviventes próximos, e uma parte do dano causado por seus ataques corpo a corpo pesados sempre concede cura aos companheiros de equipe próximos. Seus tiros na cabeça também marcam os alvos, de modo que o próximo Sobrevivente a acertar esse inimigo causa dano extra e recebe um pouco de cura.",
     ashhunterbio: "Depois de perder o amor de sua vida para as forças das trevas, esse Ash logo encontrou um novo amor: seu cano duplo. Ele começa todas as partidas com ele e sabe manuseá-lo com mais eficácia do que qualquer outra pessoa no planeta. Sua experiência lhe conferiu a capacidade de detectar caixas de suprimentos próximas através das paredes e uma habilidade única que lhe permite expulsar o demônio de qualquer humano ou Deadite que esteja por perto.",
-    scottybio: "Seja para contar uma piada ou acabar com uma Deadite, Scotty, o melhor amigo de Ash, está sempre pronto! Um mestre com um machado de lenhador, os ataques corpo a corpo pesados de Scotty causam dano colateral aos inimigos ao redor, e seus níveis de medo diminuem a cada morte. Ele possui uma habilidade única capaz de desencadear uma explosão devastadora que causa dano a todos os inimigos ao seu redor com um único impulso."
+    scottybio: "Seja para contar uma piada ou acabar com uma Deadite, Scotty, o melhor amigo de Ash, está sempre pronto! Um mestre com um machado de lenhador, os ataques corpo a corpo pesados de Scotty causam dano colateral aos inimigos ao redor, e seus níveis de medo diminuem a cada morte. Ele possui uma habilidade única capaz de desencadear uma explosão devastadora que causa dano a todos os inimigos ao seu redor com um único impulso.",
+    pablobio: "Como El Brujo Especial, Pablo é dotado de grande talento nas artes shamanicas. Seu poder o torna invisível à Visão Demoníaca Kandariana. Ele começa cada partida com um amuleto, regenera seu escudo quando está fora de combate e pode criar um novo amuleto usando suas habilidades únicas."
   },
 
   /* ENGLISH */
@@ -749,6 +772,9 @@ const translations = {
     batterylife: "Battery life",
     ImpactRadius: "Impact Radius",
     DamageDealtToNearbyEnemies: "Damage Dealt to Nearby Enemies",
+    ExtraAmulets: "Extra Amulets",
+    MaximumAmuletsIncrease: "Maximum Amulets Increase",
+    TeammatesShieldBarRestored: "Teammates' Shield Bar Restored",
 
 
     /* Ed */
@@ -867,6 +893,16 @@ const translations = {
     scottyspecialhability3: "Partially reduces your fear levels with every enemy you kill.",
     scottyspecialhability4: "The Lumberjack Axe has a faster attacks speed and deals increased health, balance bar and dismemberment damage.",
 
+    /* Pablo */
+    pablospecialtitle1: "Gift From El Brujo Especial",
+    pablospecialtitle2: "Infernal Camouflage",
+    pablospecialtitle3: "Legacy of El Brujo",
+    pablospecialtitle4: "Shamanic Protection",
+    pablospecialhability1: "Activate this ability to begin creating an amulet and then drop it to the ground on completion.",
+    pablospecialhability2: "Demons are no longer able to detect you using Demon Vision. When using an amulet, nearby Survivors go undetected by the Demon Vision for a limited time.",
+    pablospecialhability3: "Begin the match with an additional amulet. Also increases the maximum amount of amulets you can carry. When Pablo uses an amulet, nearby Survivors recover part of their shield bar.",
+    pablospecialhability4: "Your shield bar will gradually recover over time until you have at least 1 full bar.",
+
     /* Pontos Fortes */
     edstrength: "Since he's a hunter, he has a lot of stamina.",
 
@@ -882,6 +918,10 @@ const translations = {
     ashsupportstrength2: "He can heal himself by landing heavy attacks on demons.",
 
     scottystrength: "He has mastery over the game's most powerful melee weapon.",
+
+    pablostrength: "He can create amulets.",
+
+    pabloweak1: "He's weak at the book.",
 
     /* Pontos Fracos*/
     weaknesses: "Weaknesses",
@@ -937,6 +977,11 @@ const translations = {
 
       ScottyTip1: "His heavy attacks cause him to lose a little fear, as do his nearby allies, so use heavy attacks when you’re facing the first objectives to lower their fear as much as possible and avoid being possessed. The reduction in fear is very small, but it helps.",
       ScottyTip2: "Heavy attacks deal area damage, so they're effective against demons that deploy many units, such as Eligos and Evil Ash. And it's particularly useful in the book.",
+
+      PabloTip1: "Pablo becomes invisible to the Demon during the Demonic Vision, even if he’s very scared or shoots with a ranged weapon, so the Demon can’t see you on the map unless he’s facing you directly. With this advantage, you can collect all the map pieces at your leisure without him finding you.",
+      PabloTip2: "Since the demon can't see you through its Demonic Vision, there's no need to level up Fear, save that for after you've leveled up the main stats like Shield, Health, Stamina, and Melee.",
+      PabloTip3: "Although the demon can't see you, even if your fear level is high, he can still possess you, so keep your fear in check, especially if you're going to make the Dagger or the Page.",
+      PabloTip4: "Start by leveling up your shield bar so you can use your amulets, then level up stamina and health.",
     
     /* General tips */
     generaltips: "General Tips",
@@ -986,7 +1031,8 @@ const translations = {
     ashwarriorbio: "He had the chance to be king. Instead, this Ash is back from the middle ages to save the world from evil. Exceptionally resilient in combat, he can partially regenerate his shield when delivering finisher attacks. Once depleted, his shield explodes, damaging nearby enemies. He's a master of the chainsaw, but, if all else fails, he can drink the Wiseman's potion for a boost.",
     ashsupportbio: "This fresh-faced Ash is always looking out for his crew. His active skill reduces the fear level of nearby Survivors and a portion of the damage caused by his heavy melee attacks always grants healing to nearby teammates. his head shots also mark their targets so the next Survivor to hit this enemy deals extra damage and receives some healing.",
     ashhunterbio: "After losing the love of his life to the forces of darkness, this Ash soon found a new love: his double-barrel. He begins every match with it and can wield it more effectively than anyone else on the planet. His experience has granted him the ability to sense nearby supply crates through walls and a unique skill which allows him to expel the demon from any nearby human or Deadite.",
-    scottybio: "Whether it's to crack a joke or kill a Deadite, Ash's best friend Scotty is always down! A master with a lumberjack axe, Scotty's heavy melee attacks cause splash damage to surrounding enemies and his fear levels are reduced with each kill. He possesses a unique skill which can unleash a devastating blast that damages all enemies around him with a single thrust."
+    scottybio: "Whether it's to crack a joke or kill a Deadite, Ash's best friend Scotty is always down! A master with a lumberjack axe, Scotty's heavy melee attacks cause splash damage to surrounding enemies and his fear levels are reduced with each kill. He possesses a unique skill which can unleash a devastating blast that damages all enemies around him with a single thrust.",
+    pablobio: "As El Brujo Especial, Pablo is gifted in the shamanic arts. His power makes him invisible to the Kandarian's Demon Vision. He begins each match with an amulet, regenerates shield when out of combat, and can create a new amulet with the use of his unique skills."
 
   },
 
