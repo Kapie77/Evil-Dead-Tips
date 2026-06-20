@@ -261,6 +261,10 @@ const translations = {
     ExtraAmulets: "Amuletos Extras",
     MaximumAmuletsIncrease: "Aumento do Máximo de Amuletos",
     TeammatesShieldBarRestored: "Barra de Escudo dos Companheiros de Equipe Restaurada",
+    BlastRadius: "Raio de Explosão",
+    BalanceBarDamage: "Dano à Barra de Equilíbrio",
+    FearResistance: "Resistência ao Medo",
+    AuraEffectsImprovement: "Melhoria nos Efeitos de Aura",
 
     /* Ed */
     EdAbilityDescription: "Quando ativada, essa habilidade permite o uso de uma lanterna especial que te ajuda a detectar e desarmar temporariamente armadilhas demoníacas.",
@@ -387,6 +391,16 @@ const translations = {
     pablospecialhability2: "Os demônios não conseguem mais detectar você por meio da Visão do Demônio. Ao usar um amuleto, os sobreviventes próximos ficam indetectáveis pela Visão do Demônio por um tempo limitado.",
     pablospecialhability3: "Comece a partida com um amuleto adicional. Além disso, aumenta o número máximo de amuletos que você pode carregar. Quando Pablo usa um amuleto, os Sobreviventes próximos recuperam parte de sua barra de escudo.",
     pablospecialhability4: "Sua barra de escudo se recuperará gradualmente com o tempo até que você tenha pelo menos 1 barra cheia.",
+
+    /* Ash Leader */
+    ashleaderspecialtitle1: "Apareça e Detone!",
+    ashleaderspecialtitle2: "El Jefe",
+    ashleaderspecialtitle3: "Velha Amiga",
+    ashleaderspecialtitle4: "El Jefe Grande",
+    ashleaderspecialhability1: "Ativa habilidade que gera uma explosão, causando dano à barra de equilíbrio dos inimigos.",
+    ashleaderspecialhability2: "Uma aura que afeta todos os sobreviventes dentro do alcance, aumentando sua resistência ao medo e o dano que causam.",
+    ashleaderspecialhability3: "Comece a partida com a motosserra.",
+    ashleaderspecialhability4: "Aumenta os efeitos da sua aura quando você executa um finalizador ou desmembra um inimigo.",
 
     /* Pontos Fortes */
     edstrength: "Por ser caçador ele tem muita stamina.",
@@ -517,7 +531,8 @@ const translations = {
     ashsupportbio: "Esse Ash, de rosto jovem, está sempre cuidando do seu grupo. Sua habilidade ativa reduz o nível de medo dos Sobreviventes próximos, e uma parte do dano causado por seus ataques corpo a corpo pesados sempre concede cura aos companheiros de equipe próximos. Seus tiros na cabeça também marcam os alvos, de modo que o próximo Sobrevivente a acertar esse inimigo causa dano extra e recebe um pouco de cura.",
     ashhunterbio: "Depois de perder o amor de sua vida para as forças das trevas, esse Ash logo encontrou um novo amor: seu cano duplo. Ele começa todas as partidas com ele e sabe manuseá-lo com mais eficácia do que qualquer outra pessoa no planeta. Sua experiência lhe conferiu a capacidade de detectar caixas de suprimentos próximas através das paredes e uma habilidade única que lhe permite expulsar o demônio de qualquer humano ou Deadite que esteja por perto.",
     scottybio: "Seja para contar uma piada ou acabar com uma Deadite, Scotty, o melhor amigo de Ash, está sempre pronto! Um mestre com um machado de lenhador, os ataques corpo a corpo pesados de Scotty causam dano colateral aos inimigos ao redor, e seus níveis de medo diminuem a cada morte. Ele possui uma habilidade única capaz de desencadear uma explosão devastadora que causa dano a todos os inimigos ao seu redor com um único impulso.",
-    pablobio: "Como El Brujo Especial, Pablo é dotado de grande talento nas artes shamanicas. Seu poder o torna invisível à Visão Demoníaca Kandariana. Ele começa cada partida com um amuleto, regenera seu escudo quando está fora de combate e pode criar um novo amuleto usando suas habilidades únicas."
+    pablobio: "Como El Brujo Especial, Pablo é dotado de grande talento nas artes shamanicas. Seu poder o torna invisível à Visão Demoníaca Kandariana. Ele começa cada partida com um amuleto, regenera seu escudo quando está fora de combate e pode criar um novo amuleto usando suas habilidades únicas.",
+    ashleaderbio: "Esse Ash vem dando uma surra no Mal há mais de trinta anos, e isso lhe confere uma aura de liderança. Os Sobreviventes próximos se beneficiam da capacidade de causar mais dano e são mais resistentes ao medo. Os efeitos dessa aura são temporariamente intensificados quando Ash executa um golpe finalizador ou causa desmembramento. Ele começa todas as partidas com sua fiel motosserra, e sua habilidade exclusiva libera uma explosão que reduz a barra de equilíbrio dos inimigos próximos."
   },
 
   /* ENGLISH */
@@ -775,6 +790,10 @@ const translations = {
     ExtraAmulets: "Extra Amulets",
     MaximumAmuletsIncrease: "Maximum Amulets Increase",
     TeammatesShieldBarRestored: "Teammates' Shield Bar Restored",
+    BlastRadius: "Blast Radius",
+    BalanceBarDamage: "Balance Bar Damage",
+    FearResistance: "Fear Resistance",
+    AuraEffectsImprovement: "Aura Effects Improvement",
 
 
     /* Ed */
@@ -902,6 +921,16 @@ const translations = {
     pablospecialhability2: "Demons are no longer able to detect you using Demon Vision. When using an amulet, nearby Survivors go undetected by the Demon Vision for a limited time.",
     pablospecialhability3: "Begin the match with an additional amulet. Also increases the maximum amount of amulets you can carry. When Pablo uses an amulet, nearby Survivors recover part of their shield bar.",
     pablospecialhability4: "Your shield bar will gradually recover over time until you have at least 1 full bar.",
+
+    /* Ash Leader */
+    ashleaderspecialtitle1: "Show Up And Blow Up",
+    ashleaderspecialtitle2: "El Jefe",
+    ashleaderspecialtitle3: "Old Friend",
+    ashleaderspecialtitle4: "El Jefe Grande",
+    ashleaderspecialhability1: "Active ability that generates an explosion, damaging enemies' balance bar.",
+    ashleaderspecialhability2: "An aura that affects all survivors within range, increasing their fear resistance and the damage they inflict",
+    ashleaderspecialhability3: "Start the match with the chainsaw.",
+    ashleaderspecialhability4: "Enhances your aura's effects when you perform a finisher or dismember an enemy.",
 
     /* Pontos Fortes */
     edstrength: "Since he's a hunter, he has a lot of stamina.",
@@ -1032,7 +1061,8 @@ const translations = {
     ashsupportbio: "This fresh-faced Ash is always looking out for his crew. His active skill reduces the fear level of nearby Survivors and a portion of the damage caused by his heavy melee attacks always grants healing to nearby teammates. his head shots also mark their targets so the next Survivor to hit this enemy deals extra damage and receives some healing.",
     ashhunterbio: "After losing the love of his life to the forces of darkness, this Ash soon found a new love: his double-barrel. He begins every match with it and can wield it more effectively than anyone else on the planet. His experience has granted him the ability to sense nearby supply crates through walls and a unique skill which allows him to expel the demon from any nearby human or Deadite.",
     scottybio: "Whether it's to crack a joke or kill a Deadite, Ash's best friend Scotty is always down! A master with a lumberjack axe, Scotty's heavy melee attacks cause splash damage to surrounding enemies and his fear levels are reduced with each kill. He possesses a unique skill which can unleash a devastating blast that damages all enemies around him with a single thrust.",
-    pablobio: "As El Brujo Especial, Pablo is gifted in the shamanic arts. His power makes him invisible to the Kandarian's Demon Vision. He begins each match with an amulet, regenerates shield when out of combat, and can create a new amulet with the use of his unique skills."
+    pablobio: "As El Brujo Especial, Pablo is gifted in the shamanic arts. His power makes him invisible to the Kandarian's Demon Vision. He begins each match with an amulet, regenerates shield when out of combat, and can create a new amulet with the use of his unique skills.",
+    ashleaderbio: "This Ash has been kicking Evil's butt for more than thirty years and with that comes an aura of leadership. Nearby Survivors benefit from being able to deal more damage and are more resistant to fear. The effects of this aura are temporarily enhanced when Ash performs a finishing move or inflicts dismemberment. He starts every match with his trusty chainsaw, and his unique skill unleashes a blast that reduces the balance bar of nearby enemies."
 
   },
 
