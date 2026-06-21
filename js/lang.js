@@ -265,6 +265,8 @@ const translations = {
     BalanceBarDamage: "Dano à Barra de Equilíbrio",
     FearResistance: "Resistência ao Medo",
     AuraEffectsImprovement: "Melhoria nos Efeitos de Aura",
+    BalanceBarDamageToEliteUnits: "Dano Causado a Barra de Equilibrio das Unidades de Elite",
+    BalanceBarDamageToBossUnits: "Dano Causado a Barra de Equilibro das Unidades Chefes",
 
     /* Ed */
     EdAbilityDescription: "Quando ativada, essa habilidade permite o uso de uma lanterna especial que te ajuda a detectar e desarmar temporariamente armadilhas demoníacas.",
@@ -402,6 +404,16 @@ const translations = {
     ashleaderspecialhability3: "Comece a partida com a motosserra.",
     ashleaderspecialhability4: "Aumenta os efeitos da sua aura quando você executa um finalizador ou desmembra um inimigo.",
 
+    /* Annie */
+    anniespecialtitle1: "Acerte Onde Dói",
+    anniespecialtitle2: "Morteiro",
+    anniespecialtitle3: "Golpe Demolidor",
+    anniespecialtitle4: "Rebatedor",
+    anniespecialhability1: "Quando ativada, essa habilidade aumenta o dano à distância causado por Annie e por quaisquer companheiros de equipe que estejam próximos a ela.",
+    anniespecialhability2: "Você e todos os companheiros de equipe dentro do raio de efeito desta aura causam mais dano com armas de longo alcance.",
+    anniespecialhability3: "Os ataques realizados por você e seus companheiros de equipe dentro do raio de efeito dessa aura causam mais dano à barra de equilíbrio das unidades malignas básicas.",
+    anniespecialhability4: "Os ataques realizados por você e seus companheiros de equipe dentro do raio de efeito dessa aura causam mais dano à barra de equilíbrio das unidades malignas de elite e chefe.",
+
     /* Pontos Fortes */
     edstrength: "Por ser caçador ele tem muita stamina.",
 
@@ -532,7 +544,8 @@ const translations = {
     ashhunterbio: "Depois de perder o amor de sua vida para as forças das trevas, esse Ash logo encontrou um novo amor: seu cano duplo. Ele começa todas as partidas com ele e sabe manuseá-lo com mais eficácia do que qualquer outra pessoa no planeta. Sua experiência lhe conferiu a capacidade de detectar caixas de suprimentos próximas através das paredes e uma habilidade única que lhe permite expulsar o demônio de qualquer humano ou Deadite que esteja por perto.",
     scottybio: "Seja para contar uma piada ou acabar com uma Deadite, Scotty, o melhor amigo de Ash, está sempre pronto! Um mestre com um machado de lenhador, os ataques corpo a corpo pesados de Scotty causam dano colateral aos inimigos ao redor, e seus níveis de medo diminuem a cada morte. Ele possui uma habilidade única capaz de desencadear uma explosão devastadora que causa dano a todos os inimigos ao seu redor com um único impulso.",
     pablobio: "Como El Brujo Especial, Pablo é dotado de grande talento nas artes shamanicas. Seu poder o torna invisível à Visão Demoníaca Kandariana. Ele começa cada partida com um amuleto, regenera seu escudo quando está fora de combate e pode criar um novo amuleto usando suas habilidades únicas.",
-    ashleaderbio: "Esse Ash vem dando uma surra no Mal há mais de trinta anos, e isso lhe confere uma aura de liderança. Os Sobreviventes próximos se beneficiam da capacidade de causar mais dano e são mais resistentes ao medo. Os efeitos dessa aura são temporariamente intensificados quando Ash executa um golpe finalizador ou causa desmembramento. Ele começa todas as partidas com sua fiel motosserra, e sua habilidade exclusiva libera uma explosão que reduz a barra de equilíbrio dos inimigos próximos."
+    ashleaderbio: "Esse Ash vem dando uma surra no Mal há mais de trinta anos, e isso lhe confere uma aura de liderança. Os Sobreviventes próximos se beneficiam da capacidade de causar mais dano e são mais resistentes ao medo. Os efeitos dessa aura são temporariamente intensificados quando Ash executa um golpe finalizador ou causa desmembramento. Ele começa todas as partidas com sua fiel motosserra, e sua habilidade exclusiva libera uma explosão que reduz a barra de equilíbrio dos inimigos próximos.",
+    anniebio: "Filha do professor Raymond Knowby, Annie compreende o Mal desencadeado pelo Necronomicon e sabe o que é necessário para derrotá-lo. Outros Sobreviventes causam mais dano com armas de longo alcance e à barra de equilíbrio quando estão na presença dela."
   },
 
   /* ENGLISH */
@@ -794,6 +807,8 @@ const translations = {
     BalanceBarDamage: "Balance Bar Damage",
     FearResistance: "Fear Resistance",
     AuraEffectsImprovement: "Aura Effects Improvement",
+    BalanceBarDamageToEliteUnits: "Balance Bar Damage to Elite Units",
+    BalanceBarDamageToBossUnits: "Balance Bar Damage to Boss Units",
 
 
     /* Ed */
@@ -932,6 +947,16 @@ const translations = {
     ashleaderspecialhability3: "Start the match with the chainsaw.",
     ashleaderspecialhability4: "Enhances your aura's effects when you perform a finisher or dismember an enemy.",
 
+    /* Annie */
+    anniespecialtitle1: "Hit 'em Where it Hurts",
+    anniespecialtitle2: "Howitzer",
+    anniespecialtitle3: "Haymaker",
+    anniespecialtitle4: "Slugger",
+    anniespecialhability1: "When activated, this ability increases ranged damage from Annie and any teammates who are near her.",
+    anniespecialhability2: "You and all teammates within this aura's effect radius deal more damage with ranged weapons.",
+    anniespecialhability3: "Attacks by you and your teammates within this aura's effect radius cause more damage to the balance bar of basic evil units.",
+    anniespecialhability4: "Attacks by you and your teammates within this aura's effect radius cause more damage to the balance bar of elite and boss evil units.",
+
     /* Pontos Fortes */
     edstrength: "Since he's a hunter, he has a lot of stamina.",
 
@@ -1062,7 +1087,8 @@ const translations = {
     ashhunterbio: "After losing the love of his life to the forces of darkness, this Ash soon found a new love: his double-barrel. He begins every match with it and can wield it more effectively than anyone else on the planet. His experience has granted him the ability to sense nearby supply crates through walls and a unique skill which allows him to expel the demon from any nearby human or Deadite.",
     scottybio: "Whether it's to crack a joke or kill a Deadite, Ash's best friend Scotty is always down! A master with a lumberjack axe, Scotty's heavy melee attacks cause splash damage to surrounding enemies and his fear levels are reduced with each kill. He possesses a unique skill which can unleash a devastating blast that damages all enemies around him with a single thrust.",
     pablobio: "As El Brujo Especial, Pablo is gifted in the shamanic arts. His power makes him invisible to the Kandarian's Demon Vision. He begins each match with an amulet, regenerates shield when out of combat, and can create a new amulet with the use of his unique skills.",
-    ashleaderbio: "This Ash has been kicking Evil's butt for more than thirty years and with that comes an aura of leadership. Nearby Survivors benefit from being able to deal more damage and are more resistant to fear. The effects of this aura are temporarily enhanced when Ash performs a finishing move or inflicts dismemberment. He starts every match with his trusty chainsaw, and his unique skill unleashes a blast that reduces the balance bar of nearby enemies."
+    ashleaderbio: "This Ash has been kicking Evil's butt for more than thirty years and with that comes an aura of leadership. Nearby Survivors benefit from being able to deal more damage and are more resistant to fear. The effects of this aura are temporarily enhanced when Ash performs a finishing move or inflicts dismemberment. He starts every match with his trusty chainsaw, and his unique skill unleashes a blast that reduces the balance bar of nearby enemies.",
+    anniebio: "Daughter of Professor Raymond Knowby, Annie understands the Evil unleashed by the Necronomicon and she knows what's required to defeat it. Other Survivors deal increased ranged weapon and balance bar damage when in her presence."
 
   },
 
