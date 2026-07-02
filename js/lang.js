@@ -255,7 +255,7 @@ const translations = {
     ShieldBarRestored: "Barra de Escudo Restaurada",
     DamageRestoredAsHealth: "Dano Restaurado Como Saúde",
     InfernalEnergyReduction: "Redução da Energia Infernal",
-    batterylife: "Duração da bateria",
+    batterylife: "Duração da Bateria",
     ImpactRadius: "Raio de Impacto",
     DamageDealtToNearbyEnemies: "Dano Causado a Inimigos Próximos",
     ExtraAmulets: "Amuletos Extras",
@@ -267,6 +267,18 @@ const translations = {
     AuraEffectsImprovement: "Melhoria nos Efeitos de Aura",
     BalanceBarDamageToEliteUnits: "Dano Causado a Barra de Equilibrio das Unidades de Elite",
     BalanceBarDamageToBossUnits: "Dano Causado a Barra de Equilibro das Unidades Chefes",
+    MaximumCharge: "Carga Máxima",
+    MaximumDamage: "Dano Máximo",
+    MaxHealthRestored: "Saúde Máxima Restaurada",
+    MaxStaminaRegeneration: "Regeneração Máxima de Stamina",
+    MaxCooldownReduction: "Redução Máxima do Tempo de Recarga",
+    MaxDamageReduction: "Redução Máxima de Dano",
+    ResistanceToPossession: "Resistência à Possessão",
+    InfernalEnergyPerSecond: "Energia Infernal Por Segundo",
+    DamageTakenFromPossession: "Dano Recebido Por Possessão",
+    HealthRegenerationThreshold: "Limite de Regeneração de Saúde",
+    ExtraDamage: "Dano Extra",
+    MaxQuickStudyBoosts: "Máximo de Impulsos de Estudo Rápido",
 
     /* Ed */
     EdAbilityDescription: "Quando ativada, essa habilidade permite o uso de uma lanterna especial que te ajuda a detectar e desarmar temporariamente armadilhas demoníacas.",
@@ -414,6 +426,16 @@ const translations = {
     anniespecialhability3: "Os ataques realizados por você e seus companheiros de equipe dentro do raio de efeito dessa aura causam mais dano à barra de equilíbrio das unidades malignas básicas.",
     anniespecialhability4: "Os ataques realizados por você e seus companheiros de equipe dentro do raio de efeito dessa aura causam mais dano à barra de equilíbrio das unidades malignas de elite e chefe.",
 
+    /* Ruby */
+    rubyspecialtitle1: "Maldição de Lilith",
+    rubyspecialtitle2: "Devoradora de Alma",
+    rubyspecialtitle3: "Anatema",
+    rubyspecialtitle4: "Estudo Rápido",
+    rubyspecialhability1: "Quando ativada, Ruby consome gradualmente as almas acumuladas para carregar sua habilidade exclusiva. Se for desativada ou ficar sem almas, Ruby provocará uma explosão mortal que causa dano às unidades malignas dentro do alcance e cura os Sobreviventes próximos.",
+    rubyspecialhability2: "Ruby regenera a vida até um certo limite. Por ser uma Sombria, ela não pode coletar nem usar um amuleto. Em contrapartida, ela absorve as almas das unidades malignas que morrem dentro de sua aura, aumentando os efeitos desta.",
+    rubyspecialhability3: "Aumenta o limiar de medo e o custo de Energia Infernal necessários para que Ruby seja possuída. Além disso, reduz o dano recebido quando a possessão termina e aumenta a regeneração de vida de Ruby no modo Devoradora de Almas.",
+    rubyspecialhability4: "Matar uma unidade maligna com uma arma corpo a corpo aumenta o dano corpo a corpo de Ruby. Por outro lado, matar uma unidade maligna com uma arma de longo alcance aumenta o dano de longo alcance dela.",
+
     /* Pontos Fortes */
     edstrength: "Por ser caçador ele tem muita stamina.",
 
@@ -545,7 +567,8 @@ const translations = {
     scottybio: "Seja para contar uma piada ou acabar com uma Deadite, Scotty, o melhor amigo de Ash, está sempre pronto! Um mestre com um machado de lenhador, os ataques corpo a corpo pesados de Scotty causam dano colateral aos inimigos ao redor, e seus níveis de medo diminuem a cada morte. Ele possui uma habilidade única capaz de desencadear uma explosão devastadora que causa dano a todos os inimigos ao seu redor com um único impulso.",
     pablobio: "Como El Brujo Especial, Pablo é dotado de grande talento nas artes shamanicas. Seu poder o torna invisível à Visão Demoníaca Kandariana. Ele começa cada partida com um amuleto, regenera seu escudo quando está fora de combate e pode criar um novo amuleto usando suas habilidades únicas.",
     ashleaderbio: "Esse Ash vem dando uma surra no Mal há mais de trinta anos, e isso lhe confere uma aura de liderança. Os Sobreviventes próximos se beneficiam da capacidade de causar mais dano e são mais resistentes ao medo. Os efeitos dessa aura são temporariamente intensificados quando Ash executa um golpe finalizador ou causa desmembramento. Ele começa todas as partidas com sua fiel motosserra, e sua habilidade exclusiva libera uma explosão que reduz a barra de equilíbrio dos inimigos próximos.",
-    anniebio: "Filha do professor Raymond Knowby, Annie compreende o Mal desencadeado pelo Necronomicon e sabe o que é necessário para derrotá-lo. Outros Sobreviventes causam mais dano com armas de longo alcance e à barra de equilíbrio quando estão na presença dela."
+    anniebio: "Filha do professor Raymond Knowby, Annie compreende o Mal desencadeado pelo Necronomicon e sabe o que é necessário para derrotá-lo. Outros Sobreviventes causam mais dano com armas de longo alcance e à barra de equilíbrio quando estão na presença dela.",
+    rubybio: "Ruby tem um sonho: comandar os poderes das trevas. E ela está determinada a abrir caminho até o topo, matando quem estiver no seu caminho. Essa Sombria escraviza as almas daqueles que são mortos dentro de sua aura para aumentar seu poder. Além disso, ela pode fazê-los explodir, curando seus companheiros de equipe e eliminando as unidades malignas nas proximidades.",
   },
 
   /* ENGLISH */
@@ -809,6 +832,18 @@ const translations = {
     AuraEffectsImprovement: "Aura Effects Improvement",
     BalanceBarDamageToEliteUnits: "Balance Bar Damage to Elite Units",
     BalanceBarDamageToBossUnits: "Balance Bar Damage to Boss Units",
+    MaximumCharge: "Maximum Charge",
+    MaximumDamage: "Maximum Damage",
+    MaxHealthRestored: "Max Health Restored",
+    MaxStaminaRegeneration: "Max Stamina Regeneration",
+    MaxCooldownReduction: "Max Cooldown Reduction",
+    MaxDamageReduction: "Max Damage Reduction",
+    ResistanceToPossession: "Resistance to Possession",
+    InfernalEnergyPerSecond: "Infernal Energy Per Second",
+    DamageTakenFromPossession: "Damage Taken From Possession",
+    HealthRegenerationThreshold: "Health Regeneration Threshold",
+    ExtraDamage: "Extra Damage",
+    MaxQuickStudyBoosts: "Max Quick Study Boosts",
 
 
     /* Ed */
@@ -943,7 +978,7 @@ const translations = {
     ashleaderspecialtitle3: "Old Friend",
     ashleaderspecialtitle4: "El Jefe Grande",
     ashleaderspecialhability1: "Active ability that generates an explosion, damaging enemies' balance bar.",
-    ashleaderspecialhability2: "An aura that affects all survivors within range, increasing their fear resistance and the damage they inflict",
+    ashleaderspecialhability2: "An aura that affects all survivors within range, increasing their fear resistance and the damage they inflict.",
     ashleaderspecialhability3: "Start the match with the chainsaw.",
     ashleaderspecialhability4: "Enhances your aura's effects when you perform a finisher or dismember an enemy.",
 
@@ -956,6 +991,16 @@ const translations = {
     anniespecialhability2: "You and all teammates within this aura's effect radius deal more damage with ranged weapons.",
     anniespecialhability3: "Attacks by you and your teammates within this aura's effect radius cause more damage to the balance bar of basic evil units.",
     anniespecialhability4: "Attacks by you and your teammates within this aura's effect radius cause more damage to the balance bar of elite and boss evil units.",
+
+    /* Ruby */
+    rubyspecialtitle1: "Lilith's Curse",
+    rubyspecialtitle2: "Soul Eater",
+    rubyspecialtitle3: "Anathema",
+    rubyspecialtitle4: "Quick Study",
+    rubyspecialhability1: "When activated, Ruby gradually consumes the accumulated souls to charge her unique ability. If deactivated or when she runs out of souls, Ruby will trigger a deadly blast that damages evil units within range and heal Survivors nearby.",
+    rubyspecialhability2: "Ruby regenerates health up to a certain threshold. Being a Dark One, she can't collect or use an amulet. In return, she absorbs the souls of evil units that die within her aura, improving its effects.",
+    rubyspecialhability3: "Increases the fear threshold and Infernal Energy cost at which Ruby can be possessed. Additionally, it reduces the damage taken when the possession ends and increases Ruby's Soul Eater health regeneration.",
+    rubyspecialhability4: "Killing an evil unit with a melee weapon increases Ruby's melee damage. Conversely, killing an evil unit with a ranged weapon increases her ranged damage.",
 
     /* Pontos Fortes */
     edstrength: "Since he's a hunter, he has a lot of stamina.",
@@ -1088,7 +1133,8 @@ const translations = {
     scottybio: "Whether it's to crack a joke or kill a Deadite, Ash's best friend Scotty is always down! A master with a lumberjack axe, Scotty's heavy melee attacks cause splash damage to surrounding enemies and his fear levels are reduced with each kill. He possesses a unique skill which can unleash a devastating blast that damages all enemies around him with a single thrust.",
     pablobio: "As El Brujo Especial, Pablo is gifted in the shamanic arts. His power makes him invisible to the Kandarian's Demon Vision. He begins each match with an amulet, regenerates shield when out of combat, and can create a new amulet with the use of his unique skills.",
     ashleaderbio: "This Ash has been kicking Evil's butt for more than thirty years and with that comes an aura of leadership. Nearby Survivors benefit from being able to deal more damage and are more resistant to fear. The effects of this aura are temporarily enhanced when Ash performs a finishing move or inflicts dismemberment. He starts every match with his trusty chainsaw, and his unique skill unleashes a blast that reduces the balance bar of nearby enemies.",
-    anniebio: "Daughter of Professor Raymond Knowby, Annie understands the Evil unleashed by the Necronomicon and she knows what's required to defeat it. Other Survivors deal increased ranged weapon and balance bar damage when in her presence."
+    anniebio: "Daughter of Professor Raymond Knowby, Annie understands the Evil unleashed by the Necronomicon and she knows what's required to defeat it. Other Survivors deal increased ranged weapon and balance bar damage when in her presence.",
+    rubybio: "Ruby has a dream, commanding the powers of darkness. And she's bound to slay her way to the top. This Dark One enslaves the souls of those killed within her aura to increase her power. To top it off, she can make them go boom, healing her teammates and eradicating the evil units nearby.",
 
   },
 
