@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Ruby</title>
+  <title>Brock</title>
 
   <link rel="stylesheet" href="../../css/characterspage.css">
   <link rel="stylesheet" href="../../css/backbutton.css">
@@ -33,9 +33,9 @@
     <!-- Descrição -->
     <div class="hero-left">
       
-      <h1>RUBY KNOWBY</h1>
+      <h1>BROCK WILLIAMS</h1>
 
-      <p data-lang="rubybio">
+      <p data-lang="brockbio">
         Personagem Descrição
       </p>
 
@@ -50,8 +50,8 @@
         <span data-lang="defense">Defesa</span>
         <div class="bars">
           <div class="bar filled"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
           <div class="bar"></div>
           <div class="bar"></div>
         </div>
@@ -73,8 +73,8 @@
         <div class="bars">
           <div class="bar filled"></div>
           <div class="bar filled"></div>
-          <div class="bar filled"></div>
-          <div class="bar filled"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
           <div class="bar"></div>
         </div>
       </div>
@@ -105,23 +105,23 @@
 
     <h2 data-lang="abilities">Habilidades</h2>
 
-    <p data-lang="rubyspecialhability1">
+    <p data-lang="brockspecialhability1">
       Descrição de Habilidade
     </p>
 
     <div class="ability">
-      <h3 data-lang="rubyspecialtitle2">Título Habilidade 1</h3>
-      <p data-lang="rubyspecialhability2">Descrição Habilidade 1</p>
+      <h3 data-lang="brockspecialtitle2">Título Habilidade 1</h3>
+      <p data-lang="brockspecialhability2">Descrição Habilidade 1</p>
     </div>
 
     <div class="ability">
-      <h3 data-lang="rubyspecialtitle3">Título Habilidade 2</h3>
-      <p data-lang="rubyspecialhability3">Descrição Habilidade 2</p>
+      <h3 data-lang="brockspecialtitle3">Título Habilidade 2</h3>
+      <p data-lang="brockspecialhability3">Descrição Habilidade 2</p>
     </div>
 
     <div class="ability">
-      <h3 data-lang="rubyspecialtitle4">Título Habilidade 3</h3>
-      <p data-lang="rubyspecialhability4">Descrição Habilidade 3</p>
+      <h3 data-lang="brockspecialtitle4">Título Habilidade 3</h3>
+      <p data-lang="brockspecialhability4">Descrição Habilidade 3</p>
     </div>
 
     <div class="tab-buttons">
@@ -143,19 +143,19 @@
 
     <div class="skill-icons">
 
-      <img src="../../images/SkillTree/MainCharacter/Ruby_Leader/01.png"
+      <img src="../../images/SkillTree/MainCharacter/Brock_Leader/01.png"
           class="skill-icon active"
           onclick="showSkill('trap', this)">
 
-      <img src="../../images/SkillTree/MainCharacter/Ruby_Leader/02.png"
+      <img src="../../images/SkillTree/MainCharacter/Brock_Leader/02.png"
           class="skill-icon"
           onclick="showSkill('light', this)">
 
-      <img src="../../images/SkillTree/MainCharacter/Ruby_Leader/03.png"
+      <img src="../../images/SkillTree/MainCharacter/Brock_Leader/03.png"
           class="skill-icon"
           onclick="showSkill('crossbow', this)">
 
-      <img src="../../images/SkillTree/MainCharacter/Ruby_Leader/04.png"
+      <img src="../../images/SkillTree/MainCharacter/Brock_Leader/04.png"
           class="skill-icon"
           onclick="showSkill('collector', this)">
     </div>
@@ -193,7 +193,7 @@
     <section class="strengths-box">
       <h2 data-lang="strengths">Pontos Fortes</h2>
       <ul>
-        <li data-lang="rubystrength">Strength 1</li>
+        <li data-lang="brockstrength">Strength 1</li>
       </ul>
     </section>
     <!-------------------->
@@ -202,7 +202,7 @@
     <section class="weakness-box">
       <h2 data-lang="weaknesses">Pontos Fracos</h2>
       <ul>
-        <li data-lang="rubyweak1">Weakness 1</li>
+        <li data-lang="">There are no tips for this character yet.</li>
       </ul>
     </section>
     <!-------------------->
@@ -235,98 +235,94 @@
     const skills = {
 
     trap: {
-      title: "rubyspecialtitle1",
+      title: "brockspecialtitle1",
 
       description:
-        "rubyspecialhability1",
+        "brockspecialhability1",
 
       stats: [
         {
-          name: "cooldown",
-          value: "60s → 55s"
+          name: "duration",
+          value: "10s → 10s"
         },
         {
-          name: "MaximumCharge",
-          value: "70 → 70"
+          name: "AuraRange",
+          value: "13.1ft → 19.7ft"
         },
         {
-          name: "MaximumDamage",
-          value: "800 → 880"
-        },
-        {
-          name: "MaxHealthRestored",
-          value: "500 → 500"
+          name: "AuraEffect",
+          value: "45% → 55%"
         }
       ]
     },
 
     light: {
-      title: "rubyspecialtitle2",
+      title: "brockspecialtitle2",
 
       description:
-        "rubyspecialhability2",
+        "brockspecialhability2",
 
       stats: [
         {
-          name: "MaxStaminaRegeneration",
-          value: "20% → 24%"
+          name: "FearReductionPerLeader",
+          value: "8% → 10%"
         },
         {
-          name: "MaxCooldownReduction",
-          value: "25% → 35%"
+          name: "MeleeDamagePerWarrior",
+          value: "8% → 10%"
         },
         {
-          name: "MaximumDamage",
-          value: "20% → 24%"
+          name: "RangedDamagePerHunter",
+          value: "8% → 10%"
         },
         {
-          name: "MaxDamageReduction",
-          value: "20% → 24%"
+          name: "CooldownSpeedIncreasePerSupport",
+          value: "8% → 10%"
         }
       ]
     },
 
     crossbow: {
-      title: "rubyspecialtitle3",
+      title: "brockspecialtitle3",
 
       description:
-        "rubyspecialhability3",
+        "brockspecialhability3",
 
       stats: [
         {
-          name: "ResistanceToPossession",
-          value: "10%"
+          name: "DamageReductionPerFamilyMember",
+          value: "4%"
         },
         {
-          name: "InfernalEnergyPerSecond",
-          value: "+1"
-        },
-        {
-          name: "DamageTakenFromPossession",
-          value: "75%"
-        },
-        {
-          name: "HealthRegenerationThreshold",
-          value: "50%"
+          name: "HealingIncreasePerNonFamilyMember",
+          value: "4%"
         }
 
       ]
     },
 
     collector: {
-      title: "rubyspecialtitle4",
+      title: "brockspecialtitle4",
 
       description:
-        "rubyspecialhability4",
+        "brockspecialhability4",
 
       stats: [
         {
-          name: "ExtraDamage",
-          value: "1%"
+          name: "MaximumAmuletsIncrease",
+          value: "2"
         },
         {
-          name: "MaxQuickStudyBoosts",
-          value: "20"
+          name: "MaximumShempsIncrease",
+          value: "2"
+        },
+        {
+          name: "MaximumMatchsticksIncrease",
+          value: "2"
+        },
+        {
+          name: "MaximumAmmoIncrease",
+          value: "15"
         }
       ]
     }
