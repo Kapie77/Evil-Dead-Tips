@@ -279,6 +279,18 @@ const translations = {
     HealthRegenerationThreshold: "Limite de Regeneração de Saúde",
     ExtraDamage: "Dano Extra",
     MaxQuickStudyBoosts: "Máximo de Impulsos de Estudo Rápido",
+    AuraRange: "Alcance de Aura",
+    AuraEffect: "Efeito de Aura",
+    FearReductionPerLeader: "Redução de Medo Por Líder",
+    MeleeDamagePerWarrior: "Dano Corpo a Corpo Por Guerreiro",
+    RangedDamagePerHunter: "Dano à Distância Por Caçador",
+    CooldownSpeedIncreasePerSupport: "Aumento de Velocidade de Cooldown Por Suporte",
+    DamageReductionPerFamilyMember: "Redução de Dano Por Membro da Família",
+    HealingIncreasePerNonFamilyMember: "Aumento de Cura Por Membro Não-Família",
+    MaximumAmuletsIncrease: "Aumento Máximo de Amuletos",
+    MaximumShempsIncrease: "Aumento Máximo de Shemps",
+    MaximumMatchsticksIncrease: "Aumento Máximo de Fósforo",
+    MaximumAmmoIncrease: "Aumento Máximo de Munição",
 
     /* Ed */
     EdAbilityDescription: "Quando ativada, essa habilidade permite o uso de uma lanterna especial que te ajuda a detectar e desarmar temporariamente armadilhas demoníacas.",
@@ -436,6 +448,16 @@ const translations = {
     rubyspecialhability3: "Aumenta o limiar de medo e o custo de Energia Infernal necessários para que Ruby seja possuída. Além disso, reduz o dano recebido quando a possessão termina e aumenta a regeneração de vida de Ruby no modo Devoradora de Almas.",
     rubyspecialhability4: "Matar uma unidade maligna com uma arma corpo a corpo aumenta o dano corpo a corpo de Ruby. Por outro lado, matar uma unidade maligna com uma arma de longo alcance aumenta o dano de longo alcance dela.",
 
+    /* Brock */
+    brockspecialtitle1: "Todos os Olhos em Mim",
+    brockspecialtitle2: "Alma da Festa",
+    brockspecialtitle3: "Laços de Sangue",
+    brockspecialtitle4: "Eu Sou o Gerente",
+    brockspecialhability1: "Quando ativada, essa habilidade confere imunidade a empurrões e aumenta o alcance da sua aura. Por sua vez, os companheiros de equipe que estiverem dentro do alcance potencializam os efeitos da habilidade Alma da Festa de Brock.",
+    brockspecialhability2: "Os efeitos da aura de Brock são influenciados pela classe de seus companheiros de equipe.",
+    brockspecialhability3: "Os efeitos da aura de Brock variam dependendo se seus companheiros de equipe são membros da família Williams.",
+    brockspecialhability4: "Aumenta a quantidade máxima de Shemp's Cola, munição, amuletos e fósforos que Brock pode carregar.",
+
     /* Pontos Fortes */
     edstrength: "Por ser caçador ele tem muita stamina.",
 
@@ -454,6 +476,10 @@ const translations = {
 
     pablostrength: "Consegue criar amuletos.",
 
+    rubystrength: "Consegue curar a si mesma com sua habilidade de explosão.",
+
+    brockstrength: "Ele consegue carregar 5 Shemps, 5 amuletos, 5 fósforos e +15 de munições.",
+
     /* Pontos Fracos */
     weaknesses: "Pontos Fracos",
     edweak1: "Ele possui pouca saúde por ser Caçador.",
@@ -471,6 +497,8 @@ const translations = {
     scottyweak1: "A habilidade especial dele é horrível.",
 
     pabloweak1: "Ele é fraco no livro.",
+
+    rubyweak1: "Ela não controla quando a explosão da sua habilidade irá acontecer, então o poder pode ser muitas vezes usado em vão.",
 
     /* DICAS */
     tips: "Dicas",
@@ -569,6 +597,7 @@ const translations = {
     ashleaderbio: "Esse Ash vem dando uma surra no Mal há mais de trinta anos, e isso lhe confere uma aura de liderança. Os Sobreviventes próximos se beneficiam da capacidade de causar mais dano e são mais resistentes ao medo. Os efeitos dessa aura são temporariamente intensificados quando Ash executa um golpe finalizador ou causa desmembramento. Ele começa todas as partidas com sua fiel motosserra, e sua habilidade exclusiva libera uma explosão que reduz a barra de equilíbrio dos inimigos próximos.",
     anniebio: "Filha do professor Raymond Knowby, Annie compreende o Mal desencadeado pelo Necronomicon e sabe o que é necessário para derrotá-lo. Outros Sobreviventes causam mais dano com armas de longo alcance e à barra de equilíbrio quando estão na presença dela.",
     rubybio: "Ruby tem um sonho: comandar os poderes das trevas. E ela está determinada a abrir caminho até o topo, matando quem estiver no seu caminho. Essa Sombria escraviza as almas daqueles que são mortos dentro de sua aura para aumentar seu poder. Além disso, ela pode fazê-los explodir, curando seus companheiros de equipe e eliminando as unidades malignas nas proximidades.",
+    brockbio: "É verdade que Brock Williams é um velho desprezível com sérios problemas de limites pessoais, mas ele sabe uma coisa ou duas sobre como controlar auras. Brock consegue modificar o efeito de sua aura, dependendo da classe dos seus camaradas Sobreviventes. Além disso, suas calças cargo largas podem carregar uma quantidade absurda dos bons — admito que essa é a única razão pela qual você se aproximaria dessas calças cargo largas. Assim que ele usa sua habilidade ativa, quanto mais Sobreviventes estiverem por perto, mais poderosa sua aura se torna.",
   },
 
   /* ENGLISH */
@@ -844,6 +873,18 @@ const translations = {
     HealthRegenerationThreshold: "Health Regeneration Threshold",
     ExtraDamage: "Extra Damage",
     MaxQuickStudyBoosts: "Max Quick Study Boosts",
+    AuraRange: "Aura Range",
+    AuraEffect: "Aura Effect",
+    FearReductionPerLeader: "Fear Reduction Per Leader",
+    MeleeDamagePerWarrior: "Melee Damage Per Warrior",
+    RangedDamagePerHunter: "Ranged Damage Per Hunter",
+    CooldownSpeedIncreasePerSupport: "Cooldown Speed Increase Per Support",
+    DamageReductionPerFamilyMember: "Damage Reduction Per Family Member",
+    HealingIncreasePerNonFamilyMember: "Healing Increase Per Non-Famly Member",
+    MaximumAmuletsIncrease: "Maximum Amulets Increase",
+    MaximumShempsIncrease: "Maximum Shemps Increase",
+    MaximumMatchsticksIncrease: "Maximum Matchsticks Increase",
+    MaximumAmmoIncrease: "Maximum Ammo Increase",
 
 
     /* Ed */
@@ -1002,6 +1043,16 @@ const translations = {
     rubyspecialhability3: "Increases the fear threshold and Infernal Energy cost at which Ruby can be possessed. Additionally, it reduces the damage taken when the possession ends and increases Ruby's Soul Eater health regeneration.",
     rubyspecialhability4: "Killing an evil unit with a melee weapon increases Ruby's melee damage. Conversely, killing an evil unit with a ranged weapon increases her ranged damage.",
 
+    /* Brock */
+    brockspecialtitle1: "All Eyes on Me",
+    brockspecialtitle2: "Life of the Party",
+    brockspecialtitle3: "Blood Ties",
+    brockspecialtitle4: "I Am The Manager",
+    brockspecialhability1: "When activated, this ability provides immunity to Knock Backs and increases the range of your aura. In turn, teammates within range enhance the effects of Brock's Life of the Party.",
+    brockspecialhability2: "The Effects of Brock's aura are influenced by the class of his teammates.",
+    brockspecialhability3: "The Effects of Brock's aura vary depending on whether his teammates are member of the Williams family.",
+    brockspecialhability4: "Increases the maximum amount of Shemp's Cola, ammo, amulets, and matches Brock can carry.",
+
     /* Pontos Fortes */
     edstrength: "Since he's a hunter, he has a lot of stamina.",
 
@@ -1020,7 +1071,9 @@ const translations = {
 
     pablostrength: "He can create amulets.",
 
-    pabloweak1: "He's weak at the book.",
+    rubystrength: "She can heal herself with her explosion ability.",
+
+    brockstrength: "He can carry 5 Shemps, 5 amulets, 5 matches, and +15 rounds of ammunition.",
 
     /* Pontos Fracos*/
     weaknesses: "Weaknesses",
@@ -1037,6 +1090,10 @@ const translations = {
     ashsupportweak1: "Heavy attacks are slow, so your teammates can kill the demons, or land a finisher, before you land your attack and heal everyone.",
 
     scottyweak1: "His special ability is terrible.",
+
+    pabloweak1: "He's weak at the book.",
+
+    rubyweak1: "She can't control when her ability will explode, so the ability is often wasted.",
 
     /* DICAS */
     tips: "Tips",
@@ -1135,6 +1192,7 @@ const translations = {
     ashleaderbio: "This Ash has been kicking Evil's butt for more than thirty years and with that comes an aura of leadership. Nearby Survivors benefit from being able to deal more damage and are more resistant to fear. The effects of this aura are temporarily enhanced when Ash performs a finishing move or inflicts dismemberment. He starts every match with his trusty chainsaw, and his unique skill unleashes a blast that reduces the balance bar of nearby enemies.",
     anniebio: "Daughter of Professor Raymond Knowby, Annie understands the Evil unleashed by the Necronomicon and she knows what's required to defeat it. Other Survivors deal increased ranged weapon and balance bar damage when in her presence.",
     rubybio: "Ruby has a dream, commanding the powers of darkness. And she's bound to slay her way to the top. This Dark One enslaves the souls of those killed within her aura to increase her power. To top it off, she can make them go boom, healing her teammates and eradicating the evil units nearby.",
+    brockbio: "It's true Brock Williams is a seedy old man with major boundary issues, but he knows a thing or two about controlling auras. Brock can modify the effect of his aura, depending on the class of his fellow Survivors. Plus, his baggy cargo pants can carry an insane amount of goodies — admittedly the only reason you'd go near his baggy cargo pants. Once he uses his active skill, the more Survivors nearby, the more powerful his aura grows.",
 
   },
 
