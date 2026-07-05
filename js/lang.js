@@ -44,6 +44,7 @@ const translations = {
     schemer: "Intrigante",
     evilash: "Ash Maligno",
     witch: "Bruxa",
+    blacksmith: "Ferreiro",
 
     /* Armas */
     TypesOfAmmunition: "Tipos de Munição",
@@ -291,6 +292,10 @@ const translations = {
     MaximumShempsIncrease: "Aumento Máximo de Shemps",
     MaximumMatchsticksIncrease: "Aumento Máximo de Fósforo",
     MaximumAmmoIncrease: "Aumento Máximo de Munição",
+    ExtraMetalScraps: "Sucatas de Metal Extras",
+    DismembermentDamage: "Dano de Desmembramento",
+    MaximumHealth: "Saúde Máxima",
+    ChanceAnAmuletDoenstBreak: "Chance de Amuleto Não Quebrar",
 
     /* Ed */
     EdAbilityDescription: "Quando ativada, essa habilidade permite o uso de uma lanterna especial que te ajuda a detectar e desarmar temporariamente armadilhas demoníacas.",
@@ -458,6 +463,16 @@ const translations = {
     brockspecialhability3: "Os efeitos da aura de Brock variam dependendo se seus companheiros de equipe são membros da família Williams.",
     brockspecialhability4: "Aumenta a quantidade máxima de Shemp's Cola, munição, amuletos e fósforos que Brock pode carregar.",
 
+    /* Blacksmith */
+    blacksmithspecialtitle1: "Avenging Anvil",
+    blacksmithspecialtitle2: "Weapon Master: Melee",
+    blacksmithspecialtitle3: "Tough as Nails",
+    blacksmithspecialtitle4: "Rough and Ready",
+    blacksmithspecialhability1: "When activated, the Blacksmith fuses metal scraps to forge a random weapon. The more metal scraps you own, the higher your chance of fashioning a high-quality weapon.",
+    blacksmithspecialhability2: "Melee weapons have a faster attacks speed and deal increases health, balance bar, and dismemberment damage. In return, the Blacksmith  is unable to use ranged weapons.",
+    blacksmithspecialhability3: "Increases the maximum health of the Blacksmith.",
+    blacksmithspecialhability4: "When using ana Amulet, the Blacksmith and nearby Survivors have their damage increased for a limited time. If you're lucky, the amulet might not break, so you can keep using it!",
+
     /* Pontos Fortes */
     edstrength: "Por ser caçador ele tem muita stamina.",
 
@@ -486,7 +501,7 @@ const translations = {
 
     miaweak1: "O medo dela sobe muito rápido, então você precisa vigiar seu nível de medo constantemente para que o demônio não saiba onde você está.",
 
-    davidweak1: "Ele tem maestria com uma arma arma horrível, que dá pouco dano e gasta muita munição.",
+    davidweak1: "Ele tem maestria com uma arma horrível, que dá pouco dano e gasta muita munição.",
 
     lordarthurweak1: "A espada tem um manejo difícil.",
 
@@ -598,6 +613,7 @@ const translations = {
     anniebio: "Filha do professor Raymond Knowby, Annie compreende o Mal desencadeado pelo Necronomicon e sabe o que é necessário para derrotá-lo. Outros Sobreviventes causam mais dano com armas de longo alcance e à barra de equilíbrio quando estão na presença dela.",
     rubybio: "Ruby tem um sonho: comandar os poderes das trevas. E ela está determinada a abrir caminho até o topo, matando quem estiver no seu caminho. Essa Sombria escraviza as almas daqueles que são mortos dentro de sua aura para aumentar seu poder. Além disso, ela pode fazê-los explodir, curando seus companheiros de equipe e eliminando as unidades malignas nas proximidades.",
     brockbio: "É verdade que Brock Williams é um velho desprezível com sérios problemas de limites pessoais, mas ele sabe uma coisa ou duas sobre como controlar auras. Brock consegue modificar o efeito de sua aura, dependendo da classe dos seus camaradas Sobreviventes. Além disso, suas calças cargo largas podem carregar uma quantidade absurda dos bons — admito que essa é a única razão pela qual você se aproximaria dessas calças cargo largas. Assim que ele usa sua habilidade ativa, quanto mais Sobreviventes estiverem por perto, mais poderosa sua aura se torna.",
+    blacksmithbio: "Boa sorte em encontrar alguém tão habilidoso no trabalho com ferro quanto o Ferreiro de Kandar! Esse artesão consegue criar todos os tipos de armas sofisticadas a partir de pouco mais do que sucata de metal. Ele também sabe como empunhá-las — espere até vê-lo com uma arma corpo-a-corpo nas mãos.",
   },
 
   /* ENGLISH */
@@ -640,6 +656,7 @@ const translations = {
     schemer: "Schemer",
     evilash: "Evil Ash",
     witch: "Witch",
+    blacksmith: "Blacksmith",
 
     /* Armas */
     TypesOfAmmunition: "Types of Ammunition",
@@ -885,6 +902,10 @@ const translations = {
     MaximumShempsIncrease: "Maximum Shemps Increase",
     MaximumMatchsticksIncrease: "Maximum Matchsticks Increase",
     MaximumAmmoIncrease: "Maximum Ammo Increase",
+    ExtraMetalScraps: "Extra Metal Scraps",
+    DismembermentDamage: "Dismemberment Damage",
+    MaximumHealth: "Maximum Health",
+    ChanceAnAmuletDoenstBreak: "Chance an Amulet Doenst Break",
 
 
     /* Ed */
@@ -1193,6 +1214,7 @@ const translations = {
     anniebio: "Daughter of Professor Raymond Knowby, Annie understands the Evil unleashed by the Necronomicon and she knows what's required to defeat it. Other Survivors deal increased ranged weapon and balance bar damage when in her presence.",
     rubybio: "Ruby has a dream, commanding the powers of darkness. And she's bound to slay her way to the top. This Dark One enslaves the souls of those killed within her aura to increase her power. To top it off, she can make them go boom, healing her teammates and eradicating the evil units nearby.",
     brockbio: "It's true Brock Williams is a seedy old man with major boundary issues, but he knows a thing or two about controlling auras. Brock can modify the effect of his aura, depending on the class of his fellow Survivors. Plus, his baggy cargo pants can carry an insane amount of goodies — admittedly the only reason you'd go near his baggy cargo pants. Once he uses his active skill, the more Survivors nearby, the more powerful his aura grows.",
+    blacksmithbio: "Good luck finding someone as skilled in ironwork as Kandar's Blacksmith! This artisan can craft all sorts of sophisticated weapon from little more than metal scraps. He knows how to wield them too - wait till you see him with a melee weapon in hand.",
 
   },
 
