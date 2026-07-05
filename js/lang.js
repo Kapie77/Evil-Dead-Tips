@@ -464,14 +464,14 @@ const translations = {
     brockspecialhability4: "Aumenta a quantidade máxima de Shemp's Cola, munição, amuletos e fósforos que Brock pode carregar.",
 
     /* Blacksmith */
-    blacksmithspecialtitle1: "Avenging Anvil",
-    blacksmithspecialtitle2: "Weapon Master: Melee",
-    blacksmithspecialtitle3: "Tough as Nails",
-    blacksmithspecialtitle4: "Rough and Ready",
-    blacksmithspecialhability1: "When activated, the Blacksmith fuses metal scraps to forge a random weapon. The more metal scraps you own, the higher your chance of fashioning a high-quality weapon.",
-    blacksmithspecialhability2: "Melee weapons have a faster attacks speed and deal increases health, balance bar, and dismemberment damage. In return, the Blacksmith  is unable to use ranged weapons.",
-    blacksmithspecialhability3: "Increases the maximum health of the Blacksmith.",
-    blacksmithspecialhability4: "When using ana Amulet, the Blacksmith and nearby Survivors have their damage increased for a limited time. If you're lucky, the amulet might not break, so you can keep using it!",
+    blacksmithspecialtitle1: "Bigorna Vingativa",
+    blacksmithspecialtitle2: "Mestre de Armas: Corpo a Corpo",
+    blacksmithspecialtitle3: "Duro Como Pregos",
+    blacksmithspecialtitle4: "Bruto e Pronto",
+    blacksmithspecialhability1: "Quando ativado, o Ferreiro funde sucatas de metal para forjar uma arma aleatória. Quanto mais sucatas de metal você tiver, maior será sua chance de criar uma arma de alta qualidade.",
+    blacksmithspecialhability2: "As armas corpo-a-corpo têm uma velocidade de ataque maior e causam mais dano à saúde, à barra de equilíbrio e de desmembramento. Em contrapartida, o Ferreiro não pode usar armas de longo alcance.",
+    blacksmithspecialhability3: "Aumenta a saúde máxima do Ferreiro.",
+    blacksmithspecialhability4: "Ao usar um amuleto, o Ferreiro e os Sobreviventes próximos têm seu dano aumentado por um tempo limitado. Se você tiver sorte, o amuleto pode não quebrar, e assim você poderá continuar usando-o!",
 
     /* Pontos Fortes */
     edstrength: "Por ser caçador ele tem muita stamina.",
@@ -1073,6 +1073,16 @@ const translations = {
     brockspecialhability2: "The Effects of Brock's aura are influenced by the class of his teammates.",
     brockspecialhability3: "The Effects of Brock's aura vary depending on whether his teammates are member of the Williams family.",
     brockspecialhability4: "Increases the maximum amount of Shemp's Cola, ammo, amulets, and matches Brock can carry.",
+
+    /* Blacksmith */
+    blacksmithspecialtitle1: "Avenging Anvil",
+    blacksmithspecialtitle2: "Weapon Master: Melee",
+    blacksmithspecialtitle3: "Tough as Nails",
+    blacksmithspecialtitle4: "Rough and Ready",
+    blacksmithspecialhability1: "When activated, the Blacksmith fuses metal scraps to forge a random weapon. The more metal scraps you own, the higher your chance of fashioning a high-quality weapon.",
+    blacksmithspecialhability2: "Melee weapons have a faster attacks speed and deal increases health, balance bar, and dismemberment damage. In return, the Blacksmith  is unable to use ranged weapons.",
+    blacksmithspecialhability3: "Increases the maximum health of the Blacksmith.",
+    blacksmithspecialhability4: "When using an Amulet, the Blacksmith and nearby Survivors have their damage increased for a limited time. If you're lucky, the amulet might not break, so you can keep using it!",
 
     /* Pontos Fortes */
     edstrength: "Since he's a hunter, he has a lot of stamina.",
