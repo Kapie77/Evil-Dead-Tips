@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Henry</title>
+
+  <link rel="stylesheet" href="../../css/characterspage.css">
+  <link rel="stylesheet" href="../../css/backbutton.css">
+  <link rel="stylesheet" href="../../css/flag.css">
+  <link rel="icon" href="../../images/favicon.png">
+
+</head>
+<body class="guerreiro">
+
+  <!-- Language -->
+   <div class="lang-switch">
+      <img src="../../images/flags/br.jpg" onclick="setLang('pt')">
+      <img src="../../images/flags/us.png" onclick="setLang('en')">
+      <img src="../../images/flags/es.jpg" onclick="setLang('es')">
+  </div>
+  <!--------------->
+
+  <div class="overlay"></div>
+
+  <main class="container">
+
+<div class="hero-wrapper">
+
+  <!-- PERFIL -->
+  <section class="char-hero">
+  <div id="profile-tab" class="tab-content profile-layout active">
+
+    <!-- Descrição -->
+    <div class="hero-left">
+      
+      <h1>HENRY THE RED</h1>
+
+      <p data-lang="henrybio">
+        Scotty Descrição
+      </p>
+
+    </div>
+
+    <!-- Atributos -->
+    <div class="hero-right">
+
+      <h2 data-lang="attributes">Atributos</h2>
+
+      <div class="stat">
+        <span data-lang="defense">Defesa</span>
+        <div class="bars">
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+        </div>
+      </div>
+
+      <div class="stat">
+        <span data-lang="melee">Corpo a corpo</span>
+        <div class="bars">
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+          <div class="bar filled"></div>
+        </div>
+      </div>
+
+      <div class="stat">
+        <span data-lang="range">Longo alcance</span>
+        <div class="bars">
+          <div class="bar filled"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <div class="stat">
+        <span data-lang="support2">Suporte</span>
+        <div class="bars">
+          <div class="bar filled"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+       <div class="tab-buttons">
+        <button onclick="showAbilities()" data-lang="showabilities">
+          Ver Habilidades
+        </button>
+     </div>
+
+    </div>
+
+  </div>
+
+  <!-- HABILIDADES -->
+  <div id="abilities-tab" class="tab-content">
+
+    <h2 data-lang="abilities">Habilidades</h2>
+
+    <p data-lang="henryspecialhability1">
+      Descrição de Habilidade
+    </p>
+
+    <div class="ability">
+      <h3 data-lang="henryspecialtitle2">Habilidade 1</h3>
+      <p data-lang="henryspecialhability2">Descrição Habilidade 1</p>
+    </div>
+
+    <div class="ability">
+      <h3 data-lang="henryspecialtitle3">Habilidade 2</h3>
+      <p data-lang="henryspecialhability3">Descrição Habilidade 2</p>
+    </div>
+
+    <div class="ability">
+      <h3 data-lang="henryspecialtitle4">Habilidade 3</h3>
+      <p data-lang="henryspecialhability4">Descrição Habilidade 3</p>
+    </div>
+
+    <div class="tab-buttons">
+      <button onclick="showProfile()" data-lang="showprofile">
+        Voltar ao Perfil
+      </button>
+    </div>
+
+  </div>
+
+</section>
+  <!-- FIM DO PERFIL -->
+  </div>
+
+  <!-- HABILIDADES ESPECIAIS -->
+  <section class="skills-box">
+
+    <h2 data-lang="specialabilities">Habilidades Especiais</h2>
+
+    <div class="skill-icons">
+
+      <img src="../../images/SkillTree/MainCharacter/Henry_Warrior/01.png"
+          class="skill-icon active"
+          onclick="showSkill('trap', this)">
+
+      <img src="../../images/SkillTree/MainCharacter/Henry_Warrior/02.png"
+          class="skill-icon"
+          onclick="showSkill('light', this)">
+
+      <img src="../../images/SkillTree/MainCharacter/Henry_Warrior/03.png"
+          class="skill-icon"
+          onclick="showSkill('crossbow', this)">
+
+      <img src="../../images/SkillTree/MainCharacter/Henry_Warrior/04.png"
+          class="skill-icon"
+          onclick="showSkill('collector', this)">
+    </div>
+
+    <div class="skill-info">
+
+      <h3 id="skill-title"></h3>
+
+      <p id="skill-description"></p>
+
+      <div class="skill-stats" id="skill-stats"></div>
+
+    </div>
+
+  </section>
+  <!-- FIM DAS HABILIDADES ESPECIAIS -->
+
+    <!-- MAESTRIA -->
+     <section class="mastery-box">
+          <h2 data-lang="WeaponMastery">Maestria de Arma</h2>
+
+          <div class="no-mastery">
+
+            <p data-lang="NoMastery">
+              Este personagem não possui maestria de arma.
+            </p>
+
+          </div>
+
+    </section>
+
+    <!-------------->
+
+    <!-- PONTOS FORTES -->
+    <section class="strengths-box">
+      <h2 data-lang="strengths">Pontos Fortes</h2>
+      <ul>
+        <li data-lang="">This character doesn't have any strengths yet.</li>
+      </ul>
+    </section>
+    <!-------------------->
+
+    <!-- PONTOS FRACOS -->
+    <section class="weakness-box">
+      <h2 data-lang="weaknesses">Pontos Fracos</h2>
+      <ul>
+        <li data-lang="">This character doesn't have any weaknesses yet.</li>
+      </ul>
+    </section>
+    <!-------------------->
+
+    <!-- DICAS -->
+    <section class="tips-box">
+      <h2 data-lang="tips">Dicas</h2>
+      <div class="tips-grid">
+
+        <div class="tip">
+          <span class="tip-number">1</span>
+          <p data-lang="">There are no tips for this character yet.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <button onclick="goBack()" class="back-btn" data-lang="back">Voltar</button>
+
+  <script src="../../js/script.js"></script>
+  <script src="../../js/lang.js"></script> <!-- translate -->
+  <script src="../../js/see-abilities.js"></script> <!-- see abilities/profile -->
+
+  <script>
+    const currentLang = localStorage.getItem("lang") || "en";
+
+    const skills = {
+
+    trap: {
+      title: "henryspecialtitle1",
+
+      description:
+        "henryspecialhability1",
+
+      stats: [
+        {
+          name: "duration",
+          value: "7s → 8s"
+        },
+        {
+          name: "cooldown",
+          value: "100s → 95s"
+        }
+      ]
+    },
+
+    light: {
+      title: "henryspecialtitle2",
+
+      description:
+        "henryspecialhability2",
+
+      stats: [
+
+      ]
+    },
+
+    crossbow: {
+      title: "henryspecialtitle3",
+
+      description:
+        "henryspecialhability3",
+
+      stats: [
+        {
+          name: "DamageReflected",
+          value: "30%"
+        }
+      ]
+    },
+
+    collector: {
+      title: "henryspecialtitle4",
+
+      description:
+        "henryspecialhability4",
+
+      stats: [
+        {
+          name: "HealthAndShieldBarLengthIncrease",
+          value: "10% → 12;5%"
+        }
+      ]
+    }
+
+  };
+
+  function showSkill(skillName, clickedIcon) {
+
+  document.getElementById("skill-title").textContent =
+    translations[currentLang][skills[skillName].title];
+
+  document.getElementById("skill-description").textContent =
+    translations[currentLang][skills[skillName].description];
+
+  const statsContainer =
+    document.getElementById("skill-stats");
+
+  statsContainer.innerHTML = "";
+
+  skills[skillName].stats.forEach(stat => {
+
+    statsContainer.innerHTML += `
+      <div class="skill-stat">
+
+        <div class="skill-stat-name">
+          ${translations[currentLang][stat.name]}
+        </div>
+
+        <div class="skill-stat-values">
+          ${stat.value}
+        </div>
+
+      </div>
+    `;
+
+  });
+
+  document.querySelectorAll(".skill-icon")
+    .forEach(icon => icon.classList.remove("active"));
+
+  if (clickedIcon) {
+    clickedIcon.classList.add("active");
+  }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  showSkill("trap");
+});
+  </script>
+
+</body>
+</html>
