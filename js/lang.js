@@ -296,6 +296,8 @@ const translations = {
     DismembermentDamage: "Dano de Desmembramento",
     MaximumHealth: "Saúde Máxima",
     ChanceAnAmuletDoenstBreak: "Chance de Amuleto Não Quebrar",
+    DamageReflected: "Dano Refletido",
+    HealthAndShieldBarLengthIncrease: "Aumento da Saúde e do Comprimento da Barra de Escudo",
 
     /* Ed */
     EdAbilityDescription: "Quando ativada, essa habilidade permite o uso de uma lanterna especial que te ajuda a detectar e desarmar temporariamente armadilhas demoníacas.",
@@ -473,6 +475,16 @@ const translations = {
     blacksmithspecialhability3: "Aumenta a saúde máxima do Ferreiro.",
     blacksmithspecialhability4: "Ao usar um amuleto, o Ferreiro e os Sobreviventes próximos têm seu dano aumentado por um tempo limitado. Se você tiver sorte, o amuleto pode não quebrar, e assim você poderá continuar usando-o!",
 
+    /* Henry */
+    henryspecialtitle1: "Imparável",
+    henryspecialtitle2: "Escudos Acima",
+    henryspecialtitle3: "Ricochete",
+    henryspecialtitle4: "Endurecido em Batalha",
+    henryspecialhability1: "Ativar essa habilidade impede temporariamente dano a saúde ou ao escudo.",
+    henryspecialhability2: "Comece a partida com uma barra de escudo adicional.",
+    henryspecialhability3: "Se você tiver algum escudo, uma porcentagem do dano recebido será refletida de volta para o seu atacante.",
+    henryspecialhability4: "Aumenta a saúde máxima e o comprimento da barra de escudo.",
+
     /* Pontos Fortes */
     edstrength: "Por ser caçador ele tem muita stamina.",
 
@@ -614,6 +626,7 @@ const translations = {
     rubybio: "Ruby tem um sonho: comandar os poderes das trevas. E ela está determinada a abrir caminho até o topo, matando quem estiver no seu caminho. Essa Sombria escraviza as almas daqueles que são mortos dentro de sua aura para aumentar seu poder. Além disso, ela pode fazê-los explodir, curando seus companheiros de equipe e eliminando as unidades malignas nas proximidades.",
     brockbio: "É verdade que Brock Williams é um velho desprezível com sérios problemas de limites pessoais, mas ele sabe uma coisa ou duas sobre como controlar auras. Brock consegue modificar o efeito de sua aura, dependendo da classe dos seus camaradas Sobreviventes. Além disso, suas calças cargo largas podem carregar uma quantidade absurda dos bons — admito que essa é a única razão pela qual você se aproximaria dessas calças cargo largas. Assim que ele usa sua habilidade ativa, quanto mais Sobreviventes estiverem por perto, mais poderosa sua aura se torna.",
     blacksmithbio: "Boa sorte em encontrar alguém tão habilidoso no trabalho com ferro quanto o Ferreiro de Kandar! Esse artesão consegue criar todos os tipos de armas sofisticadas a partir de pouco mais do que sucata de metal. Ele também sabe como empunhá-las — espere até vê-lo com uma arma corpo-a-corpo nas mãos.",
+    henrybio: "O Duque de Shale e Senhor das Terras do Norte, Henry, o Vermelho, é um guerreiro robusto que se sente mais à vontade lutando na linha de frente. Ele possui mais vida e maior capacidade de escudo, além de uma habilidade ativa que o torna temporariamente invulnerável a danos. Como se isso não bastasse, qualquer inimigo que ousar atacá-lo paga por sua insolência recebendo danos automáticos em retaliação.",
   },
 
   /* ENGLISH */
@@ -906,6 +919,8 @@ const translations = {
     DismembermentDamage: "Dismemberment Damage",
     MaximumHealth: "Maximum Health",
     ChanceAnAmuletDoenstBreak: "Chance an Amulet Doenst Break",
+    DamageReflected: "Damage Reflected",
+    HealthAndShieldBarLengthIncrease: "Health and Shield Bar Length Increase",
 
 
     /* Ed */
@@ -1084,6 +1099,16 @@ const translations = {
     blacksmithspecialhability3: "Increases the maximum health of the Blacksmith.",
     blacksmithspecialhability4: "When using an Amulet, the Blacksmith and nearby Survivors have their damage increased for a limited time. If you're lucky, the amulet might not break, so you can keep using it!",
 
+    /* Henry */
+    henryspecialtitle1: "Unstoppable",
+    henryspecialtitle2: "Shields up",
+    henryspecialtitle3: "Rebound",
+    henryspecialtitle4: "Battle Hardened",
+    henryspecialhability1: "Activating this ability temporarily prevents damage to health or shield.",
+    henryspecialhability2: "Start the match with an additional shield bar.",
+    henryspecialhability3: "If you have any shield, reflects a percentage of the damage you receive back onto your attacker.",
+    henryspecialhability4: "Increases maximum health and shield bar length.",
+
     /* Pontos Fortes */
     edstrength: "Since he's a hunter, he has a lot of stamina.",
 
@@ -1225,6 +1250,7 @@ const translations = {
     rubybio: "Ruby has a dream, commanding the powers of darkness. And she's bound to slay her way to the top. This Dark One enslaves the souls of those killed within her aura to increase her power. To top it off, she can make them go boom, healing her teammates and eradicating the evil units nearby.",
     brockbio: "It's true Brock Williams is a seedy old man with major boundary issues, but he knows a thing or two about controlling auras. Brock can modify the effect of his aura, depending on the class of his fellow Survivors. Plus, his baggy cargo pants can carry an insane amount of goodies — admittedly the only reason you'd go near his baggy cargo pants. Once he uses his active skill, the more Survivors nearby, the more powerful his aura grows.",
     blacksmithbio: "Good luck finding someone as skilled in ironwork as Kandar's Blacksmith! This artisan can craft all sorts of sophisticated weapon from little more than metal scraps. He knows how to wield them too - wait till you see him with a melee weapon in hand.",
+    henrybio: "The Duke of Shale and Lord of the Northlands, Henry the Red is a robust warrior who feels most at home fighting on the front lines. He's got increased health and shield capacity and an active ability that makes him temporarily invulnerable to damage. If that's not tough enough, any enemy who dares strike him pays for its insolence with automatic damage in return.",
 
   },
 
