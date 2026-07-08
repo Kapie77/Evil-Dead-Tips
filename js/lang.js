@@ -298,6 +298,15 @@ const translations = {
     ChanceAnAmuletDoenstBreak: "Chance de Amuleto Não Quebrar",
     DamageReflected: "Dano Refletido",
     HealthAndShieldBarLengthIncrease: "Aumento da Saúde e do Comprimento da Barra de Escudo",
+    HealingPerSecond: "Cura Por Segundo",
+    TeammatesFearReduction: "Redução de Medo de Companheiros de Equipe",
+    TeammatesHealthRecovered: "Saúde dos Companheiros de Equipe Recuperada",
+    RangedDamageAsBleed: "Dano de Longo Alcance Como Sangramento",
+    BleedingDuration: "Duração de Sangramento",
+    WeaponDamagePerSecond: "Dano de Arma Por Segundo",
+    MaxBattleFrenzyBoosts: "Aumento de Frenesi de Batalha Máxima",
+    ExtraDamagePerSecond: "Dano Extra Por Segundo",
+    DamagePerConsecutiveHit: "Dano Por Acerto Consecutivo",
 
     /* Ed */
     EdAbilityDescription: "Quando ativada, essa habilidade permite o uso de uma lanterna especial que te ajuda a detectar e desarmar temporariamente armadilhas demoníacas.",
@@ -485,8 +494,29 @@ const translations = {
     henryspecialhability3: "Se você tiver algum escudo, uma porcentagem do dano recebido será refletida de volta para o seu atacante.",
     henryspecialhability4: "Aumenta a saúde máxima e o comprimento da barra de escudo.",
 
+    /* Cheryl */
+    cherylspecialtitle1: "Toque Curativo",
+    cherylspecialtitle2: "Montanha-Russa de Refrigerante",
+    cherylspecialtitle3: "Coragem no Contato",
+    cherylspecialtitle4: "Cura Pelo Contato",
+    cherylspecialhability1: "Ative essa habilidade para criar uma zona de cura para você e seus companheiros de equipe.",
+    cherylspecialhability2: "Carregue mais Shemp's Cola e comece a partida com um a mais no seu inventário.",
+    cherylspecialhability3: "Beber uma Shemp's Cola reduz parcialmente o seu medo e o medo dos companheiros de equipe que estão por perto.",
+    cherylspecialhability4: "Quando você bebe uma Shemp's Cola, Cheryl e os companheiros de equipe próximos ganham uma quantidade maior de vida.",
+
+    /* Kelly */
+    kellyspecialtitle1: "Tiro Deslizante",
+    kellyspecialtitle2: "Meastria de Arma: Martelo de Carne",
+    kellyspecialtitle3: "Tiro de Contra-ataque",
+    kellyspecialtitle4: "Frenesi de Batalha",
+    kellyspecialhability1: "Quando ativada, você se esquiva sem consumir vigor e seus ataques de longo alcance causam dano de sangramento ao alvo por um curto período.",
+    kellyspecialhability2: "O Martelo de Carne tem uma velocidade de ataque maior e causa mais dano à saúde, à barra de equilíbrio e de desmembramento.",
+    kellyspecialhability3: "Seu próximo ataque à distância após uma esquiva bem-sucedida causa dano de sangramento no seu alvo por um curto período de tempo.",
+    kellyspecialhability4: "Aumenta a quantidade de dano corpo a corpo que você causa quanto mais tempo permanecer em sustentando combate.",
+
     /* Pontos Fortes */
-    edstrength: "Por ser caçador ele tem muita stamina.",
+    edstrength: "Por ser Caçador ele tem muita stamina.",
+    kellystrength: "Como ela é Caçadora, ela tem muita resistência.",
 
     miastrength: "Ela tem o maior dano do jogo.",
 
@@ -510,6 +540,7 @@ const translations = {
     /* Pontos Fracos */
     weaknesses: "Pontos Fracos",
     edweak1: "Ele possui pouca saúde por ser Caçador.",
+    kellyweak1: "Ela possui pouca saúde por ser Caçadora.",
 
     miaweak1: "O medo dela sobe muito rápido, então você precisa vigiar seu nível de medo constantemente para que o demônio não saiba onde você está.",
 
@@ -627,6 +658,9 @@ const translations = {
     brockbio: "É verdade que Brock Williams é um velho desprezível com sérios problemas de limites pessoais, mas ele sabe uma coisa ou duas sobre como controlar auras. Brock consegue modificar o efeito de sua aura, dependendo da classe dos seus camaradas Sobreviventes. Além disso, suas calças cargo largas podem carregar uma quantidade absurda dos bons — admito que essa é a única razão pela qual você se aproximaria dessas calças cargo largas. Assim que ele usa sua habilidade ativa, quanto mais Sobreviventes estiverem por perto, mais poderosa sua aura se torna.",
     blacksmithbio: "Boa sorte em encontrar alguém tão habilidoso no trabalho com ferro quanto o Ferreiro de Kandar! Esse artesão consegue criar todos os tipos de armas sofisticadas a partir de pouco mais do que sucata de metal. Ele também sabe como empunhá-las — espere até vê-lo com uma arma corpo-a-corpo nas mãos.",
     henrybio: "O Duque de Shale e Senhor das Terras do Norte, Henry, o Vermelho, é um guerreiro robusto que se sente mais à vontade lutando na linha de frente. Ele possui mais vida e maior capacidade de escudo, além de uma habilidade ativa que o torna temporariamente invulnerável a danos. Como se isso não bastasse, qualquer inimigo que ousar atacá-lo paga por sua insolência recebendo danos automáticos em retaliação.",
+    cherylbio: "Especialista na arte da cura, Cheryl, a irmãzinha de Ash, é capaz de reduzir os níveis de medo e restaurar alguma saúde dos Sobreviventes próximos sempre que bebe um Shemp’s Cola. Ela começa cada partida com um Shemp’s em seu inventário e bem como possui capacidade de carregamento aumentada para elas. Ela possui uma habilidade única que lhe permite criar uma zona de cura que restaura a saúde de todos os Sobreviventes próximos ao longo do tempo.",
+    kellybio: "Caçadora ágil e implacável, Kelly se torna cada vez mais perigosa quanto mais tempo passa em combate corpo a corpo. Some isso a sua maestria com martelo de carne, e os Deadites não estão a salvo em lugar algum perto dela. Além disso, como atiradora habilidosa, Kelly tem a capacidade de causar dano de sangramento com qualquer ataque de longo alcance após se esquivar. Sua habilidade única lhe confere a capacidade temporária de se esquivar sem consumir vigor e de causar dano de sangramento com todos os ataques de longo alcance.",
+    amandabio: "Ninguém maneja uma pistola como a Detetive Fisher. Nas mãos dela, tem velocidade de ataque aumentada e causa mais dano à saúde, à barra de equilíbrio e de desmembramento. Ela começa cada partida com sua fiel arma secundária, e cada acerto consecutivo que ela desferir com qualquer arma de longo alcance aumenta o dano do acerto seguinte. Com sua habilidade ativa exclusiva, Amanda pode disparar qualquer arma de longo alcance sem consumir munição por um tempo limitado.",
   },
 
   /* ENGLISH */
@@ -921,7 +955,15 @@ const translations = {
     ChanceAnAmuletDoenstBreak: "Chance an Amulet Doenst Break",
     DamageReflected: "Damage Reflected",
     HealthAndShieldBarLengthIncrease: "Health and Shield Bar Length Increase",
-
+    HealingPerSecond: "Healing Per Second",
+    TeammatesFearReduction: "Teammates Fear Reduction",
+    TeammatesHealthRecovered: "Teammates Health Recovered",
+    RangedDamageAsBleed: "Ranged Damage as Bleed",
+    BleedingDuration: "Bleeding Duration",
+    WeaponDamagePerSecond: "Weapon Damage Per Second",
+    MaxBattleFrenzyBoosts: "Max Battle Frenzy Boosts",
+    ExtraDamagePerSecond: "Extra Damage Per Second",
+    DamagePerConsecutiveHit: "Damage Per Consecutive Hit",
 
     /* Ed */
     EdAbilityDescription: "When activated, this ability grants use of a unique flashlight that allows you to detect and temporarily disarm demon traps.",
@@ -1109,8 +1151,39 @@ const translations = {
     henryspecialhability3: "If you have any shield, reflects a percentage of the damage you receive back onto your attacker.",
     henryspecialhability4: "Increases maximum health and shield bar length.",
 
+    /* Cheryl */
+    cherylspecialtitle1: "Healing Touch",
+    cherylspecialtitle2: "Cola Coaster",
+    cherylspecialtitle3: "Contact Courage",
+    cherylspecialtitle4: "Contact Healing",
+    cherylspecialhability1: "Activate this ability to create a healing zone for you and your teammates.",
+    cherylspecialhability2: "Carry more Shemp's Cola and start the match with an extra one in your inventory.",
+    cherylspecialhability3: "Drinking a Shemp's Cola partially reduces your fear and the fear of nearby teammates.",
+    cherylspecialhability4: "When you drink a Shemp's Cola, Cheryl and nearby teammates gain an increased amount of health.",
+
+    /* Kelly */
+    kellyspecialtitle1: "Slipshot",
+    kellyspecialtitle2: "Weapon Master: Meat Hammer",
+    kellyspecialtitle3: "Countershot",
+    kellyspecialtitle4: "Battle Frenzy",
+    kellyspecialhability1: "When activated, you dodge without using stamina and your ranged attacks cause bleeding damage to your target for a short period.",
+    kellyspecialhability2: "The Meat Hammer has a faster attack speed and deals increased health, balance bar and dismemberment damage.",
+    kellyspecialhability3: "Your next ranged attack after a successful dodge inflicts bleeding damage on your target for a short time.",
+    kellyspecialhability4: "Increases the amount of melee damage you deal the longer you are in sustained combat.",
+
+    /* Amanda */
+    amandaspecialtitle1: "Ammo For Days",
+    amandaspecialtitle2: "Trusty Sidearm",
+    amandaspecialtitle3: "Weapon Master: Pistol",
+    amandaspecialtitle4: "Accuracy Counts",
+    amandaspecialhability1: "When activated, this ability allows you to temporarily fire your ranged weapons without expending any ammunition.",
+    amandaspecialhability2: "Start the match with a pistol.",
+    amandaspecialhability3: "The Pistol has a faster reload speed and deals increases health, balance bar and dismemberment damage.",
+    amandaspecialhability4: "Damage dealt by your ranged weapons increases with each consecutive hit.",
+
     /* Pontos Fortes */
     edstrength: "Since he's a hunter, he has a lot of stamina.",
+    kellystrength: "Since she's a hunter, he has a lot of stamina.",
 
     miastrength: "She deals the most damage in the game.",
 
@@ -1134,6 +1207,7 @@ const translations = {
     /* Pontos Fracos*/
     weaknesses: "Weaknesses",
     edweak1: "He has low health because he is a Hunter.",
+    kellyweak1: "She has low health because she is a Hunter.",
 
     miaweak1: "Her fear rises very quickly, so you need to keep a constant eye on her fear level so the demon doesn't know where you are.",
 
@@ -1251,6 +1325,9 @@ const translations = {
     brockbio: "It's true Brock Williams is a seedy old man with major boundary issues, but he knows a thing or two about controlling auras. Brock can modify the effect of his aura, depending on the class of his fellow Survivors. Plus, his baggy cargo pants can carry an insane amount of goodies — admittedly the only reason you'd go near his baggy cargo pants. Once he uses his active skill, the more Survivors nearby, the more powerful his aura grows.",
     blacksmithbio: "Good luck finding someone as skilled in ironwork as Kandar's Blacksmith! This artisan can craft all sorts of sophisticated weapon from little more than metal scraps. He knows how to wield them too - wait till you see him with a melee weapon in hand.",
     henrybio: "The Duke of Shale and Lord of the Northlands, Henry the Red is a robust warrior who feels most at home fighting on the front lines. He's got increased health and shield capacity and an active ability that makes him temporarily invulnerable to damage. If that's not tough enough, any enemy who dares strike him pays for its insolence with automatic damage in return.",
+    cherylbio: "A specialist in the art of healing, Ash's little sister Cheryl is able to reduce fear levels and restore some health to nearby Survivors whenever she drinks a Shemp's Cola. She starts every match with a Shemp's in her inventory and has an increased carrying capacity for them as well. She has a unique skill that allows her to create a healing zone that restores health to all nearby Survivors over time.",
+    kellybio: "An agile and ruthless Hunter, Kelly becomes more dangerous the longer she's engaged in melee combat. Combine that with her mastery of the meat hammer and Deadites aren't safe anywhere near her. Also a deft shot, Kelly has the ability to inflict bleeding damage from any ranged attack after she dodges. Her unique skills grant her the temporary ability to dodge without consuming stamina and inflict bleeding damage with all ranged attacks.",
+    amandabio: "No one wields a pistol like Detective Fisher. In her hands, it has increased attack speed and deals more health, balance bar and dismemberment damage. She begins each match with her trusty sidearm, and every consecutive hit she makes with any ranged weapon increases the damage of the following hit. With her unique active skill, Amanda can fire any ranged weapon without consuming ammunition for a limited time.",
 
   },
 
