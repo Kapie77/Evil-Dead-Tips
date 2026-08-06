@@ -214,8 +214,51 @@
 
         <div class="tip">
           <span class="tip-number">1</span>
-          <p data-lang="">There are no tips for this character yet.</p>
+          <p data-lang="RubyTip1">Dica 1.</p>
         </div>
+
+        <div class="tip">
+          <span class="tip-number">2</span>
+          <p data-lang="RubyTip2">Dica 2.</p>
+        </div>
+
+        <div class="tip">
+          <span class="tip-number">3</span>
+          <p data-lang="RubyTip3">Dica 3.</p>
+        </div>
+
+        <div class="tip">
+          <span class="tip-number">4</span>
+          <p data-lang="RubyTip4">Dica 4.</p>
+        </div>
+
+        <div class="tip">
+          <span class="tip-number">5</span>
+          <p data-lang="RubyTip5">Dica 5.</p>
+        </div>
+
+        <!-- Dica com imagem -->
+        <div class="tip-image-card">
+          <span class="tip-number">6</span>
+
+          <div class="tip-image-content">
+
+            <p data-lang="RubyTip6">
+                Se você usar seu poder...
+            </p>
+
+            <img
+                src="./images/ruby1.png"
+                alt="Dica 1"
+                class="tip-image"
+                onclick="openImage(this.src)">
+
+                <span class="tip-caption">
+                    A luz da lanterna desarma a armadilha antes de você passar.
+                </span>
+          </div>
+        </div>
+        <!-- Dica com imagem -->
 
       </div>
     </section>
@@ -376,6 +419,30 @@ window.addEventListener("DOMContentLoaded", () => {
   showSkill("trap");
 });
   </script>
+
+<!-- dica com imagem -->
+<script>
+function openImage(src)
+{
+    document.getElementById("modalImage").src = src;
+
+    document.getElementById("imageModal")
+        .classList.add("show");
+}
+
+function closeImage()
+{
+    document.getElementById("imageModal")
+        .classList.remove("show");
+}
+</script>
+
+ <div id="imageModal" class="image-modal" onclick="closeImage()">
+
+    <img id="modalImage">
+
+</div>
+<!-- dica com imagem -->
 
 </body>
 </html>
