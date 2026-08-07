@@ -195,3 +195,54 @@ h1{
 
     cursor:pointer;
 }
+
+/* ===============
+    TAGS
+================= */
+.bonus-description{
+    margin:15px 0;
+    line-height:1.5;
+    min-height:70px;
+}
+
+.bonus-tags{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+
+    margin-top:auto;
+}
+
+.bonus-tags span{
+    width:140px;          /* mesma largura para todas */
+    padding:6px 12px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    font-size:.8rem;
+    font-weight:bold;
+}
+
+/* personagem */
+.tag-character{
+    background:#555;
+    color:white;
+}
+
+/* individual */
+.tag-self{
+    background:#b91c1c;
+    color:white;
+}
+
+/* coletivo */
+.tag-team{
+    background:#15803d;
+    color:white;
+}
