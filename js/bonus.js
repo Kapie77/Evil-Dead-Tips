@@ -1,65 +1,11 @@
 const bonuses = [
 
 // ----------------------------------------------------------- //
-    {
-
-    image:"../images/HUD/HUD_Skills/Arrow_Stroke.png",
-    lang: "bonus1"
-
-    },
-
-    {
-
-    image:"../images/HUD/HUD_Skills/DN015_Token.png",
-    lang: "bonus2"
-
-    },
-
-    {
-
-    image:"../images/HUD/HUD_Skills/DN016_Token.png",
-    lang: "bonus3"
-
-    },
-
-    {
-
-    image:"../images/HUD/HUD_Skills/DPB008_ViciousFatigue_Token.png",
-    lang: "bonus4"
-
-    },
-
-    {
-
-    image:"../images/HUD/HUD_Skills/DW005_Token.png",
-    lang: "bonus5"
-
-    },
-
-    {
-
-    image:"../images/HUD/HUD_Skills/DW011_Token.png",
-    lang: "bonus6"
-
-    },
-
-    {
-
-    image:"../images/HUD/HUD_Skills/DW012_Token.png",
-    lang: "bonus7"
-
-    },
-
-    {
-
-    image:"../images/HUD/HUD_Skills/Eye_Token.png",
-    lang: "bonus8"
-
-    },
-
+    
     {
 
     image:"../images/HUD/HUD_Skills/HUD_SH009_01_2d.png",
+    name: "kellyspecialtitle4",
     character: "Kelly",
     team: false, // individual
     lang: "bonus9"
@@ -69,51 +15,19 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/HUD_SH010_01_2d.png",
+    name: "kellyspecialtitle3",
     character: "Kelly",
     team: false, // individual
     lang: "bonus10"
 
     },
 
-    /* 20 */
-    {
-
-    image:"../images/HUD/HUD_Skills/Progress_Bar_xxs.png",
-    lang: "bonus11"
-
-    },
-
-    {
-
-    image:"../images/HUD/HUD_Skills/SC033_Token.png",
-    lang: "bonus12"
-
-    },
-
-    {
-
-    image:"../images/HUD/HUD_Skills/SC045_Token.png",
-    lang: "bonus13"
-
-    },
-
-    {
-
-    image:"../images/HUD/HUD_Skills/SC046_Token.png",
-    lang: "bonus14"
-
-    },
-
-    {
-
-    image:"../images/HUD/HUD_Skills/SC047_Token.png",
-    lang: "bonus15"
-
-    },
+    
 
     {
 
     image:"../images/HUD/HUD_Skills/SH012_Token.png",
+    name: "kellyspecialtitle1",
     character: "Kelly",
     team: false, // individual
     lang: "bonus16"
@@ -123,7 +37,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL003_Token.png",
-    character: "Ash Leader",
+    name: "ashleaderspecialtitle4",
+    character: "lash",
     team: false, // individual
     lang: "bonus17"
 
@@ -132,6 +47,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL005_Token.png",
+    name: "anniespecialtitle2",
     character: "Annie",
     team: true, // coletivo
     lang: "bonus18"
@@ -141,6 +57,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL013_00.png",
+    name: "rubyspecialtitle2",
     character: "Ruby",
     team: true, // coletivo
     lang: "bonus19"
@@ -150,6 +67,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL013_01.png",
+    name: "rubyspecialtitle2",
     character: "Ruby",
     team: true, // coletivo
     lang: "bonus20"
@@ -160,6 +78,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL013_02.png",
+    name: "rubyspecialtitle2",
     character: "Ruby",
     team: true, // coletivo
     lang:"bonus21"
@@ -169,6 +88,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL013_03.png",
+    name: "rubyspecialtitle2",
     character: "Ruby",
     team: true, // coletivo
     lang: "bonus22"
@@ -178,6 +98,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL013_Self.png",
+    name: "rubyspecialtitle2",
     character: "Ruby",
     team: false, // individual
     lang: "bonus23"
@@ -187,6 +108,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL015_Melee.png",
+    name: "rubyspecialtitle4",
     character: "Ruby",
     team: false, // individual
     lang: "bonus24"
@@ -196,6 +118,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL015_Ranged.png",
+    name: "rubyspecialtitle4",
     character: "Ruby",
     team: false, // individual
     lang: "bonus25"
@@ -205,6 +128,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL017_Hunter_Token.png",
+    name: "brockspecialtitle2",
     character: "Brock",
     team: true, // coletivo
     lang: "bonus26"
@@ -214,6 +138,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL017_Leader_Token.png",
+    name: "brockspecialtitle2",
     character: "Brock",
     team: true, // coletivo
     lang: "bonus27"
@@ -223,6 +148,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL017_Support_Token.png",
+    name: "brockspecialtitle2",
     character: "Brock",
     team: true, // coletivo
     lang: "bonus28"
@@ -232,6 +158,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL017_Warrior_Token.png",
+    name: "brockspecialtitle2",
     character: "Brock",
     team: true, // coletivo
     lang: "bonus29"
@@ -241,6 +168,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL018_no_Token.png",
+    name: "brockspecialtitle3",
     character: "Brock",
     team: true, // coletivo
     lang: "bonus30"
@@ -251,6 +179,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL018_yes_Token.png",
+    name: "brockspecialtitle3",
     character: "Brock",
     team: true, // coletivo
     lang: "bonus31"
@@ -269,6 +198,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SS009_Token.png",
+    name: "pablospecialtitle2",
     character: "Pablo",
     team: false, // individual
     lang: "bonus33"
@@ -278,6 +208,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SS015_Token.png",
+    name: "davidspecialtitle2",
     character: "David",
     team: true, // coletivo
     lang: "bonus34"
@@ -287,6 +218,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SS016_Token.png",
+    name: "davidspecialtitle1",
     character: "David",
     team: true, // coletivo
     lang: "bonus35"
@@ -296,7 +228,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SS019_Token.png",
-    character: "Blacksmith",
+    name: "blacksmithspecialtitle4",
+    character: "blacksmith",
     team: true, // coletivo
     lang: "bonus36"
 
@@ -305,6 +238,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SW009_Token.png",
+    name: "henryspecialtitle4",
     character: "Henry",
     team: false, // individual
     lang: "bonus37"
@@ -314,6 +248,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SW013_Token.png",
+    name: "miaspecialtitle2",
     character: "Mia",
     team: false, // individual
     lang: "bonus38"
@@ -323,37 +258,19 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SW014_Token.png",
+    name: "miaspecialtitle3",
     character: "Mia",
     team: false, // individual
     lang: "bonus39"
 
     },
 
-    {
-
-    image:"../images/HUD/HUD_Skills/u1086_u0001_HUD_DP020_01_2d.png",
-    lang: "bonus40"
-
-    },
-
-    /* 50 */
-    {
-
-    image:"../images/HUD/HUD_Skills/u1087_u0001_HUD_DN019_01_2d.png",
-    lang: "bonus41"
-
-    },
-
-    {
-
-    image:"../images/HUD/HUD_Skills/u1088_u0001_HUD_DN017_01_2d.png",
-    lang: "bonus42"
-
-    },
+    
 
     {
 
     image:"../images/HUD/HUD_Skills/u1092_u0001_HUD_SH006_01_2d.png",
+    name: "edspecialtitle4",
     character: "Ed",
     team: false, // individual
     lang: "bonus43"
@@ -363,30 +280,20 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1093_u0001_HUD_SH008_01_2d.png",
+    name: "edspecialtitle1",
     character: "Ed",
     team: false, // individual
     lang: "bonus44"
 
     },
 
-    {
-
-    image:"../images/HUD/HUD_Skills/u1095_u0001_HUD_SC034_01_2d.png",
-    lang: "bonus45"
-
-    },
-
-    {
-
-    image:"../images/HUD/HUD_Skills/u1096_u0001_HUD_SC035_01_2d.png",
-    lang: "bonus46"
-
-    },
+    
 
     {
 
     image:"../images/HUD/HUD_Skills/u1098_u0001_HUD_SL002_01_2d.png",
-    character: "Ash Leader",
+    name: "ashleaderspecialtitle2",
+    character: "lash",
     team: true, // coletivo
     lang: "bonus47"
 
@@ -395,6 +302,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1099_u0001_HUD_SL006_01_2d.png",
+    name: "anniespecialtitle3",
     character: "Annie",
     team: true, // coletivo
     lang: "bonus48"
@@ -404,6 +312,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1100_u0001_HUD_SL007_01_2d.png",
+    name: "anniespecialtitle4",
     character: "Annie",
     team: true, // coletivo
     lang: "bonus49"
@@ -413,6 +322,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1101_u0001_HUD_SL008_01_2d.png",
+    name: "anniespecialtitle1",
     character: "Annie",
     team: true, // coletivo
     lang: "bonus50"
@@ -423,6 +333,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1102_u0001_HUD_SL009_01_2d.png",
+    name: "lordarthurspecialtitle2",
     character: "Lord Arthur",
     team: true, // coletivo
     lang: "bonus51"
@@ -432,6 +343,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1103_u0001_HUD_SL010_01_2d.png",
+    name: "lordarthurspecialtitle3",
     character: "Lord Arthur",
     team: false, // individual
     lang: "bonus52"
@@ -441,6 +353,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1104_u0001_HUD_SL012_01_2d.png",
+    name: "lordarthurspecialtitle1",
     character: "Lord Arthur",
     team: true, // coletivo
     lang: "bonus53"
@@ -450,7 +363,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1105_u0001_HUD_SW004_01_2d.png",
-    character: "Ash Warrior",
+    name: "ashwarriorspecialtitle1",
+    character: "wash",
     team: false, // individual
     lang: "bonus54"
 
@@ -459,6 +373,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1106_u0001_HUD_SW012_01_2d.png",
+    name: "henryspecialtitle1",
     character: "Henry",
     team: false, // individual
     lang: "bonus55"
@@ -468,6 +383,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1107_u0001_HUD_SH014_01_2d.png",
+    name: "amandaspecialtitle4",
     character: "Amanda",
     team: false, // individual
     lang: "bonus56"
@@ -477,6 +393,7 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1108_u0001_HUD_SH016_01_2d.png",
+    name: "amandaspecialtitle1",
     character: "Amanda",
     team: false, // individual
     lang: "bonus57"
@@ -486,18 +403,14 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1109_u0001_HUD_SS002_01_2d.png",
-    character: "Ash Support",
+    name: "ashsupportspecialtitle3",
+    character: "sash",
     team: true, // coletivo
     lang: "bonus58"
 
     },
 
-    {
 
-    image:"../images/HUD/HUD_Skills/u2445_u0001_Glow_01_2d.png",
-    lang: "bonus59"
-
-    }
 
   ];
 // -------------------------------------------------------- //
@@ -515,6 +428,10 @@ bonuses.forEach(bonus => {
     card.innerHTML = `
         <img src="${bonus.image}" alt="Bonus">
 
+        <h3 class="bonus-name">
+            ${translations[currentLang][bonus.name]}
+        </h3>
+
         <p class="bonus-description">
             ${translations[currentLang][bonus.lang]}
         </p>
@@ -522,7 +439,7 @@ bonuses.forEach(bonus => {
         <div class="bonus-tags">
 
             <span class="tag-character">
-                ${bonus.character}
+                ${translations[currentLang][bonus.character] || bonus.character}
             </span>
 
             <span class="${bonus.team ? 'tag-team' : 'tag-self'}">
