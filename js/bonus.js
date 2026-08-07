@@ -60,6 +60,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/HUD_SH009_01_2d.png",
+    character: "Kelly",
+    team: false, // individual
     lang: "bonus9"
 
     },
@@ -67,6 +69,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/HUD_SH010_01_2d.png",
+    character: "Kelly",
+    team: false, // individual
     lang: "bonus10"
 
     },
@@ -110,6 +114,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SH012_Token.png",
+    character: "Kelly",
+    team: false, // individual
     lang: "bonus16"
 
     },
@@ -117,6 +123,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL003_Token.png",
+    character: "Ash Leader",
+    team: false, // individual
     lang: "bonus17"
 
     },
@@ -124,6 +132,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL005_Token.png",
+    character: "Annie",
+    team: true, // coletivo
     lang: "bonus18"
 
     },
@@ -131,6 +141,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL013_00.png",
+    character: "Ruby",
+    team: true, // coletivo
     lang: "bonus19"
 
     },
@@ -138,6 +150,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL013_01.png",
+    character: "Ruby",
+    team: true, // coletivo
     lang: "bonus20"
 
     },
@@ -146,6 +160,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL013_02.png",
+    character: "Ruby",
+    team: true, // coletivo
     lang:"bonus21"
 
     },
@@ -153,6 +169,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL013_03.png",
+    character: "Ruby",
+    team: true, // coletivo
     lang: "bonus22"
 
     },
@@ -167,6 +185,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL015_Melee.png",
+    character: "Ruby",
+    team: false, // individual
     lang: "bonus24"
 
     },
@@ -174,6 +194,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL015_Ranged.png",
+    character: "Ruby",
+    team: false, // individual
     lang: "bonus25"
 
     },
@@ -181,6 +203,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL017_Hunter_Token.png",
+    character: "Brock",
+    team: true, // coletivo
     lang: "bonus26"
 
     },
@@ -188,6 +212,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL017_Leader_Token.png",
+    character: "Brock",
+    team: true, // coletivo
     lang: "bonus27"
 
     },
@@ -195,6 +221,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL017_Support_Token.png",
+    character: "Brock",
+    team: true, // coletivo
     lang: "bonus28"
 
     },
@@ -202,6 +230,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL017_Warrior_Token.png",
+    character: "Brock",
+    team: true, // coletivo
     lang: "bonus29"
 
     },
@@ -209,6 +239,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL018_no_Token.png",
+    character: "Brock",
+    team: true, // coletivo
     lang: "bonus30"
 
     },
@@ -217,6 +249,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL018_yes_Token.png",
+    character: "Brock",
+    team: true, // coletivo
     lang: "bonus31"
 
     },
@@ -224,6 +258,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/Specialist_Token.png",
+    character: "Ash Warrior | Scotty | Mia",
+    team: false, // individual
     lang: "bonus32"
 
     },
@@ -231,6 +267,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SS009_Token.png",
+    character: "Pablo",
+    team: false, // individual
     lang: "bonus33"
 
     },
@@ -238,6 +276,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SS015_Token.png",
+    character: "David",
+    team: true, // coletivo
     lang: "bonus34"
 
     },
@@ -245,6 +285,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SS016_Token.png",
+    character: "David",
+    team: true, // coletivo
     lang: "bonus35"
 
     },
@@ -252,6 +294,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SS019_Token.png",
+    character: "Blacksmith",
+    team: true, // coletivo
     lang: "bonus36"
 
     },
@@ -259,6 +303,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SW009_Token.png",
+    character: "Henry",
+    team: false, // individual
     lang: "bonus37"
 
     },
@@ -266,6 +312,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SW013_Token.png",
+    character: "Mia",
+    team: false, // individual
     lang: "bonus38"
 
     },
@@ -273,6 +321,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SW014_Token.png",
+    character: "Mia",
+    team: false, // individual
     lang: "bonus39"
 
     },
@@ -302,6 +352,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1092_u0001_HUD_SH006_01_2d.png",
+    character: "Ed",
+    team: false, // individual
     lang: "bonus43"
 
     },
@@ -309,6 +361,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1093_u0001_HUD_SH008_01_2d.png",
+    character: "Ed",
+    team: false, // individual
     lang: "bonus44"
 
     },
@@ -330,6 +384,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1098_u0001_HUD_SL002_01_2d.png",
+    character: "Ash Leader",
+    team: true, // coletivo
     lang: "bonus47"
 
     },
@@ -337,6 +393,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1099_u0001_HUD_SL006_01_2d.png",
+    character: "Annie",
+    team: true, // coletivo
     lang: "bonus48"
 
     },
@@ -344,6 +402,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1100_u0001_HUD_SL007_01_2d.png",
+    character: "Annie",
+    team: true, // coletivo
     lang: "bonus49"
 
     },
@@ -351,6 +411,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1101_u0001_HUD_SL008_01_2d.png",
+    character: "Annie",
+    team: true, // coletivo
     lang: "bonus50"
 
     },
@@ -359,6 +421,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1102_u0001_HUD_SL009_01_2d.png",
+    character: "Lord Arthur",
+    team: true, // coletivo
     lang: "bonus51"
 
     },
@@ -366,6 +430,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1103_u0001_HUD_SL010_01_2d.png",
+    character: "Lord Arthur",
+    team: false, // individual
     lang: "bonus52"
 
     },
@@ -373,6 +439,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1104_u0001_HUD_SL012_01_2d.png",
+    character: "Lord Arthur",
+    team: true, // coletivo
     lang: "bonus53"
 
     },
@@ -380,6 +448,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1105_u0001_HUD_SW004_01_2d.png",
+    character: "Ash Warrior",
+    team: false, // individual
     lang: "bonus54"
 
     },
@@ -387,6 +457,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1106_u0001_HUD_SW012_01_2d.png",
+    character: "Henry",
+    team: false, // individual
     lang: "bonus55"
 
     },
@@ -394,6 +466,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1107_u0001_HUD_SH014_01_2d.png",
+    character: "Amanda",
+    team: false, // individual
     lang: "bonus56"
 
     },
@@ -401,6 +475,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1108_u0001_HUD_SH016_01_2d.png",
+    character: "Amanda",
+    team: false, // individual
     lang: "bonus57"
 
     },
@@ -408,6 +484,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1109_u0001_HUD_SS002_01_2d.png",
+    character: "Ash Support",
+    team: true, // coletivo
     lang: "bonus58"
 
     },
@@ -431,10 +509,29 @@ bonuses.forEach(bonus => {
 
     card.className = "bonus-card";
 
+    //innerHTML //
     card.innerHTML = `
-        <img src="${bonus.image}">
-        <p>${translations[currentLang][bonus.lang]}</p>
+        <img src="${bonus.image}" alt="Bonus">
+
+        <p class="bonus-description">
+            ${translations[currentLang][bonus.lang]}
+        </p>
+
+        <div class="bonus-tags">
+
+            <span class="tag-character">
+                ${bonus.character}
+            </span>
+
+            <span class="${bonus.team ? 'tag-team' : 'tag-self'}">
+                ${bonus.team
+                    ? translations[currentLang].teamBonus
+                    : translations[currentLang].selfBonus}
+            </span>
+
+        </div>
     `;
+    // -------------- //
 
     card.onclick = () => openModal(bonus);
 
