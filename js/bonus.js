@@ -178,6 +178,8 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SL013_Self.png",
+    character: "Ruby",
+    team: false, // individual
     lang: "bonus23"
 
     },
