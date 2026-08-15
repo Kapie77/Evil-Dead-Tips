@@ -536,6 +536,7 @@ const translations = {
     rubystrength: "Consegue curar a si mesma com sua habilidade de explosão.",
 
     brockstrength: "Ele consegue carregar 5 Shemps, 5 amuletos, 5 fósforos e +15 de munições.",
+    blacksmithstrength: "Ele tem maestria com todas as armas corpo-a-corpo.",
 
     /* Pontos Fracos */
     weaknesses: "Pontos Fracos",
@@ -557,6 +558,9 @@ const translations = {
     pabloweak1: "Ele é fraco no livro.",
 
     rubyweak1: "Ela não controla quando a explosão da sua habilidade irá acontecer, então o poder pode ser muitas vezes usado em vão.",
+    blacksmithweak1: "Ele não pode carregar armas de longe alcance.",
+    blacksmithweak2: "Ele não pode escolher qual arma vai forjar, nem sequer pode escolher o tipo de arma se de corpo-a-corpo ou de longo alcance, então pode passar muito tempo coletando sucatas para no fim forjar uma arma ruim ou que não é útil para ninguém.",
+    blacksmithweak3: "Ele perde muito tempo coletando sucatas e só pode fazer uma arma lendária durante a partida. Talvez ele consiga fazer mais uma arma lendária, mas apenas se a partida demorar, tiver muitos demônio para matar, e perder tempo coletando as sucatas.",
 
     /* DICAS */
     tips: "Dicas",
@@ -603,14 +607,27 @@ const translations = {
       PabloTip4: "Comece upando sua barra de escudo para conseguir usar seus amuletos, depois upe vigor e vida.",
 
       /* Ruby Dicas */
-      RubyTip1: "Ruby absorve as almas das unidades malignas que morrem dentro de sua aura, sejam mortos por ela ou por companheiros de equipe, e isso aumenta os efeitos da sua aura. Portanto quanto mais almas você coletar, mais forte ela ficará. Mas se você usar a habilidade especial dela irá perder as almas e, consequentemente, diminuirá os efeitos de sua aura, então não desperdice as almas coletadas. Use a habilidade dela apenas em momentos essenciais, como no Necronomicon, por exemplo.",
-      RubyTip2: "Ruby pode cancelar a habilidade especial dela a qualquer momento apertando o mesmo botão da habilidade especial, isso ativará a explosão e será consumida o número de almas que foi coletada até o momento em que você cancelou a habilidade, com isso você pode controlar quantas almas você irá perder. Porém, a habilidade será resetada e você terá que esperar muito tempo pra usá-la de novo.",
-      RubyTip3: "Foque em upar a Aura dela pro máximo o quanto antes. 5 pontos em atributos libera o primeiro ponto da Aura. 9 pontos em atributos libera o segundo ponto da Aura. 14 pontos em atributos libera o terceiro ponto da Aura.",
-      RubyTip4: "Aura level 1: reduz o tempo de recarga. Aumenta Limite de almas de 35 para 40. Aura level 2: reduz o dano. Aumenta Limite de +10 (40 para 50). Aura level 3: aumenta o dano. Aumenta Limite de +15 (50 para 55).",
-      RubyTip5: "Ruby pode cancelar a animação de armadilha em uma caixa com glitch. Use a habilidade dela, depois abra a caixa com armadilha, depois cancele o poder dela e isso fará a animação da armadilha ser cancelada. Porém, você ainda assim receberá dano de armadilha.",
+      RubyTip1: "Diferente dos outros lideres, Ruby precisa upar a sua Aura para o máximo para liberar todos os bônus dela. Ao começar a partida Ruby tem apenas o bônus de Regeneração de Stamina. Ao colocar a Aura level 1 você libera o bônus de Redução de Cooldown de Habilidade. Ao colocar a Aura level 2 você libera o bônus de Redução de Dano. E ao colocar a Aura no level 3, o level máximo, você libera o último bônus que é o Aumento de Dano. Sendo assim, foque em colocar a aura dela no máximo para liberar todos os bônus para todos.",
+      RubyTip2: "Ao colocar a Aura de Ruby no máximo você aumentará também o número máximo de almas que ela pode coletar, e quanto mais almas ela coleta mais aumenta os efeitos de sua aura. Você começa com o limite de 35 almas. Aura level 1 aumenta o limite de almas de 35 para 40. Aura level 2 aumenta o limite de almas em +10 (40 para 50). Aura level 3 o limite em +15 (50 para 55).",
+      RubyTip3: "Como já foi dito acima é preciso que você foque em upar foque em upar a Aura dela pro máximo o quanto antes. Eis quantos pontos são necessário para isso: 5 pontos desbloqueia Aura 1 (+1 na aura). +4 pra desbloquear Aura 2 (+1 na aura). +5 pra desbloquear Aura 3 (+1 na Aura). Total 14 pontos em habilidades no geral +3 na Aura = 17 pontos.",
+      RubyTip4: "Ruby absorve as almas das unidades malignas que morrem dentro de sua aura, sejam mortos por ela ou por companheiros de equipe, e isso aumenta os efeitos da sua aura. Portanto quanto mais almas você coletar, mais forte ela ficará. Mas se você usar a habilidade especial dela irá perder as almas e, consequentemente, diminuirá os efeitos de sua aura, então não desperdice as almas coletadas. Use a habilidade dela apenas em momentos essenciais, como no Necronomicon, por exemplo.",
+      RubyTip5: "Ruby pode cancelar a habilidade especial dela a qualquer momento apertando o mesmo botão da habilidade especial, isso ativará a explosão e será consumida o número de almas que foi coletada até o momento em que você cancelou a habilidade, com isso você pode controlar quantas almas você irá perder. Porém, a habilidade será resetada e você terá que esperar muito tempo pra usá-la de novo.",
+      RubyTip6: "Ruby pode cancelar a animação de armadilha em uma caixa com glitch. Use a habilidade dela, depois abra a caixa com armadilha, depois cancele o poder dela e isso fará a animação da armadilha ser cancelada. Porém, você ainda assim receberá dano de armadilha.",
+          //  imagens descrição
+            RubyCaption1: "Ruby começa com o bônus de Regeneração de Stamina (20%, ou 24% se for P1).",
+            RubyCaption2: "Ao colocar a Aura no level 1 você libera o bônus de Redução de Cooldown de habilidade (25%, ou 35% se for P1).",
+            RubyCaption3: "Ao colocar a Aura no level 2 você libera o bônus de Redução de Dano (20%, ou 24% se for P1).",
+            RubyCaption4: "Ao colocar a Aura no level 3 você libera o bônus de Aumento de Dano (20%, ou 24% se for P1).",
 
       /* Brock Dicas */
       BrockTip1: "A habilidade especial de Brock não o torna invencivel como Henry, ela só evita empurrões e agarrões, então só serve para reviver alguém que caiu sangrando.",
+
+      /* Ferreiro Dicas */
+      BlacksmithTip1: "As sucatas no mapa não renascem após serem pegas.",
+      BlacksmithTip2: "Os outros Sobreviventes não conseguem ver as sucatas, mas conseguem ouvir o barulho que faz quando você pega elas.",
+      BlacksmithTip3: "Foque em upar Sucata pro level máximo o mais rápido possível para conseguir coletar as sucatas necessárias para fazer armas lendárias.",
+      BlacksmithTip4: "2 pontos libera o Sucatas de Metal level 1 (+1 ponto na sucata). +2 pontos libera o Sucatas de Metal level 2 (+1 ponto na sucata). +2 pontos libera o Sucatas de Metal level 3 (+1 ponto na sucata). Total 6 em habilidades gerais + 3 pontos em Sucata = 9 pontos.",
+      BlacksmithTip5: "O Ferreiro começa a partida podendo coletar até 20 sucatas. Com a Aura level 1 aumenta o limite para 30. Com a Aura level 2 aumenta o limite para 40. Com a Aura level 3, level máximo, aumenta o limite para 50.",
 
     /* DICAS GERAIS */
     generaltips: "Dicas Gerais",
@@ -1278,6 +1295,7 @@ const translations = {
     rubystrength: "She can heal herself with her explosion ability.",
 
     brockstrength: "He can carry 5 Shemps, 5 amulets, 5 matches, and +15 rounds of ammunition.",
+    blacksmithstrength: "He is a master of all melee weapons.",
 
     /* Pontos Fracos*/
     weaknesses: "Weaknesses",
@@ -1299,6 +1317,9 @@ const translations = {
     pabloweak1: "He's weak at the book.",
 
     rubyweak1: "She can't control when her ability will explode, so the ability is often wasted.",
+    blacksmithweak1: "He cannot carry ranged weapons.",
+    blacksmithweak2: "He can't choose which weapon to craft, nor can he even choose whether it will be a melee or ranged weapon, so he might spend a lot of time collecting scrap only to end up crafting a weapon that's either bad or useless to anyone.",
+    blacksmithweak3: "He spends a lot of time collecting scrap and can only craft one legendary weapon during the match. He might be able to craft one more legendary weapon, but only if the match goes on for a long time, there are plenty of demons to kill, and he spends time collecting scrap.",
 
     /* DICAS */
     tips: "Tips",
@@ -1345,14 +1366,27 @@ const translations = {
       PabloTip4: "Start by leveling up your shield bar so you can use your amulets, then level up stamina and health.",
 
       /* Ruby Dicas */
-      RubyTip1: "Ruby absorbs the souls of evil units that die within her aura, whether killed by her or by her teammates, and this enhances the effects of her aura. Therefore, the more souls you collect, the stronger she becomes. But if you use her special ability, you’ll lose the souls, which will, consequently, weaken the effects of her aura, so don’t waste the souls you’ve collected. Use her special ability only at crucial moments, such as at the Necronomicon, for example.",
-      RubyTip2: "Ruby can cancel her special ability at any time by pressing the same button used for the special ability. This will trigger the explosion and consume the number of souls you’ve collected up to the moment you canceled the ability, allowing you to control how many souls you’ll lose. However, the ability will be reset, and you’ll have to wait a long time before you can use it again.",
-      RubyTip3: "Focus on maxing out her Aura as soon as possible. 5 points on attribute unlock the first Aura point. 9 points on attribute unlock the second Aura point. 14 points on attribute unlock the third Aura point.",
-      RubyTip4: "Aura Level 1: Reduces cooldown. Increases Soul Limit from 35 to 40. Aura Level 2: Reduces damage. Increases Soul Limit by +10 (from 40 to 50). Aura Level 3: Increases damage. Increases Soul Limit by +15 (from 50 to 55).",
-      RubyTip5: "Ruby can cancel the trap animation on a chest using a glitch. Use her ability, then open the trap chest, and then cancel her ability—this will cancel the trap animation. However, you will still take trap damage.",
+      RubyTip1: "Unlike other leaders, Ruby needs to level up her Aura to the maximum to unlock all of its bonuses. At the start of the match, Ruby only has the Stamina Regeneration bonus. When you set the Aura to level 1, you unlock the Ability Cooldown Reduction bonus. When you raise her Aura to Level 2, you unlock the Damage Reduction bonus. And when you raise her Aura to Level 3—the maximum level—you unlock the final bonus, which is Damage Increase. Therefore, focus on raising her Aura to the maximum to unlock all bonuses for everyone.",
+      RubyTip2: "By maxing out Ruby's Aura, you'll also increase the maximum number of souls she can collect, and the more souls she collects, the more her aura's effects increase. You start with a limit of 35 souls. Aura level 1 increases the soul limit from 35 to 40. Aura level 2 increases the soul limit by +10 (from 40 to 50). Aura level 3 increases the limit by +15 (from 50 to 55).",
+      RubyTip3: "As mentioned above, you need to focus on leveling up her Aura to the maximum as soon as possible. Here’s how many points you’ll need: 5 points to unlock Aura 1 (+1 to Aura). +4 to unlock Aura 2 (+1 to Aura). +5 to unlock Aura 3 (+1 to Aura). Total: 14 points in general skills + 3 points in Aura = 17 points.",
+      RubyTip4: "Ruby absorbs the souls of evil units that die within her aura, whether killed by her or by her teammates, and this enhances the effects of her aura. Therefore, the more souls you collect, the stronger she becomes. But if you use her special ability, you’ll lose the souls, which will, consequently, weaken the effects of her aura, so don’t waste the souls you’ve collected. Use her special ability only at crucial moments, such as at the Necronomicon, for example.",
+      RubyTip5: "Ruby can cancel her special ability at any time by pressing the same button used for the special ability. This will trigger the explosion and consume the number of souls you’ve collected up to the moment you canceled the ability, allowing you to control how many souls you’ll lose. However, the ability will be reset, and you’ll have to wait a long time before you can use it again.",
+      RubyTip6: "Ruby can cancel the trap animation on a chest using a glitch. Use her ability, then open the trap chest, and then cancel her ability—this will cancel the trap animation. However, you will still take trap damage.",
+          //  imagens descrição
+          RubyCaption1: "Ruby starts with the Stamina Regeneration bonus (20%, or 24% if she is P1).",
+          RubyCaption2: "When you level up Aura to level 1, you unlock the ability Cooldown Reduction bonus (25%, or 35% if it's P1).",
+          RubyCaption3: "When you level up Aura to level 2, you unlock the Damage Reduction bonus (20%, or 24% if it's P1).",
+          RubyCaption4: "When you level up Aura to level 3, you unlock the Damage Boost bonus (20%, or 24% if it's P1).",
 
       /* Brock Dicas */
       BrockTip1: "Brock's special ability doesn't make him invincible like Henry; it just prevents him from being pushed or grabbed, so it's only useful for reviving someone who has fallen and is bleeding.",
+
+      /* Ferreiro Dicas */
+      BlacksmithTip1: "Scrap on the map do not respawn after being picked up.",
+      BlacksmithTip2: "The other Survivors can't see the scraps, but they can hear the noise it makes when you pick it up.",
+      BlacksmithTip3: "Focus on leveling up Scrap to the maximum level as quickly as possible so you can collect the scrap needed to craft legendary weapons.",
+      BlacksmithTip4: "2 points unlock Metal Scraps Level 1 (+1 point in scrap). +2 points unlock Metal Scraps Level 2 (+1 point in scrap). +2 points unlock Metal Scraps Level 3 (+1 point in scrap). Total: 6 points in general skills + 3 points in Scrap = 9 points.",
+      BlacksmithTip5: "The Blacksmith starts the match able to collect up to 20 scraps. With Level 1 Aura, the limit increases to 30. With Level 2 Aura, the limit increases to 40. With Level 3 Aura—the maximum level—the limit increases to 50.",
     
     /* General tips */
     generaltips: "General Tips",
