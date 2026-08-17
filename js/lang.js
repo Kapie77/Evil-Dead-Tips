@@ -533,7 +533,7 @@ const translations = {
 
     pablostrength: "Consegue criar amuletos.",
 
-    rubystrength: "Consegue curar a si mesma com sua habilidade de explosão.",
+    rubystrength: "Ela consegue se curar automaticamente até uns 35%/40% de saúde devido a sua habilidade “Devoradora de Alma”, e também pode se curar sozinha com sua outra habilidade “Maldição de Lilith”.",
 
     brockstrength: "Ele consegue carregar 5 Shemps, 5 amuletos, 5 fósforos e +15 de munições.",
     blacksmithstrength: "Ele tem maestria com todas as armas corpo-a-corpo.",
@@ -620,7 +620,7 @@ const translations = {
             RubyCaption4: "Ao colocar a Aura no level 3 você libera o bônus de Aumento de Dano (20%, ou 24% se for P1).",
 
       /* Brock Dicas */
-      BrockTip1: "A habilidade especial de Brock não o torna invencivel como Henry, ela só evita empurrões e agarrões, então só serve para reviver alguém que caiu sangrando.",
+      BrockTip1: "A habilidade especial de Brock não o torna invencivel como a de Henry, ela só evita empurrões/agarrões, mas você ainda receberá dano. Porém ainda assim ela é útil, pois você pode usá-la para levantar alguém que está caído sagrando, entrar em um carro, reviver alguém, usar shemps/amuletos, abrir uma caixa, sem ser interrompido.",
 
       /* Ferreiro Dicas */
       BlacksmithTip1: "As sucatas no mapa não renascem após serem pegas.",
@@ -686,8 +686,8 @@ const translations = {
     bonus10: "Seu próximo ataque à distância após uma esquiva bem-sucedida causa dano de sangramento no seu alvo por um curto período de tempo.",
     bonus11: "",
     bonus12: "",
-    bonus13: "",
-    bonus14: "",
+    bonus13: "Aumenta o dano das armas de longo alcance quando os alvos estão a uma distância superior a um determinado limite (10 metros).",
+    bonus14: "Aumenta o dano das armas de longo alcance quando os alvos estão dentro de um determinado alcance (5 metros).",
     bonus15: "",
     bonus16: "Você se esquiva sem consumir vigor, e seus ataques de longo alcance causam dano de sangramento ao seu alvo por um curto período.",
     bonus17: "Aumenta os efeitos da sua aura quando você executa um finalizador ou desmembra um inimigo.",
@@ -734,6 +734,9 @@ const translations = {
     bonus57: "Permite que você dispare temporariamente suas armas de longo alcance sem gastar munição.",
     bonus58: "Os tiros na cabeça marcam o alvo por um tempo limitado; durante esse período, os tiros subsequentes, sejam eles seus ou de seus companheiros de equipe, causam dano adicional.",
     bonus59: "",
+
+    bonusbuild1: "Mortal à Distância",
+    bonusbuild2: "Mortal de Perto",
 
     edbio: "Sendo um caçador de relíquias, o Professor Associado Ed Getly entende a importância de uma lanterna. A bateria da lanterna de Ed duram mais tempo e sua tecnica ativa lhe permite usar uma lanterna especial para detectar e desarmar armadilhas demoniacas. ele tem 'o jeito' para encontrar armas de melhor qualidade e, simplesmente por estar por perto, ele proporicona essa vantagem a todos os membros de equipe da partida. Como se isso tudo não fosse o bastante, ele ainda é perito de besta.",
     miabio: "Mia Allen jurou manter o controle. Além de ter maestria com o facão, ela aprendeu a transformar seu medo em força. Ela tem a capacidade de aumentar seu próprio nível de medo, tornando-se invulnerável à possessão e permitindo-lhe causar mais danos à medida que esse nível aumenta. Os inimigos temem seus ataques poderosos porque uma porcentagem do dano que causam é automaticamente convertida em sangramento prolongado.",
@@ -1292,7 +1295,7 @@ const translations = {
 
     pablostrength: "He can create amulets.",
 
-    rubystrength: "She can heal herself with her explosion ability.",
+    rubystrength: "She can automatically heal herself up to about 35%–40% of her health thanks to her “Soul Eater” ability, and she also can heal herself using her other ability, “Lilith's Curse.”",
 
     brockstrength: "He can carry 5 Shemps, 5 amulets, 5 matches, and +15 rounds of ammunition.",
     blacksmithstrength: "He is a master of all melee weapons.",
@@ -1379,7 +1382,7 @@ const translations = {
           RubyCaption4: "When you level up Aura to level 3, you unlock the Damage Boost bonus (20%, or 24% if it's P1).",
 
       /* Brock Dicas */
-      BrockTip1: "Brock's special ability doesn't make him invincible like Henry; it just prevents him from being pushed or grabbed, so it's only useful for reviving someone who has fallen and is bleeding.",
+      BrockTip1: "Brock's special ability doesn't make him invincible like Henry's ability does; it just prevents shoves and grabs, but you'll still take damage. However, it's still useful because you can use it to lift someone who's down bleeding, get into a car, revive someone, use shemps and amulets, open a crate, without being interrupted.",
 
       /* Ferreiro Dicas */
       BlacksmithTip1: "Scrap on the map do not respawn after being picked up.",
@@ -1445,8 +1448,8 @@ const translations = {
     bonus10: "Your next ranged attack after a successful dodge inflicts bleeding damage on your target for a short time.",
     bonus11: "",
     bonus12: "",
-    bonus13: "",
-    bonus14: "",
+    bonus13: "Increases ranged weapon damage when target are farther than a certain distance (32.8ft. | 10 Meters).",
+    bonus14: "Increases ranged weapon damage when target are within a certain range (16.4ft. | 5 Meters).",
     bonus15: "",
     bonus16: "You dogde without using stamina and your ranged attacks cause bleeding damage to your target for a short period.",
     bonus17: "Enhances your aura's effects when you perform a finisher or dismember an enemy.",
@@ -1493,6 +1496,9 @@ const translations = {
     bonus57: "Allows you to temporarily fire your ranged weapons without expending any ammunition.",
     bonus58: "Headshots mark a target for a limited time; during this period, follow up shots from you or your teammates deal additional damage.",
     bonus59: "",
+
+    bonusbuild1: "Deadly from a Distance",
+    bonusbuild2: "Deadly up Close",
 
     edbio: "As a relic hunter, Associate Professor Ed Getley understands the importance of a flashlight. Ed's flashlight batteries last longer and his active ability allows him to use a special flashlight to detect demonic traps and disarm them. Ed has a knack for finding higher quality weapons and his mere presence provides this advantage to all team members in a match. If that isn't enough, the guy is also a crossbow master.",
     miabio: "Mia Allen has vowed to stay in control. Not only has she mastered the machete, but she's learned to channel her terror into strength. She has the ability to increase her own fear level, making her invulnerable to possession and allowing her to deal greater damage as that level rises. Enemies fear her heavy attacks because a percentage of the damage they inflict is automatically converted to prolonged bleeding.",

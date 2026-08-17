@@ -22,6 +22,25 @@ const bonuses = [
 
     },
 
+    {
+
+    image:"../images/HUD/HUD_Skills/SC045_Token.png",
+    name: "bonusbuild1",
+    character: "HAsh | Ed | Kelly | Amanda",
+    team: false, // individual
+    lang: "bonus13"
+
+    },
+
+    {
+
+    image:"../images/HUD/HUD_Skills/SC046_Token.png",
+    name: "bonusbuild2",
+    character: "HAsh | Ed | Kelly | Amanda",
+    team: false, // individual
+    lang: "bonus14"
+
+    },
     
 
     {
