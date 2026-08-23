@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<title>Debuff</title>
+
+<link rel="stylesheet" href="../css/bonus.css">
+<link rel="stylesheet" href="../css/backbutton.css">
+<link rel="stylesheet" href="../css/flag.css">
+<link rel="icon" href="../images/favicon.png">
+
+</head>
+
+<body>
+
+  <!-- Language -->
+   <div class="lang-switch">
+      <img src="../images/flags/br.jpg" onclick="setLang('pt')">
+      <img src="../images/flags/us.png" onclick="setLang('en')">
+      <img src="../images/flags/es.jpg" onclick="setLang('es')">
+  </div>
+  <!--------------->
+
+<div class="overlay"></div>
+
+<main class="container">
+
+    <h1>Debuff</h1>
+
+    <section class="bonus-grid" id="bonusGrid">
+
+    </section>
+
+</main>
+  
+<button onclick="goBack()" class="back-btn" data-lang="back">Voltar</button>
+<script src="../js/script.js"></script>
+<script src="../js/lang.js"></script> <!-- translate -->
+<script src="../js/debuff.js"></script>
+
+</body>
+</html>
