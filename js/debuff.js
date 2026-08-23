@@ -9,15 +9,19 @@ const bonuses = [
     },
 
     {
-
     image:"../images/HUD/HUD_Skills/DN015_Token.png",
+    name: "debuff67",
+    character: "Evil Ash's basics and elite",
+    team: true, // coletivo
     lang: "bonus2"
-
     },
 
     {
 
     image:"../images/HUD/HUD_Skills/DN016_Token.png",
+    name: "debuff68",
+    character: "Evil Ash's basics and elite",
+    team: true, // coletivo
     lang: "bonus3"
 
     },
@@ -25,6 +29,9 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/DPB008_ViciousFatigue_Token.png",
+    name: "debuff63",
+    character: "Witch boss, basic and elite",
+    team: true, // coletivo
     lang: "bonus4"
 
     },
@@ -32,13 +39,19 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/DW005_Token.png",
-    lang: "bonus5"
+    name: "debuff64",
+    character: "Henrietta Basics",
+    team: false, // individual
+    lang: "bonus7"
 
     },
 
     {
 
     image:"../images/HUD/HUD_Skills/DW011_Token.png",
+    name: "debuff6",
+    character: "Henrietta Basics",
+    team: false, // individual
     lang: "bonus6"
 
     },
@@ -46,7 +59,10 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/DW012_Token.png",
-    lang: "bonus7"
+    name: "debuff5",
+    character: "Henrietta Basics",
+    team: false, // individual
+    lang: "bonus5"
 
     },
 
@@ -88,6 +104,9 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/u1086_u0001_HUD_DP020_01_2d.png",
+    name: "debuff70",
+    character: "Eligos Boss",
+    team: false, // individual
     lang: "bonus40"
 
     },
@@ -101,10 +120,11 @@ const bonuses = [
     },
 
     {
-
     image:"../images/HUD/HUD_Skills/u1088_u0001_HUD_DN017_01_2d.png",
+    name: "debuff69",
+    character: "Evil Ash Boss",
+    team: false, // individual
     lang: "bonus42"
-
     },
 
     
@@ -130,7 +150,53 @@ const bonuses = [
     image:"../images/HUD/HUD_Skills/u2445_u0001_Glow_01_2d.png",
     lang: "bonus59"
 
-    }
+    },
+
+    // ==============================
+    // NOVOS
+    // ==============================
+    {
+    image:"../images/HUD_Demon/Demon_Skills/IAmTheDarkness_Token.png",
+    name: "debuff60",
+    character: "Baal Boss",
+    team: true, // coletivo
+    lang: "bonus60"
+    },
+
+    {
+    image:"../images/HUD_Demon/Demon_Skills/ReignOfTerror_Token.png",
+    name: "debuff66",
+    character: "Baal Boss",
+    team: true, // coletivo
+    lang: "bonus65"
+
+    },
+    {
+    image:"../images/HUD_Demon/Demon_Skills/ActiveSkill_Plaguebringuer_WitchRecipe.png",
+    name: "debuff62",
+    character: "Witch's cauldron",
+    team: true, // coletivo
+    lang: "bonus62"
+    },
+
+    {
+    image:"../images/HUD_Demon/Demon_Skills/CorruptedWater_Token.png",
+    name: "debuff64",
+    character: "Witch's Elite",
+    team: true, // coletivo
+    lang: "bonus64"
+    },
+
+    {
+    image:"../images/HUD_Demon/Demon_Skills/MarkedToDeath_Token.png",
+    name: "debuff61",
+    character: "Baal Boss",
+    team: true, // coletivo
+    lang: "bonus61"
+
+    },
+
+    
 
   ];
 // -------------------------------------------------------- //

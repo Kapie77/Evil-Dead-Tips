@@ -291,7 +291,7 @@ const bonuses = [
     image:"../images/HUD/HUD_Skills/u1092_u0001_HUD_SH006_01_2d.png",
     name: "edspecialtitle4",
     character: "Ed",
-    team: false, // individual
+    team: true, // coletivo
     lang: "bonus43"
 
     },
