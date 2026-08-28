@@ -534,6 +534,7 @@ const translations = {
     pablostrength: "Consegue criar amuletos.",
 
     rubystrength: "Ela consegue se curar automaticamente até uns 35%/40% de saúde devido a sua habilidade “Devoradora de Alma”, e também pode se curar sozinha com sua outra habilidade “Maldição de Lilith”.",
+    rubystrength2: "Devido ao bônus de Regeneração de Vigor da Aura dela, Ruby tem um Vigor razoavelmente bom.",
 
     brockstrength: "Ele consegue carregar 5 Shemps, 5 amuletos, 5 fósforos e +15 de munições.",
     blacksmithstrength: "Ele tem maestria com todas as armas corpo-a-corpo.",
@@ -549,7 +550,7 @@ const translations = {
 
     lordarthurweak1: "A espada tem um manejo difícil.",
 
-    ashwarriorweak1: "Por ser Guerreiro tem pouca stamina.",
+    ashwarriorweak1: "Por ser Guerreiro tem pouco Vigor.",
 
     ashsupportweak1: "Ataques pesados são lentos, então companheiros de equipe podem matar os demônios, ou realizar um finalizador, antes que você acerte o golpe e cure todos.",
 
@@ -561,6 +562,8 @@ const translations = {
     blacksmithweak1: "Ele não pode carregar armas de longe alcance.",
     blacksmithweak2: "Ele não pode escolher qual arma vai forjar, nem sequer pode escolher o tipo de arma se de corpo-a-corpo ou de longo alcance, então pode passar muito tempo coletando sucatas para no fim forjar uma arma ruim ou que não é útil para ninguém.",
     blacksmithweak3: "Ele perde muito tempo coletando sucatas e só pode fazer uma arma lendária durante a partida. Talvez ele consiga fazer mais uma arma lendária, mas apenas se a partida demorar, tiver muitos demônio para matar, e perder tempo coletando as sucatas.",
+
+    brockweak1: "O Vigor dele não é muito bom.",
 
     /* DICAS */
     tips: "Dicas",
@@ -592,8 +595,8 @@ const translations = {
       AshSupportTip2: "Seus ataques pesados curam um pouco de vida, mas não tanto, então sempre se esquive se ver que o demõnio vai te bater e só depois bata nele, porque o que ele dá de dano é maior do que o que você recupera de vida.",
       AshSupportTip3: "Fique perto do seu time e use ataques pesados porque isso além de te curar, irá curá-los também.",
 
-      AshHunterTip1: "Coloque os primeiros pontos na Stamina. Foque em deixá-la no máximo. Assim você terá stamina para catar os mapas, correr do demõnio e se esquivar se precisar. Contudo, se o demônio for um jogador experiente e te achar no inicio da partida a melhor opção pode ser colocar os pontos em Longo Alcance, porque assim você recarregará a arma mais rápido e dará mais dano.",
-      AshHunterTip2: "Comece a partida rushando todos os mapas. Caçador é a classe que tem mais stamina, você consegue correr muito, e ainda tem o poder de exorcizar se for preciso caso o demônio te ache sozinho.",
+      AshHunterTip1: "Coloque os primeiros pontos na Stamina. Foque em deixá-la no máximo. Assim você terá vigor para catar os mapas, correr do demõnio e se esquivar se precisar. Contudo, se o demônio for um jogador experiente e te achar no inicio da partida a melhor opção pode ser colocar os pontos em Longo Alcance, porque assim você recarregará a arma mais rápido e dará mais dano.",
+      AshHunterTip2: "Comece a partida rushando todos os mapas. Caçador é a classe que tem mais vigor, você consegue correr muito, e ainda tem o poder de exorcizar se for preciso caso o demônio te ache sozinho.",
       AshHunterTip3: "Antes de usar a habilidade de exorcizar mate todos os demônio em volta, porque senão você irá exorcizar a unidade possuida e ele irá possuir algum outro demônio ao redor e continuará te batendo, então não irá adiantar nada.",
       AshHunterTip4: "Vale a pena ter Recarga Rápida com ele, porque você precisará muito do poder dele. Calculos caso queira conferir: 90s (1 minuto e 30 segundos) - 10% (9 segundos) = 81s (1 minuto e 21 segundos). 85s [P5] (1 minuto e 25 segundos) - 10% (8,5 segundos) = 76,5s (1 minuto e 16 segundos)",
       AshHunterTip5: "Você não pode exorcizar unidades de elite e chefe possuidas, mas ao usar a habilidade de exorcizar você irá drenar a energia infernal do demônio e isso pode ser muito util, pois assim poderá diminuir o tempo de possessão dele ou mesmo acabar com a possessão porque ele pode estar com pouca energia infernal.",
@@ -602,25 +605,28 @@ const translations = {
       ScottyTip2: "Ataques pesados causam dano em area, então é bom contra demônios que colocam muitas unidades, como Eligos e Ash Maligno. E é algo especialmente bom no livro.",
 
       PabloTip1: "Pablo fica invísivel pro Demônio na Visão Demôniaca, mesmo com medo alto, mesmo se atirar ou até mesmo se dirigir um carro, então ele não pode te ver pelo mapa, a menos que esteja te vendo cara a cara, assim, com essa vantagem, você pode catar todos os pedaços do mapa tranquilamente sem ele te achar.",
-      PabloTip2: "Como o demônio não consegue te ver pela Visão Demôniaca não tem necessidade de você upar o medo, deixe isso para depois que upar os principais como escudo, vida, stamina e corpo-a-corpo.",
+      PabloTip2: "Como o demônio não consegue te ver pela Visão Demôniaca não tem necessidade de você upar o medo, deixe isso para depois que upar os principais como escudo, vida, vigor e corpo-a-corpo.",
       PabloTip3: "Embora o demônio não consiga te ver nem se você estiver com o medo alto, ele ainda pode te possuir, então cuide do seu medo, ainda mais se for fazer a Adaga ou a Página.",
       PabloTip4: "Comece upando sua barra de escudo para conseguir usar seus amuletos, depois upe vigor e vida.",
 
       /* Ruby Dicas */
-      RubyTip1: "Diferente dos outros lideres, Ruby precisa upar a sua Aura para o máximo para liberar todos os bônus dela. Ao começar a partida Ruby tem apenas o bônus de Regeneração de Stamina. Ao colocar a Aura level 1 você libera o bônus de Redução de Cooldown de Habilidade. Ao colocar a Aura level 2 você libera o bônus de Redução de Dano. E ao colocar a Aura no level 3, o level máximo, você libera o último bônus que é o Aumento de Dano. Sendo assim, foque em colocar a aura dela no máximo para liberar todos os bônus para todos.",
+      RubyTip1: "Diferente dos outros lideres, Ruby precisa upar a sua Aura para o máximo para liberar todos os bônus dela. Ao começar a partida Ruby tem apenas o bônus de Regeneração de Vigor. Ao colocar a Aura level 1 você libera o bônus de Redução de Cooldown de Habilidade. Ao colocar a Aura level 2 você libera o bônus de Redução de Dano. E ao colocar a Aura no level 3, o level máximo, você libera o último bônus que é o Aumento de Dano. Sendo assim, foque em colocar a aura dela no máximo para liberar todos os bônus para todos.",
       RubyTip2: "Ao colocar a Aura de Ruby no máximo você aumentará também o número máximo de almas que ela pode coletar, e quanto mais almas ela coleta mais aumenta os efeitos de sua aura. Você começa com o limite de 35 almas. Aura level 1 aumenta o limite de almas de 35 para 40. Aura level 2 aumenta o limite de almas em +10 (40 para 50). Aura level 3 o limite em +15 (50 para 55).",
       RubyTip3: "Como já foi dito acima é preciso que você foque em upar foque em upar a Aura dela pro máximo o quanto antes. Eis quantos pontos são necessário para isso: 5 pontos desbloqueia Aura 1 (+1 na aura). +4 pra desbloquear Aura 2 (+1 na aura). +5 pra desbloquear Aura 3 (+1 na Aura). Total 14 pontos em habilidades no geral +3 na Aura = 17 pontos.",
       RubyTip4: "Ruby absorve as almas das unidades malignas que morrem dentro de sua aura, sejam mortos por ela ou por companheiros de equipe, e isso aumenta os efeitos da sua aura. Portanto quanto mais almas você coletar, mais forte ela ficará. Mas se você usar a habilidade especial dela irá perder as almas e, consequentemente, diminuirá os efeitos de sua aura, então não desperdice as almas coletadas. Use a habilidade dela apenas em momentos essenciais, como no Necronomicon, por exemplo.",
       RubyTip5: "Ruby pode cancelar a habilidade especial dela a qualquer momento apertando o mesmo botão da habilidade especial, isso ativará a explosão e será consumida o número de almas que foi coletada até o momento em que você cancelou a habilidade, com isso você pode controlar quantas almas você irá perder. Porém, a habilidade será resetada e você terá que esperar muito tempo pra usá-la de novo.",
       RubyTip6: "Ruby pode cancelar a animação de armadilha em uma caixa com glitch. Use a habilidade dela, depois abra a caixa com armadilha, depois cancele o poder dela e isso fará a animação da armadilha ser cancelada. Porém, você ainda assim receberá dano de armadilha.",
           //  imagens descrição
-            RubyCaption1: "Ruby começa com o bônus de Regeneração de Stamina (20%, ou 24% se for P1).",
+            RubyCaption1: "Ruby começa com o bônus de Regeneração de Vigor (20%, ou 24% se for P1).",
             RubyCaption2: "Ao colocar a Aura no level 1 você libera o bônus de Redução de Cooldown de habilidade (25%, ou 35% se for P1).",
             RubyCaption3: "Ao colocar a Aura no level 2 você libera o bônus de Redução de Dano (20%, ou 24% se for P1).",
             RubyCaption4: "Ao colocar a Aura no level 3 você libera o bônus de Aumento de Dano (20%, ou 24% se for P1).",
 
       /* Brock Dicas */
       BrockTip1: "A habilidade especial de Brock não o torna invencivel como a de Henry, ela só evita empurrões/agarrões, mas você ainda receberá dano. Porém ainda assim ela é útil, pois você pode usá-la para levantar alguém que está caído sagrando, entrar em um carro, reviver alguém, usar shemps/amuletos, abrir uma caixa, sem ser interrompido.",
+      BrockTip2: "Os bonus de Brock são dados para todos. Por exemplo, se tiver alguém da família Williams na partida, todos ganham o bonus dado a família, assim como se tiver alguém que não é da família Williams todos ganham o bonus não-família. Se tiver um líder/suporte/guerreiro/caçador, todos ganharão o bonus também, e não apenas quem tá com classe especifica.",
+          // imagens descrição
+            BrockCaption1: "Na imagem vemos um Henry com o bonus de membro da família e não-família, assim como o bonus de ter um Líder na partida, um Guerreiro e um Suporte.",
 
       /* Ferreiro Dicas */
       BlacksmithTip1: "As sucatas no mapa não renascem após serem pegas.",
@@ -1313,6 +1319,7 @@ const translations = {
     pablostrength: "He can create amulets.",
 
     rubystrength: "She can automatically heal herself up to about 35%–40% of her health thanks to her “Soul Eater” ability, and she also can heal herself using her other ability, “Lilith's Curse.”",
+    rubystrength2: "Thanks to the Stamina Regeneration bonus from her Aura, Ruby has reasonably good Stamina.",
 
     brockstrength: "He can carry 5 Shemps, 5 amulets, 5 matches, and +15 rounds of ammunition.",
     blacksmithstrength: "He is a master of all melee weapons.",
@@ -1340,6 +1347,8 @@ const translations = {
     blacksmithweak1: "He cannot carry ranged weapons.",
     blacksmithweak2: "He can't choose which weapon to craft, nor can he even choose whether it will be a melee or ranged weapon, so he might spend a lot of time collecting scrap only to end up crafting a weapon that's either bad or useless to anyone.",
     blacksmithweak3: "He spends a lot of time collecting scrap and can only craft one legendary weapon during the match. He might be able to craft one more legendary weapon, but only if the match goes on for a long time, there are plenty of demons to kill, and he spends time collecting scrap.",
+
+    brockweak1: "His stamina isn't very good.",
 
     /* DICAS */
     tips: "Tips",
@@ -1400,6 +1409,9 @@ const translations = {
 
       /* Brock Dicas */
       BrockTip1: "Brock's special ability doesn't make him invincible like Henry's ability does; it just prevents shoves and grabs, but you'll still take damage. However, it's still useful because you can use it to lift someone who's down bleeding, get into a car, revive someone, use shemps and amulets, open a crate, without being interrupted.",
+      BrockTip2: "Brock's bonuses are given to everyone. For example, if there's someone from the Williams family in the match, everyone gets the family bonus; likewise, if there's someone who isn't from the Williams family, everyone gets the non-family bonus. If you there's a leader/support/warrior/hunter, everyone will get the bonus too—not just those with that specific class.",
+            // imagens descrição
+            BrockCaption1: "In the image, we see a Henry with the family and non-family member bonuses, as well as the bonuses for having a Leader, a Warrior, and a Support in the match.",
 
       /* Ferreiro Dicas */
       BlacksmithTip1: "Scrap on the map do not respawn after being picked up.",
