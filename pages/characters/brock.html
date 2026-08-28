@@ -202,7 +202,7 @@
     <section class="weakness-box">
       <h2 data-lang="weaknesses">Pontos Fracos</h2>
       <ul>
-        <li data-lang="">There are no tips for this character yet.</li>
+        <li data-lang="brockweak1">There are no tips for this character yet.</li>
       </ul>
     </section>
     <!-------------------->
@@ -216,6 +216,30 @@
           <span class="tip-number">1</span>
           <p data-lang="BrockTip1">Dica 1.</p>
         </div>
+
+        <!-- Dica com imagem -->
+        <div class="tip-image-card">
+          <span class="tip-number">2</span>
+
+          <div class="tip-image-content">
+
+            <p data-lang="BrockTip2">
+                Se você usar seu poder...
+            </p>
+
+            <img
+                src="./images/brock1.png"
+                alt="Tip 1"
+                class="tip-image"
+                onclick="openImage(this.src)">
+
+                <span class="tip-caption" data-lang="BrockCaption1">
+                    Imagem descrição
+                </span>
+
+          </div>
+        </div>
+        <!-- Dica com imagem -->
 
       </div>
     </section>
@@ -247,7 +271,7 @@
         },
         {
           name: "AuraRange",
-          value: "13.1ft → 19.7ft"
+          value: "13.1ft | 3.99m → 19.7ft | 6m"
         },
         {
           name: "AuraEffect",
