@@ -625,6 +625,8 @@ const translations = {
       /* Brock Dicas */
       BrockTip1: "A habilidade especial de Brock não o torna invencivel como a de Henry, ela só evita empurrões/agarrões, mas você ainda receberá dano. Porém ainda assim ela é útil, pois você pode usá-la para levantar alguém que está caído sagrando, entrar em um carro, reviver alguém, usar shemps/amuletos, abrir uma caixa, sem ser interrompido.",
       BrockTip2: "Os bonus de Brock são dados para todos. Por exemplo, se tiver alguém da família Williams na partida, todos ganham o bonus dado a família, assim como se tiver alguém que não é da família Williams todos ganham o bonus não-família. Se tiver um líder/suporte/guerreiro/caçador, todos ganharão o bonus também, e não apenas quem tá com classe especifica.",
+      BrockTip3: "Os efeitos da aura de Brock são 4% por quantidade membros da família Williams ou não-membros da família. Então o ideal pro time seria ter um Ash Guerreiro, um Ash Caçador e de suporte um Ash Suporte ou Cheryl, assim todos terão 16% de redução de dano. Ou pode escolher um guerreiro, caçador e suporte que não sejam da família Williams e terá 12% de aumento de cura (e 4% de redução de dano por causa da presença de Brock, que é da família).",
+      BrockTip4: "A habilidade de Brock não serve apenas para ter imunidade a empurrões, mas aumenta o alcance da cura, e potencializa os efeitos de sua aura. 55% de 4% = 2.2%. 55% de 8% = 4.4%. 55% de 12% = 6.6%. 55% de 16% = 8.8%. Isso durará por 10 segundos.",
           // imagens descrição
             BrockCaption1: "Na imagem vemos um Henry com o bonus de membro da família e não-família, assim como o bonus de ter um Líder na partida, um Guerreiro e um Suporte.",
 
@@ -634,6 +636,8 @@ const translations = {
       BlacksmithTip3: "Foque em upar Sucata pro level máximo o mais rápido possível para conseguir coletar as sucatas necessárias para fazer armas lendárias.",
       BlacksmithTip4: "2 pontos libera o Sucatas de Metal level 1 (+1 ponto na sucata). +2 pontos libera o Sucatas de Metal level 2 (+1 ponto na sucata). +2 pontos libera o Sucatas de Metal level 3 (+1 ponto na sucata). Total 6 em habilidades gerais + 3 pontos em Sucata = 9 pontos.",
       BlacksmithTip5: "O Ferreiro começa a partida podendo coletar até 20 sucatas. Com a Aura level 1 aumenta o limite para 30. Com a Aura level 2 aumenta o limite para 40. Com a Aura level 3, level máximo, aumenta o limite para 50.",
+      BlacksmithTip6: "No Necronomicon não use todos os seu amuletos de vez! Use um amuleto e espere o bonus que ele dará — que é aumento de dano por 20/22 segundos — acabar para usar outro amuleto e repita isso até o fim, assim renovará o bonus de dano sempre até terminar de proteger o Necronomicon. Três amuletos darão 60 segundos (1 minutos), então se você tiver 6 amuletos já terá bonus desde o início do Necronomicon até o fim.",
+            BlacksmithCaption1: "Com a perk 'Bruto e Pronto', que você pode usar a cada 40 segundos, você tem 50% de não quebrar o amuleto, então terá a chance de preservar 2 amuletos durante o Necronomicon.",
 
     /* DICAS GERAIS */
     generaltips: "Dicas Gerais",
@@ -1410,6 +1414,8 @@ const translations = {
       /* Brock Dicas */
       BrockTip1: "Brock's special ability doesn't make him invincible like Henry's ability does; it just prevents shoves and grabs, but you'll still take damage. However, it's still useful because you can use it to lift someone who's down bleeding, get into a car, revive someone, use shemps and amulets, open a crate, without being interrupted.",
       BrockTip2: "Brock's bonuses are given to everyone. For example, if there's someone from the Williams family in the match, everyone gets the family bonus; likewise, if there's someone who isn't from the Williams family, everyone gets the non-family bonus. If you there's a leader/support/warrior/hunter, everyone will get the bonus too—not just those with that specific class.",
+      BrockTip3: "The effects of Brock's aura are 4% per Williams family member or non-family member. So the ideal team composition would be one Warrior Ash, one Hunter Ash, and, as support, either a Support Ash or Cheryl—that way, everyone gets a 16% damage reduction. Or you can choose a Warrior, a Hunter, and a Support who aren’t part of the Williams family, and you’ll get a 12% healing boost (plus a 4% damage reduction due to Brock’s presence, since he is part of the family).",
+      BrockTip4: "Brock's ability doesn't just grant immunity to shoves; it also increases the healing range and enhances the effects of his aura. 55% of 4% = 2.2%. 55% of 8% = 4.4%. 55% of 12% = 6.6%. 55% of 16% = 8.8%. This will last for 10 seconds.",
             // imagens descrição
             BrockCaption1: "In the image, we see a Henry with the family and non-family member bonuses, as well as the bonuses for having a Leader, a Warrior, and a Support in the match.",
 
@@ -1419,6 +1425,9 @@ const translations = {
       BlacksmithTip3: "Focus on leveling up Scrap to the maximum level as quickly as possible so you can collect the scrap needed to craft legendary weapons.",
       BlacksmithTip4: "2 points unlock Metal Scraps Level 1 (+1 point in scrap). +2 points unlock Metal Scraps Level 2 (+1 point in scrap). +2 points unlock Metal Scraps Level 3 (+1 point in scrap). Total: 6 points in general skills + 3 points in Scrap = 9 points.",
       BlacksmithTip5: "The Blacksmith starts the match able to collect up to 20 scraps. With Level 1 Aura, the limit increases to 30. With Level 2 Aura, the limit increases to 40. With Level 3 Aura—the maximum level—the limit increases to 50.",
+      BlacksmithTip6: "In the Necronomicon, don't use all your amulets at once! Use one amulet and wait for its bonus—which is a damage boost lasting 20/22 seconds—to end before using another amulet, and repeat this until the end. This way, you'll constantly renew the damage bonus until you've finished protecting the Necronomicon. Three amulets provide 60 seconds (1 minute), so if you have six amulets, you’ll have the bonus from the start of the Necronomicon until the end. And repeat this until the end; this will keep the damage bonus active until the Necronomicon ends. Three amulets will provide 60 seconds (1 minute), so if you have six amulets, you’ll have the bonus from the start of the Necronomicon until the end.",
+            // imagens descrição
+            BlacksmithCaption1: "With the “Rough and Ready” perk, which you can use every 40 seconds, you have a 50% chance of not breaking the amulet, so you'll have the chance to preserve 2 amulets during the Necronomicon.",
     
     /* General tips */
     generaltips: "General Tips",
