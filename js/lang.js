@@ -538,6 +538,9 @@ const translations = {
 
     brockstrength: "Ele consegue carregar 5 Shemps, 5 amuletos, 5 fósforos e +15 de munições.",
     blacksmithstrength: "Ele tem maestria com todas as armas corpo-a-corpo.",
+    blacksmithstrength2: "Ele tem muita saúde! Suporte tem 1.375 de saúde, mas o Ferreiro, devido a sua habilidade “Duro Como Pregos”, tem +400 de saúde, então ele tem no total 1.775 de saúde, superando a saúde dos Guerreiros (1.630), que é a maior de todas.",
+
+    henrystrength: "Ele tem a maior saúde do jogo! Guerreiro tem 1.630 de saúde, Henry tem +10% de saúde (163) ou 12.5% [P1] (203,75), devido a sua habilidade “Endurecido em Batalha”, então no total ele tem 1.793 de saúde, e se tiver prestigio tem 1.833.",
 
     /* Pontos Fracos */
     weaknesses: "Pontos Fracos",
@@ -563,7 +566,7 @@ const translations = {
     blacksmithweak2: "Ele não pode escolher qual arma vai forjar, nem sequer pode escolher o tipo de arma se de corpo-a-corpo ou de longo alcance, então pode passar muito tempo coletando sucatas para no fim forjar uma arma ruim ou que não é útil para ninguém.",
     blacksmithweak3: "Ele perde muito tempo coletando sucatas e só pode fazer uma arma lendária durante a partida. Talvez ele consiga fazer mais uma arma lendária, mas apenas se a partida demorar, tiver muitos demônio para matar, e perder tempo coletando as sucatas.",
 
-    brockweak1: "O Vigor dele não é muito bom.",
+    brockweak1: "Ele tem o pior Vigor dos líderes e possívelmente entre todos os personagens.",
 
     /* DICAS */
     tips: "Dicas",
@@ -586,6 +589,9 @@ const translations = {
 
       LordArthurTip1: "A espada é muito difícil de manejar e é lenta, então você terá que ter paciência e treinar bastante com ela. Uma dica é upar o Melee (corpo-a-corpo) pro máximo assim você terá +20% de velocidade de ataque corpo-a-corpo, além de +20% de dano corpo a corpo claro.",
       LordArthurTip2: "O poder de Lord Arthur não só aumenta o dano corpo-a-corpo, mas diminui o medo também, então ele é util para abaixar seu medo quando precisar. Não abaixa tanto, mas ajuda muitas vezes.",
+      LordArthurTip3: "Ao ativar a habilidade 'A Cólera do Lord', se você realizar o finalizador e matar o demônio você ganhará +4 segundos e o tempo é cumulativo, mas se você realizar um finalizador e não matar o demônio o tempo da habilidade ficará congelado durante a animação, o que é bem útil também para não perder a habilidade. Nos objetivos você pode ficar realizando finalizadores e assim seus companheiros de equipe terão + 20% - 25% [P5] de aumento dano corpo a corpo e redução de medo. No Necronomicon é possível realizar tantos finalizadores que passará os 2 minutos e você não perderá a habilidade.",
+            // imagens descrição
+            LordArthurCaption1: "Você verá o congelamento ou aumento do tempo da sua habilidade ao olhar para ela no lado direito da tela.",
 
       AshWarriorTip1: "Coloque os primeiros pontos na barra de escudo dele, focando em deixá-la no máximo. É fundamental que seu wAsh esteja com a barra de escudo cheia (ou pelo menos não vazia) para usar a habilidade de explosão dele, que é muito útil.",
       AshWarriorTip2: "Sempre finalize os inimigos, porque isso aumentará sua barra de escudo e você precisa disso.",
@@ -600,6 +606,7 @@ const translations = {
       AshHunterTip3: "Antes de usar a habilidade de exorcizar mate todos os demônio em volta, porque senão você irá exorcizar a unidade possuida e ele irá possuir algum outro demônio ao redor e continuará te batendo, então não irá adiantar nada.",
       AshHunterTip4: "Vale a pena ter Recarga Rápida com ele, porque você precisará muito do poder dele. Calculos caso queira conferir: 90s (1 minuto e 30 segundos) - 10% (9 segundos) = 81s (1 minuto e 21 segundos). 85s [P5] (1 minuto e 25 segundos) - 10% (8,5 segundos) = 76,5s (1 minuto e 16 segundos)",
       AshHunterTip5: "Você não pode exorcizar unidades de elite e chefe possuidas, mas ao usar a habilidade de exorcizar você irá drenar a energia infernal do demônio e isso pode ser muito util, pois assim poderá diminuir o tempo de possessão dele ou mesmo acabar com a possessão porque ele pode estar com pouca energia infernal.",
+      AshHunterTip6: "HAsh com uma Ruby na partida fica muito forte devido a um dos bonus da Aura dela de redução máxima do tempo de recarga. Se você tem um HAsh P5 com a perk 'Recarga Rápida' o cooldown da sua habilidade ficará em 76,5s (1 minuto e 16 segundos), mas se tiver uma Ruby P1 na partida, um dos bonus da Aura dela é redução máxima do tempo de recarga em 35%, então 35% de 76,5s = 26,775s, logo o seu cooldown ficará em 76,5s − 26,775s = 49,725s (50s)! Isso significa usar a habilidade a cada minuto basicamente.",
 
       ScottyTip1: "Os ataques pesados dele fazem ele perde um pouco de medo, assim como companheiros ao redor, então use ataques pesado quando estiver nos primeiros objetivos para abaixar o medo o máximo que der e evitar ser possuído. O nível de medo abaixado é bem pouco, mas já ajuda.",
       ScottyTip2: "Ataques pesados causam dano em area, então é bom contra demônios que colocam muitas unidades, como Eligos e Ash Maligno. E é algo especialmente bom no livro.",
@@ -633,11 +640,14 @@ const translations = {
       /* Ferreiro Dicas */
       BlacksmithTip1: "As sucatas no mapa não renascem após serem pegas.",
       BlacksmithTip2: "Os outros Sobreviventes não conseguem ver as sucatas, mas conseguem ouvir o barulho que faz quando você pega elas.",
-      BlacksmithTip3: "Foque em upar Sucata pro level máximo o mais rápido possível para conseguir coletar as sucatas necessárias para fazer armas lendárias.",
-      BlacksmithTip4: "2 pontos libera o Sucatas de Metal level 1 (+1 ponto na sucata). +2 pontos libera o Sucatas de Metal level 2 (+1 ponto na sucata). +2 pontos libera o Sucatas de Metal level 3 (+1 ponto na sucata). Total 6 em habilidades gerais + 3 pontos em Sucata = 9 pontos.",
-      BlacksmithTip5: "O Ferreiro começa a partida podendo coletar até 20 sucatas. Com a Aura level 1 aumenta o limite para 30. Com a Aura level 2 aumenta o limite para 40. Com a Aura level 3, level máximo, aumenta o limite para 50.",
-      BlacksmithTip6: "No Necronomicon não use todos os seu amuletos de vez! Use um amuleto e espere o bonus que ele dará — que é aumento de dano por 20/22 segundos — acabar para usar outro amuleto e repita isso até o fim, assim renovará o bonus de dano sempre até terminar de proteger o Necronomicon. Três amuletos darão 60 segundos (1 minutos), então se você tiver 6 amuletos já terá bonus desde o início do Necronomicon até o fim.",
+      BlacksmithTip3: "Foque em colocar Sucata de Metal no máximo o mais rápido possível para conseguir coletar as sucatas necessárias para fazer armas lendárias.",
+      BlacksmithTip4: "2 pontos libera o Sucatas de Metal level 1 (+1 ponto na sucata). +2 pontos libera o Sucatas de Metal level 2 (+1 ponto na sucata). +2 pontos libera o Sucatas de Metal level 3 (+1 ponto na sucata). Total: 6 em habilidades gerais + 3 pontos em Sucata = 9 pontos necessários no total para colocar a Sucata de Metal no máximo.",
+      BlacksmithTip5: "O Ferreiro começa a partida podendo coletar até 20 sucatas. Com a Sucata de Metal level 1 o limite é aumentado para 30. Com a Sucata de Metal level 2 o limite é aumentado para 40. Com a Sucata de Metal level 3, level máximo, o limite é aumentado para 50.",
+      BlacksmithTip6: "No Necronomicon não use todos os seu amuletos de vez! Use um amuleto e espere o bonus que ele dará, que é aumento de dano — 10% ou 13% [P1] — por 20/22 segundos — acabar para usar outro amuleto e repita isso até o fim, assim renovará o bonus de dano sempre até terminar de proteger o Necronomicon. Três amuletos darão 60 segundos (1 minutos), então se você tiver 6 amuletos já terá bonus desde o início do Necronomicon até o fim.",
+      BlacksmithTip7: "Quando você usa um amuleto e ele não quebra existe um cooldown (tempo de recarga) de 40 segundos para que outro amuleto não quebre. Quando um amuleto não quebrar você verá um icone vermelho com uma mão e um colar indicando o tempo de cooldown, se você usar outro amuleto enquanto isso ele quebrará com 100% de certeza, mas quando o tempo do cooldown acabar você poderá tentar a chance de 50% de usar um amuleto e ele não quebrar de novo.",
+            // imagens descrição
             BlacksmithCaption1: "Com a perk 'Bruto e Pronto', que você pode usar a cada 40 segundos, você tem 50% de não quebrar o amuleto, então terá a chance de preservar 2 amuletos durante o Necronomicon.",
+            BlacksmithCaption2: "Quando um amuleto não quebrar você verá um icone vermelho com uma mão e um colar indicando o tempo de cooldown.",
 
     /* DICAS GERAIS */
     generaltips: "Dicas Gerais",
@@ -649,7 +659,7 @@ const translations = {
     geraltip6: "Diferente do que fazem não jogue sua arma de corpo-a-corpo no chão se tiver com medo alto, porque senão o Demônio vai se possuir e bater no soco em seus amigos e não tem como se esquivar disso, então ou eles vão morrer ou perder bastante saúde!",
     geraltip7: "Contra Demônios que são faceis de matar como Eligos e Baal use armas rápidas como picareta, facão, faca, etc, e contra demônios fortes/resistentes como Ash Maligno e Henrietta use armas fortes como machado, marreta, etc.",
     geraltip8: "O responsável por matar o Flautista é o Suporte, senão o Lider. O Guerreiro é a força do time, então ele não pode sair do objetivo por nada, e o Caçador é o segundo mais forte, as vezes ele é até mesmo mais forte que o Guerreiro, então também não pode sair, mesmo tendo mais stamina e podendo matar o Flautista de longe.",
-    geraltip9: "O responsável por reviver alguém é o Suporte, porque se ele estiver com a build de cura, quando ele reviver alguém está pessoa levantará com mais vida e até menos medo. Caso o Suporte não consiga reviver alguém, então outros podem reviver, mas a preferência é do Suporte.",
+    geraltip9: "Guerreiro tem a maior saúde do jogo, enquanto que o caçador tem a pior saúde do jogo. Lider = 1.375 HP. Guerreiro = 1.630 HP. Caçador = 950 HP. Suporte = 1.375 HP.",
     geraltip10: "Mesmo que você não seja Suporte, se tiver um Caçador na sua equipe cate munição para ajudá-lo.",
     geraltip11: "Para facilitar o catamento de munição pegue uma arma, assim você irá catar um tipo de munição, pelo menos, automaticamente ao passar perto da munição, isso economizará tempo e esforço.",
     geraltip12: "Não dê as costas para um Deadite possuida que está te batendo no meio do nada, porque você não conseguirá ver o momento em que ele vai te atacar para poder se esquivar, então você vai tomar muita porrada e poderá morrer sem conseguir fazer nada. Além disso outras deadites podem aparecer atrás de você e você nem saberá quem está te atacando ou quando esquivar.",
@@ -1327,6 +1337,9 @@ const translations = {
 
     brockstrength: "He can carry 5 Shemps, 5 amulets, 5 matches, and +15 rounds of ammunition.",
     blacksmithstrength: "He is a master of all melee weapons.",
+    blacksmithstrength2: "He’s in great health! The Support has 1.375 health, but the Blacksmith, thanks to his “Tough as Nails” ability, has +400 health, so he has a total of 1.775 health, surpassing the Warriors' health (1.630), which is the highest of all.",
+
+    henrystrength: "He has the highest health in the game! Warrior has 1.630 health; Henry has +10% health (163) or 12.5% [P1] (203.75) due to his “Battle Hardened” ability, so in total he has 1.793 health, and if he has prestige, he has 1.833.",
 
     /* Pontos Fracos*/
     weaknesses: "Weaknesses",
@@ -1352,7 +1365,7 @@ const translations = {
     blacksmithweak2: "He can't choose which weapon to craft, nor can he even choose whether it will be a melee or ranged weapon, so he might spend a lot of time collecting scrap only to end up crafting a weapon that's either bad or useless to anyone.",
     blacksmithweak3: "He spends a lot of time collecting scrap and can only craft one legendary weapon during the match. He might be able to craft one more legendary weapon, but only if the match goes on for a long time, there are plenty of demons to kill, and he spends time collecting scrap.",
 
-    brockweak1: "His stamina isn't very good.",
+    brockweak1: "He has the lowest Stamina of all the leaders and possibly of all the characters.",
 
     /* DICAS */
     tips: "Tips",
@@ -1375,6 +1388,9 @@ const translations = {
 
       LordArthurTip1: "The sword is very difficult to handle and it's slow, so you'll need to be patient and practice a lot with it. One tip is to max out your Melee stat, which will give you a +20% melee attack speed bonus, as well as a +20% melee damage bonus, of course.",
       LordArthurTip2: "Lord Arthur's ability not only increases melee damage but also reduces fear, so it's useful for lowering your fear level when you need to. It doesn't lower it by much, but it often helps.",
+      LordArthurTip3: "When you activate the “The Lord's Wrath” ability, if you land the finishing move and kill the demon, you’ll gain +4 seconds, and the duration is cumulative. However, if you land a finishing move but don’t kill the demon, the ability’s duration will be paused during the animation—which is also very useful for ensuring you don’t lose the ability. In the objectives, you can keep performing finishers, which will give your teammates a +20%–25% [P5] increase in melee damage and a reduction in fear. In the Necronomicon, you can perform so many finishing moves that you’ll exceed the 2-minute limit without losing the ability.",
+            // imagens descrição
+            LordArthurCaption1: "You'll see whether your ability's duration is frozen or increased when you look at it on the right side of the screen.",
 
       AshWarriorTip1: "Put your early points into his shield bar and focus on maxing it. It's crucial that your wAsh has a full shield bar (or at least not empty) to use his Shield Blast, which is a very useful ability.",
       AshWarriorTip2: "Always finish off your enemies, because that will increase your shield bar, and you need it.",
@@ -1389,6 +1405,7 @@ const translations = {
       AshHunterTip3: "Before using the exorcism ability, kill all the demons around you, because otherwise you’ll exorcise the possessed unit, and he will possess another demon nearby and keep attacking you, so hitwon’t do any good.",
       AshHunterTip4: "It's worth having Quick Recharge with him, because you'll really need his power. Here are the calculations if you want to check: 90s (1 minute and 30 seconds) - 10% (9 seconds) = 81s (1 minute and 21 seconds). 85s [P5] (1 minute and 25 seconds) - 10% (8.5 seconds) = 76.5s (1 minute and 16 seconds)",
       AshHunterTip5: "You cannot exorcise possessed elite and boss units, but using the exorcism ability will drain the demon’s infernal energy, which can be very useful because it can shorten the duration of the possession or even end it altogether if the demon is low on infernal energy.",
+      AshHunterTip6: "HAsh is very strong when paired with Ruby in a match due to one of the bonuses from her Aura, which reduces the maximum cooldown time. If you have a P5 HAsh with the “Fast Recharge” perk, her ability’s cooldown will be 76.5s (1 minute and 16 seconds), but if you have a P1 Ruby in the match, one of her Aura’s bonuses is a 35% maximum cooldown reduction, so 35% of 76.5s = 26.775s, meaning your cooldown will be 76.5s − 26.775s = 49.725s (50s)! This means you can use the ability basically every minute.",
 
       ScottyTip1: "His heavy attacks cause him to lose a little fear, as do his nearby allies, so use heavy attacks when you’re facing the first objectives to lower their fear as much as possible and avoid being possessed. The reduction in fear is very small, but it helps.",
       ScottyTip2: "Heavy attacks deal area damage, so they're effective against demons that deploy many units, such as Eligos and Evil Ash. And it's particularly useful in the book.",
@@ -1422,12 +1439,14 @@ const translations = {
       /* Ferreiro Dicas */
       BlacksmithTip1: "Scrap on the map do not respawn after being picked up.",
       BlacksmithTip2: "The other Survivors can't see the scraps, but they can hear the noise it makes when you pick it up.",
-      BlacksmithTip3: "Focus on leveling up Scrap to the maximum level as quickly as possible so you can collect the scrap needed to craft legendary weapons.",
-      BlacksmithTip4: "2 points unlock Metal Scraps Level 1 (+1 point in scrap). +2 points unlock Metal Scraps Level 2 (+1 point in scrap). +2 points unlock Metal Scraps Level 3 (+1 point in scrap). Total: 6 points in general skills + 3 points in Scrap = 9 points.",
-      BlacksmithTip5: "The Blacksmith starts the match able to collect up to 20 scraps. With Level 1 Aura, the limit increases to 30. With Level 2 Aura, the limit increases to 40. With Level 3 Aura—the maximum level—the limit increases to 50.",
-      BlacksmithTip6: "In the Necronomicon, don't use all your amulets at once! Use one amulet and wait for its bonus—which is a damage boost lasting 20/22 seconds—to end before using another amulet, and repeat this until the end. This way, you'll constantly renew the damage bonus until you've finished protecting the Necronomicon. Three amulets provide 60 seconds (1 minute), so if you have six amulets, you’ll have the bonus from the start of the Necronomicon until the end. And repeat this until the end; this will keep the damage bonus active until the Necronomicon ends. Three amulets will provide 60 seconds (1 minute), so if you have six amulets, you’ll have the bonus from the start of the Necronomicon until the end.",
+      BlacksmithTip3: "Focus on leveling up Metal Scrap to the maximum level as quickly as possible so you can collect the scrap needed to craft legendary weapons.",
+      BlacksmithTip4: "2 points unlock Metal Scraps Level 1 (+1 point in scrap). +2 points unlock Metal Scraps Level 2 (+1 point in scrap). +2 points unlock Metal Scraps Level 3 (+1 point in scrap). Total: 6 points in general skills + 3 points in Scrap = 9 points in total needed to put the Metal Scrap at maximum.",
+      BlacksmithTip5: "The Blacksmith starts the match able to collect up to 20 pieces of scrap. With Level 1 Metal Scrap, the limit increases to 30. With Level 2 Metal Scrap, the limit increases to 40. With Level 3 Metal Scrap, the maximum level, the limit increases to 50.",
+      BlacksmithTip6: "In the Necronomicon, don't use all your amulets at once! Use one amulet and wait for its bonus, which is a damage increase — 10% or 13% [P1] — lasting 20/22 seconds—to end before using another amulet, and repeat this until the end. This way, you'll constantly renew the damage bonus until you've finished protecting the Necronomicon. Three amulets provide 60 seconds (1 minute), so if you have six amulets, you’ll have the bonus from the start of the Necronomicon until the end. And repeat this until the end; this will keep the damage bonus active until the Necronomicon ends. Three amulets will provide 60 seconds (1 minute), so if you have six amulets, you’ll have the bonus from the start of the Necronomicon until the end.",
+      BlacksmithTip7: "When you use an amulet and it doesn't break, there is a 40-second cooldown before another amulet can't be break. When an amulet doesn’t break, you’ll see a red icon with a hand and a necklace indicating the cooldown time. If you use another amulet during this time, it will break 100% of the time, but once the cooldown ends, you’ll have a 50% chance that an amulet won’t break again when you use it.",
             // imagens descrição
             BlacksmithCaption1: "With the “Rough and Ready” perk, which you can use every 40 seconds, you have a 50% chance of not breaking the amulet, so you'll have the chance to preserve 2 amulets during the Necronomicon.",
+            BlacksmithCaption2: "When an amulet doesn't break, you'll see a red icon with a hand and a necklace indicating the cooldown time.",
     
     /* General tips */
     generaltips: "General Tips",
@@ -1439,7 +1458,7 @@ const translations = {
     geraltip6: "Unlike what others do, don't throw your melee weapon on the ground if your fear level is high, because otherwise the Demon will possess you and punch your teammates—and there's no way to dodge that, so they'll either die or lose a lot of health!",
     geraltip7: "Against Demons that are easy to kill, such as Eligos and Baal, use fast weapons like a pickaxe, machete, knife, etc., and against strong/tough demons like Evil Ash and Henrietta, use powerful weapons like an axe, sledgehammer, etc.",
     geraltip8: "The one responsible for killing the Flutist is the Support, or else the Leader. The Warrior is the team’s main source of strength, so he can’t stray from the objective under any circumstances, and the Hunter is the second strongest, sometimes even stronger than the Warrior, so he can’t stray either, even though he has more stamina and can kill the Flutist from a distance.",
-    geraltip9: "The Support is responsible for reviving players, because if they have the healing build, when they revive someone, that player will stand up with more health and even less fear. If the Support is unable to revive someone, others may do so, but the Support has priority.",
+    geraltip9: "The Warrior has the highest health in the game, while the Hunter has the lowest health in the game. Leader = 1.375 HP. Warrior = 1.630 HP. Hunter = 950 HP. Support = 1.375 HP.",
     geraltip10: "Even if you're not a Support, if you have a Hunter on your team, gather ammo to help him out.",
     geraltip11: "To make it easier to pick up ammo, grab a weapon—that way, you’ll automatically pick up at least one type of ammo whenever you walk past it, which will save you time and effort.",
     geraltip12: "Don't turn your back on a possessed Deadite that's attacking you in the middle of nowhere, because you won't be able to see when he's about to strike so you can dodge it—you'll just take a beating and might die without being able to do anything about it. Plus, other Deadites might appear behind you, and you won't even know who's attacking you or when to dodge.",
@@ -1593,6 +1612,12 @@ const translations = {
   }
 
 };
+
+// Traduções do menu //
+Object.assign(translations.pt, menuTranslations.pt);
+Object.assign(translations.en, menuTranslations.en);
+Object.assign(translations.es, menuTranslations.es);
+// --------------------------------------------------------- //
 
 function applyLang() {
   const lang = localStorage.getItem("lang") || "en"; // Lingua padrão "en" (english)

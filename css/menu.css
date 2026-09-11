@@ -1,0 +1,822 @@
+/* =========================================================
+   EVIL DEAD - SITE MENU
+========================================================= */
+
+.site-menu {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 70px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0.98),
+      rgba(0, 0, 0, 0.94)
+    );
+
+  border-bottom: 1px solid rgba(150, 0, 0, 0.55);
+
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.7);
+
+  backdrop-filter: blur(8px);
+
+  z-index: 1000;
+}
+
+
+/* =========================================================
+   INNER
+========================================================= */
+
+.menu-inner {
+  width: 100%;
+  max-width: 1500px;
+  height: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 30px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.menu-logo {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+
+  text-decoration: none;
+
+  flex-shrink: 0;
+}
+
+.menu-logo img {
+  width: 135px;
+  height: auto;
+
+  display: block;
+
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+.menu-logo:hover img {
+  transform: scale(1.04);
+
+  filter:
+    drop-shadow(0 0 5px rgba(255, 0, 0, 0.55));
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.menu-links {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  margin-left: auto;
+  gap: 4px;
+}
+
+
+/* =========================================================
+   LINK BASE
+========================================================= */
+
+.menu-link {
+  position: relative;
+
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 17px;
+
+  border: none;
+  background: transparent;
+
+  color: #d8d8d8;
+
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: bold;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+
+/* linha vermelha inferior */
+
+.menu-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: #b30000;
+
+  transform: translateX(-50%);
+
+  box-shadow:
+    0 0 8px rgba(255, 0, 0, 0.7);
+
+  transition:
+    width 0.25s ease;
+}
+
+
+/* hover */
+
+.menu-link:hover {
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(130, 0, 0, 0.15),
+      transparent
+    );
+}
+
+.menu-link:hover::after {
+  width: 70%;
+}
+
+
+/* página atual */
+
+.menu-link.active {
+  color: #ffffff;
+}
+
+.menu-link.active::after {
+  width: 70%;
+}
+
+
+/* =========================================================
+   DROPDOWN
+========================================================= */
+
+.menu-dropdown {
+  position: relative;
+
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.menu-dropdown-button {
+  gap: 7px;
+}
+
+.menu-arrow {
+  font-size: 0.7rem;
+
+  color: #8c8c8c;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.menu-dropdown:hover .menu-arrow {
+  color: #c00000;
+  transform: translateY(1px);
+}
+
+
+/* =========================================================
+   SUBMENU
+========================================================= */
+
+.menu-submenu {
+  position: absolute;
+
+  top: calc(100% + 1px);
+  left: 50%;
+
+  min-width: 220px;
+
+  padding: 8px 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(18, 18, 18, 0.98),
+      rgba(5, 5, 5, 0.98)
+    );
+
+  border: 1px solid rgba(120, 0, 0, 0.5);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.75);
+
+  transform:
+    translateX(-50%)
+    translateY(-8px);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+
+  z-index: 1001;
+}
+
+
+/* abrir */
+
+.menu-dropdown:hover .menu-submenu {
+  opacity: 1;
+  visibility: visible;
+
+  transform:
+    translateX(-50%)
+    translateY(0);
+}
+
+
+/* itens */
+
+.menu-submenu a {
+  position: relative;
+
+  display: block;
+
+  padding: 12px 20px;
+
+  color: #bdbdbd;
+
+  font-size: 0.78rem;
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.menu-submenu a:hover {
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(140, 0, 0, 0.3),
+      transparent
+    );
+
+  padding-left: 25px;
+}
+
+
+/* pequeno detalhe vermelho */
+
+.menu-submenu a::before {
+  content: "";
+
+  position: absolute;
+
+  left: 10px;
+  top: 50%;
+
+  width: 3px;
+  height: 0;
+
+  background: #b30000;
+
+  transform: translateY(-50%);
+
+  transition:
+    height 0.2s ease;
+}
+
+.menu-submenu a:hover::before {
+  height: 55%;
+}
+
+
+/* =========================================================
+   MOBILE BUTTON
+========================================================= */
+
+.menu-toggle {
+  display: none;
+
+  width: 44px;
+  height: 44px;
+
+  margin-left: auto;
+
+  border: 1px solid rgba(150, 0, 0, 0.5);
+
+  background: rgba(20, 20, 20, 0.8);
+
+  cursor: pointer;
+
+  padding: 9px;
+}
+
+.menu-toggle span {
+  display: block;
+
+  width: 100%;
+  height: 2px;
+
+  margin: 5px 0;
+
+  background: #d0d0d0;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+/* =========================================================
+   SUBMENU DENTRO DO SUBMENU
+========================================================= */
+
+.menu-submenu-item {
+  position: relative;
+}
+
+
+/* Item que abre o segundo submenu */
+
+.submenu-parent {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+
+/* Seta lateral */
+
+.submenu-arrow {
+  margin-left: 20px;
+
+  font-size: 0.7rem;
+  color: #8c8c8c;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.menu-submenu-item:hover .submenu-arrow {
+  color: #c00000;
+  transform: translateX(2px);
+}
+
+
+/* =========================================================
+   SEGUNDO SUBMENU
+========================================================= */
+
+.menu-submenu-nested {
+
+  position: absolute;
+
+  top: -9px;
+  left: 100%;
+
+  min-width: 220px;
+
+  padding: 8px 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(18, 18, 18, 0.98),
+      rgba(5, 5, 5, 0.98)
+    );
+
+  border: 1px solid rgba(120, 0, 0, 0.5);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.75);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateX(-8px);
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+
+  z-index: 1002;
+}
+
+
+/* Abre o segundo submenu */
+
+.menu-submenu-item:hover .menu-submenu-nested {
+
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateX(0);
+
+}
+
+/* =========================================================
+   LANGUAGE SELECTOR
+========================================================= */
+
+.menu-language {
+  position: relative;
+  margin-left: 18px;
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   IDIOMA ATUAL
+========================================================= */
+
+.language-current {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  height: 40px;
+  min-width: 100px;
+
+  padding: 0 10px;
+
+  border: none;
+  background: rgba(0, 0, 0, 0.92);
+
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+}
+
+
+/* Bandeira */
+
+.language-current img {
+  width: 23px;
+  height: 15px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* Texto */
+
+.language-current span:not(.language-arrow) {
+  flex: 1;
+  text-align: left;
+}
+
+
+/* Seta */
+
+.language-arrow {
+  font-size: 0.7rem;
+  color: #ffffff;
+
+  transition: transform 0.2s ease;
+}
+
+
+/* =========================================================
+   OPÇÕES
+========================================================= */
+
+.language-options {
+  position: absolute;
+
+  top: 40px;
+  right: 0;
+
+  width: 130px;
+
+  padding: 3px 0;
+
+  background: rgba(0, 0, 0, 0.96);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(-5px);
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+
+  z-index: 1100;
+}
+
+
+/* Abrir */
+
+.menu-language.open .language-options {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   BOTÕES DOS IDIOMAS
+========================================================= */
+
+.language-options button {
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 0 10px;
+
+  border: none;
+  background: transparent;
+
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.language-options button:hover {
+  background: rgba(130, 0, 0, 0.35);
+}
+
+
+/* Bandeiras */
+
+.language-options img {
+  width: 23px;
+  height: 15px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* =========================================================
+   HOVER DESKTOP
+========================================================= */
+
+@media (min-width: 901px) {
+
+  .menu-language:hover .language-options {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+}
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .menu-inner {
+    padding: 0 20px;
+  }
+
+  .menu-logo img {
+    width: 120px;
+  }
+
+  .menu-link {
+    padding: 0 11px;
+    font-size: 0.78rem;
+    letter-spacing: 1px;
+  }
+
+  .menu-language {
+    margin-left: 12px;
+    padding-left: 12px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .menu-inner {
+    padding: 0 20px;
+  }
+
+  .menu-logo img {
+    width: 120px;
+  }
+
+  /* Esconde os links */
+  .menu-links {
+    display: none;
+
+    position: absolute;
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    height: auto;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    margin: 0;
+
+    padding: 10px 0;
+
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(15, 15, 15, 0.99),
+        rgba(0, 0, 0, 0.98)
+      );
+
+    border-bottom: 1px solid rgba(150, 0, 0, 0.55);
+
+    box-shadow:
+      0 10px 25px rgba(0, 0, 0, 0.75);
+  }
+
+
+  /* Menu aberto */
+  .menu-links.open {
+    display: flex;
+  }
+
+
+  /* Links */
+  .menu-link {
+    width: 100%;
+    height: 50px;
+
+    justify-content: flex-start;
+
+    padding: 0 25px;
+
+    font-size: 0.85rem;
+  }
+
+
+  .menu-link::after {
+    left: 0;
+    transform: none;
+  }
+
+
+  .menu-link:hover::after,
+  .menu-link.active::after {
+    width: 35px;
+  }
+
+
+  /* Dropdown */
+  .menu-dropdown {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+
+  .menu-dropdown-button {
+    width: 100%;
+    height: 50px;
+
+    justify-content: space-between;
+  }
+
+
+  /* Submenu */
+  .menu-submenu {
+    position: static;
+
+    width: 100%;
+    min-width: 0;
+
+    padding: 0;
+
+    transform: none;
+
+    opacity: 1;
+    visibility: visible;
+
+    display: none;
+
+    border: none;
+
+    background: rgba(20, 20, 20, 0.7);
+
+    box-shadow: none;
+  }
+
+
+  .menu-dropdown:hover .menu-submenu {
+    transform: none;
+  }
+
+
+  .menu-submenu a {
+    padding: 11px 40px;
+
+    font-size: 0.75rem;
+  }
+
+
+  .menu-submenu a:hover {
+    padding-left: 45px;
+  }
+
+
+  /* Idiomas */
+  .menu-language {
+    margin-left: auto;
+    margin-right: 12px;
+
+    padding-left: 12px;
+
+    gap: 5px;
+  }
+
+
+  /* Botão hamburger */
+  .menu-toggle {
+    display: block;
+
+    flex-shrink: 0;
+  }
+
+}
