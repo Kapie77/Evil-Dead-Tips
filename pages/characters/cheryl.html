@@ -5,20 +5,206 @@
   <title>Cheryl</title>
 
   <link rel="stylesheet" href="../../css/characterspage.css">
-  <link rel="stylesheet" href="../../css/backbutton.css">
-  <link rel="stylesheet" href="../../css/flag.css">
+  <link rel="stylesheet" href="../../css/menu.css">
   <link rel="icon" href="../../images/favicon.png">
 
 </head>
 <body class="suporte">
 
-  <!-- Language -->
-   <div class="lang-switch">
-      <img src="../../images/flags/br.jpg" onclick="setLang('pt')">
-      <img src="../../images/flags/us.png" onclick="setLang('en')">
-      <img src="../../images/flags/es.jpg" onclick="setLang('es')">
-  </div>
-  <!--------------->
+<!------ MENU ------->
+  <nav class="site-menu">
+
+    <div class="menu-inner">
+
+      <a href="../../index.html" class="menu-logo">
+        <img src="../../images/logo.png" alt="Evil Dead">
+      </a>
+
+      <div class="menu-links">
+
+        <a href="../../index.html" class="menu-link active">
+          <span data-lang="menuHome">Início</span>
+        </a>
+
+        <!-- Sobreviventes -->
+        <div class="menu-dropdown">
+
+          <button class="menu-link menu-dropdown-button" type="button">
+            <span data-lang="menuSurvivors">Sobreviventes</span>
+            <span class="menu-arrow">▾</span>
+          </button>
+
+          <div class="menu-submenu">
+
+            <!-- Classes -->
+            <div class="menu-submenu-item">
+
+              <a href="../../pages/classes.html" class="submenu-parent">
+                <span data-lang="menuClasses">Classes</span>
+                <span class="submenu-arrow">▸</span>
+              </a>
+
+                <!-- Submenu das Classes -->
+                <div class="menu-submenu-nested">
+
+                  <a href="../../pages/classes/leader.html" data-lang="menuLeader">
+                    Líder
+                  </a>
+
+                  <a href="../../pages/classes/warrior.html" data-lang="menuWarrior">
+                    Guerreiro
+                  </a>
+
+                  <a href="../../pages/classes/hunter.html" data-lang="menuHunter">
+                    Caçador
+                  </a>
+
+                  <a href="../../pages/classes/support.html" data-lang="menuSupport">
+                    Suporte
+                  </a>
+
+                </div>
+                <!-- Fim do submenu das Classes -->
+
+            </div>
+            <!-- Fim de Classes -->
+
+            <a href="../../pages/characters.html" data-lang="menuCharacters">Personagens</a>
+            <a href="../../pages/weapons.html" data-lang="menuWeapons">Armas</a>
+            <a href="#" data-lang="menuBuild">Build</a>
+            <a href="#" data-lang="menuGlitches">Glitches</a>
+            <a href="../../pages/hunter-spots.html" data-lang="menuHunterSpots">Spots para Caçadores</a>
+            <a href="../../pages/crates.html" data-lang="menuCrates">Caixas</a>
+            <a href="../../pages/bonus.html" data-lang="menuBonus">Bonus</a>
+            <a href="../../pages/debuff.html" data-lang="menuDebuff">Debuff</a>
+
+          </div>
+
+        </div>
+        <!-- Fim dos Sobreviventes -->
+
+        <!-- demõnios -->
+         <div class="menu-dropdown">
+
+            <button class="menu-link menu-dropdown-button" type="button">
+              <span data-lang="menuDemons">Demônios</span>
+              <span class="menu-arrow">▾</span>
+            </button>
+
+
+            <div class="menu-submenu">
+
+              <!-- SUBMENU DOS DEMÔNIOS -->
+
+              <div class="menu-submenu-item">
+
+                <a href="../../pages/demons.html" class="submenu-parent">
+                  <span data-lang="menuAllDemons">Demônios</span>
+                  <span class="submenu-arrow">▸</span>
+                </a>
+
+                <div class="menu-submenu-nested">
+                  <a href="../../pages/demons/henrietta.html">
+                    Henrietta
+                  </a>
+
+                  <a href="../../pages/demons/evil-ash.html" data-lang="demonEvilAsh">
+                    Evil Ash
+                  </a>
+
+                  <a href="../../pages/characters/puppeteer.html">
+                    Eligos
+                  </a>
+
+                  <a href="../../pages/demons/plaguebringer.html" data-lang="demonWitch">
+                    Witch
+                  </a>
+
+                  <a href="../../pages/demons/puppeteer.html">
+                    Baal
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        <!-- fim demônios -->
+
+        <!-- termos -->
+         <a href="#" class="menu-link">
+          <span data-lang="menuGlossary">Glossary</span>
+        </a>
+        <!-- fim dos termos-->
+
+        <!-- Social media -->
+        <div class="menu-dropdown">
+          <button class="menu-link menu-dropdown-button" type="button">
+            <span data-lang="menuSocial">Social Media</span>
+            <span class="menu-arrow">▾</span>
+          </button>
+
+          <div class="menu-submenu">
+            <a href="https://www.reddit.com/r/EvilDeadTheGame/" data-lang="menuReddit">Reddit</a>
+            <a href="https://www.evildeadthegame.com/" data-lang="menuWebsite">Website</a>
+            <a href="https://www.youtube.com/@EvilDeadTheGame" data-lang="menuYoutube">Youtube</a>
+            <a href="https://x.com/evildeadthegame" data-lang="menuTwitter">Twitter</a>
+            <a href="https://discord.gg/evildeadthegame" data-lang="menuDiscord">Discord</a>
+            <a href="https://discord.gg/HHJx4rS5Vj" data-lang="menuFanDiscord">Evil Dead The Gathering</a>
+            <a href="https://discord.gg/sjUez8dZF7" data-lang="menuFanDiscord2">Evil Dead The Game Modding</a>
+            <a href="https://www.nexusmods.com/games/evildeadthegame" data-lang="menuNexusModEvilDead">Nexus Mod Evil Dead</a>
+          </div>
+        </div>
+        <!-- fim da Social media -->
+
+        <a href="https://github.com/Kapie77/Evil-Dead-Tips" class="menu-link">
+          <span data-lang="menuSourceCode">Source code</span>
+        </a>
+
+      </div>
+
+    <!-- idiomas -->
+    <div class="menu-language">
+
+        <button class="language-current" type="button">
+            <img src="../../images/flags/us.png" alt="">
+            <span>ENG</span>
+            <span class="language-arrow">▼</span>
+        </button>
+
+        <div class="language-options">
+
+            <button type="button" onclick="setLang('en')">
+                <img src="../../images/flags/us.png" alt="">
+                <span>ENG</span>
+            </button>
+
+            <button type="button" onclick="setLang('es')">
+                <img src="../../images/flags/es.jpg" alt="">
+                <span>ESP</span>
+            </button>
+
+            <button type="button" onclick="setLang('pt')">
+                <img src="../../images/flags/br.jpg" alt="">
+                <span>PT-BR</span>
+            </button>
+
+        </div>
+
+    </div>
+    <!-- fim do idiomas -->
+
+      <button class="menu-toggle" type="button" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+  </nav>
+<!------- FIM DO MENU --------->
 
   <div class="overlay"></div>
 
@@ -223,11 +409,14 @@
 
   </main>
 
-  <button onclick="goBack()" class="back-btn" data-lang="back">Voltar</button>
-
-  <script src="../../js/script.js"></script>
-  <script src="../../js/lang.js"></script> <!-- translate -->
-  <script src="../../js/see-abilities.js"></script> <!-- see abilities/profile -->
+<!-- =========================
+       SCRIPTS
+========================== -->
+<script src="../../js/script.js"></script>
+<script src="../../js/translations/menu.js"></script>
+<script src="../../js/lang.js"></script>
+<script src="../../js/menu.js"></script>
+<script src="../../js/see-abilities.js"></script>
 
   <script>
     const currentLang = localStorage.getItem("lang") || "en";

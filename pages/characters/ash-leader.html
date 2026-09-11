@@ -1,348 +1,715 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <title>Ash Leader</title>
+
+  <title data-lang="ashleader">Ash Leader</title>
 
   <link rel="stylesheet" href="../../css/characterspage.css">
-  <link rel="stylesheet" href="../../css/backbutton.css">
-  <link rel="stylesheet" href="../../css/flag.css">
-  <link rel="icon" href="../../images/favicon.png">
+  <link rel="stylesheet" href="../../css/menu.css">
 
+  <link rel="icon" href="../../images/favicon.png">
 </head>
+
 <body class="lider">
 
-  <!-- Language -->
-   <div class="lang-switch">
-      <img src="../../images/flags/br.jpg" onclick="setLang('pt')">
-      <img src="../../images/flags/us.png" onclick="setLang('en')">
-      <img src="../../images/flags/es.jpg" onclick="setLang('es')">
-  </div>
-  <!--------------->
+<!------ MENU ------->
+  <nav class="site-menu">
 
-  <div class="overlay"></div>
+    <div class="menu-inner">
+
+      <a href="../../index.html" class="menu-logo">
+        <img src="../../images/logo.png" alt="Evil Dead">
+      </a>
+
+      <div class="menu-links">
+
+        <a href="../../index.html" class="menu-link active">
+          <span data-lang="menuHome">Início</span>
+        </a>
+
+        <!-- Sobreviventes -->
+        <div class="menu-dropdown">
+
+          <button class="menu-link menu-dropdown-button" type="button">
+            <span data-lang="menuSurvivors">Sobreviventes</span>
+            <span class="menu-arrow">▾</span>
+          </button>
+
+          <div class="menu-submenu">
+
+            <!-- Classes -->
+            <div class="menu-submenu-item">
+
+              <a href="../../pages/classes.html" class="submenu-parent">
+                <span data-lang="menuClasses">Classes</span>
+                <span class="submenu-arrow">▸</span>
+              </a>
+
+                <!-- Submenu das Classes -->
+                <div class="menu-submenu-nested">
+
+                  <a href="../../pages/classes/leader.html" data-lang="menuLeader">
+                    Líder
+                  </a>
+
+                  <a href="../../pages/classes/warrior.html" data-lang="menuWarrior">
+                    Guerreiro
+                  </a>
+
+                  <a href="../../pages/classes/hunter.html" data-lang="menuHunter">
+                    Caçador
+                  </a>
+
+                  <a href="../../pages/classes/support.html" data-lang="menuSupport">
+                    Suporte
+                  </a>
+
+                </div>
+                <!-- Fim do submenu das Classes -->
+
+            </div>
+            <!-- Fim de Classes -->
+
+            <a href="../../pages/characters.html" data-lang="menuCharacters">Personagens</a>
+            <a href="../../pages/weapons.html" data-lang="menuWeapons">Armas</a>
+            <a href="#" data-lang="menuBuild">Build</a>
+            <a href="#" data-lang="menuGlitches">Glitches</a>
+            <a href="../../pages/hunter-spots.html" data-lang="menuHunterSpots">Spots para Caçadores</a>
+            <a href="../../pages/crates.html" data-lang="menuCrates">Caixas</a>
+            <a href="../../pages/bonus.html" data-lang="menuBonus">Bonus</a>
+            <a href="../../pages/debuff.html" data-lang="menuDebuff">Debuff</a>
+
+          </div>
+
+        </div>
+        <!-- Fim dos Sobreviventes -->
+
+        <!-- demõnios -->
+         <div class="menu-dropdown">
+
+            <button class="menu-link menu-dropdown-button" type="button">
+              <span data-lang="menuDemons">Demônios</span>
+              <span class="menu-arrow">▾</span>
+            </button>
+
+
+            <div class="menu-submenu">
+
+              <!-- SUBMENU DOS DEMÔNIOS -->
+
+              <div class="menu-submenu-item">
+
+                <a href="../../pages/demons.html" class="submenu-parent">
+                  <span data-lang="menuAllDemons">Demônios</span>
+                  <span class="submenu-arrow">▸</span>
+                </a>
+
+                <div class="menu-submenu-nested">
+                  <a href="../../pages/demons/henrietta.html">
+                    Henrietta
+                  </a>
+
+                  <a href="../../pages/demons/evil-ash.html" data-lang="demonEvilAsh">
+                    Evil Ash
+                  </a>
+
+                  <a href="../../pages/characters/puppeteer.html">
+                    Eligos
+                  </a>
+
+                  <a href="../../pages/demons/plaguebringer.html" data-lang="demonWitch">
+                    Witch
+                  </a>
+
+                  <a href="../../pages/demons/puppeteer.html">
+                    Baal
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        <!-- fim demônios -->
+
+        <!-- termos -->
+         <a href="#" class="menu-link">
+          <span data-lang="menuGlossary">Glossary</span>
+        </a>
+        <!-- fim dos termos-->
+
+        <!-- Social media -->
+        <div class="menu-dropdown">
+          <button class="menu-link menu-dropdown-button" type="button">
+            <span data-lang="menuSocial">Social Media</span>
+            <span class="menu-arrow">▾</span>
+          </button>
+
+          <div class="menu-submenu">
+            <a href="https://www.reddit.com/r/EvilDeadTheGame/" data-lang="menuReddit">Reddit</a>
+            <a href="https://www.evildeadthegame.com/" data-lang="menuWebsite">Website</a>
+            <a href="https://www.youtube.com/@EvilDeadTheGame" data-lang="menuYoutube">Youtube</a>
+            <a href="https://x.com/evildeadthegame" data-lang="menuTwitter">Twitter</a>
+            <a href="https://discord.gg/evildeadthegame" data-lang="menuDiscord">Discord</a>
+            <a href="https://discord.gg/HHJx4rS5Vj" data-lang="menuFanDiscord">Evil Dead The Gathering</a>
+            <a href="https://discord.gg/sjUez8dZF7" data-lang="menuFanDiscord2">Evil Dead The Game Modding</a>
+            <a href="https://www.nexusmods.com/games/evildeadthegame" data-lang="menuNexusModEvilDead">Nexus Mod Evil Dead</a>
+          </div>
+        </div>
+        <!-- fim da Social media -->
+
+        <a href="https://github.com/Kapie77/Evil-Dead-Tips" class="menu-link">
+          <span data-lang="menuSourceCode">Source code</span>
+        </a>
+
+      </div>
+
+    <!-- idiomas -->
+    <div class="menu-language">
+
+        <button class="language-current" type="button">
+            <img src="../../images/flags/us.png" alt="">
+            <span>ENG</span>
+            <span class="language-arrow">▼</span>
+        </button>
+
+        <div class="language-options">
+
+            <button type="button" onclick="setLang('en')">
+                <img src="../../images/flags/us.png" alt="">
+                <span>ENG</span>
+            </button>
+
+            <button type="button" onclick="setLang('es')">
+                <img src="../../images/flags/es.jpg" alt="">
+                <span>ESP</span>
+            </button>
+
+            <button type="button" onclick="setLang('pt')">
+                <img src="../../images/flags/br.jpg" alt="">
+                <span>PT-BR</span>
+            </button>
+
+        </div>
+
+    </div>
+    <!-- fim do idiomas -->
+
+      <button class="menu-toggle" type="button" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+  </nav>
+<!------- FIM DO MENU --------->
+
+
+  <!-- ==============================
+       CONTEÚDO
+  =============================== -->
 
   <main class="container">
 
-<div class="hero-wrapper">
+    <div class="hero-wrapper">
 
-  <!-- PERFIL -->
-  <section class="char-hero">
-  <div id="profile-tab" class="tab-content profile-layout active">
+      <!-- PERFIL -->
 
-    <!-- Descrição -->
-    <div class="hero-left">
-      
-      <h1>ASH WILLIAMS</h1>
+      <section class="char-hero">
 
-      <p data-lang="ashleaderbio">
-        Personagem Descrição
-      </p>
+        <div
+          id="profile-tab"
+          class="tab-content profile-layout active"
+        >
 
-    </div>
+          <!-- DESCRIÇÃO -->
 
-    <!-- Atributos -->
-    <div class="hero-right">
+          <div class="hero-left">
 
-      <h2 data-lang="attributes">Atributos</h2>
+            <h1>Ash Williams</h1>
 
-      <div class="stat">
-        <span data-lang="defense">Defesa</span>
-        <div class="bars">
-          <div class="bar filled"></div>
-          <div class="bar filled"></div>
-          <div class="bar filled"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-      </div>
-
-      <div class="stat">
-        <span data-lang="melee">Corpo a corpo</span>
-        <div class="bars">
-          <div class="bar filled"></div>
-          <div class="bar filled"></div>
-          <div class="bar filled"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-      </div>
-
-      <div class="stat">
-        <span data-lang="range">Longo alcance</span>
-        <div class="bars">
-          <div class="bar filled"></div>
-          <div class="bar filled"></div>
-          <div class="bar filled"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-      </div>
-
-      <div class="stat">
-        <span data-lang="support2">Suporte</span>
-        <div class="bars">
-          <div class="bar filled"></div>
-          <div class="bar filled"></div>
-          <div class="bar filled"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-      </div>
-
-       <div class="tab-buttons">
-        <button onclick="showAbilities()" data-lang="showabilities">
-          Ver Habilidades
-        </button>
-     </div>
-
-    </div>
-
-  </div>
-
-  <!-- HABILIDADES -->
-  <div id="abilities-tab" class="tab-content">
-
-    <h2 data-lang="abilities">Habilidades</h2>
-
-    <p data-lang="ashleaderspecialhability1">
-      Descrição de Habilidade
-    </p>
-
-    <div class="ability">
-      <h3 data-lang="ashleaderspecialtitle2">Título Habilidade 1</h3>
-      <p data-lang="ashleaderspecialhability2">Descrição Habilidade 1</p>
-    </div>
-
-    <div class="ability">
-      <h3 data-lang="ashleaderspecialtitle3">Título Habilidade 2</h3>
-      <p data-lang="ashleaderspecialhability3">Descrição Habilidade 2</p>
-    </div>
-
-    <div class="ability">
-      <h3 data-lang="ashleaderspecialtitle4">Título Habilidade 3</h3>
-      <p data-lang="ashleaderspecialhability4">Descrição Habilidade 3</p>
-    </div>
-
-    <div class="tab-buttons">
-      <button onclick="showProfile()" data-lang="showprofile">
-        Voltar ao Perfil
-      </button>
-    </div>
-
-  </div>
-
-</section>
-  <!-- FIM DO PERFIL -->
-  </div>
-
-  <!-- HABILIDADES ESPECIAIS -->
-  <section class="skills-box">
-
-    <h2 data-lang="specialabilities">Habilidades Especiais</h2>
-
-    <div class="skill-icons">
-
-      <img src="../../images/SkillTree/MainCharacter/Ash/01.png"
-          class="skill-icon active"
-          onclick="showSkill('trap', this)">
-
-      <img src="../../images/SkillTree/MainCharacter/Ash/02.png"
-          class="skill-icon"
-          onclick="showSkill('light', this)">
-
-      <img src="../../images/SkillTree/MainCharacter/Ash/03.png"
-          class="skill-icon"
-          onclick="showSkill('crossbow', this)">
-
-      <img src="../../images/SkillTree/MainCharacter/Ash/04.png"
-          class="skill-icon"
-          onclick="showSkill('collector', this)">
-    </div>
-
-    <div class="skill-info">
-
-      <h3 id="skill-title"></h3>
-
-      <p id="skill-description"></p>
-
-      <div class="skill-stats" id="skill-stats"></div>
-
-    </div>
-
-  </section>
-  <!-- FIM DAS HABILIDADES ESPECIAIS -->
-
-    <!-- MAESTRIA -->
-     <section class="mastery-box">
-          <h2 data-lang="WeaponMastery">Maestria de Arma</h2>
-
-          <div class="no-mastery">
-
-            <p data-lang="NoMastery">
-              Este personagem não possui maestria de arma.
+            <p data-lang="ashleaderbio">
+              Personagem Descrição
             </p>
 
           </div>
 
+
+          <!-- ATRIBUTOS -->
+
+          <div class="hero-right">
+
+            <h2 data-lang="attributes">
+              Atributos
+            </h2>
+
+
+            <div class="stat">
+
+              <span data-lang="defense">
+                Defesa
+              </span>
+
+              <div class="bars">
+                <div class="bar filled"></div>
+                <div class="bar filled"></div>
+                <div class="bar filled"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+
+            </div>
+
+
+            <div class="stat">
+
+              <span data-lang="melee">
+                Corpo a corpo
+              </span>
+
+              <div class="bars">
+                <div class="bar filled"></div>
+                <div class="bar filled"></div>
+                <div class="bar filled"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+
+            </div>
+
+
+            <div class="stat">
+
+              <span data-lang="range">
+                Longo alcance
+              </span>
+
+              <div class="bars">
+                <div class="bar filled"></div>
+                <div class="bar filled"></div>
+                <div class="bar filled"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+
+            </div>
+
+
+            <div class="stat">
+
+              <span data-lang="support2">
+                Suporte
+              </span>
+
+              <div class="bars">
+                <div class="bar filled"></div>
+                <div class="bar filled"></div>
+                <div class="bar filled"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+
+            </div>
+
+
+            <div class="tab-buttons">
+
+              <button
+                onclick="showAbilities()"
+                data-lang="showabilities"
+              >
+                Ver Habilidades
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- HABILIDADES -->
+
+        <div id="abilities-tab" class="tab-content">
+
+          <h2 data-lang="abilities">
+            Habilidades
+          </h2>
+
+          <p data-lang="ashleaderspecialhability1">
+            Descrição de Habilidade
+          </p>
+
+
+          <div class="ability">
+
+            <h3 data-lang="ashleaderspecialtitle2">
+              Título Habilidade 1
+            </h3>
+
+            <p data-lang="ashleaderspecialhability2">
+              Descrição Habilidade 1
+            </p>
+
+          </div>
+
+
+          <div class="ability">
+
+            <h3 data-lang="ashleaderspecialtitle3">
+              Título Habilidade 2
+            </h3>
+
+            <p data-lang="ashleaderspecialhability3">
+              Descrição Habilidade 2
+            </p>
+
+          </div>
+
+
+          <div class="ability">
+
+            <h3 data-lang="ashleaderspecialtitle4">
+              Título Habilidade 3
+            </h3>
+
+            <p data-lang="ashleaderspecialhability4">
+              Descrição Habilidade 3
+            </p>
+
+          </div>
+
+
+          <div class="tab-buttons">
+
+            <button
+              onclick="showProfile()"
+              data-lang="showprofile"
+            >
+              Voltar ao Perfil
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+
+    <!-- HABILIDADES ESPECIAIS -->
+
+    <section class="skills-box">
+
+      <h2 data-lang="specialabilities">
+        Habilidades Especiais
+      </h2>
+
+
+      <div class="skill-icons">
+
+        <img
+          src="../../images/SkillTree/MainCharacter/Ash/01.png"
+          class="skill-icon active"
+          onclick="showSkill('trap', this)"
+        >
+
+        <img
+          src="../../images/SkillTree/MainCharacter/Ash/02.png"
+          class="skill-icon"
+          onclick="showSkill('light', this)"
+        >
+
+        <img
+          src="../../images/SkillTree/MainCharacter/Ash/03.png"
+          class="skill-icon"
+          onclick="showSkill('crossbow', this)"
+        >
+
+        <img
+          src="../../images/SkillTree/MainCharacter/Ash/04.png"
+          class="skill-icon"
+          onclick="showSkill('collector', this)"
+        >
+
+      </div>
+
+
+      <div class="skill-info">
+
+        <h3 id="skill-title"></h3>
+
+        <p id="skill-description"></p>
+
+        <div
+          class="skill-stats"
+          id="skill-stats"
+        ></div>
+
+      </div>
+
     </section>
 
-    <!-------------->
+
+    <!-- MAESTRIA -->
+
+    <section class="mastery-box">
+
+      <h2 data-lang="WeaponMastery">
+        Maestria de Arma
+      </h2>
+
+      <div class="no-mastery">
+
+        <p data-lang="NoMastery">
+          Este personagem não possui maestria de arma.
+        </p>
+
+      </div>
+
+    </section>
+
 
     <!-- PONTOS FORTES -->
+
     <section class="strengths-box">
-      <h2 data-lang="strengths">Pontos Fortes</h2>
+
+      <h2 data-lang="strengths">
+        Pontos Fortes
+      </h2>
+
       <ul>
-        <li data-lang="">This character doesn't have any strengths yet.</li>
+
+        <li>
+          This character doesn't have any strengths yet.
+        </li>
+
       </ul>
+
     </section>
-    <!-------------------->
+
 
     <!-- PONTOS FRACOS -->
+
     <section class="weakness-box">
-      <h2 data-lang="weaknesses">Pontos Fracos</h2>
+
+      <h2 data-lang="weaknesses">
+        Pontos Fracos
+      </h2>
+
       <ul>
-        <li data-lang="">This character doesn't have any weaknesses yet.</li>
+
+        <li>
+          This character doesn't have any weaknesses yet.
+        </li>
+
       </ul>
+
     </section>
-    <!-------------------->
+
 
     <!-- DICAS -->
+
     <section class="tips-box">
-      <h2 data-lang="tips">Dicas</h2>
+
+      <h2 data-lang="tips">
+        Dicas
+      </h2>
+
+
       <div class="tips-grid">
 
         <div class="tip">
-          <span class="tip-number">1</span>
-          <p data-lang="">There are no tips for this character yet.</p>
+
+          <span class="tip-number">
+            1
+          </span>
+
+          <p>
+            There are no tips for this character yet.
+          </p>
+
         </div>
 
       </div>
-    </section>
 
+    </section>
 
   </main>
 
-  <button onclick="goBack()" class="back-btn" data-lang="back">Voltar</button>
+
+  <!-- ==============================
+       JAVASCRIPT
+  =============================== -->
 
   <script src="../../js/script.js"></script>
-  <script src="../../js/lang.js"></script> <!-- translate -->
-  <script src="../../js/see-abilities.js"></script> <!-- see abilities/profile -->
+  <script src="../../js/translations/menu.js"></script>
+  <script src="../../js/lang.js"></script>
+  <script src="../../js/menu.js"></script>
+  <script src="../../js/see-abilities.js"></script>
+
 
   <script>
-    const currentLang = localStorage.getItem("lang") || "en";
+
+    const currentLang =
+      localStorage.getItem("lang") || "en";
+
 
     const skills = {
 
-    trap: {
-      title: "ashleaderspecialtitle1",
+      trap: {
 
-      description:
-        "ashleaderspecialhability1",
+        title:
+          "ashleaderspecialtitle1",
 
-      stats: [
-        {
-          name: "cooldown",
-          value: "30s → 25s"
-        },
-        {
-          name: "BlastRadius",
-          value: "4m (13.1ft) → 4m (13.1ft)"
-        },
-        {
-          name: "BalanceBarDamage",
-          value: "150 → 180"
-        }
-      ]
-    },
+        description:
+          "ashleaderspecialhability1",
 
-    light: {
-      title: "ashleaderspecialtitle2",
+        stats: [
 
-      description:
-        "ashleaderspecialhability2",
+          {
+            name: "cooldown",
+            value: "30s → 25s"
+          },
 
-      stats: [
-        {
-          name: "Damage",
-          value: "15% → 20%"
-        },
-        {
-          name: "FearResistance",
-          value: "20% → 25%"
-        }
-      ]
-    },
+          {
+            name: "BlastRadius",
+            value: "4m (13.1ft) → 4m (13.1ft)"
+          },
 
-    crossbow: {
-      title: "ashleaderspecialtitle3",
+          {
+            name: "BalanceBarDamage",
+            value: "150 → 180"
+          }
 
-      description:
-        "ashleaderspecialhability3",
+        ]
 
-      stats: [
+      },
 
-      ]
-    },
 
-    collector: {
-      title: "ashleaderspecialtitle4",
+      light: {
 
-      description:
-        "ashleaderspecialhability4",
+        title:
+          "ashleaderspecialtitle2",
 
-      stats: [
-        {
-          name: "AuraEffectsImprovement",
-          value: "100%"
-        }
-      ]
+        description:
+          "ashleaderspecialhability2",
+
+        stats: [
+
+          {
+            name: "Damage",
+            value: "15% → 20%"
+          },
+
+          {
+            name: "FearResistance",
+            value: "20% → 25%"
+          }
+
+        ]
+
+      },
+
+
+      crossbow: {
+
+        title:
+          "ashleaderspecialtitle3",
+
+        description:
+          "ashleaderspecialhability3",
+
+        stats: []
+
+      },
+
+
+      collector: {
+
+        title:
+          "ashleaderspecialtitle4",
+
+        description:
+          "ashleaderspecialhability4",
+
+        stats: [
+
+          {
+            name: "AuraEffectsImprovement",
+            value: "100%"
+          }
+
+        ]
+
+      }
+
+    };
+
+
+    function showSkill(skillName, clickedIcon) {
+
+      document.getElementById("skill-title").textContent =
+        translations[currentLang][skills[skillName].title];
+
+
+      document.getElementById("skill-description").textContent =
+        translations[currentLang][skills[skillName].description];
+
+
+      const statsContainer =
+        document.getElementById("skill-stats");
+
+      statsContainer.innerHTML = "";
+
+
+      skills[skillName].stats.forEach(stat => {
+
+        statsContainer.innerHTML += `
+
+          <div class="skill-stat">
+
+            <div class="skill-stat-name">
+              ${translations[currentLang][stat.name]}
+            </div>
+
+            <div class="skill-stat-values">
+              ${stat.value}
+            </div>
+
+          </div>
+
+        `;
+
+      });
+
+
+      document
+        .querySelectorAll(".skill-icon")
+        .forEach(icon =>
+          icon.classList.remove("active")
+        );
+
+
+      if (clickedIcon) {
+        clickedIcon.classList.add("active");
+      }
+
     }
 
-  };
 
-  function showSkill(skillName, clickedIcon) {
+    window.addEventListener("DOMContentLoaded", () => {
 
-  document.getElementById("skill-title").textContent =
-    translations[currentLang][skills[skillName].title];
+      showSkill("trap");
 
-  document.getElementById("skill-description").textContent =
-    translations[currentLang][skills[skillName].description];
+    });
 
-  const statsContainer =
-    document.getElementById("skill-stats");
-
-  statsContainer.innerHTML = "";
-
-  skills[skillName].stats.forEach(stat => {
-
-    statsContainer.innerHTML += `
-      <div class="skill-stat">
-
-        <div class="skill-stat-name">
-          ${translations[currentLang][stat.name]}
-        </div>
-
-        <div class="skill-stat-values">
-          ${stat.value}
-        </div>
-
-      </div>
-    `;
-
-  });
-
-  document.querySelectorAll(".skill-icon")
-    .forEach(icon => icon.classList.remove("active"));
-
-  if (clickedIcon) {
-    clickedIcon.classList.add("active");
-  }
-}
-
-window.addEventListener("DOMContentLoaded", () => {
-  showSkill("trap");
-});
   </script>
 
 </body>

@@ -1,368 +1,1372 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
+
   <title data-lang="weapons">Armas</title>
 
-  <link rel="stylesheet" href="../css/weapons.css">
-  <link rel="stylesheet" href="../css/backbutton.css">
-  <link rel="stylesheet" href="../css/flag.css">
+  <link rel="stylesheet" href="../css/weaponlist.css">
+  <link rel="stylesheet" href="../css/menu.css">
   <link rel="icon" href="../images/favicon.png">
 </head>
+
 <body>
 
-  <!-- idioma -->
-  <div class="lang-switch">
-    <img src="../images/flags/br.jpg" onclick="setLang('pt')">
-    <img src="../images/flags/us.png" onclick="setLang('en')">
-    <img src="../images/flags/es.jpg" onclick="setLang('es')">
-  </div>
+<!-- =========================
+       MENU
+========================== -->
+<nav class="site-menu">
 
-  <div class="overlay"></div>
+    <div class="menu-inner">
 
-  <header>
-    <h1 data-lang="weapons">ARMAS</h1>
-  </header>
+      <!-- LOGO -->
+      <a href="../index.html" class="menu-logo">
+        <img src="../images/logo.png" alt="Evil Dead">
+      </a>
 
-  <main class="container">
+      <!-- LINKS -->
+      <div class="menu-links">
 
-    <!-- MELEE -->
-    <section class="weapon-section">
-      <h2 data-lang="melee">Corpo a Corpo</h2>
-
-      <div class="weapon-grid">
-
-        <a href="../pages/weapons/melee/fist.html" class="weapon-card">
-          <img src="../images/weapons/MeleeFist_01.png">
-          <span data-lang="fist">Fist</span>
+        <!-- INÍCIO -->
+        <a href="../index.html" class="menu-link">
+          <span data-lang="menuHome">Início</span>
         </a>
 
-        <a href="../pages/weapons/melee/power-glove.html" class="weapon-card">
-          <img src="../images/weapons/MeleePowerGlove_01.png">
-          <span data-lang="powerglove">Power Glove</span>
-        </a>
 
-        <a href="../pages/weapons/melee/chainsaw.html" class="weapon-card">
-          <img src="../images/weapons/Chainsaw_01.png">
-          <span data-lang="chainsaw">Motoserra</span>
-        </a>
+        <!-- =========================
+             SOBREVIVENTES
+        ========================== -->
+        <div class="menu-dropdown">
 
-        <a href="../pages/weapons/melee/hand-axe.html" class="weapon-card">
-          <img src="../images/weapons/HandAxe_01.png">
-          <span data-lang="handaxe">Machadinha</span>
-        </a>
+          <button class="menu-link menu-dropdown-button" type="button">
+            <span data-lang="menuSurvivors">Sobreviventes</span>
+            <span class="menu-arrow">▾</span>
+          </button>
 
-         <a href="../pages/weapons/melee/scythe.html" class="weapon-card">
-          <img src="../images/weapons/Scythe_01.png">
-          <span data-lang="scythe">Foice</span>
-         </a>
+          <div class="menu-submenu">
 
-        <a href="../pages/weapons/melee/hunting-knife.html" class="weapon-card">
-          <img src="../images/weapons/HuntingKnife_01.png">
-          <span data-lang="huntingknife">Faca</span>
-        </a>
+            <!-- CLASSES -->
+            <div class="menu-submenu-item">
 
-        <a href="../pages/weapons/melee/bat.html" class="weapon-card">
-          <img src="../images/weapons/NailBat_01.png">
-          <span data-lang="bat">Taco</span>
-        </a>
+              <a href="classes.html" class="submenu-parent">
+                <span data-lang="menuClasses">Classes</span>
+                <span class="submenu-arrow">▸</span>
+              </a>
 
-        <a href="../pages/weapons/melee/lumberjackaxe.html" class="weapon-card">
-          <img src="../images/weapons/LumberjackAxe_01.png">
-          <span data-lang="lumberjackaxe">Machado</span>
-        </a>
+              <!-- SUBMENU DAS CLASSES -->
+              <div class="menu-submenu-nested">
 
-        <a href="../pages/weapons/melee/sledgehammer.html" class="weapon-card">
-          <img src="../images/weapons/Sledgehammer_01.png">
-          <span data-lang="sledgehammer">Marreta</span>
-        </a>
+                <a href="classes/leader.html" data-lang="menuLeader">
+                  Líder
+                </a>
 
-        <a href="../pages/weapons/melee/meat-cleaver.html" class="weapon-card">
-          <img src="../images/weapons/MeatCleaver_01.png">
-          <span data-lang="meatcleaver">Cutelo</span>
-        </a>
+                <a href="classes/warrior.html" data-lang="menuWarrior">
+                  Guerreiro
+                </a>
 
-        <a href="../pages/weapons/melee/improvised-spear.html" class="weapon-card">
-          <img src="../images/weapons/Spear_01.png">
-          <span data-lang="spear">Lança Improvisada</span>
-        </a>
+                <a href="classes/hunter.html" data-lang="menuHunter">
+                  Caçador
+                </a>
 
-        <a href="../pages/weapons/melee/meat-hammer.html" class="weapon-card">
-          <img src="../images/weapons/MeatHammer_01.png">
-          <span data-lang="meathammer">Martelo de Carne</span>
-        </a>
+                <a href="classes/support.html" data-lang="menuSupport">
+                  Suporte
+                </a>
 
-        <a href="../pages/weapons/melee/machete.html" class="weapon-card">
-          <img src="../images/weapons/Machete_01.png">
-          <span data-lang="machete">Facão</span>
-        </a>
-
-        <a href="../pages/weapons/melee/pickaxe.html" class="weapon-card">
-          <img src="../images/weapons/Pickaxe_01.png">
-          <span data-lang="pickaxe">Picareta</span>
-        </a>
-
-        <a href="../pages/weapons/melee/shovel.html" class="weapon-card">
-          <img src="../images/weapons/Shovel_01.png">
-          <span data-lang="shovel">Pá</span>
-        </a>
-
-        <a href="../pages/weapons/melee/sword.html" class="weapon-card">
-          <img src="../images/weapons/Sword_01.png">
-          <span data-lang="sword">Espada</span>
-        </a>
-
-        <a href="../pages/weapons/melee/arthurs-fabled-sword.html" class="weapon-card">
-          <img src="../images/weapons/Sword_01.png">
-          <span data-lang="arthursword">Espada Lendária de Artur</span>
-        </a>
-
-        <a href="../pages/weapons/melee/syringe.html" class="weapon-card">
-          <img src="../images/weapons/Tranquilizer_01.png">
-          <span data-lang="tranquilizer">Seringa</span>
-        </a>
-
-        <a href="../pages/weapons/melee/pipe.html" class="weapon-card">
-          <img src="../images/weapons/LeadPipe_01.png">
-          <span data-lang="pipe">Cano</span>
-        </a>
-
-        <a href="../pages/weapons/melee/mace.html" class="weapon-card">
-          <img src="../images/weapons/Mace_01.png">
-          <span data-lang="mace">Maça</span>
-        </a>
-
-        <a href="../pages/weapons/melee/staff.html" class="weapon-card">
-          <img src="../images/weapons/Quarterstaff_01.png">
-          <span data-lang="quarterstaff">Cajado</span>
-        </a>
-
-      </div>
-    </section>
-
-    <!-- RANGED -->
-    <section class="weapon-section">
-      <h2 data-lang="ranged">Longo Alcance</h2>
-
-      <div class="weapon-grid">
-
-        <a href="../pages/weapons/ranged/crossbow.html" class="weapon-card">
-          <img src="../images/weapons/Crossbow_06.png">
-          <span data-lang="crossbow">Besta</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/explosive-crossbow.html" class="weapon-card">
-          <img src="../images/weapons/Crossbow_04.png">
-          <span data-lang="explosivecrossbow">Besta Explosiva</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/repeating-crossbow.html" class="weapon-card">
-          <img src="../images/weapons/Crossbow_01.png">
-          <span data-lang="repeatingcrossbow">Besta Repetidora</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/blunderbuss.html" class="weapon-card">
-          <img src="../images/weapons/SingleShotgun_01.png">
-          <span data-lang="singleshotgun">Bacamarte</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/grenade-launcher.html" class="weapon-card">
-          <img src="../images/weapons/GrenadeLauncher_01.png">
-          <span data-lang="grenadelauncher">Lança-granada</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/pistol.html" class="weapon-card">
-          <img src="../images/weapons/Handgun_01.png">
-          <span data-lang="handgun">Pistola</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/revolver.html" class="weapon-card">
-          <img src="../images/weapons/Revolver_01.png">
-          <span data-lang="revolver">Revolver</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/shotgun.html" class="weapon-card">
-          <img src="../images/weapons/Shotgun_01.png">
-          <span data-lang="shotgun">Escopeta</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/hunting-rifle.html" class="weapon-card">
-          <img src="../images/weapons/HuntingRifle_01.png">
-          <span data-lang="huntingrifle">Rifle de Caçador</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/lever-action-rifle.html" class="weapon-card">
-          <img src="../images/weapons/LeverActionRifle_01.png">
-          <span data-lang="leveractionrifle">Rifle de Alavanca</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/double-barrel.html" class="weapon-card">
-          <img src="../images/weapons/Longstick_01.png">
-          <span data-lang="longstick">Cano Duplo</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/boomstick.html" class="weapon-card">
-          <img src="../images/weapons/Boomstick_01.png">
-          <span data-lang="boomstick">Pau de Fogo</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/nailgun.html" class="weapon-card">
-          <img src="../images/weapons/NailGun_01.png">
-          <span data-lang="nailgun">Pistola de Pregos</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/submachine-gun.html" class="weapon-card">
-          <img src="../images/weapons/SubMachineGun_01.png">
-          <span data-lang="submachinegun">Submetralhadora</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/sawgun.html" class="weapon-card">
-          <img src="../images/weapons/Sawgun_01.png">
-          <span data-lang="sawgun">Retalhadora</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/minigun.html" class="weapon-card">
-          <img src="../images/weapons/Minigun_01.png">
-          <span data-lang="minigun">Minigun</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/harpoon.html" class="weapon-card">
-          <img src="">
-          <span data-lang="harpoon">Arpão</span>
-        </a>
-
-        <a href="../pages/weapons/ranged/flamethrower.html" class="weapon-card">
-          <img src="">
-          <span data-lang="flamethrower">Flamethrower</span>
-        </a>
-
-      </div>
-    </section>
-
-    <!-- TIPOS DE ARMAS -->
-    <section class="weapon-info melee-info">
-
-        <h2 data-lang="TypesOfMeleeWeapons">Tipos de Armas corpo-a-corpo</h2>
-
-        <div class="info-grid">
-
-              <div class="info-card">
-                <h3 data-lang="Onehandedmeleeweapons">Armas corpo-a-corpo de uma mão</h3>
-                  <p data-lang="knife">Faca de Caça</p>
-                  <p data-lang="chainsaw">Motoserra</p>
-                  <p data-lang="machete">Facão</p>
-                  <p data-lang="handaxe">Machadinha</p>
-                  <p data-lang="meatcleaver">Cutelo</p>
-                  <p data-lang="meathammer">Martelo de Carne</p>
-                  <p data-lang="pickaxe">Picareta</p>
-                  <p data-lang="mace">Maça</p>
-              </div>
-              
-            <div class="info-card">
-                <h3 data-lang="Twohandedmeleeweapons">Arma de corpo-a-corpo de duas mãos</h3>
-                  <p data-lang="lumberjackaxe">Machado</p>
-                  <p data-lang="sledgehammer">Marreta</p>
-                  <p data-lang="sword">Espada</p>
-                  <p data-lang="quarterstaff">Cajado</p>
-                  <p data-lang="scythe">Foice</p>
-                  <p data-lang="shovel">Pá</p>
-                  <p data-lang="tranquilizer">Seringa</p>
-                  <p data-lang="pipe">Cano</p>
-                  <p data-lang="bat">Taco</p>
-                  <p data-lang="spear">Lança Improvisada</p>
               </div>
 
-              <div class="info-card">
-                <h3 data-lang="BluntWeapons">Armas de contusão/contundente (impacto) (blunt)</h3>
-                  <p data-lang="shovel">Pá</p>
-                  <p data-lang="bat">Taco</p>
-                  <p data-lang="sledgehammer">Marreta</p>
-                  <p data-lang="meathammer">Martelo de Carne</p>
-                  <p data-lang="quarterstaff">Cajado</p>
-                  <p data-lang="mace">Maça</p>
-                  <p data-lang="pipe">Cano</p>
-                  <p data-lang="tranquilizer">Seringa</p>
-                  <p data-lang="pickaxe">Picareta</p>
-              </div>
-
-              <div class="info-card">
-                <h3 data-lang="SharpWeapons">Armas Cortantes/Afiada (Sharp)</h3>
-                  <p data-lang="lumberjackaxe">Machado</p>
-                  <p data-lang="knife">Faca</p>
-                  <p data-lang="machete">Facão</p>
-                  <p data-lang="sword">Espada</p>
-                  <p data-lang="chainsaw">Motoserra</p>
-                  <p data-lang="handaxe">Machadinha</p>
-                  <p data-lang="meatcleaver">Cutelo</p>
-                  <p data-lang="spear">Lança Improvisada</p>
-                  <p data-lang="scythe">Foice</p>
             </div>
-          
-        </section>
+            <!-- FIM DE CLASSES -->
 
-            <!-- ARMAS DE FOGO -->
-            <section class="weapon-info ammo-info">
-              <h2 data-lang="TypesOfAmmunition">Munições</h2>
-              <!-- Hand Gun Ammo-->
-            <div class="info-grid">
 
-              <div class="info-card ammo light">
-              <h3>
-                <img src="../images/weapons/HandGunAmmo_01.png">
-                <span data-lang="HandGunAmmo">Hand Gun Ammo</span>
-              </h3>
+            <!-- PERSONAGENS -->
+            <a href="characters.html" data-lang="menuCharacters">
+              Personagens
+            </a>
 
-                <ul>
-                  <li data-lang="submachinegun">Sub-metralhadora</li>
-                  <li data-lang="leveractionrifle">Rifle de Alavanca</li>
-                  <li data-lang="revolver">Revolver</li>
-                  <li data-lang="handgun">Pistola</li>
-                </ul>
-              </div>
-            
-              <!-- Long Gun Ammo -->
-              <div class="info-card ammo heavy">
-              <h3>
-                <img src="../images/weapons/LongGunAmmo_01.png">
-                <span data-lang="LongGunAmmo">Long Gun Ammo</span>
-              </h3>
 
-                <ul>
-                  <li data-lang="longstick">Cano Duplo</li>
-                  <li data-lang="huntingrifle">Rifle de Caça</li>
-                  <li data-lang="shotgun">Escopeta</li>
-                  <li data-lang="boomstick">Pau de Fogo</li>
-                </ul>
-              </div>
-            
-              <!-- Special Gun Ammo -->
-              <div class="info-card ammo special">
-              <h3>
-                <img src="../images/weapons/SpecialGunAmmo_01.png">
-                <span data-lang="SpecialGunAmmo">Gun Ammo</span>
-              </h3>
+            <!-- ARMAS -->
+            <a href="weapons.html" data-lang="menuWeapons" class="active">
+              Armas
+            </a>
 
-                <ul>
-                  <li data-lang="grenadelauncher">Lança-granadas</li>
-                  <li data-lang="nailgun">Pistola de Prego</li>
-                  <li data-lang="sawgun">Retalhadora</li>
-                  <li data-lang="singleshotgun">Bacamarte</li>
-                  <li data-lang="crossbow">Besta</li>
-                  <li data-lang="explosivecrossbow">Besta Explosiva</li>
-                  <li data-lang="repeatingcrossbow">Besta Repetidora</li>
-                </ul>
-              </div>
+
+            <!-- BUILD -->
+            <a href="#" data-lang="menuBuild">
+              Build
+            </a>
+
+
+            <!-- GLITCHES -->
+            <a href="#" data-lang="menuGlitches">
+              Glitches
+            </a>
+
+
+            <!-- HUNTER SPOTS -->
+            <a href="hunter-spots.html" data-lang="menuHunterSpots">
+              Spots para Caçadores
+            </a>
+
+
+            <!-- CAIXAS -->
+            <a href="crates.html" data-lang="menuCrates">
+              Caixas
+            </a>
+
+
+            <!-- BONUS -->
+            <a href="bonus.html" data-lang="menuBonus">
+              Bonus
+            </a>
+
+
+            <!-- DEBUFF -->
+            <a href="debuff.html" data-lang="menuDebuff">
+              Debuff
+            </a>
+
+          </div>
 
         </div>
+        <!-- FIM DOS SOBREVIVENTES -->
+
+
+        <!-- =========================
+             DEMÔNIOS
+        ========================== -->
+        <div class="menu-dropdown">
+
+          <button class="menu-link menu-dropdown-button" type="button">
+            <span data-lang="menuDemons">Demônios</span>
+            <span class="menu-arrow">▾</span>
+          </button>
+
+          <div class="menu-submenu">
+
+            <!-- DEMÔNIOS -->
+            <div class="menu-submenu-item">
+
+              <a href="demons.html" class="submenu-parent">
+
+                <span data-lang="menuAllDemons">
+                  Demônios
+                </span>
+
+                <span class="submenu-arrow">
+                  ▸
+                </span>
+
+              </a>
+
+
+              <!-- SUBMENU DOS DEMÔNIOS -->
+              <div class="menu-submenu-nested">
+
+                <a href="demons/henrietta.html">
+                  Henrietta
+                </a>
+
+                <a href="demons/evil-ash.html" data-lang="demonEvilAsh">
+                  Evil Ash
+                </a>
+
+                <a href="characters/puppeteer.html">
+                  Eligos
+                </a>
+
+                <a href="demons/plaguebringer.html" data-lang="demonWitch">
+                  Witch
+                </a>
+
+                <a href="demons/puppeteer.html">
+                  Baal
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- FIM DOS DEMÔNIOS -->
+
+
+        <!-- =========================
+             GLOSSÁRIO
+        ========================== -->
+        <a href="#" class="menu-link">
+          <span data-lang="menuGlossary">
+            Glossary
+          </span>
+        </a>
+
+
+        <!-- =========================
+             SOCIAL MEDIA
+        ========================== -->
+        <div class="menu-dropdown">
+
+          <button class="menu-link menu-dropdown-button" type="button">
+
+            <span data-lang="menuSocial">
+              Social Media
+            </span>
+
+            <span class="menu-arrow">
+              ▾
+            </span>
+
+          </button>
+
+
+          <div class="menu-submenu">
+
+            <a
+              href="https://www.reddit.com/r/EvilDeadTheGame/"
+              data-lang="menuReddit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Reddit
+            </a>
+
+
+            <a
+              href="https://www.evildeadthegame.com/"
+              data-lang="menuWebsite"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website
+            </a>
+
+
+            <a
+              href="https://www.youtube.com/@EvilDeadTheGame"
+              data-lang="menuYoutube"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Youtube
+            </a>
+
+
+            <a
+              href="https://x.com/evildeadthegame"
+              data-lang="menuTwitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
+
+
+            <a
+              href="https://discord.gg/evildeadthegame"
+              data-lang="menuDiscord"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Discord
+            </a>
+
+
+            <a
+              href="https://discord.gg/HHJx4rS5Vj"
+              data-lang="menuFanDiscord"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Evil Dead The Gathering
+            </a>
+
+
+            <a
+              href="https://discord.gg/sjUez8dZF7"
+              data-lang="menuFanDiscord2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Evil Dead The Game Modding
+            </a>
+
+
+            <a
+              href="https://www.nexusmods.com/games/evildeadthegame"
+              data-lang="menuNexusModEvilDead"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Nexus Mod Evil Dead
+            </a>
+
+          </div>
+
+        </div>
+        <!-- FIM DA SOCIAL MEDIA -->
+
+
+        <!-- =========================
+             SOURCE CODE
+        ========================== -->
+        <a
+          href="https://github.com/Kapie77/Evil-Dead-Tips"
+          class="menu-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span data-lang="menuSourceCode">
+            Source code
+          </span>
+        </a>
+
+      </div>
+      <!-- FIM MENU LINKS -->
+
+
+      <!-- =========================
+           IDIOMAS
+      ========================== -->
+      <div class="menu-language">
+
+        <button class="language-current" type="button">
+
+          <img
+            src="../images/flags/us.png"
+            alt=""
+          >
+
+          <span>
+            ENG
+          </span>
+
+          <span class="language-arrow">
+            ▼
+          </span>
+
+        </button>
+
+
+        <div class="language-options">
+
+          <button
+            type="button"
+            onclick="setLang('en')"
+          >
+
+            <img
+              src="../images/flags/us.png"
+              alt=""
+            >
+
+            <span>
+              ENG
+            </span>
+
+          </button>
+
+
+          <button
+            type="button"
+            onclick="setLang('es')"
+          >
+
+            <img
+              src="../images/flags/es.jpg"
+              alt=""
+            >
+
+            <span>
+              ESP
+            </span>
+
+          </button>
+
+
+          <button
+            type="button"
+            onclick="setLang('pt')"
+          >
+
+            <img
+              src="../images/flags/br.jpg"
+              alt=""
+            >
+
+            <span>
+              PT-BR
+            </span>
+
+          </button>
+
+        </div>
+
+      </div>
+      <!-- FIM DOS IDIOMAS -->
+
+
+      <!-- =========================
+           MENU MOBILE
+      ========================== -->
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Menu"
+      >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
     </div>
+
+  </nav>
+  <!-- FIM DO MENU -->
+
+
+  <!-- =========================
+       CONTEÚDO
+  ========================== -->
+  <main class="weapons-page">
+
+
+    <!-- =========================
+         TÍTULO
+    ========================== -->
+    <div class="page-title">
+
+      <span class="page-title-line"></span>
+
+      <h1 data-lang="weapons">
+        ARMAS
+      </h1>
+
+      <span class="page-title-line"></span>
+
+    </div>
+
+
+    <!-- =========================
+         MELEE
+    ========================== -->
+    <section class="weapon-section">
+
+      <h2 data-lang="melee">
+        Corpo a Corpo
+      </h2>
+
+
+      <div class="weapon-list-grid">
+
+
+        <a
+          href="weapons/melee/fist.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/MeleeFist_01.png"
+            alt="Fist"
+          >
+          <span data-lang="fist">
+            Fist
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/power-glove.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/MeleePowerGlove_01.png"
+            alt="Power Glove"
+          >
+          <span data-lang="powerglove">
+            Power Glove
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/chainsaw.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Chainsaw_01.png"
+            alt="Chainsaw"
+          >
+          <span data-lang="chainsaw">
+            Motoserra
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/hand-axe.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/HandAxe_01.png"
+            alt="Hand Axe"
+          >
+          <span data-lang="handaxe">
+            Machadinha
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/scythe.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Scythe_01.png"
+            alt="Scythe"
+          >
+          <span data-lang="scythe">
+            Foice
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/hunting-knife.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/HuntingKnife_01.png"
+            alt="Hunting Knife"
+          >
+          <span data-lang="huntingknife">
+            Faca
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/bat.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/NailBat_01.png"
+            alt="Bat"
+          >
+          <span data-lang="bat">
+            Taco
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/lumberjackaxe.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/LumberjackAxe_01.png"
+            alt="Lumberjack Axe"
+          >
+          <span data-lang="lumberjackaxe">
+            Machado
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/sledgehammer.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Sledgehammer_01.png"
+            alt="Sledgehammer"
+          >
+          <span data-lang="sledgehammer">
+            Marreta
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/meat-cleaver.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/MeatCleaver_01.png"
+            alt="Meat Cleaver"
+          >
+          <span data-lang="meatcleaver">
+            Cutelo
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/improvised-spear.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Spear_01.png"
+            alt="Improvised Spear"
+          >
+          <span data-lang="spear">
+            Lança Improvisada
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/meat-hammer.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/MeatHammer_01.png"
+            alt="Meat Hammer"
+          >
+          <span data-lang="meathammer">
+            Martelo de Carne
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/machete.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Machete_01.png"
+            alt="Machete"
+          >
+          <span data-lang="machete">
+            Facão
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/pickaxe.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Pickaxe_01.png"
+            alt="Pickaxe"
+          >
+          <span data-lang="pickaxe">
+            Picareta
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/shovel.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Shovel_01.png"
+            alt="Shovel"
+          >
+          <span data-lang="shovel">
+            Pá
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/sword.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Sword_01.png"
+            alt="Sword"
+          >
+          <span data-lang="sword">
+            Espada
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/arthurs-fabled-sword.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Sword_01.png"
+            alt="Arthur's Fabled Sword"
+          >
+          <span data-lang="arthursword">
+            Espada Lendária de Artur
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/syringe.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Tranquilizer_01.png"
+            alt="Syringe"
+          >
+          <span data-lang="tranquilizer">
+            Seringa
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/pipe.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/LeadPipe_01.png"
+            alt="Lead Pipe"
+          >
+          <span data-lang="pipe">
+            Cano
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/mace.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Mace_01.png"
+            alt="Mace"
+          >
+          <span data-lang="mace">
+            Maça
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/melee/staff.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Quarterstaff_01.png"
+            alt="Quarterstaff"
+          >
+          <span data-lang="quarterstaff">
+            Cajado
+          </span>
+        </a>
+
+      </div>
+
     </section>
-    <!------------------------>
+
+
+    <!-- =========================
+         RANGED
+    ========================== -->
+    <section class="weapon-section">
+
+      <h2 data-lang="ranged">
+        Longo Alcance
+      </h2>
+
+
+      <div class="weapon-list-grid">
+
+
+        <a
+          href="weapons/ranged/crossbow.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Crossbow_06.png"
+            alt="Crossbow"
+          >
+          <span data-lang="crossbow">
+            Besta
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/explosive-crossbow.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Crossbow_04.png"
+            alt="Explosive Crossbow"
+          >
+          <span data-lang="explosivecrossbow">
+            Besta Explosiva
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/repeating-crossbow.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Crossbow_01.png"
+            alt="Repeating Crossbow"
+          >
+          <span data-lang="repeatingcrossbow">
+            Besta Repetidora
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/blunderbuss.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/SingleShotgun_01.png"
+            alt="Blunderbuss"
+          >
+          <span data-lang="singleshotgun">
+            Bacamarte
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/grenade-launcher.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/GrenadeLauncher_01.png"
+            alt="Grenade Launcher"
+          >
+          <span data-lang="grenadelauncher">
+            Lança-granada
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/pistol.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Handgun_01.png"
+            alt="Handgun"
+          >
+          <span data-lang="handgun">
+            Pistola
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/revolver.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Revolver_01.png"
+            alt="Revolver"
+          >
+          <span data-lang="revolver">
+            Revolver
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/shotgun.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Shotgun_01.png"
+            alt="Shotgun"
+          >
+          <span data-lang="shotgun">
+            Escopeta
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/hunting-rifle.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/HuntingRifle_01.png"
+            alt="Hunting Rifle"
+          >
+          <span data-lang="huntingrifle">
+            Rifle de Caçador
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/lever-action-rifle.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/LeverActionRifle_01.png"
+            alt="Lever Action Rifle"
+          >
+          <span data-lang="leveractionrifle">
+            Rifle de Alavanca
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/double-barrel.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Longstick_01.png"
+            alt="Double Barrel"
+          >
+          <span data-lang="longstick">
+            Cano Duplo
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/boomstick.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Boomstick_01.png"
+            alt="Boomstick"
+          >
+          <span data-lang="boomstick">
+            Pau de Fogo
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/nailgun.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/NailGun_01.png"
+            alt="Nail Gun"
+          >
+          <span data-lang="nailgun">
+            Pistola de Pregos
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/submachine-gun.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/SubMachineGun_01.png"
+            alt="Submachine Gun"
+          >
+          <span data-lang="submachinegun">
+            Submetralhadora
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/sawgun.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Sawgun_01.png"
+            alt="Sawgun"
+          >
+          <span data-lang="sawgun">
+            Retalhadora
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/minigun.html"
+          class="weapon-list-card"
+        >
+          <img
+            src="../images/weapons/Minigun_01.png"
+            alt="Minigun"
+          >
+          <span data-lang="minigun">
+            Minigun
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/harpoon.html"
+          class="weapon-list-card"
+        >
+          <img
+            src=""
+            alt="Harpoon"
+          >
+          <span data-lang="harpoon">
+            Arpão
+          </span>
+        </a>
+
+
+        <a
+          href="weapons/ranged/flamethrower.html"
+          class="weapon-list-card"
+        >
+          <img
+            src=""
+            alt="Flamethrower"
+          >
+          <span data-lang="flamethrower">
+            Flamethrower
+          </span>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         TIPOS DE ARMAS CORPO A CORPO
+    ========================== -->
+    <section class="weapon-info melee-info">
+
+      <h2 data-lang="TypesOfMeleeWeapons">
+        Tipos de Armas corpo-a-corpo
+      </h2>
+
+
+      <div class="weapon-info-grid">
+
+
+        <!-- UMA MÃO -->
+        <div class="weapon-info-card">
+
+          <h3 data-lang="Onehandedmeleeweapons">
+            Armas corpo-a-corpo de uma mão
+          </h3>
+
+          <p data-lang="huntingknife">Faca de Caça</p>
+          <p data-lang="chainsaw">Motoserra</p>
+          <p data-lang="machete">Facão</p>
+          <p data-lang="handaxe">Machadinha</p>
+          <p data-lang="meatcleaver">Cutelo</p>
+          <p data-lang="meathammer">Martelo de Carne</p>
+          <p data-lang="pickaxe">Picareta</p>
+          <p data-lang="mace">Maça</p>
+
+        </div>
+
+
+        <!-- DUAS MÃOS -->
+        <div class="weapon-info-card">
+
+          <h3 data-lang="Twohandedmeleeweapons">
+            Arma de corpo-a-corpo de duas mãos
+          </h3>
+
+          <p data-lang="lumberjackaxe">
+            Machado
+          </p>
+
+          <p data-lang="sledgehammer">
+            Marreta
+          </p>
+
+          <p data-lang="sword">
+            Espada
+          </p>
+
+          <p data-lang="quarterstaff">
+            Cajado
+          </p>
+
+          <p data-lang="scythe">
+            Foice
+          </p>
+
+          <p data-lang="shovel">
+            Pá
+          </p>
+
+          <p data-lang="tranquilizer">
+            Seringa
+          </p>
+
+          <p data-lang="pipe">
+            Cano
+          </p>
+
+          <p data-lang="bat">
+            Taco
+          </p>
+
+          <p data-lang="spear">
+            Lança Improvisada
+          </p>
+
+        </div>
+
+
+        <!-- BLUNT -->
+        <div class="weapon-info-card">
+
+          <h3 data-lang="BluntWeapons">
+            Armas de contusão/contundente (impacto) (blunt)
+          </h3>
+
+          <p data-lang="shovel">
+            Pá
+          </p>
+
+          <p data-lang="bat">
+            Taco
+          </p>
+
+          <p data-lang="sledgehammer">
+            Marreta
+          </p>
+
+          <p data-lang="meathammer">
+            Martelo de Carne
+          </p>
+
+          <p data-lang="quarterstaff">
+            Cajado
+          </p>
+
+          <p data-lang="mace">
+            Maça
+          </p>
+
+          <p data-lang="pipe">
+            Cano
+          </p>
+
+          <p data-lang="tranquilizer">
+            Seringa
+          </p>
+
+          <p data-lang="pickaxe">
+            Picareta
+          </p>
+
+        </div>
+
+
+        <!-- SHARP -->
+        <div class="weapon-info-card">
+
+          <h3 data-lang="SharpWeapons">
+            Armas Cortantes/Afiada (Sharp)
+          </h3>
+
+          <p data-lang="lumberjackaxe">
+            Machado
+          </p>
+
+          <p data-lang="knife">
+            Faca
+          </p>
+
+          <p data-lang="machete">
+            Facão
+          </p>
+
+          <p data-lang="sword">
+            Espada
+          </p>
+
+          <p data-lang="chainsaw">
+            Motoserra
+          </p>
+
+          <p data-lang="handaxe">
+            Machadinha
+          </p>
+
+          <p data-lang="meatcleaver">
+            Cutelo
+          </p>
+
+          <p data-lang="spear">
+            Lança Improvisada
+          </p>
+
+          <p data-lang="scythe">
+            Foice
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         MUNIÇÕES
+    ========================== -->
+    <section class="weapon-info weapon-ammo">
+
+      <h2 data-lang="TypesOfAmmunition">
+        Munições
+      </h2>
+
+
+      <div class="weapon-info-grid">
+
+
+        <!-- HAND GUN AMMO -->
+        <div class="weapon-info-card ammo light">
+
+          <h3>
+
+            <img
+              src="../images/weapons/HandGunAmmo_01.png"
+              alt="Hand Gun Ammo"
+            >
+
+            <span data-lang="HandGunAmmo">
+              Hand Gun Ammo
+            </span>
+
+          </h3>
+
+
+          <ul>
+
+            <li data-lang="submachinegun">
+              Sub-metralhadora
+            </li>
+
+            <li data-lang="leveractionrifle">
+              Rifle de Alavanca
+            </li>
+
+            <li data-lang="revolver">
+              Revolver
+            </li>
+
+            <li data-lang="handgun">
+              Pistola
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- LONG GUN AMMO -->
+        <div class="weapon-info-card ammo heavy">
+
+          <h3>
+
+            <img
+              src="../images/weapons/LongGunAmmo_01.png"
+              alt="Long Gun Ammo"
+            >
+
+            <span data-lang="LongGunAmmo">
+              Long Gun Ammo
+            </span>
+
+          </h3>
+
+
+          <ul>
+
+            <li data-lang="longstick">
+              Cano Duplo
+            </li>
+
+            <li data-lang="huntingrifle">
+              Rifle de Caça
+            </li>
+
+            <li data-lang="shotgun">
+              Escopeta
+            </li>
+
+            <li data-lang="boomstick">
+              Pau de Fogo
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- SPECIAL GUN AMMO -->
+        <div class="weapon-info-card ammo special">
+
+          <h3>
+
+            <img
+              src="../images/weapons/SpecialGunAmmo_01.png"
+              alt="Special Gun Ammo"
+            >
+
+            <span data-lang="SpecialGunAmmo">
+              Gun Ammo
+            </span>
+
+          </h3>
+
+
+          <ul>
+
+            <li data-lang="grenadelauncher">
+              Lança-granadas
+            </li>
+
+            <li data-lang="nailgun">
+              Pistola de Prego
+            </li>
+
+            <li data-lang="sawgun">
+              Retalhadora
+            </li>
+
+            <li data-lang="singleshotgun">
+              Bacamarte
+            </li>
+
+            <li data-lang="crossbow">
+              Besta
+            </li>
+
+            <li data-lang="explosivecrossbow">
+              Besta Explosiva
+            </li>
+
+            <li data-lang="repeatingcrossbow">
+              Besta Repetidora
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
 
   </main>
 
-  <button onclick="goBack()" class="back-btn" data-lang="back">Voltar</button>
 
+  <!-- =========================
+       SCRIPTS
+  ========================== -->
   <script src="../js/script.js"></script>
-  <script src="../js/lang.js"></script> <!-- tradução -->
+  <script src="../js/translations/menu.js"></script>
+  <script src="../js/lang.js"></script>
+  <script src="../js/menu.js"></script>
+
 </body>
+
 </html>
