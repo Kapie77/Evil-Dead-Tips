@@ -1,3 +1,7 @@
+/* =========================================================
+   RESET
+========================================================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,518 +9,122 @@
   font-family: Arial, sans-serif;
 }
 
-a, i {
-  color: inherit;
-  text-decoration: none;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: url('../images/background.png') no-repeat center/cover;
-  color: white;
+
+  color: #fff;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.72)
+    ),
+    url("../images/background.png")
+    no-repeat
+    center center / cover;
+
+  background-attachment: fixed;
 }
 
-/* =====================
-CORES DAS CLASSES
-===================== */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+
+/* =========================================================
+   CORES DAS CLASSES
+========================================================= */
 
 /* CAÇADOR */
+
 body.cacador {
   --class-color: #ffaa00;
 }
 
 /* GUERREIRO */
+
 body.guerreiro {
   --class-color: #ff3333;
 }
 
 /* LÍDER */
+
 body.lider {
   --class-color: #00ccff;
 }
 
 /* SUPORTE */
+
 body.suporte {
   --class-color: #33cc66;
 }
 
-header {
-  text-align: center;
-  padding: 30px 0;
-  z-index: 2;
-}
 
-header h1 {
-  color: #ffaa00;
-  text-shadow: 0 0 15px #ffaa00;
-}
+/* =========================================================
+   CONTAINER PRINCIPAL
+========================================================= */
 
-/* layout */
 .container {
-  max-width: 900px;
+  width: 100%;
+  max-width: 1400px;
+
   margin: 0 auto;
-  padding: 20px;
+
+  padding: 50px 40px 80px;
+
   display: flex;
   flex-direction: column;
+
   gap: 20px;
-  z-index: 2;
 }
 
-/* perfil topo */
-.profile {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
 
-.profile img {
-  width: 120px;
-  border-radius: 10px;
-}
-
-.info {
-  flex: 1;
-}
-
-/* caixas */
-.box {
-  background: rgba(0,0,0,0.7);
-  padding: 20px;
-  border-left: 4px solid #ffaa00;
-  border-radius: 5px;
-}
-
-.box ul {
-  padding-left: 20px;
-}
-
-/* botão voltar */
-.back {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  padding: 10px 15px;
-  background: transparent;
-  border: 1px solid white;
-  color: white;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.char-card {
-  text-decoration: none;
-  color: white;
-}
-
-/* ===========
-NOVO
-===============*/
-.char-hero {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 40px;
-
-  background: rgba(0,0,0,0.6);
-  border: 1px solid rgba(255,255,255,0.2);
-
-  padding: 30px;
-  border-radius: 10px;
-
-  backdrop-filter: blur(8px);
-}
-
-/* esquerda */
-.hero-left {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-}
-
-.hero-left h1 {
-  font-size: 2.5rem;
-}
-
-.hero-left p {
-  line-height: 1.6;
-  color: rgba(255,255,255,0.8);
-}
-
-/* direita */
-.hero-right {
-  flex: 1;
-}
-
-.hero-right h2 {
-  margin-bottom: 15px;
-}
+/* =========================================================
+   HERO / PERFIL
+========================================================= */
 
 .hero-wrapper {
-  margin-bottom: 10px;
+  width: 100%;
 }
 
-/* atributos */
-.stat {
-  margin-bottom: 15px;
-}
+.char-hero {
+  width: 100%;
 
-.stat span {
-  display: block;
-  font-size: 0.9rem;
-  margin-bottom: 5px;
-}
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.82),
+      rgba(10, 10, 10, 0.65)
+    );
 
-/* barras */
-.bars {
-  display: flex;
-  gap: 5px;
-}
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-left: 3px solid var(--class-color);
 
-.bar {
-  width: 12px;
-  height: 12px;
-  background: rgba(255,255,255,0.2);
-  transform: rotate(45deg);
-}
+  border-radius: 4px;
 
-.bar.filled {
-  background: var(--class-color);
-  box-shadow: 0 0 5px var(--class-color);
-}
-
-
-/* =======================
- PERFIL DE HABILIDADES
-=========================*/
-.abilities-box {
-  background: rgba(0,0,0,0.6); /* igual ao hero */
-  border: 1px solid rgba(255,255,255,0.2);
-
-  padding: 20px;
-  /*border-left: 4px solid #ffaa00;*/
-  border-radius: 10px;
-  backdrop-filter: blur(8px);
-  position: relative;
-}
-
-.abilities-box p {
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
-
-/* título */
-.abilities-box h2 {
-  margin-bottom: 15px;
-  color: #ffaa00;
-}
-
-#abilities-tab h2 {
-  margin-bottom: 15px;
-}
-
-#abilities-tab > p {
-  margin-bottom: 25px;
-  line-height: 1.6;
-}
-
-/* cada habilidade */
-.ability {
-  margin-bottom: 15px;
-}
-
-.ability h3 {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
-}
-
-.ability p {
-  font-size: 0.9rem;
-  color: rgba(255,255,255,0.8);
-}
-
-/* ==================
-    PONTOS FORTES
-=================== */
-.strengths-box {
-  background: rgba(0, 50, 2, 0.6);
-  border: 1px solid rgba(77, 250, 25, 0.3);
-
-  padding: 20px;
-  border-radius: 10px;
+  padding: 35px;
 
   backdrop-filter: blur(8px);
-  position: relative;
-}
 
-/* borda lateral */
-.strengths-box::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 4px;
-  background: #2aaf01;
-}
-
-/* título */
-.strengths-box h2 {
-  color: #6bff4d;
-  margin-bottom: 15px;
-}
-
-/* ==================
-PONTOS FRACOS
-=================== */
-.weakness-box {
-  background: rgba(50,0,0,0.6);
-  border: 1px solid rgba(255,0,0,0.3);
-
-  padding: 20px;
-  border-radius: 10px;
-
-  backdrop-filter: blur(8px);
-  position: relative;
-}
-
-/* borda lateral */
-.weakness-box::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 4px;
-  background: #ff3333;
-}
-
-/* título */
-.weakness-box h2 {
-  color: #ff4d4d;
-  margin-bottom: 15px;
-}
-
-/* =================
-      DICAS
-====================*/
-.tips-box {
-  background: rgba(0,30,50,0.6);
-  border: 1px solid rgba(0,200,255,0.3);
-
-  padding: 20px;
-  border-radius: 10px;
-
-  backdrop-filter: blur(8px);
-  position: relative;
-}
-
-/* borda lateral */
-.tips-box::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 4px;
-  background: #00ccff;
-}
-
-/* título */
-.tips-box h2 {
-  color: #00ccff;
-  margin-bottom: 15px;
-}
-
-/* grid das dicas */
-.tips-grid {
-  display: grid;
-  /*grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));*/
-  gap: 15px;
-}
-
-/* card individual */
-.tip {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(0,200,255,0.2);
-  border-radius: 8px;
-
-  padding: 15px;
-
-  transition: 0.2s;
-}
-
-/* número */
-.tip-number {
-  min-width: 28px;
-  height: 28px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: #00ccff;
-  color: black;
-
-  font-weight: bold;
-  font-size: 0.9rem;
-
-  border-radius: 6px;
-
-  box-shadow: 0 0 8px rgba(0,200,255,0.6);
-}
-
-/* texto */
-.tip p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-/* hover */
-.tip:hover {
-  background: rgba(0,200,255,0.08);
-  transform: translateY(-3px);
-  box-shadow: 0 0 10px rgba(0,200,255,0.2);
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.45),
+    0 0 25px rgba(0, 0, 0, 0.25);
 }
 
 
-/* ====================
-DICAS E PONTOS FRACOS
-======================*/
-.strengths-box,
-.weakness-box,
-.tips-box {
-  padding: 20px 20px 20px 35px; /* Topo, direita, baixo, esquerda */
-}
-.strengths-box:hover, 
-.weakness-box:hover,
-.tips-box:hover {
-  transform: scale(1.01);
-  transition: 0.2s;
-}
+/* =========================================================
+   ABAS
+========================================================= */
 
-.strengths-box, 
-.weakness-box,
-.tips-box ul li {
-  font-size: 1rem;       /* aumenta um pouco */
-  line-height: 1.6;      /* deixa mais confortável de ler */
-  margin-bottom: 10px;   /* espaço entre as dicas */
-}
-
-/* ======================
-   MAESTRIA DE ARMA
-====================== */
-.mastery-box {
-  background: rgba(0,0,0,0.6);
-  border: 1px solid rgba(255,255,255,0.2);
-
-  padding: 20px;
-  border-radius: 10px;
-
-  backdrop-filter: blur(8px);
-  position: relative;
-}
-
-/* borda lateral estilo jogo */
-.mastery-box::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 4px;
-  background: var(--class-color);
-}
-
-/* título */
-.mastery-box h2 {
-  color: var(--class-color);
-  margin-bottom: 15px;
-}
-
-/* hover */
-.mastery-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px var(--class-color);
-}
-
-/* grid */
-.mastery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 120px));
-  justify-content: center;
-  gap: 15px;
-}
-
-/* card */
-.mastery-card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 8px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding: 10px;
-
-  transition: 0.2s;
-}
-
-/* imagem */
-.mastery-card img {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-  margin-bottom: 6px;
-}
-
-/* texto */
-.mastery-card span {
-  font-size: 0.85rem;
-  text-align: center;
-}
-
-.mastery-card {
-  border: 1px solid var(--class-color);
-}
-.mastery-grid.single {
-  display: flex;
-  justify-content: center;
-}
-
-.mastery-grid.single .mastery-card {
-  width: 160px;
-  padding: 15px;
-}
-
-.mastery-grid.single .mastery-card img {
-  width: 64px;
-  height: 64px;
-}
-
-/*====================
-    SEM MAESTRIA
-======================*/
-.no-mastery {
-  text-align: center;
-  padding: 20px 10px;
-}
-
-.no-mastery p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: rgba(255,255,255,0.85);
-}
-
-/* =========================
-      SISTEMA DE ABAS
-========================= */
 .tab-content {
   display: none;
 }
@@ -525,226 +133,1361 @@ DICAS E PONTOS FRACOS
   display: block;
 }
 
-.profile-layout.active {
-  display: flex !important;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 40px;
+
+/* =========================================================
+   PERFIL
+========================================================= */
+
+.profile-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.7fr)
+    minmax(280px, 1fr);
+
+  gap: 60px;
+
+  align-items: center;
 }
+
+
+/* =========================================================
+   LADO ESQUERDO
+========================================================= */
 
 .hero-left {
+  min-width: 0;
+
   display: flex;
   flex-direction: column;
+
+  gap: 20px;
 }
 
-.tab-buttons {
-  margin-top: 20px;
-  display: flex;
-  justify-content: flex-end;
+.hero-left h1 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+
+  font-weight: 800;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+
+  color: #fff;
+
+  text-shadow:
+    0 0 15px rgba(0, 204, 255, 0.35);
 }
 
-.tab-buttons button {
-  background: color-mix(in srgb, var(--class-color) 15%, transparent);
-  border: 1px solid color-mix(in srgb, var(--class-color) 40%, transparent);
-  color: white;
-  padding: 10px 18px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.2s;
+.hero-left h1::after {
+  content: "";
+
+  display: block;
+
+  width: 80px;
+  height: 3px;
+
+  margin-top: 15px;
+
+  background: var(--class-color);
+
+  box-shadow:
+    0 0 10px var(--class-color);
 }
 
-.tab-buttons button:hover {
-  background: color-mix(in srgb, var(--class-color) 30%, transparent);
-  box-shadow: 0 0 10px var(--class-color);
+.hero-left p {
+  max-width: 750px;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 1rem;
+
+  line-height: 1.75;
 }
 
-/* =============================
-      HABILIDADES ESPECIAIS
-=============================== */
-.skills-box {
-  background: rgba(0,0,0,0.6);
-  border: 1px solid rgba(255,255,255,0.2);
 
-  padding: 20px;
-  border-radius: 10px;
+/* =========================================================
+   LADO DIREITO / ATRIBUTOS
+========================================================= */
 
-  backdrop-filter: blur(8px);
+.hero-right {
+  width: 100%;
+
+  padding-left: 30px;
+
+  border-left:
+    1px solid rgba(255, 255, 255, 0.12);
 }
 
-.skills-box h2 {
-  margin-bottom: 15px;
+.hero-right h2 {
+  margin-bottom: 25px;
+
   color: var(--class-color);
+
+  font-size: 1.15rem;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  text-shadow:
+    0 0 10px var(--class-color);
 }
 
-.skill-icons {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
 
+/* =========================================================
+   ATRIBUTOS
+========================================================= */
+
+.stat {
   margin-bottom: 20px;
 }
 
-.skill-icon {
-  width: 90px;
-  height: 90px;
+.stat span {
+  display: block;
 
-  object-fit: cover;
+  margin-bottom: 10px;
 
-  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 0.8rem;
+
+  font-weight: bold;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   BARRAS
+========================================================= */
+
+.bars {
+  display: flex;
+
+  gap: 9px;
+
+  padding-left: 3px;
+}
+
+.bar {
+  width: 13px;
+  height: 13px;
+
+  background:
+    rgba(255, 255, 255, 0.12);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.18);
+
+  transform: rotate(45deg);
+}
+
+.bar.filled {
+  background: var(--class-color);
+
+  border-color: var(--class-color);
+
+  box-shadow:
+    0 0 8px var(--class-color);
+}
+
+
+/* =========================================================
+   BOTÕES DAS ABAS
+========================================================= */
+
+.tab-buttons {
+  margin-top: 30px;
+}
+
+.tab-buttons button {
+  min-height: 42px;
+
+  padding: 0 22px;
+
+  border: 1px solid var(--class-color);
+
+  background:
+    rgba(0, 0, 0, 0.45);
+
+  color: #fff;
+
+  font-size: 0.78rem;
+
+  font-weight: bold;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
 
   cursor: pointer;
 
-  opacity: .6;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
 
-  transition: .2s;
+.tab-buttons button:hover {
+  background: var(--class-color);
+
+  color: #000;
+
+  box-shadow:
+    0 0 15px var(--class-color);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   ABA DE HABILIDADES
+========================================================= */
+
+#abilities-tab h2 {
+  margin-bottom: 20px;
+
+  color: var(--class-color);
+
+  font-size: 1.4rem;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+#abilities-tab > p {
+  margin-bottom: 30px;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  line-height: 1.7;
+}
+
+.ability {
+  margin-bottom: 22px;
+
+  padding-left: 18px;
+
+  border-left:
+    2px solid var(--class-color);
+}
+
+.ability h3 {
+  margin-bottom: 7px;
+
+  color: #fff;
+
+  font-size: 1rem;
+
+  letter-spacing: 1px;
+}
+
+.ability p {
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 0.9rem;
+
+  line-height: 1.6;
+}
+
+/* ======================
+   MAESTRIA DE ARMA
+====================== */
+
+.mastery-box {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 4px;
+  padding: 25px 25px 25px 30px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.mastery-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--class-color);
+  box-shadow: 0 0 10px var(--class-color);
+}
+
+.mastery-box h2 {
+  margin-bottom: 20px;
+  color: var(--class-color);
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* GRID */
+
+.mastery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* CARD */
+
+.mastery-card {
+  width: 140px;
+  min-width: 140px;
+  padding: 15px 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--class-color);
+  border-radius: 6px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.mastery-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 12px var(--class-color);
+}
+
+.mastery-card img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.mastery-card span {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* UMA ÚNICA MAESTRIA */
+
+.mastery-grid.single {
+  display: flex;
+  justify-content: center;
+}
+
+.mastery-grid.single .mastery-card {
+  width: 160px;
+  padding: 18px 15px;
+}
+
+.mastery-grid.single .mastery-card img {
+  width: 64px;
+  height: 64px;
+}
+
+/* ======================
+   SEM MAESTRIA
+====================== */
+
+.no-mastery {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.no-mastery p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   SISTEMA DE ABAS
+========================= */
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/*
+   Não usamos mais display:flex aqui.
+   O .profile-layout utiliza o grid
+   definido na primeira parte do CSS.
+*/
+.profile-layout.active {
+  display: grid;
+}
+
+
+/* =========================
+   BOTÕES DAS ABAS
+========================= */
+
+.tab-buttons {
+  margin-top: 30px;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.tab-buttons button {
+  min-height: 42px;
+  padding: 0 22px;
+
+  border: 1px solid var(--class-color);
+  border-radius: 3px;
+
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+
+  font-size: 0.78rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.tab-buttons button:hover {
+  background: var(--class-color);
+  color: #000;
+  box-shadow: 0 0 15px var(--class-color);
+  transform: translateY(-2px);
+}
+
+
+/* =============================
+   HABILIDADES ESPECIAIS
+============================= */
+
+.skills-box {
+  position: relative;
+
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 4px;
+
+  padding: 25px 30px;
+
+  backdrop-filter: blur(8px);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.skills-box::before {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 3px;
+  height: 100%;
+
+  background: var(--class-color);
+  box-shadow: 0 0 10px var(--class-color);
+}
+
+.skills-box h2 {
+  margin-bottom: 20px;
+  color: var(--class-color);
+
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+/* ÍCONES */
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+
+  margin-bottom: 25px;
+}
+
+.skill-icon {
+  width: 82px;
+  height: 82px;
+
+  flex-shrink: 0;
+
+  object-fit: cover;
+
+  border: 1px solid transparent;
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  opacity: 0.55;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .skill-icon:hover {
-  opacity: .85;
-  transform: scale(1.05);
+  opacity: 0.9;
+  transform: translateY(-3px);
 }
 
 .skill-icon.active {
   opacity: 1;
+
   border-color: var(--class-color);
-  box-shadow: 0 0 15px var(--class-color);
+
+  box-shadow:
+    0 0 12px var(--class-color),
+    0 0 25px rgba(0, 0, 0, 0.4);
 }
 
+
+/* INFORMAÇÕES DA HABILIDADE */
+
 .skill-info {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
 
-  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
 
-  padding: 15px;
+  padding: 20px;
 }
 
 .skill-info h3 {
   margin-bottom: 10px;
+
+  color: #fff;
+
+  font-size: 1.05rem;
+  letter-spacing: 1px;
 }
+
+.skill-info p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+
+/* STATUS DA HABILIDADE */
 
 .skill-stats {
   margin-top: 20px;
   padding-top: 15px;
 
-  border-top: 1px solid rgba(255,255,255,0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .skill-stat {
   margin-bottom: 15px;
 }
 
+.skill-stat:last-child {
+  margin-bottom: 0;
+}
+
 .skill-stat-name {
+  margin-bottom: 5px;
+
   color: var(--class-color);
+
+  font-size: 0.85rem;
   font-weight: bold;
-  margin-bottom: 4px;
+  letter-spacing: 1px;
 }
 
 .skill-stat-values {
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
+
+/* =========================
+   PONTOS FORTES
+========================= */
+
+.strengths-box {
+  position: relative;
+
+  background: rgba(0, 50, 2, 0.6);
+  border: 1px solid rgba(77, 250, 25, 0.3);
+  border-radius: 4px;
+
+  padding: 22px 25px 22px 32px;
+
+  backdrop-filter: blur(8px);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.strengths-box::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 3px;
+  height: 100%;
+
+  background: #2aaf01;
+  box-shadow: 0 0 10px rgba(42, 175, 1, 0.5);
+}
+
+.strengths-box h2 {
+  margin-bottom: 15px;
+
+  color: #6bff4d;
+
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.strengths-box ul {
+  padding-left: 20px;
+}
+
+.strengths-box li {
+  margin-bottom: 10px;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.strengths-box li:last-child {
+  margin-bottom: 0;
+}
+
+.strengths-box:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    0 0 12px rgba(42, 175, 1, 0.15);
+}
+
+
+/* =========================
+   PONTOS FRACOS
+========================= */
+
+.weakness-box {
+  position: relative;
+
+  background: rgba(50, 0, 0, 0.6);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  border-radius: 4px;
+
+  padding: 22px 25px 22px 32px;
+
+  backdrop-filter: blur(8px);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.weakness-box::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 3px;
+  height: 100%;
+
+  background: #ff3333;
+  box-shadow: 0 0 10px rgba(255, 51, 51, 0.5);
+}
+
+.weakness-box h2 {
+  margin-bottom: 15px;
+
+  color: #ff4d4d;
+
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.weakness-box ul {
+  padding-left: 20px;
+}
+
+.weakness-box li {
+  margin-bottom: 10px;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.weakness-box li:last-child {
+  margin-bottom: 0;
+}
+
+.weakness-box:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    0 0 12px rgba(255, 51, 51, 0.15);
+}
+
+
+/* =========================
+   DICAS
+========================= */
+
+.tips-box {
+  position: relative;
+
+  background: rgba(0, 30, 50, 0.6);
+  border: 1px solid rgba(0, 200, 255, 0.3);
+  border-radius: 4px;
+
+  padding: 22px 25px 22px 32px;
+
+  backdrop-filter: blur(8px);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.tips-box::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 3px;
+  height: 100%;
+
+  background: #00ccff;
+  box-shadow: 0 0 10px rgba(0, 204, 255, 0.5);
+}
+
+.tips-box h2 {
+  margin-bottom: 20px;
+
+  color: #00ccff;
+
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.tips-box ul {
+  padding-left: 20px;
+}
+
+.tips-box li {
+  margin-bottom: 10px;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.tips-box li:last-child {
+  margin-bottom: 0;
+}
+
+.tips-box:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    0 0 12px rgba(0, 204, 255, 0.15);
+}
+
+
+/* =========================
+   GRID DE DICAS
+========================= */
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  padding: 15px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 200, 255, 0.2);
+  border-radius: 6px;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.tip:hover {
+  background: rgba(0, 200, 255, 0.08);
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.2);
+}
+
+.tip-number {
+  min-width: 28px;
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #00ccff;
+  color: #000;
+
+  font-size: 0.9rem;
+  font-weight: bold;
+
+  border-radius: 5px;
+
+  box-shadow: 0 0 8px rgba(0, 200, 255, 0.6);
+}
+
+.tip p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
 
 /* ===========================
-      DICAS COM IMAGEM
+   DICAS COM IMAGEM
 =========================== */
 
-.tip-image-card{
+.tip-image-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
 
-    display:flex;
-    align-items:flex-start;
-    gap:15px;
+  padding: 18px;
 
-    background:rgba(255,255,255,.05);
+  background: rgba(255, 255, 255, 0.05);
 
-    border:1px solid rgba(0,200,255,.2);
+  border: 1px solid rgba(0, 200, 255, 0.2);
+  border-radius: 6px;
 
-    border-radius:8px;
-
-    padding:15px;
-
-    transition:.2s;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.tip-image-card:hover{
+.tip-image-card:hover {
+  background: rgba(0, 200, 255, 0.08);
 
-    background:rgba(0,200,255,.08);
+  transform: translateY(-3px);
 
-    transform:translateY(-3px);
-
-    box-shadow:0 0 10px rgba(0,200,255,.2);
+  box-shadow: 0 0 12px rgba(0, 200, 255, 0.2);
 }
 
-.tip-image-content{
-
-    flex:1;
-
-    display:flex;
-    flex-direction:column;
+.tip-image-content {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.tip-image-content p{
-
-    margin-bottom:15px;
-
-    line-height:1.6;
+.tip-image-content p {
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
 }
 
-.tip-clickable{
-
-    width:100%;
-
-    max-width:450px;
-
-    border-radius:8px;
-
-    cursor:pointer;
-
-    transition:.25s;
+.tip-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
-.tip-clickable:hover{
+.tip-image:hover {
+  transform: scale(1.02);
 
-    transform:scale(1.02);
-
-    box-shadow:0 0 15px rgba(255,255,255,.25);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.25);
 }
 
-.tip-caption{
-    font-size:.85rem;
-    color:rgba(255,255,255,.65);
-    text-align:center;
-    font-style:italic;
+.tip-caption {
+  margin-top: 8px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: center;
+  font-style: italic;
 }
 
-.image-modal{
 
-    position:fixed;
-    inset:0;
+/* ===========================
+   MODAL DE IMAGEM
+=========================== */
 
-    background:rgba(0,0,0,.85);
+.image-modal {
+  position: fixed;
+  inset: 0;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    opacity:0;
-    visibility:hidden;
+  padding: 20px;
 
-    transition:.25s;
+  background: rgba(0, 0, 0, 0.88);
 
-    z-index:9999;
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+
+  z-index: 9999;
 }
 
-.image-modal.show{
-    opacity:1;
-    visibility:visible;
+.image-modal.show {
+  opacity: 1;
+  visibility: visible;
 }
 
-.image-modal img{
+.image-modal img {
+  display: block;
 
-    max-width:90%;
-    max-height:90%;
+  max-width: min(90vw, 1000px);
+  max-height: 90vh;
 
-    border-radius:10px;
+  border-radius: 6px;
 
-    box-shadow:0 0 30px black;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+
+
+/* TABLETS / NOTEBOOKS */
+@media (max-width: 1100px) {
+
+  .container {
+    padding: 40px 25px 70px;
+  }
+
+  .char-hero {
+    padding: 30px;
+  }
+
+  .profile-layout {
+    grid-template-columns:
+      minmax(0, 1.4fr)
+      minmax(250px, 1fr);
+
+    gap: 40px;
+  }
+
+  .hero-right {
+    padding-left: 25px;
+  }
+
+  .skill-icon {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+
+/* TABLET / CELULAR GRANDE */
+@media (max-width: 800px) {
+
+  .container {
+    padding: 30px 20px 60px;
+  }
+
+  .char-hero {
+    padding: 25px 20px;
+  }
+
+  .profile-layout,
+  .profile-layout.active {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+  }
+
+  .hero-left p {
+    max-width: none;
+    font-size: 0.95rem;
+  }
+
+  .hero-right {
+    padding-left: 0;
+    padding-top: 25px;
+
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .hero-right h2 {
+    margin-bottom: 20px;
+  }
+
+  .tab-buttons {
+    justify-content: flex-start;
+  }
+
+  .skills-box,
+  .mastery-box {
+    padding: 22px 20px;
+  }
+
+  .skill-icons {
+    gap: 12px;
+  }
+
+  .skill-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .tip-image-card {
+    flex-direction: column;
+  }
+
+  .tip-image {
+    max-width: 100%;
+  }
+}
+
+
+/* CELULAR */
+@media (max-width: 600px) {
+
+  .container {
+    padding: 25px 12px 50px;
+    gap: 15px;
+  }
+
+  .char-hero {
+    padding: 22px 16px;
+  }
+
+  .hero-left {
+    gap: 16px;
+  }
+
+  .hero-left h1 {
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-left h1::after {
+    width: 60px;
+    height: 2px;
+    margin-top: 12px;
+  }
+
+  .hero-left p {
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  .hero-right {
+    padding-top: 20px;
+  }
+
+  .hero-right h2 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .stat {
+    margin-bottom: 17px;
+  }
+
+  .stat span {
+    font-size: 0.72rem;
+  }
+
+  .bars {
+    gap: 8px;
+  }
+
+  .bar {
+    width: 11px;
+    height: 11px;
+  }
+
+  .tab-buttons {
+    margin-top: 20px;
+  }
+
+  .tab-buttons button {
+    width: 100%;
+    min-height: 44px;
+    padding: 0 15px;
+  }
+
+  #abilities-tab h2 {
+    font-size: 1.15rem;
+    letter-spacing: 2px;
+  }
+
+  #abilities-tab > p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .ability {
+    padding-left: 12px;
+  }
+
+  .ability h3 {
+    font-size: 0.95rem;
+  }
+
+  .ability p {
+    font-size: 0.85rem;
+  }
+
+  .skills-box,
+  .mastery-box {
+    padding: 20px 15px;
+  }
+
+  .skills-box h2,
+  .mastery-box h2 {
+    font-size: 1rem;
+  }
+
+  .skill-icons {
+    gap: 9px;
+  }
+
+  .skill-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skill-info {
+    padding: 15px;
+  }
+
+  .skill-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .skill-info p,
+  .skill-stat-values {
+    font-size: 0.84rem;
+  }
+
+  .mastery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .mastery-grid.single .mastery-card {
+    width: 140px;
+    min-width: 140px;
+  }
+
+  .mastery-card {
+    width: 125px;
+    min-width: 125px;
+    padding: 12px 8px;
+  }
+
+  .mastery-card img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .mastery-card span {
+    font-size: 0.74rem;
+  }
+
+  .strengths-box,
+  .weakness-box,
+  .tips-box {
+    padding: 18px 15px 18px 25px;
+  }
+
+  .tip {
+    padding: 12px;
+  }
+
+  .tip p {
+    font-size: 0.85rem;
+  }
+
+  .tip-image-card {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .tip-image-content p {
+    font-size: 0.85rem;
+  }
+
+  .image-modal {
+    padding: 10px;
+  }
+
+  .image-modal img {
+    max-width: 96vw;
+    max-height: 85vh;
+  }
+
+    .strengths-box,
+  .weakness-box,
+  .tips-box {
+    padding: 18px 15px 18px 27px;
+  }
+
+  .strengths-box h2,
+  .weakness-box h2,
+  .tips-box h2 {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+  }
+
+  .strengths-box li,
+  .weakness-box li,
+  .tips-box li {
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+
+  .tip {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .tip-number {
+    min-width: 25px;
+    width: 25px;
+    height: 25px;
+    font-size: 0.8rem;
+  }
+
+  .tip p {
+    font-size: 0.85rem;
+  }
+}
+
+
+/* CELULARES MUITO PEQUENOS */
+@media (max-width: 400px) {
+
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .char-hero {
+    padding: 20px 13px;
+  }
+
+  .hero-left h1 {
+    font-size: 1.45rem;
+  }
+
+  .skill-icons {
+    gap: 7px;
+  }
+
+  .skill-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .bars {
+    gap: 7px;
+  }
+
+  .bar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .mastery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }

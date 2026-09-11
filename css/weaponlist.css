@@ -1,0 +1,714 @@
+/* =========================
+   BASE
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+
+  color: #fff;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.72)
+    ),
+    url("../images/background.png")
+    no-repeat
+    center center / cover;
+
+  background-attachment: fixed;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* =========================
+   CONTAINER DA PÁGINA
+========================= */
+
+.weapons-page {
+  width: 100%;
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  padding: 45px 40px 80px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 55px;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.page-title {
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
+
+  margin-bottom: 5px;
+}
+
+.page-title h1 {
+  flex-shrink: 0;
+
+  font-size: 2rem;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+.page-title-line {
+  flex: 1;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      rgba(180, 0, 0, 0.8)
+    );
+}
+
+.page-title-line:last-child {
+  background:
+    linear-gradient(
+      to left,
+      transparent,
+      rgba(180, 0, 0, 0.8)
+    );
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.weapon-section {
+  width: 100%;
+}
+
+.weapon-section > h2 {
+  position: relative;
+
+  margin-bottom: 22px;
+
+  padding-left: 15px;
+
+  color: #ff3333;
+
+  font-size: 1.25rem;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  text-shadow:
+    0 0 10px rgba(255, 51, 51, 0.35);
+}
+
+.weapon-section > h2::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+
+  width: 4px;
+  height: 22px;
+
+  transform: translateY(-50%);
+
+  background: #ff3333;
+
+  box-shadow:
+    0 0 10px #ff3333;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.weapon-list-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(7, minmax(120px, 1fr));
+
+  gap: 12px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.weapon-list-card {
+  position: relative;
+
+  min-height: 175px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end;
+  align-items: center;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(25, 25, 25, 0.25),
+      rgba(0, 0, 0, 0.9)
+    );
+
+  border:
+    1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 4px;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.weapon-list-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #ff3333;
+
+  box-shadow:
+    0 0 18px rgba(255, 51, 51, 0.35);
+}
+
+
+/* =========================
+   IMAGEM
+========================= */
+
+.weapon-list-card img {
+  width: 100%;
+  height: 125px;
+
+  object-fit: contain;
+
+  display: block;
+
+  padding: 12px;
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.weapon-list-card:hover img {
+  transform: scale(1.08);
+
+  filter:
+    drop-shadow(
+      0 0 8px rgba(255, 51, 51, 0.35)
+    );
+}
+
+
+/* =========================
+   NOME
+========================= */
+
+.weapon-list-card span {
+  position: relative;
+
+  width: 100%;
+  min-height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px;
+
+  background:
+    rgba(0, 0, 0, 0.78);
+
+  color:
+    rgba(255, 255, 255, 0.9);
+
+  font-size: 0.75rem;
+  font-weight: bold;
+
+  line-height: 1.25;
+
+  letter-spacing: 0.8px;
+
+  text-align: center;
+
+  text-transform: uppercase;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+.weapon-list-card:hover span {
+  color: #fff;
+
+  background:
+    rgba(100, 0, 0, 0.65);
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.weapon-info {
+  position: relative;
+
+  width: 100%;
+
+  padding:
+    25px
+    30px
+    25px
+    32px;
+
+  background:
+    rgba(0, 0, 0, 0.6);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.14);
+
+  border-radius: 4px;
+
+  backdrop-filter: blur(8px);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.weapon-info::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 3px;
+  height: 100%;
+
+  background: #ff3333;
+
+  box-shadow:
+    0 0 10px #ff3333;
+}
+
+.weapon-info > h2 {
+  margin-bottom: 25px;
+
+  color: #ff3333;
+
+  font-size: 1.15rem;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  text-shadow:
+    0 0 10px rgba(255, 51, 51, 0.35);
+}
+
+
+/* =========================
+   GRID DE INFORMAÇÕES
+========================= */
+
+.weapon-info-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 15px;
+}
+
+.weapon-info-card {
+  padding: 18px;
+
+  background:
+    rgba(255, 255, 255, 0.05);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 6px;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.weapon-info-card:hover {
+  background:
+    rgba(255, 51, 51, 0.06);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 12px rgba(255, 51, 51, 0.15);
+}
+
+.weapon-info-card h3 {
+  margin-bottom: 15px;
+
+  color: #fff;
+
+  font-size: 0.9rem;
+
+  line-height: 1.4;
+
+  letter-spacing: 1px;
+}
+
+.weapon-info-card p {
+  padding: 7px 0;
+
+  color:
+    rgba(255, 255, 255, 0.78);
+
+  font-size: 0.85rem;
+
+  line-height: 1.4;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.06);
+}
+
+.weapon-info-card p:last-child {
+  border-bottom: none;
+}
+
+
+/* =========================
+   MUNIÇÕES
+========================= */
+
+.weapon-ammo .weapon-info-grid {
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+}
+
+.weapon-info-card.ammo h3 {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  min-height: 50px;
+}
+
+.weapon-info-card.ammo h3 img {
+  width: 42px;
+  height: 42px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+.weapon-info-card.ammo ul {
+  padding-left: 20px;
+}
+
+.weapon-info-card.ammo li {
+  margin-bottom: 8px;
+
+  color:
+    rgba(255, 255, 255, 0.8);
+
+  font-size: 0.85rem;
+
+  line-height: 1.4;
+}
+
+.weapon-info-card.ammo li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* tipos de munição */
+
+.weapon-info-card.ammo.light {
+  border-color:
+    rgba(255, 255, 255, 0.18);
+}
+
+.weapon-info-card.ammo.heavy {
+  border-color:
+    rgba(255, 170, 0, 0.25);
+}
+
+.weapon-info-card.ammo.special {
+  border-color:
+    rgba(180, 80, 255, 0.3);
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 1300px) {
+
+  .weapons-page {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .weapon-list-grid {
+    grid-template-columns:
+      repeat(6, minmax(120px, 1fr));
+  }
+}
+
+
+@media (max-width: 1100px) {
+
+  .weapons-page {
+    padding:
+      40px
+      25px
+      70px;
+  }
+
+  .weapon-list-grid {
+    grid-template-columns:
+      repeat(5, minmax(120px, 1fr));
+  }
+
+  .weapon-info-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .weapon-ammo .weapon-info-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+@media (max-width: 900px) {
+
+  .weapon-list-grid {
+    grid-template-columns:
+      repeat(4, minmax(120px, 1fr));
+  }
+
+  .weapon-ammo .weapon-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 800px) {
+
+  .weapons-page {
+    padding:
+      30px
+      20px
+      60px;
+
+    gap: 45px;
+  }
+
+  .page-title {
+    gap: 15px;
+  }
+
+  .page-title h1 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+
+  .weapon-list-grid {
+    grid-template-columns:
+      repeat(3, minmax(110px, 1fr));
+
+    gap: 10px;
+  }
+
+  .weapon-list-card {
+    min-height: 165px;
+  }
+
+  .weapon-list-card img {
+    height: 115px;
+  }
+
+  .weapon-info {
+    padding:
+      22px
+      20px
+      22px
+      25px;
+  }
+
+  .weapon-info-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .weapons-page {
+    padding:
+      25px
+      12px
+      50px;
+
+    gap: 40px;
+  }
+
+  .page-title {
+    gap: 10px;
+  }
+
+  .page-title h1 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .page-title-line {
+    display: none;
+  }
+
+  .weapon-section > h2 {
+    margin-bottom: 18px;
+
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .weapon-section > h2::before {
+    width: 3px;
+    height: 18px;
+  }
+
+  .weapon-list-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 8px;
+  }
+
+  .weapon-list-card {
+    min-height: 155px;
+  }
+
+  .weapon-list-card img {
+    height: 105px;
+    padding: 10px;
+  }
+
+  .weapon-list-card span {
+    min-height: 45px;
+
+    padding: 7px 5px;
+
+    font-size: 0.7rem;
+  }
+
+  .weapon-info {
+    padding:
+      18px
+      15px
+      18px
+      27px;
+  }
+
+  .weapon-info > h2 {
+    margin-bottom: 20px;
+
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+  }
+
+  .weapon-info-grid {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+  }
+
+  .weapon-info-card {
+    padding: 15px;
+  }
+
+  .weapon-info-card h3 {
+    font-size: 0.85rem;
+  }
+
+  .weapon-info-card p,
+  .weapon-info-card.ammo li {
+    font-size: 0.82rem;
+  }
+}
+
+
+@media (max-width: 400px) {
+
+  .weapons-page {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .weapon-list-grid {
+    gap: 7px;
+  }
+
+  .weapon-list-card {
+    min-height: 145px;
+  }
+
+  .weapon-list-card img {
+    height: 95px;
+  }
+
+  .weapon-list-card span {
+    font-size: 0.67rem;
+  }
+}

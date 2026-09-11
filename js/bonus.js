@@ -25,10 +25,10 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SC045_Token.png",
-    name: "bonusbuild1",
-    character: "HAsh | Ed | Kelly | Amanda",
+    name: "bonusgeneral1",
+    character: "Lord Arthur | WAsh | Scotty | Mia | HAsh | Ed | Kelly | Amanda | David | Blacksmith",
     team: false, // individual
-    lang: "bonus13"
+    lang: "bonusgeneral2"
 
     },
 
@@ -58,7 +58,7 @@ const bonuses = [
     image:"../images/HUD/HUD_Skills/SL003_Token.png",
     name: "ashleaderspecialtitle4",
     character: "lash",
-    team: false, // individual
+    team: true, // coletivo
     lang: "bonus17"
 
     },

@@ -28,6 +28,8 @@ const menuTranslations = {
     demonWitch: "Bruxa",
     demonEvilAsh: "Ash Maligno",
 
+    meniGlossary: "Glossário",
+
     menuSourceCode: "Cópdigo Fonte",
   },
 
@@ -58,6 +60,8 @@ const menuTranslations = {
     menuAllDemons: "Demons",
     demonWitch: "Witch",
     demonEvilAsh: "Evil Ash",
+
+    meniGlossary: "Glossary",
 
     menuSourceCode: "Source Code",
   },
