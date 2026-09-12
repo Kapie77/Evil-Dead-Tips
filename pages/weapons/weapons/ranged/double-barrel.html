@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title data-lang="longstick">Cano Duplo</title>
+
+  <link rel="stylesheet" href="../../../css/weaponpage.css">
+  <link rel="stylesheet" href="../../../css/menu.css">
+  <link rel="icon" href="../../../images/favicon.png">
+
+</head>
+<body>
+
+<!-- =========================
+       MENU
+========================== -->
+<nav class="site-menu">
+
+    <div class="menu-inner">
+
+      <!-- LOGO -->
+      <a href="../../../index.html" class="menu-logo">
+        <img src="../../../images/logo.png" alt="Evil Dead">
+      </a>
+
+
+      <!-- LINKS -->
+      <div class="menu-links">
+
+        <!-- INÍCIO -->
+        <a href="../../../index.html" class="menu-link">
+          <span data-lang="menuHome">Início</span>
+        </a>
+
+
+        <!-- =========================
+             SOBREVIVENTES
+        ========================== -->
+        <div class="menu-dropdown">
+
+          <button class="menu-link menu-dropdown-button" type="button">
+            <span data-lang="menuSurvivors">Sobreviventes</span>
+            <span class="menu-arrow">▾</span>
+          </button>
+
+
+          <div class="menu-submenu">
+
+            <!-- CLASSES -->
+            <div class="menu-submenu-item">
+
+              <a href="../../classes.html" class="submenu-parent">
+
+                <span data-lang="menuClasses">
+                  Classes
+                </span>
+
+                <span class="submenu-arrow">
+                  ▸
+                </span>
+
+              </a>
+
+
+              <div class="menu-submenu-nested">
+
+                <a href="../../classes/leader.html" data-lang="menuLeader">
+                  Líder
+                </a>
+
+                <a href="../../classes/warrior.html" data-lang="menuWarrior">
+                  Guerreiro
+                </a>
+
+                <a href="../../classes/hunter.html" data-lang="menuHunter">
+                  Caçador
+                </a>
+
+                <a href="../../classes/support.html" data-lang="menuSupport">
+                  Suporte
+                </a>
+
+              </div>
+
+            </div>
+
+
+            <!-- PERSONAGENS -->
+            <a href="../../characters.html" data-lang="menuCharacters">
+              Personagens
+            </a>
+
+
+            <!-- ARMAS -->
+            <a href="../../weapons.html" data-lang="menuWeapons">
+              Armas
+            </a>
+
+
+            <!-- BUILD -->
+            <a href="#" data-lang="menuBuild">
+              Build
+            </a>
+
+
+            <!-- GLITCHES -->
+            <a href="#" data-lang="menuGlitches">
+              Glitches
+            </a>
+
+
+            <!-- HUNTER SPOTS -->
+            <a href="../../hunter-spots.html" data-lang="menuHunterSpots">
+              Spots para Caçadores
+            </a>
+
+
+            <!-- CAIXAS -->
+            <a href="../../crates.html" data-lang="menuCrates">
+              Caixas
+            </a>
+
+
+            <!-- BONUS -->
+            <a href="../../bonus.html" data-lang="menuBonus">
+              Bonus
+            </a>
+
+
+            <!-- DEBUFF -->
+            <a href="../../debuff.html" data-lang="menuDebuff">
+              Debuff
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- =========================
+             DEMÔNIOS
+        ========================== -->
+        <div class="menu-dropdown">
+
+          <button class="menu-link menu-dropdown-button" type="button">
+
+            <span data-lang="menuDemons">
+              Demônios
+            </span>
+
+            <span class="menu-arrow">
+              ▾
+            </span>
+
+          </button>
+
+
+          <div class="menu-submenu">
+
+            <div class="menu-submenu-item">
+
+              <a href="../../demons.html" class="submenu-parent">
+
+                <span data-lang="menuAllDemons">
+                  Demônios
+                </span>
+
+                <span class="submenu-arrow">
+                  ▸
+                </span>
+
+              </a>
+
+
+              <div class="menu-submenu-nested">
+
+                <a href="../../demons/henrietta.html">
+                  Henrietta
+                </a>
+
+                <a href="../../demons/evil-ash.html" data-lang="demonEvilAsh">
+                  Evil Ash
+                </a>
+
+                <a href="../../characters/puppeteer.html">
+                  Eligos
+                </a>
+
+                <a href="../../demons/plaguebringer.html" data-lang="demonWitch">
+                  Witch
+                </a>
+
+                <a href="../../demons/puppeteer.html">
+                  Baal
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- GLOSSÁRIO -->
+        <a href="../../glossary.html" class="menu-link">
+
+          <span data-lang="menuGlossary">
+            Glossary
+          </span>
+
+        </a>
+
+
+        <!-- =========================
+             SOCIAL MEDIA
+        ========================== -->
+        <div class="menu-dropdown">
+
+          <button class="menu-link menu-dropdown-button" type="button">
+
+            <span data-lang="menuSocial">
+              Social Media
+            </span>
+
+            <span class="menu-arrow">
+              ▾
+            </span>
+
+          </button>
+
+
+          <div class="menu-submenu">
+
+            <a
+              href="https://www.reddit.com/r/EvilDeadTheGame/"
+              data-lang="menuReddit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Reddit
+            </a>
+
+
+            <a
+              href="https://www.evildeadthegame.com/"
+              data-lang="menuWebsite"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website
+            </a>
+
+
+            <a
+              href="https://www.youtube.com/@EvilDeadTheGame"
+              data-lang="menuYoutube"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Youtube
+            </a>
+
+
+            <a
+              href="https://x.com/evildeadthegame"
+              data-lang="menuTwitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
+
+
+            <a
+              href="https://discord.gg/evildeadthegame"
+              data-lang="menuDiscord"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Discord
+            </a>
+
+
+            <a
+              href="https://discord.gg/HHJx4rS5Vj"
+              data-lang="menuFanDiscord"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Evil Dead The Gathering
+            </a>
+
+
+            <a
+              href="https://discord.gg/sjUez8dZF7"
+              data-lang="menuFanDiscord2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Evil Dead The Game Modding
+            </a>
+
+
+            <a
+              href="https://www.nexusmods.com/games/evildeadthegame"
+              data-lang="menuNexusModEvilDead"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Nexus Mod Evil Dead
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- SOURCE CODE -->
+        <a
+          href="https://github.com/Kapie77/Evil-Dead-Tips"
+          class="menu-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span data-lang="menuSourceCode">
+            Source code
+          </span>
+        </a>
+
+      </div>
+
+
+      <!-- =========================
+           IDIOMAS
+      ========================== -->
+      <div class="menu-language">
+
+        <button class="language-current" type="button">
+
+          <img
+            src="../../../images/flags/us.png"
+            alt=""
+          >
+
+          <span>
+            ENG
+          </span>
+
+          <span class="language-arrow">
+            ▼
+          </span>
+
+        </button>
+
+
+        <div class="language-options">
+
+          <button
+            type="button"
+            onclick="setLang('en')"
+          >
+
+            <img
+              src="../../../images/flags/us.png"
+              alt=""
+            >
+
+            <span>
+              ENG
+            </span>
+
+          </button>
+
+
+          <button
+            type="button"
+            onclick="setLang('es')"
+          >
+
+            <img
+              src="../../../images/flags/es.jpg"
+              alt=""
+            >
+
+            <span>
+              ESP
+            </span>
+
+          </button>
+
+
+          <button
+            type="button"
+            onclick="setLang('pt')"
+          >
+
+            <img
+              src="../../../images/flags/br.jpg"
+              alt=""
+            >
+
+            <span>
+              PT-BR
+            </span>
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- MENU MOBILE -->
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Menu"
+      >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </nav>
+<!-- =========================
+       FIM DO MENU
+========================== -->
+
+  <div class="overlay"></div>
+
+  <header>
+    <h1 data-lang="longstick">CANO DUPLO</h1>
+    <p data-lang="longstickdesc">The Pistol is a versatile ranged weapon tht gets the job done.</p>
+  </header>
+
+  <main class="container">
+
+    <!-- RARIDADES -->
+    <section class="rarity-section">
+
+        <!-- COMUM -->
+        <div class="weapon-card common">
+            <div class="weapon-top">
+            <h3 data-lang="longstick">CANO DUPLO</h3>
+            <span data-lang="common">Comum</span>
+            </div>
+
+            <div class="weapon-content">
+            <img src="../../../images/weapons/Longstick_01.png">
+
+            <div class="stats">
+
+            <!-- LINHA DE CIMA -->
+            <div class="stats-top"> 
+               
+              <p>
+                  <span data-lang="Damage">Dano</span>
+                  <strong>: 222</strong>
+                </p>
+
+                <p>
+                  <span data-lang="AmmoCapacity">Capacidade de munição</span>
+                  <strong>: 2</strong>
+                </p>
+               
+                <p>
+                 <span data-lang="RateOfFire">Frequência de disparados</span>
+                 <strong>: 0.7</strong>
+                </p>
+                </div>
+
+              <!-- LISTA DE BAIXO -->
+              <div class="stats-bottom">
+                <p>
+                  <span data-lang="Dismemberment">Desmembramento</span>
+                  <strong>150</strong>
+                </p>
+
+                <p>
+                  <span data-lang="Balancebar">Barra de equilibrio</span>
+                   <strong>90</strong>
+                </p>
+                   
+                <p>
+                  <span data-lang="Reloadtime">Velocidade de recarga</span>
+                  <strong>2.0</strong>
+                </p>
+
+                <p>
+                  <span data-lang="Range">Alcance</span>
+                  <strong>32.0</strong>
+                </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- RARA -->
+        <div class="weapon-card rare">
+            <div class="weapon-top">
+           <h3 data-lang="longstick">CANO DUPLO</h3>
+            <span data-lang="rare">Rara</span>
+            </div>
+
+            <div class="weapon-content">
+            <img src="../../../images/weapons/Longstick_01.png">
+
+            <div class="stats">
+
+              <!-- LINHA DE CIMA -->
+              <div class="stats-top"> 
+              
+                <p>
+                  <span data-lang="Damage">Dano</span>
+                  <strong>: 252</strong>
+                </p>
+
+                <p>
+                  <span data-lang="AmmoCapacity">Capacidade de munição</span>
+                  <strong>: 2</strong>
+               </p>
+               
+                <p>
+                 <span data-lang="RateOfFire">Frequência de disparados</span>
+                 <strong>: 0.7</strong>
+                </p>
+              </div>
+
+              <!-- LINHA DEBAIXO -->
+            <div class="stats-bottom"> 
+                <p>
+                  <span data-lang="Dismemberment">Desmembramento</span>
+                  <strong>156</strong>
+                </p>
+
+                <p>
+                  <span data-lang="Balancebar">Barra de equilibrio</span>
+                   <strong>96</strong>
+                </p>
+                   
+                <p>
+                  <span data-lang="Reloadtime">Velocidade de recarga</span>
+                  <strong>2.0</strong>
+                </p>
+
+                <p>
+                  <span data-lang="Range">Alcance</span>
+                  <strong>32.0</strong>
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- ÉPICA -->
+        <div class="weapon-card epic">
+            <div class="weapon-top">
+           <h3 data-lang="longstick">CANO DUPLO</h3>
+            <span data-lang="epic">Épica</span>
+            </div>
+
+            <div class="weapon-content">
+            <img src="../../../images/weapons/Longstick_01.png">
+
+            <div class="stats">
+              
+              <!-- LINHA DE CIMA -->
+              <div class="stats-top"> 
+                <p>
+                  <span data-lang="Damage">Dano</span>
+                  <strong>: 312</strong>
+                </p>
+
+                <p>
+                  <span data-lang="AmmoCapacity">Capacidade de munição</span>
+                  <strong>: 2</strong>
+               </p>
+               
+                <p>
+                 <span data-lang="RateOfFire">Frequência de disparados</span>
+                 <strong>: 0.6</strong>
+                </p>
+              </div>
+
+              <!-- LINHA DEBAIXO -->
+            <div class="stats-bottom"> 
+                <p>
+                  <span data-lang="Dismemberment">Desmembramento</span>
+                  <strong>162</strong>
+                </p>
+
+                <p>
+                  <span data-lang="Balancebar">Barra de equilibrio</span>
+                   <strong>102</strong>
+                </p>
+                   
+                <p>
+                  <span data-lang="Reloadtime">Velocidade de recarga</span>
+                  <strong>2.0</strong>
+                </p>
+
+                <p>
+                  <span data-lang="Range">Alcance</span>
+                  <strong>32.0</strong>
+                </p>
+             </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- LENDÁRIA -->
+        <div class="weapon-card legendary">
+            <div class="weapon-top">
+            <h3 data-lang="longstick">CANO DUPLO</h3>
+            <span data-lang="legendary">Lendária</span>
+            </div>
+
+            <div class="weapon-content">
+            <img src="../../../images/weapons/LegendLongstick_01.png">
+
+            <div class="stats">
+
+              <!-- LINHA DE CIMA -->
+              <div class="stats-top"> 
+               <p>
+                  <span data-lang="Damage">Dano</span>
+                  <strong>: 402</strong>
+                </p>
+
+                <p>
+                  <span data-lang="AmmoCapacity">Capacidade de munição</span>
+                  <strong>: 2</strong>
+               </p>
+               
+                <p>
+                 <span data-lang="RateOfFire">Frequência de disparados</span>
+                 <strong>: 0.6</strong>
+                </p>
+              </div>
+
+              <!-- LINHA DEBAIXO -->
+              <div class="stats-bottom"> 
+                <p>
+                  <span data-lang="Dismemberment">Desmembramento</span>
+                  <strong>180</strong>
+                </p>
+
+                <p>
+                  <span data-lang="Balancebar">Barra de equilibrio</span>
+                   <strong>120</strong>
+                </p>
+                   
+                <p>
+                  <span data-lang="Reloadtime">Velocidade de recarga</span>
+                  <strong>2.0</strong>
+                </p>
+
+                <p>
+                  <span data-lang="Range">Alcance</span>
+                  <strong>32.0</strong>
+                </p>
+
+              </div>
+          </div>
+        </div>
+      </div>
+
+        </section>
+    <!-- RARIDE FIM -->
+
+  </main>
+
+<!-- =========================
+       SCRIPTS
+========================== -->
+<script src="../../../js/script.js"></script>
+<script src="../../../js/translations/menu.js"></script>
+<script src="../../../js/lang.js"></script>
+<script src="../../../js/menu.js"></script>
+
+</body>
+</html>
