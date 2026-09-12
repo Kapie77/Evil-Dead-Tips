@@ -1,0 +1,365 @@
+/* =========================================================
+   DEBUFF PAGE
+========================================================= */
+
+body {
+    min-height: 100vh;
+    margin: 0;
+
+    background: url('../images/background.png') no-repeat center/cover;
+    background-attachment: fixed;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.debuff-page {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 30px 20px 60px;
+}
+
+
+/* =========================================================
+   TÍTULO
+========================================================= */
+
+.page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 25px auto 45px;
+}
+
+.page-title-line {
+    flex: 1;
+    height: 1px;
+    background: rgba(220, 50, 50, 0.45);
+}
+
+.page-title h1 {
+    margin: 0;
+    color: #dc3232;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow:
+        0 0 8px rgba(220, 50, 50, 0.7),
+        0 0 20px rgba(220, 50, 50, 0.35);
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.debuff-grid {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 18px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.bonus-card {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 18px;
+
+    min-height: 260px;
+
+    box-sizing: border-box;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.bonus-card:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 0, 0, 0.8);
+    border-color: rgba(220, 50, 50, 0.5);
+    box-shadow: 0 0 18px rgba(220, 50, 50, 0.2);
+}
+
+
+/* =========================================================
+   IMAGEM
+========================================================= */
+
+.bonus-card img {
+    width: 120px;
+
+    height: 120px;
+
+    object-fit: contain;
+
+    margin-bottom: 12px;
+
+    transition: transform 0.2s ease;
+}
+
+.bonus-card:hover img {
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   NOME
+========================================================= */
+
+.bonus-name {
+    margin: 5px 0 8px;
+    font-size: 1rem;
+    color: #dc3232;
+}
+
+
+/* =========================================================
+   DESCRIÇÃO
+========================================================= */
+
+.bonus-description {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 0.85rem;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.bonus-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    margin-top: auto;
+
+    padding-top: 14px;
+}
+
+.bonus-tags span {
+    padding: 5px 8px;
+
+    border-radius: 5px;
+
+    font-size: 0.7rem;
+
+    font-weight: bold;
+}
+
+.tag-character {
+    background: rgba(255, 255, 255, 0.08);
+
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.tag-team {
+    background: rgba(0, 255, 153, 0.12);
+
+    border: 1px solid rgba(0, 255, 153, 0.3);
+
+    color: #00ff99;
+}
+
+.tag-self {
+    background: rgba(220, 50, 50, 0.12);
+    border: 1px solid rgba(220, 50, 50, 0.3);
+    color: #dc3232;
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.modal {
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background: rgba(0, 0, 0, 0.8);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease;
+
+    z-index: 9999;
+}
+
+.modal.active {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #111;
+    border: 1px solid rgba(220, 50, 50, 0.35);
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.modal-content img {
+    max-width: 220px;
+    max-height: 220px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+.modal-content .close {
+    margin-top: 15px;
+    padding: 9px 18px;
+    border: 1px solid rgba(220, 50, 50, 0.4);
+    border-radius: 6px;
+    background: rgba(220, 50, 50, 0.1);
+    color: #dc3232;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   RESPONSIVO
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .debuff-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .debuff-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .debuff-page {
+        padding: 20px 12px 40px;
+    }
+
+    .page-title {
+        gap: 12px;
+
+        margin-bottom: 30px;
+    }
+
+    .page-title h1 {
+        font-size: 2.2rem;
+    }
+
+    .debuff-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+    .bonus-card {
+        padding: 14px;
+
+        min-height: 240px;
+    }
+
+    .bonus-card img {
+        width: 100px;
+
+        height: 100px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .page-title-line {
+        display: none;
+    }
+
+    .page-title h1 {
+        font-size: 1.9rem;
+    }
+
+    .debuff-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

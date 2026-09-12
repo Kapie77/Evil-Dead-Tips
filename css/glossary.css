@@ -1,0 +1,279 @@
+/* =========================================================
+   GLOSSARY PAGE
+========================================================= */
+
+body {
+    min-height: 100vh;
+    margin: 0;
+
+    background: url('../images/background.png') no-repeat center/cover;
+    background-attachment: fixed;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.glossary-page {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 30px 20px 60px;
+}
+
+
+/* =========================================================
+   TÍTULO
+========================================================= */
+
+.page-title {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    max-width: 1100px;
+
+    margin: 25px auto 40px;
+}
+
+.page-title-line {
+    flex: 1;
+
+    height: 1px;
+
+    background: rgba(255, 204, 51, 0.45);
+}
+
+.page-title h1 {
+    margin: 0;
+
+    color: #ffcc33;
+
+    font-size: 3rem;
+
+    letter-spacing: 2px;
+
+    text-align: center;
+
+    text-shadow:
+        0 0 8px rgba(255, 204, 51, 0.7),
+        0 0 20px rgba(255, 204, 51, 0.35);
+}
+
+
+/* =========================================================
+   BUSCA
+========================================================= */
+
+.glossary-search {
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+}
+
+.glossary-search input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 16px;
+
+    border: 1px solid rgba(255, 204, 51, 0.35);
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    color: white;
+
+    font-size: 0.95rem;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.glossary-search input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.glossary-search input:focus {
+    border-color: #ffcc33;
+
+    box-shadow:
+        0 0 10px rgba(255, 204, 51, 0.2);
+}
+
+
+/* =========================================================
+   LISTA
+========================================================= */
+
+.glossary-list {
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   TERMO
+========================================================= */
+
+.glossary-item {
+    display: grid;
+
+    grid-template-columns: 180px 1fr;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 18px 22px;
+
+    box-sizing: border-box;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 8px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.glossary-item:hover {
+    transform: translateX(4px);
+
+    background: rgba(0, 0, 0, 0.8);
+
+    border-color: rgba(255, 204, 51, 0.4);
+}
+
+
+/* =========================================================
+   NOME DO TERMO
+========================================================= */
+
+.glossary-term {
+    color: #ffcc33;
+
+    font-size: 1.1rem;
+
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   DEFINIÇÃO
+========================================================= */
+
+.glossary-definition {
+    color: rgba(255, 255, 255, 0.8);
+
+    font-size: 0.9rem;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   TEXTO DESTACADO
+========================================================= */
+
+.glossary-definition strong {
+    color: white;
+}
+
+
+/* =========================================================
+   SEM RESULTADOS
+========================================================= */
+
+.glossary-empty {
+    display: none;
+
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.55);
+
+    font-size: 0.9rem;
+}
+
+.glossary-empty.visible {
+    display: block;
+}
+
+
+/* =========================================================
+   RESPONSIVO
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .glossary-page {
+        padding: 20px 12px 40px;
+    }
+
+    .page-title {
+        gap: 12px;
+
+        margin-bottom: 30px;
+    }
+
+    .page-title h1 {
+        font-size: 2.2rem;
+    }
+
+    .glossary-item {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+
+        padding: 16px 18px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .page-title-line {
+        display: none;
+    }
+
+    .page-title h1 {
+        font-size: 1.9rem;
+    }
+
+}

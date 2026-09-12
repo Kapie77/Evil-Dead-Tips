@@ -1,0 +1,49 @@
+const glossaryTranslations = {
+
+    pt: {
+
+        glossary: "Glossário",
+        glossary_search: "Pesquisar termo...",
+        glossary_empty: "Nenhum termo encontrado.",
+        glossary_billy: "Apelido para Baal.",
+        glossary_double_barrel: "Double-Barrel (Cano Duplo)",
+        glossary_balance_bar: "Balance Bar (Barra de Equilíbrio)",
+        glossary_damage_bar: "Damage Bar (Barra de Dano)",
+        glossary_damage_reduction: "Damage Reduction (Redução de Dano)",
+        glossary_aoe: "Area of Effect (Área de Efeito), termo padrão de jogos.",
+        glossary_pup: "Puppeteer (Marionetista) / Eligos",
+        glossary_rotation: "É uma sequência otimizada de ações que o jogador de Demônio usa especificamente na fase final, quando os Survivors estão protegendo o Necronomicon (o \"book\"). A rotation é a ordem específica em que o jogador spawna ou possui unidades (basics, elites e boss), usa skills e ataques pesados, alterna entre pressionar o livro e controlar os Survivors e gerencia cooldowns de portal e skills. É basicamente o combo ou a rotação de habilidades ideal para maximizar dano no livro o mais rápido possível, sem desperdiçar tempo ou energia. Cada classe de Demônio pode ter suas próprias rotations favoritas.",
+        glossary_proxy_portal: "Portal de proximidade. É o portal que spawna quando o Survivor chega perto. Para colocar esse portal, é preciso clicar em (1) para selecionar o portal básico ou (2) para selecionar o portal de elite e clicar com o botão direito do mouse, não o esquerdo.",
+        glossary_flute: "Flautist (Flautista)",
+        glossary_soloq: "Solo Queue. Joga partidas sozinho.",
+
+    },
+
+
+    en: {
+
+        glossary: "Glossary",
+        glossary_search: "Search term...",
+        glossary_empty: "No terms found.",
+        glossary_billy: "Nickname for Baal.",
+        glossary_double_barrel: "Double-Barrel",
+        glossary_balance_bar: "Balance Bar",
+        glossary_damage_bar: "Damage Bar",
+        glossary_damage_reduction: "Damage Reduction",
+        glossary_aoe: "Area of Effect, a standard gaming term.",
+        glossary_pup: "Puppeteer / Eligos",
+        glossary_rotation: "An optimized sequence of actions used by the Demon player specifically during the final phase, when Survivors are protecting the Necronomicon (the \"book\"). The rotation is the specific order in which the player spawns or possesses units (basics, elites, and boss), uses skills and heavy attacks, switches between pressuring the book and controlling Survivors, and manages portal and skill cooldowns. It is essentially the ideal combo or ability rotation to maximize damage to the book as quickly as possible without wasting time or energy. Each Demon class can have its own preferred rotations.",
+        glossary_proxy_portal: "A proximity portal that spawns when a Survivor gets close. To place this portal, click (1) to select the basic portal or (2) to select the elite portal, then right-click instead of left-click.",
+        glossary_flute: "Flautist",
+        glossary_soloq: "Solo Queue. In other words, playing alone.",
+
+    },
+
+
+    es: {
+
+        /* */
+
+    }
+
+};

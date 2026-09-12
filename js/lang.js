@@ -75,12 +75,6 @@ const translations = {
     MeleeDamage: "Dano Corpo a Corpo",
     NoMastery: "Este personagem não possui maestria de arma.",
 
-      /* Tipos */
-      Common: "Comum",
-      Rare: "Raro",
-      Epic: "Épico",
-      Legendary: "Lendário",
-
       /* Melee */
       chainsaw: "Motoserra",
       handaxe: "Machadinha",
@@ -126,28 +120,6 @@ const translations = {
       nodescription: "Sem descrição.",
       crates: "Caixas",
 
-      /* Caixas */
-      crate_common: "Caixa Comum",
-      crate_rare: "Caixa Rara",
-      crate_epic: "Caixa Épica",
-      crate_legendary: "Caixa Lendária",
-      treasure_chest: "Baú do Tesouro",
-
-        /* Caixas descrição */
-        cratecommondesc: "Esta caixa comum é extremamente simples e tem poucas chances de conter algo de valor significativo.",
-        crateraredesc: "Essa caixa rara pode ter algo legal dentro. Mas também pode não ter.",
-        crateepicdesc: "Esta caixa épica tem grandes chances de conter várias garrafas de Pink F e armas de qualidade superior.",
-        cratelegendarydesc: "Esta caixa contém uma arma lendária e vários frascos de Pink F.",
-        treasurechestdesc: "Contém itens de alta qualidade.",
-
-        /* Loots */
-        onepinkf: "1 Pink F",
-        twopinkf: "2 Pink F",
-        threepinkf: "3 Pink F",
-        fourpinkf: "4 Pink F",
-        oneweapon: "1 Arma",
-        oneamulet: "1 Amuleto",
-        oneshemps: "1 Refrigerante Shemp",
 
       /* Melee Desc */
       machetedesc: "Esta lâmina bem equilibrada oferece velocidade, dano e capacidade de desmembramento superiores. Cortante. Uma mão.",
@@ -781,34 +753,6 @@ const translations = {
     MeleeDamage: "Melee Damage",
     NoMastery: "This character does not have any weapon mastery.",
 
-    /* Caixas */
-      crate_common: "Crate Common",
-      crate_rare: "Crate Rare",
-      crate_epic: "Crate Epic",
-      crate_legendary: "Crate Legendary",
-      treasure_chest: "Treasure Chest",
-
-      cratecommondesc: "This common crate is as basic as they came and has a low chance of yielding anything with serious value.",
-      crateraredesc: "This rare crate might have something nice inside. Then again, it might not.",
-      crateepicdesc: "This epic crate has a high chance of containing several bottles of Pink F and higher quality weapons.",
-      cratelegendarydesc: "This crate contains a legendary weapon and multiple bottles of Pink F.",
-      treasurechestdesc: "Contains high quality loot.",
-    
-    /* Loots */
-      onepinkf: "1 Pink F",
-      twopinkf: "2 Pink F",
-      threepinkf: "3 Pink F",
-      fourpinkf: "4 Pink F",
-      oneweapon: "1 Weapon",
-      oneamulet: "1 Amulet",
-      oneshemps: "1 Shemp's Cola",
-
-
-      /* Tipos */
-      common: "Common",
-      rare: "Rare",
-      epic: "Epic",
-      legendary: "Legendary",
 
       /* Melee */
       chainsaw: "Chainsaw",
@@ -1449,11 +1393,26 @@ if (typeof menuTranslations !== "undefined") {
     Object.assign(translations.en, menuTranslations.en);
     Object.assign(translations.es, menuTranslations.es);
 }
+
 // Traduções do bonus //
 if (typeof bonusTranslations !== "undefined") {
     Object.assign(translations.pt, bonusTranslations.pt);
     Object.assign(translations.en, bonusTranslations.en);
     Object.assign(translations.es, bonusTranslations.es);
+}
+
+// Traduções das caixas //
+if (typeof cratesTranslations !== "undefined") {
+    Object.assign(translations.pt, cratesTranslations.pt);
+    Object.assign(translations.en, cratesTranslations.en);
+    Object.assign(translations.es, cratesTranslations.es);
+}
+
+// Traduções do glossário//
+if (typeof glossaryTranslations !== "undefined") {
+    Object.assign(translations.pt, glossaryTranslations.pt);
+    Object.assign(translations.en, glossaryTranslations.en);
+    Object.assign(translations.es, glossaryTranslations.es);
 }
 // --------------------------------------------------------- //
 
@@ -1467,6 +1426,18 @@ function applyLang() {
       el.textContent = translations[lang][key];
     }
   });
+
+  // traduz o placeholder do glossário //
+  document.querySelectorAll("[data-lang-placeholder]").forEach(el => {
+
+        const key = el.getAttribute("data-lang-placeholder");
+
+        if (translations[lang] && translations[lang][key]) {
+            el.placeholder = translations[lang][key];
+        }
+
+    });
+  // fim da tradução do placeholder do glossário //
 }
 
 document.addEventListener("DOMContentLoaded", () => {

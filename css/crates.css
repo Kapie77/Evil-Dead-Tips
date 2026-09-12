@@ -1,221 +1,395 @@
-/* BASE */
+/* =========================================================
+   CRATES PAGE
+========================================================= */
+
 body {
-  min-height: 100vh;
-  background: url('../images/background.png') no-repeat center/cover;
-  color: white;
-  font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+
+    background: url('../images/background.png') no-repeat center/cover;
+    background-attachment: fixed;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
 }
 
-/* HEADER */
-header {
-  text-align: center;
-  padding: 40px 20px;
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.crates-page {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 30px 20px 60px;
 }
 
-header h1 {
-  color: #ffcc33;
-  text-shadow: 0 0 15px #ffcc33;
-  font-size: 3rem;
+
+/* =========================================================
+   TÍTULO
+========================================================= */
+
+.page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    margin: 25px auto 45px;
+
+    max-width: 1100px;
 }
 
-/* CONTAINER */
+.page-title-line {
+    flex: 1;
+
+    height: 1px;
+
+    background: rgba(255, 204, 51, 0.45);
+}
+
+.page-title h1 {
+    margin: 0;
+
+    color: #ffcc33;
+
+    font-size: 3rem;
+
+    text-align: center;
+
+    text-shadow:
+        0 0 8px rgba(255, 204, 51, 0.7),
+        0 0 20px rgba(255, 204, 51, 0.35);
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
 .chest-section {
-  max-width: 1100px;
-  margin: auto;
+    width: 100%;
+    max-width: 1100px;
 
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    margin: auto;
 
-  padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    box-sizing: border-box;
 }
 
-/* CARD */
+
+/* =========================================================
+   CARD
+========================================================= */
+
 .chest-card {
-  display: flex;
-  align-items: center;
-  gap: 24px;
+    position: relative;
 
-  min-height: 220px;
+    display: flex;
+    align-items: center;
 
-  background: rgba(0,0,0,0.6);
+    gap: 24px;
 
-  border-radius: 10px;
-  padding: 18px;
+    min-height: 220px;
 
-  border: 1px solid rgba(255,255,255,0.15);
+    padding: 18px;
 
-  transition: 0.2s;
+    box-sizing: border-box;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    border-radius: 10px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
 }
 
 .chest-card:hover {
-  transform: translateY(-3px);
+    transform: translateY(-3px);
+
+    background: rgba(0, 0, 0, 0.7);
 }
 
-/* IMG */
+
+/* =========================================================
+   IMAGEM
+========================================================= */
+
 .chest-card img {
-  width: 190px;
-  height: auto;
+    width: 190px;
+    height: auto;
 
-  object-fit: contain;
+    flex-shrink: 0;
 
-  transition: 0.2s;
+    object-fit: contain;
+
+    transition: transform 0.2s ease;
 }
 
 .chest-card:hover img {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
-/* INFO */
+
+/* =========================================================
+   INFO
+========================================================= */
+
 .chest-info {
-  flex: 1;
+    flex: 1;
+
+    min-width: 0;
 }
 
 .chest-info h2 {
-  margin-bottom: 12px;
+    margin: 0 0 12px;
+
+    font-size: 1.7rem;
 }
 
-/* LOOT */
+
+/* =========================================================
+   DESCRIÇÃO
+========================================================= */
+
+.crate-desc {
+    margin-top: 6px;
+    margin-bottom: 14px;
+
+    max-width: 700px;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    line-height: 1.4;
+
+    font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   LOOT
+========================================================= */
+
 .loot-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
 }
 
 .loot-item {
-  background: rgba(255,255,255,0.05);
+    padding: 10px 12px;
 
-  padding: 10px 12px;
-  border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+
+    border-radius: 6px;
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+    transition: background 0.2s ease;
 }
 
-/* RARIDADES */
+.loot-item:hover {
+    background: rgba(255, 255, 255, 0.09);
+}
+
+
+/* =========================================================
+   RARIDADES
+========================================================= */
+
+/* COMMON */
+
 .common {
-  border-left: 5px solid #999;
+    border-left: 5px solid #999;
 }
 
 .common img {
-  filter: drop-shadow(0 0 10px rgba(255,255,255,0.25));
+    filter:
+        drop-shadow(0 0 10px rgba(255, 255, 255, 0.25));
 }
 
+.common h2 {
+    color: #ccc;
+}
+
+
+/* RARE */
+
 .rare {
-  border-left: 5px solid #4da6ff;
+    border-left: 5px solid #4da6ff;
 }
 
 .rare img {
-  filter: drop-shadow(0 0 12px rgba(77,166,255,0.5));
-}
-
-.epic {
-  border-left: 5px solid #b366ff;
-}
-
-.epic img {
-  filter: drop-shadow(0 0 12px rgba(179,102,255,0.5));
-}
-
-.legendary {
-  border-left: 5px solid #ffaa00;
-}
-
-.legendary img {
-  filter: drop-shadow(0 0 15px rgba(255,170,0,0.6));
-}
-
-.treasure {
-  border-left: 5px solid #00ff99;
-}
-
-.treasure img {
-  filter: drop-shadow(0 0 15px rgba(0,255,153,0.5));
-}
-
-/* ==================================
-CORES DOS TÍTULOS IGUAL DAS ARMAS 
-=====================================*/
-.common h2 {
-  color: #ccc;
+    filter:
+        drop-shadow(0 0 12px rgba(77, 166, 255, 0.5));
 }
 
 .rare h2 {
-  color: #4da6ff;
+    color: #4da6ff;
+}
+
+
+/* EPIC */
+
+.epic {
+    border-left: 5px solid #b366ff;
+}
+
+.epic img {
+    filter:
+        drop-shadow(0 0 12px rgba(179, 102, 255, 0.5));
 }
 
 .epic h2 {
-  color: #b366ff;
+    color: #b366ff;
+}
+
+
+/* LEGENDARY */
+
+.legendary {
+    border-left: 5px solid #ffaa00;
+}
+
+.legendary img {
+    filter:
+        drop-shadow(0 0 15px rgba(255, 170, 0, 0.6));
 }
 
 .legendary h2 {
-  color: #ffaa00;
+    color: #ffaa00;
 }
 
-/* =========================
-   CARD TESOURO
-========================= */
+
+/* =========================================================
+   TREASURE
+========================================================= */
+
 .treasure {
-  border-left: 5px solid #00ff99;
-  position: relative;
+    position: relative;
+
+    border-left: 5px solid #00ff99;
+}
+
+.treasure img {
+    filter:
+        drop-shadow(0 0 15px rgba(0, 255, 153, 0.5));
 }
 
 .treasure h2 {
-  color: #00ff99;
+    color: #00ff99;
 }
 
-/* badge do mapa */
-.map-badge {
-  position: absolute;
-  top: 10px;
-  right: 10px;
 
-  background: rgba(255,60,60,0.15);
-  border: 1px solid rgba(255,60,60,0.5);
+/* =========================================================
+   MAP BADGE
+========================================================= */
 
-  color: #ff7b7b;
-
-  padding: 5px 10px;
-  border-radius: 6px;
-
-  font-size: 0.75rem;
-  font-weight: bold;
-
-  backdrop-filter: blur(4px);
-}
-
-/* ===========================
-          DESCRIÇÃO
-============================= /*
-/* descrição */
-.crate-desc {
-  margin-top: 6px;
-  margin-bottom: 14px;
-
-  color: rgba(255,255,255,0.75);
-
-  line-height: 1.4;
-  font-size: 0.95rem;
-
-  max-width: 700px;
-}
-
-/* aviso do treasure */
 .map-exclusive {
-  position: absolute;
-  top: 12px;
-  right: 12px;
+    position: absolute;
 
-  background: rgba(255,60,60,0.15);
-  border: 1px solid rgba(255,60,60,0.5);
+    top: 12px;
+    right: 12px;
 
-  color: #ff7b7b;
+    background: rgba(255, 60, 60, 0.15);
 
-  padding: 6px 10px;
-  border-radius: 6px;
+    border: 1px solid rgba(255, 60, 60, 0.5);
 
-  font-size: 0.75rem;
-  font-weight: bold;
+    color: #ff7b7b;
+
+    padding: 6px 10px;
+
+    border-radius: 6px;
+
+    font-size: 0.75rem;
+    font-weight: bold;
+
+    backdrop-filter: blur(4px);
+
+    z-index: 2;
 }
 
-/* necessário pro badge funcionar */
-.chest-card {
-  position: relative;
+
+/* =========================================================
+   RESPONSIVO
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .crates-page {
+        padding: 20px 12px 40px;
+    }
+
+    .page-title {
+        gap: 12px;
+
+        margin-bottom: 30px;
+    }
+
+    .page-title h1 {
+        font-size: 2.2rem;
+    }
+
+    .chest-card {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        text-align: center;
+
+        padding: 20px 16px;
+    }
+
+    .chest-card img {
+        width: 150px;
+
+        margin: 0 auto;
+    }
+
+    .chest-info h2 {
+        font-size: 1.4rem;
+    }
+
+    .crate-desc {
+        max-width: none;
+    }
+
+    .map-exclusive {
+        top: 10px;
+        right: 10px;
+
+        font-size: 0.65rem;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .page-title-line {
+        display: none;
+    }
+
+    .page-title h1 {
+        font-size: 1.9rem;
+    }
+
+    .chest-card img {
+        width: 130px;
+    }
+
 }
