@@ -7,7 +7,7 @@ const bonuses = [
     image:"../images/HUD/HUD_Skills/HUD_SH009_01_2d.png",
     name: "kellyspecialtitle4",
     character: "Kelly",
-    team: false, // individual
+    team: false, // individual 
     lang: "bonus9"
 
     },
@@ -25,10 +25,10 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/SC045_Token.png",
-    name: "bonusgeneral1",
-    character: "Lord Arthur | WAsh | Scotty | Mia | HAsh | Ed | Kelly | Amanda | David | Blacksmith",
+    name: "bonusbuild1",
+    character: "HAsh | Ed | Kelly | Amanda",
     team: false, // individual
-    lang: "bonusgeneral2"
+    lang: "bonus13"
 
     },
 
@@ -39,6 +39,16 @@ const bonuses = [
     character: "HAsh | Ed | Kelly | Amanda",
     team: false, // individual
     lang: "bonus14"
+
+    },
+
+    {
+
+    image:"../images/HUD/HUD_Skills/SC047_Token.png",
+    name: "bonusbuild3",
+    character: "HAsh | Ed | Kelly | Amanda",
+    team: false, // individual
+    lang: "bonus15"
 
     },
     
@@ -208,9 +218,10 @@ const bonuses = [
     {
 
     image:"../images/HUD/HUD_Skills/Specialist_Token.png",
-    character: "Ash Warrior | Scotty | Mia",
+    name: "bonusgeneral1",
+    character: "Lord Arthur | WAsh | Scotty | Mia | HAsh | Ed | Kelly | Amanda | David | Blacksmith",
     team: false, // individual
-    lang: "bonus32"
+    lang: "bonusgeneral2"
 
     },
 

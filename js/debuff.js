@@ -89,16 +89,6 @@ const bonuses = [
     lang: "bonus12"
 
     },
-
-    
-
-    {
-
-    image:"../images/HUD/HUD_Skills/SC047_Token.png",
-    lang: "bonus15"
-
-    },
-
     
 
     {

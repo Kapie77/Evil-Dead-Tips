@@ -53,6 +53,36 @@ const glossaryTerms = [
     {
         term: "Soloq",
         definition: "glossary_soloq"
+    },
+
+    {
+        term: "LAsh",
+        definition: "glossary_LAsh"
+    },
+
+    {
+        term: "WAsh",
+        definition: "glossary_WAsh"
+    },
+
+    {
+        term: "HAsh",
+        definition: "glossary_HAsh"
+    },
+
+    {
+        term: "SAsh",
+        definition: "glossary_SAsh"
+    },
+
+    {
+        term: "Comp",
+        definition: "glossary_comp"
+    },
+
+    {
+        term: "Speed Witch",
+        definition: "glossary_speedwitch"
     }
 
 ];

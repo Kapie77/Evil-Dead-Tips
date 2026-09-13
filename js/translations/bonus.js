@@ -19,7 +19,7 @@ const bonusTranslations = {
     bonus12: "",
     bonus13: "Aumenta o dano das armas de longo alcance quando os alvos estão a uma distância superior a um determinado limite (10 metros).",
     bonus14: "Aumenta o dano das armas de longo alcance quando os alvos estão dentro de um determinado alcance (5 metros).",
-    bonus15: "",
+    bonus15: "Aumenta o dano causado pela última bala de uma arma.",
     bonus16: "Você se esquiva sem consumir vigor, e seus ataques de longo alcance causam dano de sangramento ao seu alvo por um curto período.",
     bonus17: "Aumenta os efeitos da sua aura quando você executa um finalizador ou desmembra um inimigo.",
     bonus18: "Causa mais dano com armas de longo alcance.",
@@ -72,6 +72,7 @@ const bonusTranslations = {
 
     bonusbuild1: "Mortal à Distância",
     bonusbuild2: "Mortal de Perto",
+    bonusbuild3: "Última Chance",
     bonusgeneral1: "Maestria de Armas",
     bonusgeneral2: "Armas corpo-a-corpo que você tem maestria tem uma velocidade de ataque maior e causa mais dano à saúde, à barra de equilíbrio e de desmembramento. Armas de longo alcance que você tem maestria causa mais dano, causa mais dano de desmembramento, mais dano da barra de equilibrio e tem velocidade de recarregamento aumentada.",
     /* debuf */ debuff5: "Nojento Demais para Esquivar",
@@ -108,7 +109,7 @@ const bonusTranslations = {
     bonus12: "",
     bonus13: "Increases ranged weapon damage when target are farther than a certain distance (32.8ft. | 10 Meters).",
     bonus14: "Increases ranged weapon damage when target are within a certain range (16.4ft. | 5 Meters).",
-    bonus15: "",
+    bonus15: "Increases the damage dealt by the last bullet in a gun.",
     bonus16: "You dogde without using stamina and your ranged attacks cause bleeding damage to your target for a short period.",
     bonus17: "Enhances your aura's effects when you perform a finisher or dismember an enemy.",
     bonus18: "Deal more damage with ranged weapons.",
@@ -161,6 +162,7 @@ const bonusTranslations = {
 
     bonusbuild1: "Deadly from a Distance",
     bonusbuild2: "Deadly up Close",
+    bonusbuild3: "Last Chance",
     bonusgeneral1: "Weapons Mastery",
     bonusgeneral2: "Melee weapons you have mastered have a faster attack speed and deal more damage to health, the balance bar, and dismemberment. Ranged weapons you have mastered deal more damage, deal more dismemberment damage, deal more damage to the balance bar, and have an increased reload speed.",
     /* debuff */ debuff5: "Too grossed out to dodge",
