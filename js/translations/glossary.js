@@ -22,6 +22,12 @@ const glossaryTranslations = {
         glossary_SAsh: "Support Ash (Ash original do primeiro filme)",
         glossary_comp: "“Comp” no Evil Dead: The Game (e na maioria dos jogos multiplayer) significa composition (composição) → team composition (composição do time). Team comp / survivor comp → quais classes/personagens o time de Survivors está usando (ex: Warrior + Hunter + Support + Leader).",
         glossary_speedwitch: "Glitch com a Bruxa (Praguejadora) que aumenta a velocidade dela, equiparando-a a de um carro, sendo difícil lutar contra quase, quase impossível de acertá-la.",
+        glossary_p0: "Prestige 0 (Prestígio 0)",
+        glossary_p1: "Prestige 1 (Prestígio 1)",
+        glossary_p2: "Prestige 2 (Prestígio 2)",
+        glossary_p3: "Prestige 3 (Prestígio 3)",
+        glossary_p4: "Prestige 4 (Prestígio 4)",
+        glossary_p5: "Prestige 5 (Prestígio 5)",
 
     },
 
@@ -48,6 +54,12 @@ const glossaryTranslations = {
         glossary_SAsh: "Support Ash (Oiginal Ash from the first movie)",
         glossary_comp: "“Comp” in Evil Dead: The Game (and in most multiplayer games) stands for “composition” → team composition. Team comp / survivor comp → which classes/characters the Survivors team is using (e.g., Warrior + Hunter + Support + Leader).",
         glossary_speedwitch: "A glitch with the Witch (Plaguebringer) that increases her speed, making her as fast as a car, which makes it difficult to fight her, it's almost, almost impossible to hit her.",
+        glossary_p0: "Prestige 0",
+        glossary_p1: "Prestige 1",
+        glossary_p2: "Prestige 2",
+        glossary_p3: "Prestige 3",
+        glossary_p4: "Prestige 4",
+        glossary_p5: "Prestige 5",
 
     },
 

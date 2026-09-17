@@ -83,6 +83,41 @@ const glossaryTerms = [
     {
         term: "Speed Witch",
         definition: "glossary_speedwitch"
+    },
+
+    {
+        term: "Speed Witch",
+        definition: "glossary_speedwitch"
+    },
+
+    {
+        term: "P0",
+        definition: "glossary_p0"
+    },
+
+    {
+        term: "P1",
+        definition: "glossary_p1"
+    },
+
+    {
+        term: "P2",
+        definition: "glossary_p2"
+    },
+
+    {
+        term: "P3",
+        definition: "glossary_p3"
+    },
+
+    {
+        term: "P4",
+        definition: "glossary_p4"
+    },
+
+    {
+        term: "P5",
+        definition: "glossary_p5"
     }
 
 ];
