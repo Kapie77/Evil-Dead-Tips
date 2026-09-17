@@ -1,80 +1,601 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
+
   <title data-lang="leader">Líder</title>
+
   <link rel="stylesheet" href="../../css/classespage.css">
-  <link rel="stylesheet" href="../../css/backbutton.css">
+  <link rel="stylesheet" href="../../css/menu.css">
+
   <link rel="icon" href="../../images/favicon.png">
-
-  <link rel="stylesheet" href="../../css/flag.css">
-
 </head>
+
 <body class="lider">
 
-  <!-- Language -->
-   <div class="lang-switch">
-      <img src="../../images/flags/br.jpg" onclick="setLang('pt')">
-      <img src="../../images/flags/us.png" onclick="setLang('en')">
-      <img src="../../images/flags/es.jpg" onclick="setLang('es')">
-  </div>
-  <!--------------->
+<!------ MENU ------->
+  <nav class="site-menu">
 
-  <div class="overlay"></div>
+    <div class="menu-inner">
 
-  <header>
-    <h1 data-lang="leader">LÍDER</h1>
-    <p>Buffs, controle e liderança de equipe</p>
+      <a href="../../index.html" class="menu-logo">
+        <img src="../../images/logo.png" alt="Evil Dead">
+      </a>
+
+      <div class="menu-links">
+
+        <a href="../../index.html" class="menu-link active">
+          <span data-lang="menuHome">Início</span>
+        </a>
+
+        <!-- Sobreviventes -->
+        <div class="menu-dropdown">
+
+          <button class="menu-link menu-dropdown-button" type="button">
+            <span data-lang="menuSurvivors">Sobreviventes</span>
+            <span class="menu-arrow">▾</span>
+          </button>
+
+          <div class="menu-submenu">
+
+            <!-- Classes -->
+            <div class="menu-submenu-item">
+
+              <a href="../../pages/classes.html" class="submenu-parent">
+                <span data-lang="menuClasses">Classes</span>
+                <span class="submenu-arrow">▸</span>
+              </a>
+
+                <!-- Submenu das Classes -->
+                <div class="menu-submenu-nested">
+
+                  <a href="../../pages/classes/leader.html" data-lang="menuLeader">
+                    Líder
+                  </a>
+
+                  <a href="../../pages/classes/warrior.html" data-lang="menuWarrior">
+                    Guerreiro
+                  </a>
+
+                  <a href="../../pages/classes/hunter.html" data-lang="menuHunter">
+                    Caçador
+                  </a>
+
+                  <a href="../../pages/classes/support.html" data-lang="menuSupport">
+                    Suporte
+                  </a>
+
+                </div>
+                <!-- Fim do submenu das Classes -->
+
+            </div>
+            <!-- Fim de Classes -->
+
+            <a href="../../pages/characters.html" data-lang="menuCharacters">Personagens</a>
+            <a href="../../pages/weapons.html" data-lang="menuWeapons">Armas</a>
+            <a href="#" data-lang="menuBuild">Build</a>
+            <a href="#" data-lang="menuGlitches">Glitches</a>
+            <a href="../../pages/hunter-spots.html" data-lang="menuHunterSpots">Spots para Caçadores</a>
+            <a href="../../pages/crates.html" data-lang="menuCrates">Caixas</a>
+            <a href="../../pages/bonus.html" data-lang="menuBonus">Bonus</a>
+            <a href="../../pages/debuff.html" data-lang="menuDebuff">Debuff</a>
+
+          </div>
+
+        </div>
+        <!-- Fim dos Sobreviventes -->
+
+        <!-- demõnios -->
+         <div class="menu-dropdown">
+
+            <button class="menu-link menu-dropdown-button" type="button">
+              <span data-lang="menuDemons">Demônios</span>
+              <span class="menu-arrow">▾</span>
+            </button>
+
+
+            <div class="menu-submenu">
+
+              <!-- SUBMENU DOS DEMÔNIOS -->
+
+              <div class="menu-submenu-item">
+
+                <a href="../../pages/demons.html" class="submenu-parent">
+                  <span data-lang="menuAllDemons">Demônios</span>
+                  <span class="submenu-arrow">▸</span>
+                </a>
+
+                <div class="menu-submenu-nested">
+                  <a href="../../pages/demons/henrietta.html">
+                    Henrietta
+                  </a>
+
+                  <a href="../../pages/demons/evil-ash.html" data-lang="demonEvilAsh">
+                    Evil Ash
+                  </a>
+
+                  <a href="../../pages/characters/puppeteer.html">
+                    Eligos
+                  </a>
+
+                  <a href="../../pages/demons/plaguebringer.html" data-lang="demonWitch">
+                    Witch
+                  </a>
+
+                  <a href="../../pages/demons/puppeteer.html">
+                    Baal
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        <!-- fim demônios -->
+
+        <!-- termos -->
+         <a href="../../pages/glossary.html" class="menu-link">
+          <span data-lang="menuGlossary">Glossary</span>
+        </a>
+        <!-- fim dos termos-->
+
+        <!-- Social media -->
+        <div class="menu-dropdown">
+          <button class="menu-link menu-dropdown-button" type="button">
+            <span data-lang="menuSocial">Social Media</span>
+            <span class="menu-arrow">▾</span>
+          </button>
+
+          <div class="menu-submenu">
+            <a href="https://www.reddit.com/r/EvilDeadTheGame/" data-lang="menuReddit">Reddit</a>
+            <a href="https://www.evildeadthegame.com/" data-lang="menuWebsite">Website</a>
+            <a href="https://www.youtube.com/@EvilDeadTheGame" data-lang="menuYoutube">Youtube</a>
+            <a href="https://x.com/evildeadthegame" data-lang="menuTwitter">Twitter</a>
+            <a href="https://discord.gg/evildeadthegame" data-lang="menuDiscord">Discord</a>
+            <a href="https://discord.gg/HHJx4rS5Vj" data-lang="menuFanDiscord">Evil Dead The Gathering</a>
+            <a href="https://discord.gg/sjUez8dZF7" data-lang="menuFanDiscord2">Evil Dead The Game Modding</a>
+            <a href="https://www.nexusmods.com/games/evildeadthegame" data-lang="menuNexusModEvilDead">Nexus Mod Evil Dead</a>
+          </div>
+        </div>
+        <!-- fim da Social media -->
+
+        <a href="https://github.com/Kapie77/Evil-Dead-Tips" class="menu-link">
+          <span data-lang="menuSourceCode">Source code</span>
+        </a>
+
+      </div>
+
+    <!-- idiomas -->
+    <div class="menu-language">
+
+        <button class="language-current" type="button">
+            <img src="../../images/flags/us.png" alt="">
+            <span>ENG</span>
+            <span class="language-arrow">▼</span>
+        </button>
+
+        <div class="language-options">
+
+            <button type="button" onclick="setLang('en')">
+                <img src="../../images/flags/us.png" alt="">
+                <span>ENG</span>
+            </button>
+
+            <button type="button" onclick="setLang('es')">
+                <img src="../../images/flags/es.jpg" alt="">
+                <span>ESP</span>
+            </button>
+
+            <button type="button" onclick="setLang('pt')">
+                <img src="../../images/flags/br.jpg" alt="">
+                <span>PT-BR</span>
+            </button>
+
+        </div>
+
+    </div>
+    <!-- fim do idiomas -->
+
+      <button class="menu-toggle" type="button" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+  </nav>
+<!------- FIM DO MENU --------->
+
+
+
+<!-- =========================
+       HEADER DA CLASSE
+========================== -->
+
+  <header class="class-hero">
+
+    <div class="class-hero-content">
+
+      <span class="class-label">
+        CLASS
+      </span>
+
+      <h1 data-lang="leader">
+        LÍDER
+      </h1>
+
+      <p
+        class="class-subtitle"
+        data-lang="leaderdescription"
+      >
+        Buffs, controle e liderança de equipe.
+      </p>
+
+    </div>
+
   </header>
 
-  <main class="container">
 
-    <!-- INTRO -->
-    <section class="box lider">
-      <h2>Visão Geral</h2>
-      <p data-lang="leaderdesc">
-        O Líder é responsável por fortalecer o time com buffs e manter a equipe
-        organizada. É a classe ideal para jogadores estratégicos que gostam de
-        coordenar e potencializar o grupo.
+
+<main class="class-page">
+
+
+<!-- =========================
+         CARACTERÍSTICAS
+========================== -->
+
+    <section class="class-section">
+
+      <div class="section-title">
+
+        <span></span>
+
+        <h2 data-lang="classesCharacteristics">
+          CARACTERÍSTICAS
+        </h2>
+
+        <span></span>
+
+      </div>
+
+
+      <div class="characteristics-grid">
+
+
+        <!-- PONTOS FORTES -->
+
+        <article class="info-card strengths">
+
+          <div class="info-card-icon">
+            +
+          </div>
+
+          <h3 data-lang="classesStrengths">
+            Pontos Fortes
+          </h3>
+
+          <ul>
+
+            <li data-lang="classesLeaderStrengths1">
+              Ponto Forte 1
+            </li>
+
+          </ul>
+
+        </article>
+
+
+        <!-- PONTOS FRACOS -->
+
+        <article class="info-card weaknesses">
+
+          <div class="info-card-icon">
+            −
+          </div>
+
+          <h3 data-lang="classesWeaknesses">
+            Pontos Fracos
+          </h3>
+
+          <ul>
+
+            <li data-lang="classesLeaderWeaknesses1">
+              Ponto Fraco 1
+            </li>
+
+          </ul>
+
+        </article>
+
+      </div>
+
+</section>
+
+
+
+<!-- =========================
+         DICAS
+========================== -->
+
+    <section class="class-section">
+
+      <div class="section-title">
+
+        <span></span>
+
+        <h2 data-lang="classesTips">
+          DICAS
+        </h2>
+
+        <span></span>
+
+      </div>
+
+
+      <div class="tips-grid">
+
+
+        <article class="tip-card">
+
+          <span class="tip-number">
+            01
+          </span>
+
+          <h3 data-lang="classesLeaderTitleTip1">
+            Dica 1
+          </h3>
+
+          <p data-lang="classesLeaderTip1">
+            Dica 1 descrição.
+          </p>
+
+        </article>
+
+      </div>
+
+</section>
+
+
+
+<!-- =========================
+         PERSONAGENS
+========================== -->
+
+    <section class="class-section characters-section">
+
+      <div class="section-title">
+
+        <span></span>
+
+        <h2 data-lang="classesCharacters">
+          PERSONAGENS
+        </h2>
+
+        <span></span>
+
+      </div>
+
+
+      <p
+        class="section-description"
+        data-lang="classesLeadersCharactersAll"
+      >
+        Personagens pertencentes à classe Líder.
       </p>
+
+
+      <div class="characters-grid">
+
+
+        <!-- =========================
+             ASH LÍDER
+        ========================== -->
+        <article
+          class="character-card"
+          onclick="goTo('../characters/ash-leader.html')"
+        >
+
+          <div
+            class="character-image"
+            style="background-image: url('../../images/characters/AshLeader.png');"
+          ></div>
+
+          <div class="character-overlay"></div>
+
+
+          <div class="character-info">
+
+            <span
+              class="character-class"
+              data-lang="leader"
+            >
+              LEADER
+            </span>
+
+            <h3 data-lang="lash">
+              Ash Líder
+            </h3>
+
+            <p data-lang="lAshLeaderRole">
+              Líder
+            </p>
+
+          </div>
+        </article>
+        <!---->
+
+        <!-- =========================
+             ANNIE KNOWBY
+        ========================== -->
+        <article
+          class="character-card"
+          onclick="goTo('../characters/annie.html')"
+        >
+
+          <div
+            class="character-image"
+            style="background-image: url('../../images/characters/Annie.png');"
+          ></div>
+
+          <div class="character-overlay"></div>
+
+
+          <div class="character-info">
+
+            <span
+              class="character-class"
+              data-lang="leader"
+            >
+              LEADER
+            </span>
+
+            <h3>
+              Annie Knowby
+            </h3>
+
+            <p data-lang="annieLeaderRole">
+              Líder
+            </p>
+
+          </div>
+        </article>
+        <!---->
+
+
+        <!-- =========================
+             LORD ARTHUR
+        ========================== -->
+        <article
+          class="character-card"
+          onclick="goTo('../characters/lord-arthur.html')"
+        >
+
+          <div
+            class="character-image"
+            style="background-image: url('../../images/characters/Arthur.png');"
+          ></div>
+
+          <div class="character-overlay"></div>
+
+
+          <div class="character-info">
+
+            <span
+              class="character-class"
+              data-lang="leader"
+            >
+              LEADER
+            </span>
+
+            <h3>
+              Lord Arthur
+            </h3>
+
+            <p data-lang="arthurLeaderRole">
+              Líder
+            </p>
+
+          </div>
+
+        </article>
+        <!---->
+
+        <!-- =========================
+             RUBY
+        ========================== -->
+        <article
+          class="character-card"
+          onclick="goTo('../characters/ruby.html')"
+        >
+
+          <div
+            class="character-image"
+            style="background-image: url('../../images/characters/Ruby.png');"
+          ></div>
+
+          <div class="character-overlay"></div>
+
+
+          <div class="character-info">
+
+            <span
+              class="character-class"
+              data-lang="leader"
+            >
+              LEADER
+            </span>
+
+            <h3>
+              Ruby
+            </h3>
+
+            <p data-lang="rubyLeaderRole">
+              Líder
+            </p>
+
+          </div>
+
+        </article>
+        <!---->
+
+        <!-- =========================
+             BROCK
+        ========================== -->
+        <article
+          class="character-card"
+          onclick="goTo('../characters/brock.html')"
+        >
+
+          <div
+            class="character-image"
+            style="background-image: url('../../images/characters/Brock.png');"
+          ></div>
+
+          <div class="character-overlay"></div>
+
+
+          <div class="character-info">
+
+            <span
+              class="character-class"
+              data-lang="leader"
+            >
+              LEADER
+            </span>
+
+            <h3>
+              Brock Williams
+            </h3>
+
+            <p data-lang="brockLeaderRole">
+              Líder
+            </p>
+
+          </div>
+
+        </article>
+        <!---->
+
+      </div>
+
     </section>
 
-    <!-- PONTOS FORTES -->
-    <section class="box lider">
-      <h2 data-lang="strengths">Pontos Fortes</h2>
-      <ul>
-        <li>Buffs poderosos para o time</li>
-        <li>Equilibra dano e suporte</li>
-        <li>Reduz medo dos aliados</li>
-      </ul>
-    </section>
-
-    <!-- PONTOS FRACOS -->
-    <section class="box lider">
-      <h2 data-lang="weaknesses">Pontos Fracos</h2>
-      <ul>
-        <li>Depende do time para brilhar</li>
-        <li>Dano individual menor que Guerreiro</li>
-        <li>Requer posicionamento inteligente</li>
-      </ul>
-    </section>
-
-    <!-- DICAS -->
-    <section class="box lider">
-      <h2 data-lang="tips">Dicas</h2>
-      <ul>
-        <li>Fique sempre próximo dos aliados</li>
-        <li>Use habilidades no momento certo</li>
-        <li>Controle o medo da equipe</li>
-        <li>Seja o cérebro do time</li>
-      </ul>
-    </section>
 
   </main>
 
-  <button onclick="goBack()" class="back-btn" data-lang="back">Voltar</button>
 
-  <script src="../../js/script.js"></script>
-  <script src="../../js/lang.js"></script> <!-- translate -->
+
+<!-- =========================
+       SCRIPTS
+========================== -->
+<script src="../../js/script.js"></script>
+<script src="../../js/translations/menu.js"></script>
+<script src="../../js/translations/classes.js"></script>
+<script src="../../js/lang.js"></script>
+<script src="../../js/menu.js"></script>
+
 </body>
 </html>
