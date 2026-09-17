@@ -1,0 +1,193 @@
+const survivorstipsTranslations = {
+
+  pt: {
+    
+    /* DICAS */
+    tips: "Dicas",
+
+      /* Ed */
+      EdTip1: "Se você usar sua habilidade e desligar a lanterna, a sua habilidade será desligada também, então não desligue-a se estiver usando sua habilidade.",
+      EdTip2: "Quando Baal aparece as lanternas de todos são desativadas, e só podem ser ligadas de novo depois de alguns segundos após ele morrer, então atente-se em não usar sua habilidade se ver o inimigo irá invocar Baal ou se ele já foi invocado. Se usou seu poder e Baal foi invocado você não terá opção a não ser matar ele o mais rápido possível para poder usar a lanterna de novo, ou, a outra opção, será aceitar que usou sua habilidade em vão.",
+      EdTip3: "A luz da lanterna desarma armadilhas e não você, então não corra para cima de uma armadilha porque está usando sua habilidade, porque você poderá cair na armadilha! Isso acontece muito porque você pode chegar antes da luz desarmar a armadilha, principalmente por causa do lag, então aproxime-se com cautela de uma armadilha para desarmá-la e depois poderá passar por ela.",
+      EdTip4: "Existem 3 tipos de besta: besta (padrão), que dá só um tiro por vez. Besta repetidora, que dá vários tiros seguidos. E a besta explosiva que dá um tiro explosivo em área por vez. Ed tem maestria com Bestas, não importa qual delas.",
+      EdTip5: "Se o Demônio te possuir enquanto você está usando sua habilidade, sua lanterna se apagará, mas o tempo de uso estará contando, então quando ele te despossuir pode restar poucos segundos de habilidade ou até mesmo já ter acabado, assim se tiver com medo alto tente não usar sua habilidade.",
+      EdTip6: "Umas das habilidades passivas de Ed é de aumentar a vida util da lanterna em 100%, então dificilmente acabará a bateria dela; ela costuma durar até a partida acabar. Então deixa-a ligada todo o tempo (mas, claro, sempre de olho para não acabar a bateria, pois as vezes algumas partidas são tão longas que acaba o tempo).",
+      EdTip7: "Você só usará a habilidade de Ed umas 3 ou 4 vezes na partida, em média, e durante o inicio; quando chega nos Sombrios você não usará mais porque não tem onde usar, então não vale a pena colocar pontos em Recarga Rápida, que reduz 10% do cooldown da habilidade dele. Veja: 110s (1 minutos e 50 segundos) - 10% [11s] 99 segundos (1 minutos e 39 segundos) 105s (1 minuto e 45 segundos) [Prestigio 5] - 10% [10,55s] = 94,5 segundos (1 minuto e 34,5 segundos)",
+
+      MiaTip1: "Mia, diferente dos outros Guerreiros, não tem build de dano a barra de equilibro, mas sim uma build de dano. E isso, somado ao fato das habilidades especiais dela aumentarem seu dano quanto maior for seu medo, e dano de sangramento, torna ela a personagem com mais dano do jogo. Por isso, se você utilizar a arma com mais dano do jogo, o machado, ela ficará muito forte. Seu foco com ela, então, deve ser em dano!",
+
+      DavidTip1: "Se você estiver sozinho no meio do nada e o demônio te achar, a Chama Azul é a sua salvação! A chama irá drenar toda a energia do demônio se ele possuir alguma unidade e tentar te matar. Você pode apenas se esquivar e ganhar tempo com ele na chama, mas se puder bater nele é melhor ainda, porque ele perderá energia mais rápido. E mesmo que ele não entre na chama, fique esperando ela acabar, ele irá perder tempo e energia, fazendo você recuperar stamina, ter seu medo diminuido, e ganhando tempo para pensar no que fazer ou tempo para seus amigos chegarem e te ajudar.",
+      DavidTip2: "Tenha cuidado ao usar a Chama Azul porque se o demônio te assustar, ou te possuir, a animação é cortada, o poder não é usado, mas o tempo é resetado como se tivesse sido usado, então você terá que esperar muito tempo para conseguir usa sua habilidade de novo.",
+      DavidTip3: "Lembre-se que seu refrigerante não só cura, mas faz diminuir o dano tomado pra todos os companheiros de equipe próximos, e isso é fundamental no livro. Então, saiba usar Shemp's pensando não só em curar, mas também pensando em fazer todos receberem menos dano — mesmo que todos estejam com a vida cheia; mas você teria que ter muitos refrigerantes e saber administrá-los.",
+      DavidTip4: "Use a Chama Azul assim que o livro aparecer, pois assim conseguirá usá-la mais uma vez no final.",
+
+      LordArthurTip1: "A espada é muito difícil de manejar e é lenta, então você terá que ter paciência e treinar bastante com ela. Uma dica é upar o Melee (corpo-a-corpo) pro máximo assim você terá +20% de velocidade de ataque corpo-a-corpo, além de +20% de dano corpo a corpo claro.",
+      LordArthurTip2: "O poder de Lord Arthur não só aumenta o dano corpo-a-corpo, mas diminui o medo também, então ele é util para abaixar seu medo quando precisar. Não abaixa tanto, mas ajuda muitas vezes.",
+      LordArthurTip3: "Ao ativar a habilidade 'A Cólera do Lord', se você realizar o finalizador e matar o demônio você ganhará +4 segundos e o tempo é cumulativo — entretanto só chega até 15s ou 18s [P5] — mas se você realizar um finalizador e não matar o demônio o tempo da habilidade ficará congelado durante a animação, o que é bem útil também para não perder a habilidade. Nos objetivos você pode ficar realizando finalizadores e assim seus companheiros de equipe terão + 20% - 25% [P5] de aumento dano corpo a corpo e redução de medo. No Necronomicon é possível realizar tantos finalizadores que passará os 2 minutos e você não perderá a habilidade.",
+            // imagens descrição
+            LordArthurCaption1: "Você verá o congelamento ou aumento do tempo da sua habilidade ao olhar para ela no lado direito da tela.",
+
+      AshWarriorTip1: "Coloque os primeiros pontos na barra de escudo dele, focando em deixá-la no máximo. É fundamental que seu wAsh esteja com a barra de escudo cheia (ou pelo menos não vazia) para usar a habilidade de explosão dele, que é muito útil.",
+      AshWarriorTip2: "Sempre finalize os inimigos, porque isso aumentará sua barra de escudo e você precisa disso.",
+      AshWarriorTip3: "Esteja sempre com escudos ativos.",
+
+      AshSupportTip1: "Seus ataques pesados resturam o dano como vida 20% (25% no P1), então quanto maior for seu ataque maior será a vida recuperada, por isso foque em armas com mais dano como machado, e monte uma build que aumente dano também.",
+      AshSupportTip2: "Seus ataques pesados curam um pouco de vida, mas não tanto, então sempre se esquive se ver que o demõnio vai te bater e só depois bata nele, porque o que ele dá de dano é maior do que o que você recupera de vida.",
+      AshSupportTip3: "Fique perto do seu time e use ataques pesados porque isso além de te curar, irá curá-los também.",
+
+      AshHunterTip1: "Coloque os primeiros pontos na Stamina. Foque em deixá-la no máximo. Assim você terá vigor para catar os mapas, correr do demõnio e se esquivar se precisar. Contudo, se o demônio for um jogador experiente e te achar no inicio da partida a melhor opção pode ser colocar os pontos em Longo Alcance, porque assim você recarregará a arma mais rápido e dará mais dano.",
+      AshHunterTip2: "Comece a partida rushando todos os mapas. Caçador é a classe que tem mais vigor, você consegue correr muito, e ainda tem o poder de exorcizar se for preciso caso o demônio te ache sozinho.",
+      AshHunterTip3: "Antes de usar a habilidade de exorcizar mate todos os demônio em volta, porque senão você irá exorcizar a unidade possuida e ele irá possuir algum outro demônio ao redor e continuará te batendo, então não irá adiantar nada.",
+      AshHunterTip4: "Vale a pena ter Recarga Rápida com ele, porque você precisará muito da habilidade dele. Calculos caso queira conferir: 90s (1 minuto e 30 segundos) - 10% (9 segundos) = 81s (1 minuto e 21 segundos). 85s [P5] (1 minuto e 25 segundos) - 10% (8,5 segundos) = 76,5s (1 minuto e 16 segundos)",
+      AshHunterTip5: "Você não pode exorcizar unidades de elite e chefe possuidas, mas ao usar a habilidade de exorcizar você irá drenar a energia infernal do demônio e isso pode ser muito util, pois assim poderá diminuir o tempo de possessão dele ou mesmo acabar com a possessão porque ele pode estar com pouca energia infernal.",
+      AshHunterTip6: "HAsh com uma Ruby na partida fica muito forte devido a um dos bonus da Aura dela de redução máxima do tempo de recarga. Se você tem um HAsh P5 com a perk 'Recarga Rápida' o cooldown da sua habilidade ficará em 76,5s (1 minuto e 16 segundos), mas se tiver uma Ruby P1 na partida, um dos bonus da Aura dela é redução máxima do tempo de recarga em 35%, então 35% de 76,5s = 26,775s, logo o seu cooldown ficará em 76,5s − 26,775s = 49,725s (50s)! Isso significa usar a habilidade a cada minuto basicamente.",
+
+      ScottyTip1: "Os ataques pesados dele fazem ele perde um pouco de medo, assim como companheiros ao redor, então use ataques pesado quando estiver nos primeiros objetivos para abaixar o medo o máximo que der e evitar ser possuído. O nível de medo abaixado é bem pouco, mas já ajuda.",
+      ScottyTip2: "Ataques pesados causam dano em area, então é bom contra demônios que colocam muitas unidades, como Eligos e Ash Maligno. E é algo especialmente bom no livro.",
+
+      PabloTip1: "Pablo fica invísivel pro Demônio na Visão Demôniaca, mesmo com medo alto, mesmo se atirar ou até mesmo se dirigir um carro, então ele não pode te ver pelo mapa, a menos que esteja te vendo cara a cara, assim, com essa vantagem, você pode catar todos os pedaços do mapa tranquilamente sem ele te achar.",
+      PabloTip2: "Como o demônio não consegue te ver pela Visão Demôniaca não tem necessidade de você upar o medo, deixe isso para depois que upar os principais como escudo, vida, vigor e corpo-a-corpo.",
+      PabloTip3: "Embora o demônio não consiga te ver nem se você estiver com o medo alto, ele ainda pode te possuir, então cuide do seu medo, ainda mais se for fazer a Adaga ou a Página.",
+      PabloTip4: "Comece upando sua barra de escudo para conseguir usar seus amuletos, depois upe vigor e vida.",
+
+      /* Ruby Dicas */
+      RubyTip1: "Diferente dos outros lideres, Ruby precisa upar a sua Aura para o máximo para liberar todos os bônus dela. Ao começar a partida Ruby tem apenas o bônus de Regeneração de Vigor. Ao colocar a Aura level 1 você libera o bônus de Redução de Cooldown de Habilidade. Ao colocar a Aura level 2 você libera o bônus de Redução de Dano. E ao colocar a Aura no level 3, o level máximo, você libera o último bônus que é o Aumento de Dano. Sendo assim, foque em colocar a aura dela no máximo para liberar todos os bônus para todos.",
+      RubyTip2: "Ao colocar a Aura de Ruby no máximo você aumentará também o número máximo de almas que ela pode coletar, e quanto mais almas ela coleta mais aumenta os efeitos de sua aura. Você começa com o limite de 35 almas. Aura level 1 aumenta o limite de almas de 35 para 40. Aura level 2 aumenta o limite de almas em +10 (40 para 50). Aura level 3 o limite em +15 (50 para 55).",
+      RubyTip3: "Como já foi dito acima é preciso que você foque em upar foque em upar a Aura dela pro máximo o quanto antes. Eis quantos pontos são necessário para isso: 5 pontos desbloqueia Aura 1 (+1 na aura). +4 pra desbloquear Aura 2 (+1 na aura). +5 pra desbloquear Aura 3 (+1 na Aura). Total 14 pontos em habilidades no geral +3 na Aura = 17 pontos.",
+      RubyTip4: "Ruby absorve as almas das unidades malignas que morrem dentro de sua aura, sejam mortos por ela ou por companheiros de equipe, e isso aumenta os efeitos da sua aura. Portanto quanto mais almas você coletar, mais forte ela ficará. Mas se você usar a habilidade especial dela irá perder as almas e, consequentemente, diminuirá os efeitos de sua aura, então não desperdice as almas coletadas. Use a habilidade dela apenas em momentos essenciais, como no Necronomicon, por exemplo.",
+      RubyTip5: "Ruby pode cancelar a habilidade especial dela a qualquer momento apertando o mesmo botão da habilidade especial, isso ativará a explosão e será consumida o número de almas que foi coletada até o momento em que você cancelou a habilidade, com isso você pode controlar quantas almas você irá perder. Porém, a habilidade será resetada e você terá que esperar muito tempo pra usá-la de novo.",
+      RubyTip6: "Ruby pode cancelar a animação de armadilha em uma caixa com glitch. Use a habilidade dela, depois abra a caixa com armadilha, depois cancele o poder dela e isso fará a animação da armadilha ser cancelada. Porém, você ainda assim receberá dano de armadilha.",
+          //  imagens descrição
+            RubyCaption1: "Ruby começa com o bônus de Regeneração de Vigor (20%, ou 24% se for P1).",
+            RubyCaption2: "Ao colocar a Aura no level 1 você libera o bônus de Redução de Cooldown de habilidade (25%, ou 35% se for P1).",
+            RubyCaption3: "Ao colocar a Aura no level 2 você libera o bônus de Redução de Dano (20%, ou 24% se for P1).",
+            RubyCaption4: "Ao colocar a Aura no level 3 você libera o bônus de Aumento de Dano (20%, ou 24% se for P1).",
+
+      /* Brock Dicas */
+      BrockTip1: "A habilidade especial de Brock não o torna invencivel como a de Henry, ela só evita empurrões/agarrões, mas você ainda receberá dano. Porém ainda assim ela é útil, pois você pode usá-la para levantar alguém que está caído sagrando, entrar em um carro, reviver alguém, usar shemps/amuletos, abrir uma caixa, sem ser interrompido.",
+      BrockTip2: "Os bonus de Brock são dados para todos. Por exemplo, se tiver alguém da família Williams na partida, todos ganham o bonus dado a família, assim como se tiver alguém que não é da família Williams todos ganham o bonus não-família. Se tiver um líder/suporte/guerreiro/caçador, todos ganharão o bonus também, e não apenas quem tá com classe especifica.",
+      BrockTip3: "Os efeitos da aura de Brock são 4% por quantidade membros da família Williams ou não-membros da família. Então o ideal pro time seria ter um Ash Guerreiro, um Ash Caçador e de suporte um Ash Suporte ou Cheryl, assim todos terão 16% de redução de dano. Ou pode escolher um guerreiro, caçador e suporte que não sejam da família Williams e terá 12% de aumento de cura (e 4% de redução de dano por causa da presença de Brock, que é da família).",
+      BrockTip4: "A habilidade de Brock não serve apenas para ter imunidade a empurrões, mas aumenta o alcance da cura, e potencializa os efeitos de sua aura. 55% de 4% = 2.2%. 55% de 8% = 4.4%. 55% de 12% = 6.6%. 55% de 16% = 8.8%. Isso durará por 10 segundos.",
+          // imagens descrição
+            BrockCaption1: "Na imagem vemos um Henry com o bonus de membro da família e não-família, assim como o bonus de ter um Líder na partida, um Guerreiro e um Suporte.",
+
+      /* Ferreiro Dicas */
+      BlacksmithTip1: "As sucatas no mapa não renascem após serem pegas.",
+      BlacksmithTip2: "Os outros Sobreviventes não conseguem ver as sucatas, mas conseguem ouvir o barulho que faz quando você pega elas.",
+      BlacksmithTip3: "Foque em colocar Sucata de Metal no máximo o mais rápido possível para conseguir coletar as sucatas necessárias para fazer armas lendárias.",
+      BlacksmithTip4: "2 pontos libera o Sucatas de Metal level 1 (+1 ponto na sucata). +2 pontos libera o Sucatas de Metal level 2 (+1 ponto na sucata). +2 pontos libera o Sucatas de Metal level 3 (+1 ponto na sucata). Total: 6 em habilidades gerais + 3 pontos em Sucata = 9 pontos necessários no total para colocar a Sucata de Metal no máximo.",
+      BlacksmithTip5: "O Ferreiro começa a partida podendo coletar até 20 sucatas. Com a Sucata de Metal level 1 o limite é aumentado para 30. Com a Sucata de Metal level 2 o limite é aumentado para 40. Com a Sucata de Metal level 3, level máximo, o limite é aumentado para 50.",
+      BlacksmithTip6: "No Necronomicon não use todos os seu amuletos de vez! Use um amuleto e espere o bonus que ele dará, que é aumento de dano — 10% ou 13% [P1] — por 20/22 segundos — acabar para usar outro amuleto e repita isso até o fim, assim renovará o bonus de dano sempre até terminar de proteger o Necronomicon. Três amuletos darão 60 segundos (1 minutos), então se você tiver 6 amuletos já terá bonus desde o início do Necronomicon até o fim.",
+      BlacksmithTip7: "Quando você usa um amuleto e ele não quebra existe um cooldown (tempo de recarga) de 40 segundos para que outro amuleto não quebre. Quando um amuleto não quebrar você verá um icone vermelho com uma mão e um colar indicando o tempo de cooldown, se você usar outro amuleto enquanto isso ele quebrará com 100% de certeza, mas quando o tempo do cooldown acabar você poderá tentar a chance de 50% de usar um amuleto e ele não quebrar de novo.",
+            // imagens descrição
+            BlacksmithCaption1: "Com a perk 'Bruto e Pronto', que você pode usar a cada 40 segundos, você tem 50% de não quebrar o amuleto, então terá a chance de preservar 2 amuletos durante o Necronomicon.",
+            BlacksmithCaption2: "Quando um amuleto não quebrar você verá um icone vermelho com uma mão e um colar indicando o tempo de cooldown.",
+
+      /* Amanda Dicas */
+      AmandaTip1: "O acerto consecutivo da habilidade “Acurácia Conta” só conta se acertar em algum demônio.",
+      AmandaTip2: "A habilidade “Acurácia Conta” dura 5 segundos, se você atirar em algum demônio o valor irá subir consecutivamente, mas se você deixar os 5 segundos passar e não atirar em algum demônio o valor será zerado! Essa habilidade, então, é muito boa para armas que dão muitos tiros consecutivos como pistola, pistola de pregos, submetralhadora, etc.",
+      AmandaTip3: "A habilidade “Munição Para Dias” te permite ter munição ilimitada e você não precisa recarregar a arma para atirar, então ela é boa para armas que disparam muitas balas, atiram e recarregam rápido, mas dê preferência, em especial para o livro, para armas que sejam assim mas também que sejam forte como o cano duplo e pau de fogo. Já para outras armas essa habilidade não faz diferença alguma como a escopeta porque já tem muita munição e demora de atirar ou o bacamarte que demora muito pra recarregar e só dispara uma bala por vez.",
+      AmandaTip4: "Vale a pena ter Recarga Rápida com ela, porque você precisará muito da habilidade. Calculos caso queira conferir: 90s (1 minuto e 30 segundos) - 10% (9 segundos) = 81s (1 minuto e 21 segundos). 85s [P5] (1 minuto e 25 segundos) - 10% (8,5 segundos) = 76,5s (1 minuto e 16 segundos).",
+      AmandaTip5: "Amanda com uma Ruby na partida fica muito forte devido a um dos bonus da Aura dela de redução máxima do tempo de recarga. Se você tem uma Amanda P5 com a perk 'Recarga Rápida' o cooldown da sua habilidade ficará em 76,5s (1 minuto e 16 segundos), mas se tiver uma Ruby P1 na partida, um dos bonus da Aura dela é redução máxima do tempo de recarga em 35%, então 35% de 76,5s = 26,775s, logo o seu cooldown ficará em 76,5s − 26,775s = 49,725s (50s)! Isso significa usar a habilidade a cada minuto basicamente.",
+
+  },
+
+  en: {
+    
+    /* DICAS */
+    tips: "Tips",
+
+      /* Ed Dicas */
+      EdTip1: "If you use your ability and turn off the flashlight, your ability will also be turned off, so don't turn it off while you're using your power.",
+      EdTip2: "When Baal appears, everyone’s flashlights are deactivated, and they can only be turned back on a few seconds after he dies, so be careful not to use your ability if you see the enemy is about to summon Baal or if he has already been summoned. If you used your ability and Baal was summoned, you’ll have no choice but to kill him as quickly as possible so you can use your flashlight again—or, alternatively, accept that you used your ability in vain.",
+      EdTip3: "The flashlight disarms traps, not you, so don’t rush toward a trap just because you’re using your ability—you might end up triggering it! This happens a lot because you might reach the trap before the flashlight has a chance to disarm it, especially due to lag. So approach traps cautiously to disarm them, and then you can safely pass through.",
+      EdTip4: "There are three types of crossbows: the standard crossbow, which fires only one shot at a time; the repeating crossbow, which fires several shots in a row; and the explosive crossbow, which fires one explosive area-of-effect shot at a time. Ed is a master of crossbows, no matter which type.",
+      EdTip5: "If the Demon possesses you while you're using your ability, your flashlight will go out, but the ability's duration will still be counting down. So when he releases you, there might only be a few seconds left on the ability—or it might have already ended. Therefore, if you're at a high fear level, try not to use your ability.",
+      EdTip6: "One of Ed's passive abilities is to increase the flashlight's battery life by 100%, so it's unlikely to run out of power; it usually lasts until the match ends. So keep it on the whole time (but, of course, keep an eye on the battery so it doesn't run out, since sometimes some matches is so long that the time runs out).",
+      EdTip7: "You’ll only use Ed’s ability about 3 or 4 times per match, on average, and only during the early game; once you reach The Dark Ones, you won’t use it anymore because there’s nowhere to use it, so it’s not worth putting points into Quick Recharge, which reduces his ability’s cooldown by 10%. See: 110s (1 minute and 50 seconds) - 10% [11s] 99 seconds (1 minute and 39 seconds) 105s (1 minute and 45 seconds) [Prestige 5] - 10% [10.55s] = 94.5 seconds (1 minute and 34.5 seconds)",
+
+      MiaTip1: "Unlike the other Warriors, Mia doesn't have a balance bar damage build; instead, she has a pure damage build. Combined with the fact that her special abilities increase her damage the more fear she has, plus her bleed damage, this makes her the highest-damage character in the game. Therefore, if you equip her with the game's highest-damage weapon, the lumberjack axe, she'll be extremely powerful. Your focus with her, then, should be on damage!",
+
+      DavidTip1: "If you're alone in the middle of nowhere and the demon finds you, the Blue Flame is your salvation! The flame will drain all the demon's energy if it has any left and tries to kill you. You can just dodge and stall it in the flame, but if you can hit it, that’s even better, because he will lose energy faster. And even if he doesn’t enter the flame, just wait for it to burn out, he will waste time and energy, allowing you to regain stamina, reduce your fear, and buy time to figure out what to do or for your friends to arrive and help you.",
+      DavidTip2: "Be careful when using the Blue Flame, because if the demon scares you, or possesses you, the animation is cut short, the ability isn't used, but the cooldown is reset as if it had been used, so you'll have to wait a long time before you can use your ability again.",
+      DavidTip3: "Remember that your soda not only heals you, but also reduces the damage taken by all nearby teammates, and this is crucial in the game. So, learn to use Shemp's not just to heal, but also to help everyone take less damage — even if everyone is at full health; but you'll need to have plenty of sodas and know how to manage them.",
+      DavidTip4: "Use the Blue Flame as soon as the book appears, because that way you'll be able to use it one more time at the end.",
+
+      LordArthurTip1: "The sword is very difficult to handle and it's slow, so you'll need to be patient and practice a lot with it. One tip is to max out your Melee stat, which will give you a +20% melee attack speed bonus, as well as a +20% melee damage bonus, of course.",
+      LordArthurTip2: "Lord Arthur's ability not only increases melee damage but also reduces fear, so it's useful for lowering your fear level when you need to. It doesn't lower it by much, but it often helps.",
+      LordArthurTip3: "When you activate the “The Lord's Wrath” ability, if you land the finishing move and kill the demon, you’ll gain +4 seconds, and the duration is cumulative — but it only goes up to 15s or 18s [P5]. However, if you land a finishing move but don’t kill the demon, the ability’s duration will be paused during the animation—which is also very useful for ensuring you don’t lose the ability. In the objectives, you can keep performing finishers, which will give your teammates a +20%–25% [P5] increase in melee damage and a reduction in fear. In the Necronomicon, you can perform so many finishing moves that you’ll exceed the 2-minute limit without losing the ability.",
+            // imagens descrição
+            LordArthurCaption1: "You'll see whether your ability's duration is frozen or increased when you look at it on the right side of the screen.",
+
+      AshWarriorTip1: "Put your early points into his shield bar and focus on maxing it. It's crucial that your wAsh has a full shield bar (or at least not empty) to use his Shield Blast, which is a very useful ability.",
+      AshWarriorTip2: "Always finish off your enemies, because that will increase your shield bar, and you need it.",
+      AshWarriorTip3: "Always keep your shields up.",
+
+      AshSupportTip1: "Your heavy attacks restore damage as health at a rate of 20% (25% at P1), so the higher your attack, the more health you’ll recover. That’s why you should focus on high-damage weapons like axes and build a setup that also increases your damage.",
+      AshSupportTip2: "His heavy attacks restore a little health, but not that much, so always dodge if you see the demon about to hit you, and only then attack him, because the damage he deals is greater than the health you regain.",
+      AshSupportTip3: "Stay close to your team and use heavy attacks, because that will not only heal you but also heal them.",
+
+      AshHunterTip1: "Put your first points into Stamina. Focus on maxing it out. That way, you’ll have enough stamina to scavenge for pieces of the map, run from the demon, and dodge if you need to. However, if the demon is an experienced player and finds you early in the match, the best option might be to put your points into Long Range, because that way you’ll reload your weapon faster and deal more damage.",
+      AshHunterTip2: "Start the match by rushing through all the pieces of the map. The Hunter is the class with the most stamina, you can run a long way, and you also have the ability to exorcise if necessary, in case the demon finds you alone.",
+      AshHunterTip3: "Before using the exorcism ability, kill all the demons around you, because otherwise you’ll exorcise the possessed unit, and he will possess another demon nearby and keep attacking you, so hitwon’t do any good.",
+      AshHunterTip4: "It's worth having Quick Recharge with him, because you'll really need his ability. Here are the calculations if you want to check: 90s (1 minute and 30 seconds) - 10% (9 seconds) = 81s (1 minute and 21 seconds). 85s [P5] (1 minute and 25 seconds) - 10% (8.5 seconds) = 76.5s (1 minute and 16 seconds)",
+      AshHunterTip5: "You cannot exorcise possessed elite and boss units, but using the exorcism ability will drain the demon’s infernal energy, which can be very useful because it can shorten the duration of the possession or even end it altogether if the demon is low on infernal energy.",
+      AshHunterTip6: "HAsh is very strong when paired with Ruby in a match due to one of the bonuses from her Aura, which reduces the maximum cooldown time. If you have a P5 HAsh with the “Fast Recharge” perk, her ability’s cooldown will be 76.5s (1 minute and 16 seconds), but if you have a P1 Ruby in the match, one of her Aura’s bonuses is a 35% maximum cooldown reduction, so 35% of 76.5s = 26.775s, meaning your cooldown will be 76.5s − 26.775s = 49.725s (50s)! This means you can use the ability basically every minute.",
+
+      ScottyTip1: "His heavy attacks cause him to lose a little fear, as do his nearby allies, so use heavy attacks when you’re facing the first objectives to lower their fear as much as possible and avoid being possessed. The reduction in fear is very small, but it helps.",
+      ScottyTip2: "Heavy attacks deal area damage, so they're effective against demons that deploy many units, such as Eligos and Evil Ash. And it's particularly useful in the book.",
+
+      PabloTip1: "Pablo becomes invisible to the Demon during the Demonic Vision, even if he’s very scared, even if he's shoots with a ranged weapon, or even if he’s driving a car, so the Demon can’t see you on the map unless he’s facing you directly. With this advantage, you can collect all the map pieces at your leisure without him finding you.",
+      PabloTip2: "Since the demon can't see you through its Demonic Vision, there's no need to level up Fear, save that for after you've leveled up the main stats like Shield, Health, Stamina, and Melee.",
+      PabloTip3: "Although the demon can't see you, even if your fear level is high, he can still possess you, so keep your fear in check, especially if you're going to make the Dagger or the Page.",
+      PabloTip4: "Start by leveling up your shield bar so you can use your amulets, then level up stamina and health.",
+
+      /* Ruby Dicas */
+      RubyTip1: "Unlike other leaders, Ruby needs to level up her Aura to the maximum to unlock all of its bonuses. At the start of the match, Ruby only has the Stamina Regeneration bonus. When you set the Aura to level 1, you unlock the Ability Cooldown Reduction bonus. When you raise her Aura to Level 2, you unlock the Damage Reduction bonus. And when you raise her Aura to Level 3—the maximum level—you unlock the final bonus, which is Damage Increase. Therefore, focus on raising her Aura to the maximum to unlock all bonuses for everyone.",
+      RubyTip2: "By maxing out Ruby's Aura, you'll also increase the maximum number of souls she can collect, and the more souls she collects, the more her aura's effects increase. You start with a limit of 35 souls. Aura level 1 increases the soul limit from 35 to 40. Aura level 2 increases the soul limit by +10 (from 40 to 50). Aura level 3 increases the limit by +15 (from 50 to 55).",
+      RubyTip3: "As mentioned above, you need to focus on leveling up her Aura to the maximum as soon as possible. Here’s how many points you’ll need: 5 points to unlock Aura 1 (+1 to Aura). +4 to unlock Aura 2 (+1 to Aura). +5 to unlock Aura 3 (+1 to Aura). Total: 14 points in general skills + 3 points in Aura = 17 points.",
+      RubyTip4: "Ruby absorbs the souls of evil units that die within her aura, whether killed by her or by her teammates, and this enhances the effects of her aura. Therefore, the more souls you collect, the stronger she becomes. But if you use her special ability, you’ll lose the souls, which will, consequently, weaken the effects of her aura, so don’t waste the souls you’ve collected. Use her special ability only at crucial moments, such as at the Necronomicon, for example.",
+      RubyTip5: "Ruby can cancel her special ability at any time by pressing the same button used for the special ability. This will trigger the explosion and consume the number of souls you’ve collected up to the moment you canceled the ability, allowing you to control how many souls you’ll lose. However, the ability will be reset, and you’ll have to wait a long time before you can use it again.",
+      RubyTip6: "Ruby can cancel the trap animation on a chest using a glitch. Use her ability, then open the trap chest, and then cancel her ability—this will cancel the trap animation. However, you will still take trap damage.",
+          //  imagens descrição
+          RubyCaption1: "Ruby starts with the Stamina Regeneration bonus (20%, or 24% if she is P1).",
+          RubyCaption2: "When you level up Aura to level 1, you unlock the ability Cooldown Reduction bonus (25%, or 35% if it's P1).",
+          RubyCaption3: "When you level up Aura to level 2, you unlock the Damage Reduction bonus (20%, or 24% if it's P1).",
+          RubyCaption4: "When you level up Aura to level 3, you unlock the Damage Boost bonus (20%, or 24% if it's P1).",
+
+      /* Brock Dicas */
+      BrockTip1: "Brock's special ability doesn't make him invincible like Henry's ability does; it just prevents shoves and grabs, but you'll still take damage. However, it's still useful because you can use it to lift someone who's down bleeding, get into a car, revive someone, use shemps and amulets, open a crate, without being interrupted.",
+      BrockTip2: "Brock's bonuses are given to everyone. For example, if there's someone from the Williams family in the match, everyone gets the family bonus; likewise, if there's someone who isn't from the Williams family, everyone gets the non-family bonus. If you there's a leader/support/warrior/hunter, everyone will get the bonus too—not just those with that specific class.",
+      BrockTip3: "The effects of Brock's aura are 4% per Williams family member or non-family member. So the ideal team composition would be one Warrior Ash, one Hunter Ash, and, as support, either a Support Ash or Cheryl—that way, everyone gets a 16% damage reduction. Or you can choose a Warrior, a Hunter, and a Support who aren’t part of the Williams family, and you’ll get a 12% healing boost (plus a 4% damage reduction due to Brock’s presence, since he is part of the family).",
+      BrockTip4: "Brock's ability doesn't just grant immunity to shoves; it also increases the healing range and enhances the effects of his aura. 55% of 4% = 2.2%. 55% of 8% = 4.4%. 55% of 12% = 6.6%. 55% of 16% = 8.8%. This will last for 10 seconds.",
+            // imagens descrição
+            BrockCaption1: "In the image, we see a Henry with the family and non-family member bonuses, as well as the bonuses for having a Leader, a Warrior, and a Support in the match.",
+
+      /* Ferreiro Dicas */
+      BlacksmithTip1: "Scrap on the map do not respawn after being picked up.",
+      BlacksmithTip2: "The other Survivors can't see the scraps, but they can hear the noise it makes when you pick it up.",
+      BlacksmithTip3: "Focus on leveling up Metal Scrap to the maximum level as quickly as possible so you can collect the scrap needed to craft legendary weapons.",
+      BlacksmithTip4: "2 points unlock Metal Scraps Level 1 (+1 point in scrap). +2 points unlock Metal Scraps Level 2 (+1 point in scrap). +2 points unlock Metal Scraps Level 3 (+1 point in scrap). Total: 6 points in general skills + 3 points in Scrap = 9 points in total needed to put the Metal Scrap at maximum.",
+      BlacksmithTip5: "The Blacksmith starts the match able to collect up to 20 pieces of scrap. With Level 1 Metal Scrap, the limit increases to 30. With Level 2 Metal Scrap, the limit increases to 40. With Level 3 Metal Scrap, the maximum level, the limit increases to 50.",
+      BlacksmithTip6: "In the Necronomicon, don't use all your amulets at once! Use one amulet and wait for its bonus, which is a damage increase — 10% or 13% [P1] — lasting 20/22 seconds—to end before using another amulet, and repeat this until the end. This way, you'll constantly renew the damage bonus until you've finished protecting the Necronomicon. Three amulets provide 60 seconds (1 minute), so if you have six amulets, you’ll have the bonus from the start of the Necronomicon until the end. And repeat this until the end; this will keep the damage bonus active until the Necronomicon ends. Three amulets will provide 60 seconds (1 minute), so if you have six amulets, you’ll have the bonus from the start of the Necronomicon until the end.",
+      BlacksmithTip7: "When you use an amulet and it doesn't break, there is a 40-second cooldown before another amulet can't be break. When an amulet doesn’t break, you’ll see a red icon with a hand and a necklace indicating the cooldown time. If you use another amulet during this time, it will break 100% of the time, but once the cooldown ends, you’ll have a 50% chance that an amulet won’t break again when you use it.",
+            // imagens descrição
+            BlacksmithCaption1: "With the “Rough and Ready” perk, which you can use every 40 seconds, you have a 50% chance of not breaking the amulet, so you'll have the chance to preserve 2 amulets during the Necronomicon.",
+            BlacksmithCaption2: "When an amulet doesn't break, you'll see a red icon with a hand and a necklace indicating the cooldown time.",
+
+      /* Amanda Dicas */
+      AmandaTip1: "A consecutive hit with the “Accuracy Counts” ability only counts if it hits a demon.",
+      AmandaTip2: "The “Accuracy Counts” ability lasts 5 seconds. If you shoot a demon, the value will increase consecutively, but if you let the 5 seconds pass without shooting a demon, the value will reset to zero! This ability is therefore very useful for weapons that fire many consecutive shots, such as pistols, nail guns, submachine guns, etc.",
+      AmandaTip3: "The “Ammo for Days” ability gives you unlimited ammo and eliminates the need to reload your weapon to fire, so it’s good for weapons that fire a lot of bullets and reload quickly. However, especially for the book, prioritize weapons that fit this description but are also powerful, such as the double-barreled shotgun and the fire stick. For other weapons, however, this ability makes no difference at all—such as the shotgun because it already has plenty of ammo but takes a while to fire, or the blunderbuss, which takes a long time to reload and only fires one bullet at a time.",
+      AmandaTip4: "It's worth having Fast Recharge with her, because you'll really need that ability. Here are the calculations if you want to check: 90s (1 minute and 30 seconds) - 10% (9 seconds) = 81s (1 minute and 21 seconds). 85s [P5] (1 minute and 25 seconds) - 10% (8.5 seconds) = 76.5s (1 minute and 16 seconds).",
+      AmandaTip5: "Amanda is very strong in a match when paired with a Ruby, thanks to one of her Aura’s bonuses that reduces the maximum cooldown time. If you have a P5 Amanda with the “Fast Recharge” perk, her ability’s cooldown will be 76.5s (1 minute and 16 seconds), but if you have a P1 Ruby in the match, one of her Aura’s bonuses is a 35% maximum cooldown reduction, so 35% of 76.5s = 26.775s, meaning her cooldown will be 76.5s − 26.775s = 49.725s (50s)! This means she can use her ability basically every minute.",
+
+  },
+
+  es: {
+    
+    /* */
+
+  }
+
+};

@@ -82,13 +82,6 @@ const bonuses = [
     lang: "bonus11"
 
     },
-
-    {
-
-    image:"../images/HUD/HUD_Skills/SC033_Token.png",
-    lang: "bonus12"
-
-    },
     
 
     {
@@ -116,23 +109,6 @@ const bonuses = [
     team: false, // individual
     lang: "bonus42"
     },
-
-    
-
-    {
-
-    image:"../images/HUD/HUD_Skills/u1095_u0001_HUD_SC034_01_2d.png",
-    lang: "bonus45"
-
-    },
-
-    {
-
-    image:"../images/HUD/HUD_Skills/u1096_u0001_HUD_SC035_01_2d.png",
-    lang: "bonus46"
-
-    },
-
     
 
     {

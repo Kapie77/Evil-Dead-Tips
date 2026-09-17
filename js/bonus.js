@@ -24,6 +24,16 @@ const bonuses = [
 
     {
 
+    image:"../images/HUD/HUD_Skills/SC033_Token.png",
+    name: "bonusbuild6",
+    character: "HAsh | Ed | Kelly | Amanda",
+    team: false, // individual
+    lang: "bonus12"
+
+    },
+
+    {
+
     image:"../images/HUD/HUD_Skills/SC045_Token.png",
     name: "bonusbuild1",
     character: "HAsh | Ed | Kelly | Amanda",
@@ -42,7 +52,7 @@ const bonuses = [
 
     },
 
-    {
+    { 
 
     image:"../images/HUD/HUD_Skills/SC047_Token.png",
     name: "bonusbuild3",
@@ -314,6 +324,26 @@ const bonuses = [
     character: "Ed",
     team: false, // individual
     lang: "bonus44"
+
+    },
+
+    {
+
+    image:"../images/HUD/HUD_Skills/u1095_u0001_HUD_SC034_01_2d.png",
+    name: "bonusbuild5",
+    character: "wash | Scotty | Henry | Mia",
+    team: false, // individual
+    lang: "bonus45"
+
+    },
+
+    {
+
+    image:"../images/HUD/HUD_Skills/u1096_u0001_HUD_SC035_01_2d.png",
+    name: "bonusbuild4",
+    character: "wash | Scotty | Henry | Mia",
+    team: false, // individual
+    lang: "bonus46"
 
     },
 

@@ -28,9 +28,9 @@ const menuTranslations = {
     demonWitch: "Bruxa",
     demonEvilAsh: "Ash Maligno",
 
-    meniGlossary: "Glossário",
+    menuGlossary: "Glossário",
 
-    menuSourceCode: "Cópdigo Fonte",
+    menuSourceCode: "Código Fonte",
   },
 
   en: {
@@ -61,7 +61,7 @@ const menuTranslations = {
     demonWitch: "Witch",
     demonEvilAsh: "Evil Ash",
 
-    meniGlossary: "Glossary",
+    menuGlossary: "Glossary",
 
     menuSourceCode: "Source Code",
   },
