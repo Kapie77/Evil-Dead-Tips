@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Eligos</title>
+
+  <link rel="stylesheet" href="../../css/demonpage.css">
+  <link rel="stylesheet" href="../../css/menu.css">
+
+  <link rel="icon" href="../../images/favicon.png">
+</head>
+
+<body class="puppeteer">
+
+<!------ MENU ------->
+  <nav class="site-menu">
+
+    <div class="menu-inner">
+
+      <a href="../../index.html" class="menu-logo">
+        <img src="../../images/logo.png" alt="Evil Dead">
+      </a>
+
+      <div class="menu-links">
+
+        <a href="../../index.html" class="menu-link">
+          <span data-lang="menuHome">Início</span>
+        </a>
+
+
+        <!-- SOBREVIVENTES -->
+
+        <div class="menu-dropdown">
+
+          <button class="menu-link menu-dropdown-button" type="button">
+
+            <span data-lang="menuSurvivors">
+              Sobreviventes
+            </span>
+
+            <span class="menu-arrow">▾</span>
+
+          </button>
+
+          <div class="menu-submenu">
+
+            <div class="menu-submenu-item">
+
+              <a href="../../pages/classes.html" class="submenu-parent">
+
+                <span data-lang="menuClasses">
+                  Classes
+                </span>
+
+                <span class="submenu-arrow">▸</span>
+
+              </a>
+
+              <div class="menu-submenu-nested">
+
+                <a
+                  href="../../pages/classes/leader.html"
+                  data-lang="menuLeader">
+                  Líder
+                </a>
+
+                <a
+                  href="../../pages/classes/warrior.html"
+                  data-lang="menuWarrior">
+                  Guerreiro
+                </a>
+
+                <a
+                  href="../../pages/classes/hunter.html"
+                  data-lang="menuHunter">
+                  Caçador
+                </a>
+
+                <a
+                  href="../../pages/classes/support.html"
+                  data-lang="menuSupport">
+                  Suporte
+                </a>
+
+              </div>
+
+            </div>
+
+            <a
+              href="../../pages/characters.html"
+              data-lang="menuCharacters">
+              Personagens
+            </a>
+
+            <a
+              href="../../pages/weapons.html"
+              data-lang="menuWeapons">
+              Armas
+            </a>
+
+            <a href="#" data-lang="menuBuild">
+              Build
+            </a>
+
+            <a href="#" data-lang="menuGlitches">
+              Glitches
+            </a>
+
+            <a
+              href="../../pages/hunter-spots.html"
+              data-lang="menuHunterSpots">
+              Spots para Caçadores
+            </a>
+
+            <a
+              href="../../pages/crates.html"
+              data-lang="menuCrates">
+              Caixas
+            </a>
+
+            <a
+              href="../../pages/bonus.html"
+              data-lang="menuBonus">
+              Bonus
+            </a>
+
+            <a
+              href="../../pages/debuff.html"
+              data-lang="menuDebuff">
+              Debuff
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- DEMÔNIOS -->
+
+        <div class="menu-dropdown">
+
+          <button
+            class="menu-link menu-dropdown-button"
+            type="button">
+
+            <span data-lang="menuDemons">
+              Demônios
+            </span>
+
+            <span class="menu-arrow">▾</span>
+
+          </button>
+
+          <div class="menu-submenu">
+
+            <div class="menu-submenu-item">
+
+              <a
+                href="../../pages/demons.html"
+                class="submenu-parent">
+
+                <span data-lang="menuAllDemons">
+                  Demônios
+                </span>
+
+                <span class="submenu-arrow">▸</span>
+
+              </a>
+
+              <div class="menu-submenu-nested">
+
+                <a href="../../pages/characters/henrietta.html">
+                  Henrietta
+                </a>
+
+                <a
+                  href="../../pages/characters/evil-ash.html"
+                  data-lang="demonEvilAsh">
+                  Evil Ash
+                </a>
+
+                <a
+                  href="../../pages/characters/eligos.html">
+                  Eligos
+                </a>
+
+                <a
+                  href="../../pages/characters/witch.html"
+                  data-lang="demonWitch">
+                  Witch
+                </a>
+
+                <a href="../../pages/characters/baal.html">
+                  Baal
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- GLOSSÁRIO -->
+
+        <a
+          href="../../pages/glossary.html"
+          class="menu-link">
+
+          <span data-lang="menuGlossary">
+            Glossary
+          </span>
+
+        </a>
+
+
+        <!-- SOCIAL -->
+
+        <div class="menu-dropdown">
+
+          <button
+            class="menu-link menu-dropdown-button"
+            type="button">
+
+            <span data-lang="menuSocial">
+              Social Media
+            </span>
+
+            <span class="menu-arrow">▾</span>
+
+          </button>
+
+          <div class="menu-submenu">
+
+            <a
+              href="https://www.reddit.com/r/EvilDeadTheGame/"
+              data-lang="menuReddit">
+              Reddit
+            </a>
+
+            <a
+              href="https://www.evildeadthegame.com/"
+              data-lang="menuWebsite">
+              Website
+            </a>
+
+            <a
+              href="https://www.youtube.com/@EvilDeadTheGame"
+              data-lang="menuYoutube">
+              Youtube
+            </a>
+
+            <a
+              href="https://x.com/evildeadthegame"
+              data-lang="menuTwitter">
+              Twitter
+            </a>
+
+            <a
+              href="https://discord.gg/evildeadthegame"
+              data-lang="menuDiscord">
+              Discord
+            </a>
+
+            <a
+              href="https://discord.gg/HHJx4rS5Vj"
+              data-lang="menuFanDiscord">
+              Evil Dead The Gathering
+            </a>
+
+            <a
+              href="https://discord.gg/sjUez8dZF7"
+              data-lang="menuFanDiscord2">
+              Evil Dead The Game Modding
+            </a>
+
+            <a
+              href="https://www.nexusmods.com/games/evildeadthegame"
+              data-lang="menuNexusModEvilDead">
+              Nexus Mod Evil Dead
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- SOURCE CODE -->
+
+        <a
+          href="https://github.com/Kapie77/Evil-Dead-Tips"
+          class="menu-link">
+
+          <span data-lang="menuSourceCode">
+            Source code
+          </span>
+
+        </a>
+
+      </div>
+
+
+      <!-- IDIOMA -->
+
+      <div class="menu-language">
+
+        <button
+          class="language-current"
+          type="button">
+
+          <img
+            src="../../images/flags/us.png"
+            alt="">
+
+          <span>ENG</span>
+
+          <span class="language-arrow">
+            ▼
+          </span>
+
+        </button>
+
+        <div class="language-options">
+
+          <button
+            type="button"
+            onclick="setLang('en')">
+
+            <img
+              src="../../images/flags/us.png"
+              alt="">
+
+            <span>ENG</span>
+
+          </button>
+
+          <button
+            type="button"
+            onclick="setLang('es')">
+
+            <img
+              src="../../images/flags/es.jpg"
+              alt="">
+
+            <span>ESP</span>
+
+          </button>
+
+          <button
+            type="button"
+            onclick="setLang('pt')">
+
+            <img
+              src="../../images/flags/br.jpg"
+              alt="">
+
+            <span>PT-BR</span>
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- MOBILE -->
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Menu">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </nav>
+<!------- FIM DO MENU --------->
+
+
+  <main class="demon-page">
+
+
+    <!-- HERO -->
+
+    <header class="demon-hero">
+
+      <div
+        class="demon-hero-image"
+        style="background-image: url('../../images/demons/eligos.jpg');">
+      </div>
+
+      <div class="demon-hero-overlay"></div>
+
+      <div class="demon-hero-content">
+
+        <div class="demon-hero-main">
+
+          <span class="demon-label" data-lang="PUPPETEER">PUPPETEER</span>
+
+          <h1>Eligos</h1>
+
+          <p
+            class="demon-description"
+            data-lang="EligosBio">
+
+            Eligos é um demônio focado em controle, dano elétrico
+            e pressão constante. Ele se destaca ao possuir unidades
+            e atacar rapidamente, dificultando a reação dos
+            sobreviventes. Sua mobilidade e imprevisibilidade fazem
+            dele um dos demônios mais perigosos em mãos experientes.
+
+          </p>
+
+        </div>
+
+
+        <!-- ATRIBUTOS -->
+
+        <div class="demon-stats">
+
+          <h2 data-lang="stats">
+            Atributos
+          </h2>
+
+
+          <div class="stat">
+
+            <div class="stat-header">
+              <span data-lang="defense">
+                Pressão
+              </span>
+            </div>
+
+            <div class="bars">
+
+              <div class="bar filled"></div>
+              <div class="bar filled"></div>
+              <div class="bar filled"></div>
+              <div class="bar filled"></div>
+              <div class="bar"></div>
+
+            </div>
+
+          </div>
+
+
+          <div class="stat">
+
+            <div class="stat-header">
+              <span data-lang="damage">
+                Dano
+              </span>
+            </div>
+
+            <div class="bars">
+
+              <div class="bar filled"></div>
+              <div class="bar filled"></div>
+              <div class="bar filled"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+
+            </div>
+
+          </div>
+
+
+          <div class="stat">
+
+            <div class="stat-header">
+              <span data-lang="speed">
+                Controle
+              </span>
+            </div>
+
+            <div class="bars">
+
+              <div class="bar filled"></div>
+              <div class="bar filled"></div>
+              <div class="bar filled"></div>
+              <div class="bar filled"></div>
+              <div class="bar filled"></div>
+
+            </div>
+
+          </div>
+
+
+          <div class="stat">
+
+            <div class="stat-header">
+              <span data-lang="abilities">
+                Dificuldade
+              </span>
+            </div>
+
+            <div class="bars">
+
+              <div class="bar filled"></div>
+              <div class="bar filled"></div>
+              <div class="bar filled"></div>
+              <div class="bar filled"></div>
+              <div class="bar"></div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <!-- HABILIDADES -->
+
+    <section class="demon-section">
+
+      <div class="section-title">
+
+        <span></span>
+
+        <h2 data-lang="abilities">
+          HABILIDADES
+        </h2>
+
+        <span></span>
+
+      </div>
+
+
+      <p
+        class="section-description"
+        data-lang="EligosAbility">
+
+        Units you possess have more health, deal more damage,
+        and their attacks increase fear in their targets.
+        Additionally, possessed evil units inflict bleeding damage.
+
+      </p>
+
+
+      <div class="abilities-grid">
+
+
+        <article class="ability-card">
+
+          <span class="ability-number">
+            01
+          </span>
+
+          <h3 data-lang="EligosAb1">
+            Possessão Rápida
+          </h3>
+
+          <p data-lang="EligosAbInfo1">
+            Permite controlar unidades com maior eficiência
+            e velocidade.
+          </p>
+
+        </article>
+
+
+        <article class="ability-card">
+
+          <span class="ability-number">
+            02
+          </span>
+
+          <h3 data-lang="EligosAb2">
+            Dano Elétrico
+          </h3>
+
+          <p data-lang="EligosAbInfo2">
+            Seus ataques causam dano adicional em área.
+          </p>
+
+        </article>
+
+
+        <article class="ability-card">
+
+          <span class="ability-number">
+            03
+          </span>
+
+          <h3 data-lang="EligosAb3">
+            Teleportes
+          </h3>
+
+          <p data-lang="EligosAbInfo3">
+            Alta mobilidade para confundir sobreviventes.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- PONTOS FORTES / FRACOS -->
+
+    <section class="demon-section">
+
+      <div class="characteristics-grid">
+
+
+        <!-- PONTOS FORTES -->
+
+        <article class="info-card strengths">
+
+          <div class="info-card-icon">
+            +
+          </div>
+
+          <h2 data-lang="strengths">
+            Pontos Fortes
+          </h2>
+
+          <ul>
+
+            <li>
+              Alta pressão constante
+            </li>
+
+            <li>
+              Difícil de prever
+            </li>
+
+            <li>
+              Ótimo controle de unidades
+            </li>
+
+          </ul>
+
+        </article>
+
+
+        <!-- PONTOS FRACOS -->
+
+        <article class="info-card weaknesses">
+
+          <div class="info-card-icon">
+            −
+          </div>
+
+          <h2 data-lang="weaknesses">
+            Pontos Fracos
+          </h2>
+
+          <ul>
+
+            <li>
+              Dependente de habilidade do jogador
+            </li>
+
+            <li>
+              Frágil sem energia
+            </li>
+
+            <li>
+              Menos eficaz contra equipes organizadas
+            </li>
+
+          </ul>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- DICAS -->
+
+    <section class="demon-section demon-tips">
+
+      <div class="section-title">
+
+        <span></span>
+
+        <h2 data-lang="tips">
+          DICAS
+        </h2>
+
+        <span></span>
+
+      </div>
+
+
+      <div class="tips-list">
+
+
+        <article class="tip-card">
+
+          <span class="tip-number">
+            01
+          </span>
+
+          <p>
+            Use possessão com timing, não desperdice energia.
+          </p>
+
+        </article>
+
+
+        <article class="tip-card">
+
+          <span class="tip-number">
+            02
+          </span>
+
+          <p>
+            Pressione cedo para atrasar o loot dos sobreviventes.
+          </p>
+
+        </article>
+
+
+        <article class="tip-card">
+
+          <span class="tip-number">
+            03
+          </span>
+
+          <p>
+            Use sua mobilidade para atacar de surpresa.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+<!-- =========================
+        SCRIPTS
+========================== -->
+<script src="../../js/script.js"></script>
+<script src="../../js/translations/menu.js"></script>
+<script src="../../js/translations/demons.js"></script>
+<script src="../../js/lang.js"></script>
+<script src="../../js/menu.js"></script>
+
+</body>
+</html>
