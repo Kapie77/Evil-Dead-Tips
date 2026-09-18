@@ -28,6 +28,7 @@ const glossaryTranslations = {
         glossary_p3: "Prestige 3 (Prestígio 3)",
         glossary_p4: "Prestige 4 (Prestígio 4)",
         glossary_p5: "Prestige 5 (Prestígio 5)",
+        glossary_lego: "Lego (ou Leggo) é um termo informal/gíria da comunidade pra se referir a arma lendária (Legendary rarity).",
 
     },
 
@@ -60,6 +61,7 @@ const glossaryTranslations = {
         glossary_p3: "Prestige 3",
         glossary_p4: "Prestige 4",
         glossary_p5: "Prestige 5",
+        glossary_lego: "Lego (or Leggo) is an informal term or slang used by the community to refer to a legendary weapon (Legendary rarity).",
 
     },
 

@@ -41,7 +41,7 @@ const glossaryTerms = [
     },
 
     {
-        term: "Proxy portal",
+        term: "Proxy",
         definition: "glossary_proxy_portal"
     },
 
@@ -118,6 +118,11 @@ const glossaryTerms = [
     {
         term: "P5",
         definition: "glossary_p5"
+    },
+
+    {
+        term: "Lego",
+        definition: "glossary_lego"
     }
 
 ];

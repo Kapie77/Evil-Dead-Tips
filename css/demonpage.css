@@ -1,246 +1,756 @@
-/* BASE */
+/* ========================================
+   RESET
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   BODY
+======================================== */
+
 body {
-  background: url('../images/background.png') no-repeat center/cover;
-  color: white;
+  min-height: 100vh;
+
+  background:
+    url("../images/background.png")
+    no-repeat
+    center / cover;
+
+  background-attachment: fixed;
+
+  color: #fff;
+
   font-family: Arial, sans-serif;
 }
 
-/* CONTAINER */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+
+/* ========================================
+   PAGE
+======================================== */
+
+.demon-page {
+  position: relative;
+
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 20px 20px 70px;
 }
 
-/* HERO */
-.char-hero {
+
+.demon-section {
+  margin-bottom: 70px;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.demon-hero {
+  position: relative;
+
+  min-height: 520px;
+
   display: flex;
-  gap: 40px;
-  background: rgba(0,0,0,0.6);
-  padding: 30px;
+  align-items: flex-end;
+
+  overflow: hidden;
+
   border-radius: 10px;
+
+  background: #080808;
+
+  border:
+    1px solid
+    rgba(102, 204, 255, 0.25);
+
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* IMAGE */
-.hero-image {
-  position: fixed;
-  top: 20px;
-  left: 20px;
+
+.demon-hero-image {
+  position: absolute;
+
+  inset: 0;
+
+  background-size: cover;
+  background-position: center;
+
+  transform: scale(1.02);
 }
 
-.hero-image img {
-  width: 120px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #66ccff;
+
+.demon-hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 0.65) 50%,
+      rgba(0, 0, 0, 0.25)
+    ),
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.98),
+      transparent 65%
+    );
 }
 
-/* ATTRIBUTES */
+
+.demon-hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    330px;
+
+  gap: 50px;
+
+  padding: 50px;
+}
+
+
+.demon-hero-main {
+  align-self: end;
+
+  max-width: 700px;
+}
+
+
+.demon-label {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  padding: 5px 12px;
+
+  border:
+    1px solid
+    rgba(102, 204, 255, 0.5);
+
+  color: #66ccff;
+
+  font-size: 0.7rem;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+}
+
+
+.demon-hero h1 {
+  color: #66ccff;
+
+  font-size: clamp(3rem, 7vw, 5.5rem);
+
+  letter-spacing: 4px;
+
+  text-shadow:
+    0 0 10px rgba(102, 204, 255, 0.8),
+    0 0 30px rgba(102, 204, 255, 0.35);
+}
+
+
+.demon-description {
+  max-width: 680px;
+
+  margin-top: 18px;
+
+  color:
+    rgba(255, 255, 255, 0.75);
+
+  font-size: 0.95rem;
+
+  line-height: 1.75;
+}
+
+
+/* ========================================
+   ATTRIBUTES
+======================================== */
+
+.demon-stats {
+  align-self: end;
+
+  padding: 25px;
+
+  background:
+    rgba(0, 0, 0, 0.65);
+
+  border:
+    1px solid
+    rgba(102, 204, 255, 0.25);
+
+  border-radius: 8px;
+
+  backdrop-filter: blur(8px);
+}
+
+
+.demon-stats h2 {
+  margin-bottom: 25px;
+
+  color: #66ccff;
+
+  font-size: 1.1rem;
+
+  letter-spacing: 2px;
+}
+
+
+.stat {
+  margin-bottom: 20px;
+}
+
+
+.stat:last-child {
+  margin-bottom: 0;
+}
+
+
+.stat-header {
+  margin-bottom: 10px;
+
+  color:
+    rgba(255, 255, 255, 0.75);
+
+  font-size: 0.85rem;
+}
+
+
 .bars {
   display: flex;
-  gap: 5px;
+
+  gap: 8px;
+
+  padding-left: 5px;
 }
 
+
 .bar {
-  width: 12px;
-  height: 12px;
-  background: rgba(255,255,255,0.2);
+  width: 13px;
+  height: 13px;
+
+  background:
+    rgba(255, 255, 255, 0.15);
+
   transform: rotate(45deg);
+
+  border-radius: 2px;
 }
+
 
 .bar.filled {
   background: #66ccff;
+
+  box-shadow:
+    0 0 8px rgba(102, 204, 255, 0.5);
 }
 
-/* BOXES */
-.box {
-  background: rgba(0,0,0,0.6);
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-}
 
-/* ==================
-    PONTOS FORTES
-=================== */
-.strengths-box {
-  background: rgba(0, 50, 2, 0.6);
-  border: 1px solid rgba(77, 250, 25, 0.3);
+/* ========================================
+   SECTION TITLE
+======================================== */
 
-  padding: 20px;
-  border-radius: 10px;
-
-  backdrop-filter: blur(8px);
-  position: relative;
-  margin-top: 20px;
-}
-
-/* borda lateral */
-.strengths-box::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 4px;
-  background: #2aaf01;
-}
-
-/* título */
-.strengths-box h2 {
-  color: #6bff4d;
-  margin-bottom: 15px;
-}
-
-/* ==================
-PONTOS FRACOS
-=================== */
-.weakness-box {
-  background: rgba(50,0,0,0.6);
-  border: 1px solid rgba(255,0,0,0.3);
-
-  padding: 20px;
-  border-radius: 10px;
-
-  backdrop-filter: blur(8px);
-  position: relative;
-}
-
-/* borda lateral */
-.weakness-box::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 4px;
-  background: #ff3333;
-}
-
-/* título */
-.weakness-box h2 {
-  color: #ff4d4d;
-  margin-bottom: 15px;
-}
-
-/* ==================
-    HABILIDADES
-====================*/
-.abilities-box {
-  margin-top: 20px;
-  border-left: 4px solid #66ccff;
-  padding: 20px;
-  background: rgba(0,0,0,0.6);
-}
-
-/* ===================
-    DICAS
-============== */
-.tips-box {
-  background: rgba(0,30,50,0.6);
-  border: 1px solid rgba(0,200,255,0.3);
-
-  padding: 20px;
-  border-radius: 10px;
-
-  backdrop-filter: blur(8px);
-  position: relative;
-
-  counter-reset: tip;
-}
-
-/* borda lateral */
-.tips-box::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 4px;
-  background: #00ccff;
-}
-
-/* título */
-.tips-box h2 {
-  color: #00ccff;
-  margin-bottom: 15px;
-}
-
-/* Dica invidivual */
-.tip {
-  counter-increment: tip;
-
+.section-title {
   display: flex;
-  align-items: center;
-  gap: 10px;
 
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(0,200,255,0.2);
+  align-items: center;
+
+  gap: 20px;
+
+  margin-bottom: 30px;
+}
+
+
+.section-title span {
+  flex: 1;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      rgba(102, 204, 255, 0.45)
+    );
+}
+
+
+.section-title span:last-child {
+  background:
+    linear-gradient(
+      to left,
+      transparent,
+      rgba(102, 204, 255, 0.45)
+    );
+}
+
+
+.section-title h2 {
+  color: #66ccff;
+
+  font-size: 1.5rem;
+
+  letter-spacing: 3px;
+
+  white-space: nowrap;
+
+  text-shadow:
+    0 0 10px
+    rgba(102, 204, 255, 0.3);
+}
+
+
+.section-description {
+  max-width: 850px;
+
+  margin:
+    -10px auto
+    30px;
+
+  text-align: center;
+
+  color:
+    rgba(255, 255, 255, 0.65);
+
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   HABILIDADES
+======================================== */
+
+.abilities-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+
+.ability-card {
+  position: relative;
+
+  min-height: 190px;
+
+  padding: 25px;
+
+  background:
+    rgba(0, 0, 0, 0.65);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.1);
 
   border-radius: 8px;
-  padding: 12px 14px;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.ability-card:hover {
+  transform: translateY(-5px);
+
+  background:
+    rgba(0, 0, 0, 0.8);
+
+  border-color:
+    rgba(102, 204, 255, 0.5);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.35),
+    0 0 15px rgba(102, 204, 255, 0.1);
+}
+
+
+.ability-number {
+  display: block;
+
+  margin-bottom: 15px;
+
+  color:
+    rgba(102, 204, 255, 0.6);
+
+  font-size: 0.75rem;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+
+.ability-card h3 {
   margin-bottom: 10px;
 
-  transition: 0.2s;
+  color: #66ccff;
+
+  font-size: 1.1rem;
 }
 
-.tip:hover {
-  transform: translateY(-3px);
-  background: rgba(0,200,255,0.08);
-  box-shadow: 0 0 10px rgba(0,200,255,0.2);
+
+.ability-card p {
+  color:
+    rgba(255, 255, 255, 0.65);
+
+  font-size: 0.88rem;
+
+  line-height: 1.6;
 }
 
-/* hover número */
-.tip-number::before {
-  content: counter(tip);
+
+/* ========================================
+   PONTOS FORTES / FRACOS
+======================================== */
+
+.characteristics-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 25px;
 }
 
-.tip-number {
-  width: 24px;
-  height: 24px;
+
+.info-card {
+  position: relative;
+
+  padding: 30px;
+
+  background:
+    rgba(0, 0, 0, 0.65);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.info-card:hover {
+  transform: translateY(-4px);
+}
+
+
+.info-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+}
+
+
+.info-card.strengths::before {
+  background: #00cc66;
+}
+
+
+.info-card.weaknesses::before {
+  background: #ff4444;
+}
+
+
+.info-card-icon {
+  width: 38px;
+  height: 38px;
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 
-  background: #00ccff;
-  color: black;
+  margin-bottom: 15px;
+
+  border-radius: 50%;
+
+  font-size: 1.3rem;
 
   font-weight: bold;
-  font-size: 0.8rem;
+}
 
-  border-radius: 5px;
 
-  box-shadow: 0 0 6px rgba(0,200,255,0.6);
+.strengths .info-card-icon {
+  background:
+    rgba(0, 204, 102, 0.12);
 
+  color: #00cc66;
+}
+
+
+.weaknesses .info-card-icon {
+  background:
+    rgba(255, 68, 68, 0.12);
+
+  color: #ff4444;
+}
+
+
+.info-card h2 {
+  margin-bottom: 18px;
+
+  font-size: 1.3rem;
+}
+
+
+.info-card ul {
+  padding-left: 20px;
+
+  color:
+    rgba(255, 255, 255, 0.7);
+
+  line-height: 1.8;
+}
+
+
+.info-card li {
+  margin-bottom: 8px;
+}
+
+
+/* ========================================
+   DICAS
+======================================== */
+
+.tips-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+.tip-card {
+  position: relative;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 20px;
+
+  width: 100%;
+
+  padding: 22px 25px;
+
+  background:
+    rgba(0, 0, 0, 0.65);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+
+  border-left:
+    3px solid
+    rgba(102, 204, 255, 0.7);
+
+  border-radius: 8px;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.tip-card:hover {
+  transform: translateX(5px);
+
+  background:
+    rgba(0, 0, 0, 0.8);
+
+  border-color:
+    rgba(102, 204, 255, 0.4);
+
+  border-left-color: #66ccff;
+}
+
+
+.tip-number {
   flex-shrink: 0;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background:
+    rgba(102, 204, 255, 0.12);
+
+  border:
+    1px solid
+    rgba(102, 204, 255, 0.4);
+
+  border-radius: 6px;
+
+  color: #66ccff;
+
+  font-size: 0.75rem;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
 }
 
-/* textos */
-.tip p {
-  margin: 0;
-  line-height: 1.4;
+
+.tip-card p {
+  flex: 1;
+
+  color:
+    rgba(255, 255, 255, 0.72);
+
   font-size: 0.95rem;
+
+  line-height: 1.7;
 }
 
-/* ==================================
-DICAS E PONTOS FRACOS/FORTES HOVER
-====================================*/
-.strengths-box,
-.weakness-box,
-.tips-box {
-  padding: 20px 20px 20px 35px; /* Topo, direita, baixo, esquerda */
-}
-.strengths-box:hover, 
-.weakness-box:hover,
-.tips-box:hover {
-  transform: scale(1.01);
-  transition: 0.2s;
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+  .demon-hero-content {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .demon-stats {
+    max-width: 450px;
+  }
+
+  .abilities-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
 }
 
-.strengths-box, 
-.weakness-box,
-.tips-box ul li {
-  font-size: 1rem;       /* aumenta um pouco */
-  line-height: 1.6;      /* deixa mais confortável de ler */
-  margin-bottom: 10px;   /* espaço entre as dicas */
+
+@media (max-width: 700px) {
+
+  .demon-page {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .demon-hero {
+    min-height: 600px;
+  }
+
+  .demon-hero-content {
+    padding: 30px;
+  }
+
+  .demon-hero h1 {
+    letter-spacing: 3px;
+  }
+
+  .characteristics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .abilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    gap: 10px;
+  }
+
+  .section-title h2 {
+    font-size: 1.2rem;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .demon-hero {
+    min-height: 650px;
+  }
+
+  .demon-hero-content {
+    padding: 25px;
+  }
+
+  .demon-stats {
+    padding: 20px;
+  }
+
+  .tip-card {
+    gap: 15px;
+
+    padding: 20px;
+  }
+
+  .tip-number {
+    width: 34px;
+    height: 34px;
+  }
+
+  .tip-card p {
+    font-size: 0.9rem;
+  }
+
+}
+
+
+@media (max-width: 420px) {
+
+  .section-title span {
+    display: none;
+  }
+
+  .section-title {
+    justify-content: center;
+  }
+
+  .section-title h2 {
+    text-align: center;
+  }
+
 }

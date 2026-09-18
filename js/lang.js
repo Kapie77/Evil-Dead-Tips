@@ -1280,6 +1280,13 @@ if (typeof classesTranslations !== "undefined") {
     Object.assign(translations.en, classesTranslations.en);
     Object.assign(translations.es, classesTranslations.es);
 }
+
+// Traduções dos demônios //
+if (typeof demonsTranslations !== "undefined") {
+    Object.assign(translations.pt, demonsTranslations.pt);
+    Object.assign(translations.en, demonsTranslations.en);
+    Object.assign(translations.es, demonsTranslations.es);
+}
 // --------------------------------------------------------- //
 
 function applyLang() {

@@ -1,149 +1,548 @@
-/* RESET */
+/* ========================================
+   RESET
+======================================== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+/* ========================================
+   BODY
+======================================== */
+
+body {
+  min-height: 100vh;
+
+  background:
+    url("../images/background.png")
+    no-repeat
+    center / cover;
+
+  background-attachment: fixed;
+
+  color: #fff;
+
   font-family: Arial, sans-serif;
 }
 
-/* BODY */
-body {
-  min-height: 100vh;
-  background: url('../images/background.png') no-repeat center/cover;
-  color: white;
+
+/* ========================================
+   HERO
+======================================== */
+
+.demon-hero {
+  position: relative;
+
+  min-height: 300px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  padding: 50px 20px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.95)
+    );
 }
 
-/* HEADER */
-header {
+
+.demon-hero-content {
+  width: 100%;
+  max-width: 1100px;
+
   text-align: center;
-  padding: 40px 0;
-  z-index: 2;
-  position: relative;
 }
 
-header h1 {
-  font-size: 3rem;
+
+.demon-label {
+  display: inline-block;
+
+  margin-bottom: 12px;
+  padding: 5px 12px;
+
+  border: 1px solid rgba(255, 51, 51, 0.5);
+
   color: #ff3333;
-  text-shadow: 0 0 15px #ff3333;
+
+  font-size: 0.7rem;
+  font-weight: bold;
+
+  letter-spacing: 3px;
 }
 
-/* CONTAINER */
-.container {
-  max-width: 900px;
-  margin: auto;
+
+.demon-hero h1 {
+  color: #ff3333;
+
+  font-size: clamp(3rem, 8vw, 5.5rem);
+
+  letter-spacing: 5px;
+
+  text-shadow:
+    0 0 10px rgba(255, 51, 51, 0.8),
+    0 0 30px rgba(255, 51, 51, 0.35);
+}
+
+
+.demon-hero p {
+  margin-top: 10px;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 1rem;
+
+  letter-spacing: 1px;
+}
+
+
+/* ========================================
+   PAGE
+======================================== */
+
+.demon-page {
   position: relative;
-  z-index: 2;
+
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 20px 20px 70px;
 }
 
-/* GRID DE CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+.demon-section {
+  margin-bottom: 70px;
+}
+
+
+/* ========================================
+   SECTION TITLE
+======================================== */
+
+.section-title {
+  display: flex;
+  align-items: center;
+
   gap: 20px;
-  margin-bottom: 40px;
+
+  margin-bottom: 30px;
 }
 
-/* CARD */
-.card {
+
+.section-title span {
+  flex: 1;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 51, 51, 0.45)
+    );
+}
+
+
+.section-title span:last-child {
+  background:
+    linear-gradient(
+      to left,
+      transparent,
+      rgba(255, 51, 51, 0.45)
+    );
+}
+
+
+.section-title h2 {
+  color: #ff3333;
+
+  font-size: 1.5rem;
+
+  letter-spacing: 3px;
+
+  white-space: nowrap;
+
+  text-shadow:
+    0 0 10px rgba(255, 51, 51, 0.3);
+}
+
+
+/* ========================================
+   DEMON ROSTER
+======================================== */
+
+.demon-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(210px, 1fr)
+    );
+
+  gap: 20px;
+}
+
+
+.demon-card {
   position: relative;
+
   height: 280px;
+
   overflow: hidden;
 
-  border-radius: 12px;
+  border-radius: 8px;
+
   text-decoration: none;
-  color: white;
+
+  color: #fff;
+
+  background: #111;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
-/* imagem */
-.card-img {
+
+.demon-card:hover {
+  transform: translateY(-6px);
+}
+
+
+/* ========================================
+   CARD IMAGE
+======================================== */
+
+.demon-card-image {
   position: absolute;
+
   inset: 0;
+
   background-size: cover;
   background-position: center;
-  transition: 0.3s;
+
+  transition:
+    transform 0.4s ease;
 }
 
-/* sombra */
-.card::after {
-  content: "";
+
+.demon-card:hover .demon-card-image {
+  transform: scale(1.06);
+}
+
+
+/* ========================================
+   CARD OVERLAY
+======================================== */
+
+.demon-card-overlay {
   position: absolute;
+
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2));
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 0.2) 70%,
+      transparent
+    );
 }
 
-/* texto */
-.card-info {
+
+/* ========================================
+   CARD INFO
+======================================== */
+
+.demon-card-info {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 22px;
+
   z-index: 2;
 }
 
-/* hover */
-.card:hover .card-img {
-  transform: scale(1.05);
+
+.demon-card-type {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 0.65rem;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
 }
 
-/* CORES DOS DEMÔNIOS */
-.warlord { box-shadow: 0 0 15px #ff3333; }
-.necromancer { box-shadow: 0 0 15px #cccccc; }
-.puppeteer { box-shadow: 0 0 15px #66ccff; }
-.plague { box-shadow: 0 0 15px #66ff66; }
-.schemer { box-shadow: 0 0 15px #cc66ff; }
 
-/* =================
+.demon-card-info h3 {
+  margin-top: 6px;
+
+  font-size: 1.45rem;
+
+  text-shadow:
+    0 2px 5px #000;
+}
+
+
+.demon-card-info p {
+  margin-top: 5px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 0.8rem;
+}
+
+
+/* ========================================
+   DEMON COLORS
+======================================== */
+
+.warlord {
+  border-color: rgba(255, 51, 51, 0.25);
+}
+
+
+.warlord:hover {
+  border-color: rgba(255, 51, 51, 0.8);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(255, 51, 51, 0.2);
+}
+
+
+.necromancer {
+  border-color: rgba(204, 204, 204, 0.25);
+}
+
+
+.necromancer:hover {
+  border-color: rgba(204, 204, 204, 0.8);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(204, 204, 204, 0.2);
+}
+
+
+.puppeteer {
+  border-color: rgba(102, 204, 255, 0.25);
+}
+
+
+.puppeteer:hover {
+  border-color: rgba(102, 204, 255, 0.8);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(102, 204, 255, 0.2);
+}
+
+
+.plague {
+  border-color: rgba(102, 255, 102, 0.25);
+}
+
+
+.plague:hover {
+  border-color: rgba(102, 255, 102, 0.8);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(102, 255, 102, 0.2);
+}
+
+
+.schemer {
+  border-color: rgba(204, 102, 255, 0.25);
+}
+
+
+.schemer:hover {
+  border-color: rgba(204, 102, 255, 0.8);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(204, 102, 255, 0.2);
+}
+
+
+/* ========================================
    DICAS
-================= */
+======================================== */
+
 .demon-tips {
-  max-width: 900px;
-  margin: 0 auto 60px;
+  width: 100%;
 }
 
-.demon-tips h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #ff3333;
-}
 
-/* lista */
-.tips-list {
+.tips-grid {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  counter-reset: tip;
 }
 
-/* item */
-.tip {
-  counter-increment: tip;
+
+.tip-card {
+  position: relative;
 
   display: flex;
-  align-items: center;
-  gap: 15px;
+  align-items: flex-start;
+  gap: 20px;
 
-  background: rgba(0,0,0,0.6);
-  padding: 15px;
+  width: 100%;
 
-  border-left: 4px solid #ff3333;
+  padding: 22px 25px;
+
+  background: rgba(0, 0, 0, 0.65);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-left: 3px solid rgba(255, 51, 51, 0.7);
+
   border-radius: 8px;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
 }
 
-/* número */
-.tip-number::before {
-  content: counter(tip);
+
+.tip-card:hover {
+  transform: translateX(5px);
+
+  background: rgba(0, 0, 0, 0.8);
+
+  border-color: rgba(255, 51, 51, 0.45);
+
+  border-left-color: #ff3333;
 }
+
 
 .tip-number {
-  min-width: 28px;
-  height: 28px;
+  flex-shrink: 0;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: #ff3333;
-  color: black;
-  font-weight: bold;
+  width: 38px;
+  height: 38px;
+
+  background: rgba(255, 51, 51, 0.12);
+
+  border: 1px solid rgba(255, 51, 51, 0.4);
 
   border-radius: 6px;
+
+  color: #ff3333;
+
+  font-size: 0.75rem;
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+
+.tip-card p {
+  flex: 1;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 0.95rem;
+
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 700px) {
+
+  .section-title {
+    gap: 10px;
+  }
+
+  .section-title h2 {
+    font-size: 1.2rem;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .demon-page {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .demon-hero {
+    min-height: 240px;
+
+    padding-bottom: 35px;
+  }
+
+  .demon-hero h1 {
+    letter-spacing: 3px;
+  }
+
+  .demon-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tip-card {
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .tip-number {
+    width: 34px;
+    height: 34px;
+  }
+
+  .tip-card p {
+    font-size: 0.9rem;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 420px) {
+
+  .section-title span {
+    display: none;
+  }
+
+  .section-title {
+    justify-content: center;
+  }
+
+  .section-title h2 {
+    text-align: center;
+  }
+
 }
