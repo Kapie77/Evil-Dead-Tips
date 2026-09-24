@@ -123,6 +123,16 @@ const glossaryTerms = [
     {
         term: "Lego",
         definition: "glossary_lego"
+    },
+
+    {
+        term: "Smurf",
+        definition: "glossary_smurf"
+    },
+
+    {
+        term: "Sweatlord",
+        definition: "glossary_sweatlord"
     }
 
 ];

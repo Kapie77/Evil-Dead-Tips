@@ -29,6 +29,8 @@ const glossaryTranslations = {
         glossary_p4: "Prestige 4 (Prestígio 4)",
         glossary_p5: "Prestige 5 (Prestígio 5)",
         glossary_lego: "Lego (ou Leggo) é um termo informal/gíria da comunidade pra se referir a arma lendária (Legendary rarity).",
+        glossary_smurf: "É um jogador experiente/high skill que cria uma conta nova (ou usa uma conta de nível baixo) pra jogar contra iniciantes ou gente bem mais fraca.",
+        glossary_sweatlord: "Sweatlord (ou só Sweat) é o jogador extremamente tryhard. Basicamente o cara que “suja a camisa” de tanto tentar hard.",
 
     },
 
@@ -62,6 +64,8 @@ const glossaryTranslations = {
         glossary_p4: "Prestige 4",
         glossary_p5: "Prestige 5",
         glossary_lego: "Lego (or Leggo) is an informal term or slang used by the community to refer to a legendary weapon (Legendary rarity).",
+        glossary_smurf: "An experienced or highly skilled player who creates a new account (or uses a low-level account) to play against beginners or much weaker opponents.",
+        glossary_sweatlord: "Sweatlord (or just Sweat) is a try hard player. Basically, he’s the guy who “works up a sweat” from trying hard.",
 
     },
 
