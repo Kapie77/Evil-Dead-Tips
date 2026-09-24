@@ -31,6 +31,7 @@ const glossaryTranslations = {
         glossary_lego: "Lego (ou Leggo) é um termo informal/gíria da comunidade pra se referir a arma lendária (Legendary rarity).",
         glossary_smurf: "É um jogador experiente/high skill que cria uma conta nova (ou usa uma conta de nível baixo) pra jogar contra iniciantes ou gente bem mais fraca.",
         glossary_sweatlord: "Sweatlord (ou só Sweat) é o jogador extremamente tryhard. Basicamente o cara que “suja a camisa” de tanto tentar hard.",
+        glossary_instalock: "Instalock é quando alguém seleciona e trava o personagem na hora, no primeiro segundo da tela de escolha, sem nem esperar o time ver ou conversar.",
 
     },
 
@@ -66,6 +67,7 @@ const glossaryTranslations = {
         glossary_lego: "Lego (or Leggo) is an informal term or slang used by the community to refer to a legendary weapon (Legendary rarity).",
         glossary_smurf: "An experienced or highly skilled player who creates a new account (or uses a low-level account) to play against beginners or much weaker opponents.",
         glossary_sweatlord: "Sweatlord (or just Sweat) is a try hard player. Basically, he’s the guy who “works up a sweat” from trying hard.",
+        glossary_instalock: "Instalock is when someone selects and locks in their character right away, in the very first second of the selection screen, without even waiting for the team to see or discuss it.",
 
     },
 
