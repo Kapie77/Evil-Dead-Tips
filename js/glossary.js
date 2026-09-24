@@ -133,6 +133,11 @@ const glossaryTerms = [
     {
         term: "Sweatlord",
         definition: "glossary_sweatlord"
+    },
+
+    {
+        term: "Instalock",
+        definition: "glossary_instalock"
     }
 
 ];
