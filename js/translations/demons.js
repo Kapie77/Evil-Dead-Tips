@@ -47,6 +47,10 @@ const demonsTranslations = {
         demonsMaximumStacks: "Máximo de Pilhas",
         demonsRespawnSpeed: "Velocidade de Ressurgimento",
         demonsCharacteristics: "CARACTERÍSTICAS",
+        demonsArmy: "EXÉRCITO",
+        basicUnit: "UNIDADE BÁSICA",
+        eliteUnit: "UNIDADE DE ELITE",
+        demonsPowers: "PODERES",
 
         demonsSpeedIncrease: "Aumento de Velocidade",
         demonsFearIncreaseOnMarkedSurvivors: "Aumento de Medo em Sobreviventes Marcados",
@@ -313,6 +317,10 @@ const demonsTranslations = {
         demonsCooldownReduction: "Cooldown Reduction",
         demonsFearIncreasePerSecond: "Fear Increase Per Second",
         demonsCharacteristics: "CHARACTERISTICS",
+        demonsArmy: "ARMY",
+        basicUnit: "BASIC UNIT",
+        eliteUnit: "ELITE UNIT",
+        demonsPowers: "POWERS",
 
         // Eligos
         EligosSkill1: "PUPPET MASTER: POWER POSSESS",

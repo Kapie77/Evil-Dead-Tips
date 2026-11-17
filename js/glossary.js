@@ -138,6 +138,11 @@ const glossaryTerms = [
     {
         term: "Instalock",
         definition: "glossary_instalock"
+    },
+
+    {
+        term: "Baby Demon",
+        definition: "glossary_babydemon"
     }
 
 ];

@@ -582,6 +582,7 @@ const translations = {
       demongeneraltip3: "Verá que tudo depende do livro. Tem jogadores demônio fracos que perdem facil em todos os objetivos, mas conseguem destruir o livro e ganham a partida. Então foque em uma build para isso, ou seja, foque em aumentar a barra de equilibrio das suas unidades e dano delas.",
       demongeneraltip4: "Quando o Chefe morre ele dropa um refrigerante Shemp's ou um amuleto, então se ver que vai morrer vá para longe e esconda-se para os Sobreviventes não verem e pegarem o item de cura.",
       demongeneraltip5: "Destrua todos os carros próximo quando os Sobreviventes ativarem a Adaga ou a Página de imediato. Dê prioridade para destruir os carros antes de ataca-los. Existem carros intocaveis, pois só spawnam quando um sobrevivente chega perto. Se um desses carros estiver próximo do objetivo você pode possuir um sobrevivente e levá-lo até o carro para spawnar ele e depois é só destruí-lo. Se não estiver próximo, nem vá atrás dos sobreviventes porque eles vão pegar o carro e escapar, então foque em botar armadilhas no próximo objetivo.",
+      demongeneraltip6: "Demônios podem colocar Portais de Proximidade, que são portais invisiveis que são ativados quando algum Sobrevivente chega perto e eles não somem com tempo nem com distância elas só sumirão se você colocar novas em outro lugar; demônios podem colocar 1 portal de proximidade básico e 1 de elite, só Baal consegue colocar 2 de portal básico). Esses portais são perfeitos para colocar nos objetivos como armadilhas para quando os Sobreviventes chegarem ou no corpo de algum Sobrevivente morto ou caído, assim, além das unidades que saírão desses portais, você ainda pode colocar mais portais normais e terão muitos demônios para os Sobreviventes materem. E os Portais de Proximidade consomem menos energia infernal para serem posicionados.",
 
       /* Eligos */
       EligosBio: "Eligos pode ser chamado de muitas coisas, mas “demônio menor” não é uma delas. Além da habilidade de lançar pedras com a mente, ele possui o poder telecinético de atordoar temporariamente todos os Sobreviventes próximos. Ele também fica invisível quando se move, então boa sorte para detê-lo.",
@@ -1189,6 +1190,7 @@ const translations = {
       demongeneraltip3: "You'll see that it all depends on the book. There are weak players who lose easily in every objective but manage to destroy the book and win the match. So focus on a build for that—in other words, focus on increasing your units' health and damage.",
       demongeneraltip4: "When the Boss dies, he drops a Shemp's cola or an amulet, so if you see that your boss is about to die, move away and hide so the Survivors don't see you and take the healing item.",
       demongeneraltip5: "Destroy all nearby cars immediately when Survivors activate the Dagger or the Page. Prioritize destroying the cars before attacking them. There are untouchable cars, as they only spawn when a survivor gets close. If one of these cars is near the objective, you can possess a survivor and take them to the car to spawn it, then just destroy it. If it’s not nearby, don’t even go after the survivors because they’ll take the car and escape, so focus on setting traps at the next objective.",
+      demongeneraltip6: "Demons can place Proximity Portals, which are invisible portals that activate when a Survivor gets close, and they don’t disappear over time or with distance (they'll only disappear if you place new ones somewhere else; demons can place 1 basic proximity portal and 1 elite one, while only Baal can place 2 basic portals). These portals are perfect for placing at objectives as traps for when Survivors arrive, or on the body of a dead or downed Survivor. That way, in addition to the units that will emerge from these portals, you can also place more regular portals, ensuring there are plenty of demons for the Survivors to deal with. And Proximity Portals consume less infernal energy to deploy.",
 
       /* Eligos */
       EligosBio: "Eligos can be called a lot of things, but a 'minor demon' is not one of them. In addition to the ability to throw rocks with his mind, he wields the telekinetic power to temporarily stun all nearby Survivors. He's also invisible when moving, so good luck stopping him.",
@@ -1286,6 +1288,13 @@ if (typeof demonsTranslations !== "undefined") {
     Object.assign(translations.pt, demonsTranslations.pt);
     Object.assign(translations.en, demonsTranslations.en);
     Object.assign(translations.es, demonsTranslations.es);
+}
+
+// Traduções das dicas demônios //
+if (typeof demonstipsTranslations !== "undefined") {
+    Object.assign(translations.pt, demonstipsTranslations.pt);
+    Object.assign(translations.en, demonstipsTranslations.en);
+    Object.assign(translations.es, demonstipsTranslations.es);
 }
 // --------------------------------------------------------- //
 

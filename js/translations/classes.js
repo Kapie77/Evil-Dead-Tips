@@ -14,7 +14,21 @@ const classesTranslations = {
     strengths: "Pontos Fortes",
     weaknesses: "Pontos Fracos",
     classesCharacteristics: "CARACTERÍSTICAS",
-    classesTips: "Dicas",
+    classesTips: "DICAS",
+
+    /* LEADER */
+    classesLeaderStrengths1: "Líder tem muita resistência ao medo.",
+
+    /* WARRIOR */
+      /* Pontos Fortes */
+      classesWarriorStrengths1: "Tem muita saúde (a maior do jogo).",
+
+      /* Pontos Fracos */
+      classesWarriorWeaknesses1: "Tem pouco Vigor.",
+
+      /* Dicas */
+      classesWarriorTitleTip1: "Barra de escudo",
+      classesWarriorTip1: "Foque primeiro em upar seu Escudo pro level máximo, assim quando você usar um amuleto encherá duas barras de escudo.",
 
     /* HUNTERS */
     classesHunterStrengths1: "Caçadores possuem muito Vigor.",
@@ -40,7 +54,21 @@ const classesTranslations = {
     classesStrengths: "Strengths",
     classesWeaknesses: "Weaknesses",
     classesCharacteristics: "CHARACTERISTICS",
-    classesTips: "Tips",
+    classesTips: "TIPS",
+
+    /* LEADER */
+    classesLeaderStrengths1: "Leader is highly resistant to fear.",
+
+    /* WARRIOR */
+      /* Pontos Fortes */
+      classesWarriorStrengths1: "They have a lot of health (the most health in the game).",
+
+    /* Pontos Fracos */
+      classesWarriorWeaknesses1: "They have low stamina.",
+
+      /* Dicas */
+      classesWarriorTitleTip1: "Shield bar",
+      classesWarriorTip1: "Focus first on leveling up your Shield to the maximum level, so that when you use an amulet, it will fill two shield bars.",
 
     /* HUNTERS */
     classesHunterStrengths1: "Hunters have a lot of Stamina.",
