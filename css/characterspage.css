@@ -1082,6 +1082,33 @@ body.suporte {
   font-style: italic;
 }
 
+/* ===========================
+   DICAS COM VÍDEO
+=========================== */
+
+.tip-video {
+  display: block;
+
+  width: 100%;
+  max-width: 800px;
+
+  height: auto;
+
+  margin: 0 auto;
+
+  background: #000;
+
+  border: 1px solid rgba(0, 200, 255, 0.2);
+  border-radius: 6px;
+
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.tip-video:focus-visible {
+  outline: 2px solid #00ccff;
+  outline-offset: 3px;
+}
+
 
 /* ===========================
    MODAL DE IMAGEM
